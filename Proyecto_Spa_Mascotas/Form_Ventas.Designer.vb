@@ -42,7 +42,7 @@ Partial Class Form_Ventas
         Me.DGV_Precio = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DGV_Cantidad = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DGV_Subtotal = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.GrBo_BusquedaProducto = New System.Windows.Forms.GroupBox()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
@@ -51,7 +51,7 @@ Partial Class Form_Ventas
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.GrBo_AgregarProducto = New System.Windows.Forms.GroupBox()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -63,9 +63,9 @@ Partial Class Form_Ventas
         Me.Label3 = New System.Windows.Forms.Label()
         Me.MenuS_Principal.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox1.SuspendLayout()
+        Me.GrBo_BusquedaProducto.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
-        Me.GroupBox3.SuspendLayout()
+        Me.GrBo_AgregarProducto.SuspendLayout()
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -153,6 +153,7 @@ Partial Class Form_Ventas
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(170, 20)
         Me.TextBox1.TabIndex = 3
+        Me.TextBox1.TabStop = False
         '
         'TextBox2
         '
@@ -209,19 +210,19 @@ Partial Class Form_Ventas
         Me.DGV_Subtotal.MaxInputLength = 5
         Me.DGV_Subtotal.Name = "DGV_Subtotal"
         '
-        'GroupBox1
+        'GrBo_BusquedaProducto
         '
-        Me.GroupBox1.Controls.Add(Me.Button1)
-        Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Controls.Add(Me.TextBox2)
-        Me.GroupBox1.Controls.Add(Me.TextBox1)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 53)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(366, 134)
-        Me.GroupBox1.TabIndex = 7
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Búsqueda de producto"
+        Me.GrBo_BusquedaProducto.Controls.Add(Me.Button1)
+        Me.GrBo_BusquedaProducto.Controls.Add(Me.Label1)
+        Me.GrBo_BusquedaProducto.Controls.Add(Me.Label2)
+        Me.GrBo_BusquedaProducto.Controls.Add(Me.TextBox2)
+        Me.GrBo_BusquedaProducto.Controls.Add(Me.TextBox1)
+        Me.GrBo_BusquedaProducto.Location = New System.Drawing.Point(12, 53)
+        Me.GrBo_BusquedaProducto.Name = "GrBo_BusquedaProducto"
+        Me.GrBo_BusquedaProducto.Size = New System.Drawing.Size(366, 134)
+        Me.GrBo_BusquedaProducto.TabIndex = 7
+        Me.GrBo_BusquedaProducto.TabStop = False
+        Me.GrBo_BusquedaProducto.Text = "Búsqueda de producto"
         '
         'Button3
         '
@@ -308,23 +309,23 @@ Partial Class Form_Ventas
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Área de pago"
         '
-        'GroupBox3
+        'GrBo_AgregarProducto
         '
-        Me.GroupBox3.Controls.Add(Me.Button2)
-        Me.GroupBox3.Controls.Add(Me.NumericUpDown1)
-        Me.GroupBox3.Controls.Add(Me.Label6)
-        Me.GroupBox3.Controls.Add(Me.TextBox3)
-        Me.GroupBox3.Controls.Add(Me.Label5)
-        Me.GroupBox3.Controls.Add(Me.ComboBox2)
-        Me.GroupBox3.Controls.Add(Me.Label4)
-        Me.GroupBox3.Controls.Add(Me.ComboBox1)
-        Me.GroupBox3.Controls.Add(Me.Label3)
-        Me.GroupBox3.Location = New System.Drawing.Point(414, 27)
-        Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(368, 160)
-        Me.GroupBox3.TabIndex = 33
-        Me.GroupBox3.TabStop = False
-        Me.GroupBox3.Text = "Área de agregar producto"
+        Me.GrBo_AgregarProducto.Controls.Add(Me.Button2)
+        Me.GrBo_AgregarProducto.Controls.Add(Me.NumericUpDown1)
+        Me.GrBo_AgregarProducto.Controls.Add(Me.Label6)
+        Me.GrBo_AgregarProducto.Controls.Add(Me.TextBox3)
+        Me.GrBo_AgregarProducto.Controls.Add(Me.Label5)
+        Me.GrBo_AgregarProducto.Controls.Add(Me.ComboBox2)
+        Me.GrBo_AgregarProducto.Controls.Add(Me.Label4)
+        Me.GrBo_AgregarProducto.Controls.Add(Me.ComboBox1)
+        Me.GrBo_AgregarProducto.Controls.Add(Me.Label3)
+        Me.GrBo_AgregarProducto.Location = New System.Drawing.Point(414, 27)
+        Me.GrBo_AgregarProducto.Name = "GrBo_AgregarProducto"
+        Me.GrBo_AgregarProducto.Size = New System.Drawing.Size(368, 160)
+        Me.GrBo_AgregarProducto.TabIndex = 33
+        Me.GrBo_AgregarProducto.TabStop = False
+        Me.GrBo_AgregarProducto.Text = "Área de agregar producto"
         '
         'Button2
         '
@@ -343,6 +344,7 @@ Partial Class Form_Ventas
         Me.NumericUpDown1.Name = "NumericUpDown1"
         Me.NumericUpDown1.Size = New System.Drawing.Size(194, 20)
         Me.NumericUpDown1.TabIndex = 16
+        Me.NumericUpDown1.TabStop = False
         Me.NumericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.NumericUpDown1.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
@@ -362,6 +364,7 @@ Partial Class Form_Ventas
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(194, 20)
         Me.TextBox3.TabIndex = 14
+        Me.TextBox3.TabStop = False
         '
         'Label5
         '
@@ -380,6 +383,7 @@ Partial Class Form_Ventas
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(194, 21)
         Me.ComboBox2.TabIndex = 12
+        Me.ComboBox2.TabStop = False
         '
         'Label4
         '
@@ -398,6 +402,7 @@ Partial Class Form_Ventas
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(194, 21)
         Me.ComboBox1.TabIndex = 10
+        Me.ComboBox1.TabStop = False
         '
         'Label3
         '
@@ -414,9 +419,9 @@ Partial Class Form_Ventas
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.GroupBox3)
+        Me.Controls.Add(Me.GrBo_AgregarProducto)
         Me.Controls.Add(Me.GroupBox2)
-        Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.GrBo_BusquedaProducto)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.MenuS_Principal)
         Me.MainMenuStrip = Me.MenuS_Principal
@@ -426,12 +431,12 @@ Partial Class Form_Ventas
         Me.MenuS_Principal.ResumeLayout(False)
         Me.MenuS_Principal.PerformLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
+        Me.GrBo_BusquedaProducto.ResumeLayout(False)
+        Me.GrBo_BusquedaProducto.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
-        Me.GroupBox3.ResumeLayout(False)
-        Me.GroupBox3.PerformLayout()
+        Me.GrBo_AgregarProducto.ResumeLayout(False)
+        Me.GrBo_AgregarProducto.PerformLayout()
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -451,7 +456,7 @@ Partial Class Form_Ventas
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents Button1 As Button
     Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents GrBo_BusquedaProducto As GroupBox
     Friend WithEvents DGV_NumeroItem As DataGridViewTextBoxColumn
     Friend WithEvents DGV_Producto As DataGridViewTextBoxColumn
     Friend WithEvents DGV_Precio As DataGridViewTextBoxColumn
@@ -465,7 +470,7 @@ Partial Class Form_Ventas
     Friend WithEvents Label8 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents GroupBox3 As GroupBox
+    Friend WithEvents GrBo_AgregarProducto As GroupBox
     Friend WithEvents Button2 As Button
     Friend WithEvents NumericUpDown1 As NumericUpDown
     Friend WithEvents Label6 As Label
