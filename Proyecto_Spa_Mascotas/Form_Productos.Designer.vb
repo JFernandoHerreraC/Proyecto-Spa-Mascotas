@@ -35,6 +35,7 @@ Partial Class Form_Productos
         Me.Baja_Productos = New System.Windows.Forms.TabPage()
         Me.Cambios_Productos = New System.Windows.Forms.TabPage()
         Me.Caducos_Productos = New System.Windows.Forms.TabPage()
+        Me.ClientesYMascotasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuS_Principal.SuspendLayout()
         Me.Tab_ABCC_Productos.SuspendLayout()
         Me.SuspendLayout()
@@ -50,7 +51,7 @@ Partial Class Form_Productos
         '
         'MenuS_Principal
         '
-        Me.MenuS_Principal.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ServiciosToolStripMenuItem1, Me.VentasToolStripMenuItem, Me.InventarioToolStripMenuItem, Me.ProveedoresToolStripMenuItem, Me.EmpleadosToolStripMenuItem1})
+        Me.MenuS_Principal.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ServiciosToolStripMenuItem1, Me.VentasToolStripMenuItem, Me.InventarioToolStripMenuItem, Me.ProveedoresToolStripMenuItem, Me.EmpleadosToolStripMenuItem1, Me.ClientesYMascotasToolStripMenuItem})
         Me.MenuS_Principal.Location = New System.Drawing.Point(0, 0)
         Me.MenuS_Principal.Name = "MenuS_Principal"
         Me.MenuS_Principal.Size = New System.Drawing.Size(800, 24)
@@ -149,6 +150,12 @@ Partial Class Form_Productos
         Me.Caducos_Productos.Text = "Productos caducos"
         Me.Caducos_Productos.UseVisualStyleBackColor = True
         '
+        'ClientesYMascotasToolStripMenuItem
+        '
+        Me.ClientesYMascotasToolStripMenuItem.Name = "ClientesYMascotasToolStripMenuItem"
+        Me.ClientesYMascotasToolStripMenuItem.Size = New System.Drawing.Size(123, 20)
+        Me.ClientesYMascotasToolStripMenuItem.Text = "Clientes y mascotas"
+        '
         'Form_Productos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -181,4 +188,5 @@ Partial Class Form_Productos
     Friend WithEvents Baja_Productos As TabPage
     Friend WithEvents Cambios_Productos As TabPage
     Friend WithEvents Caducos_Productos As TabPage
+    Friend WithEvents ClientesYMascotasToolStripMenuItem As ToolStripMenuItem
 End Class

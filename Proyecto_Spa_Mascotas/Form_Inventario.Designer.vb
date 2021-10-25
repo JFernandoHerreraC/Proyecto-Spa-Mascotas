@@ -30,6 +30,7 @@ Partial Class Form_Inventario
         Me.ProveedoresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ComprasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EmpleadosToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ClientesYMascotasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuS_Principal.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -44,7 +45,7 @@ Partial Class Form_Inventario
         '
         'MenuS_Principal
         '
-        Me.MenuS_Principal.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ProductosToolStripMenuItem, Me.ServiciosToolStripMenuItem1, Me.VentasToolStripMenuItem, Me.ProveedoresToolStripMenuItem, Me.ComprasToolStripMenuItem, Me.EmpleadosToolStripMenuItem1})
+        Me.MenuS_Principal.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ProductosToolStripMenuItem, Me.ServiciosToolStripMenuItem1, Me.VentasToolStripMenuItem, Me.ProveedoresToolStripMenuItem, Me.ComprasToolStripMenuItem, Me.EmpleadosToolStripMenuItem1, Me.ClientesYMascotasToolStripMenuItem})
         Me.MenuS_Principal.Location = New System.Drawing.Point(0, 0)
         Me.MenuS_Principal.Name = "MenuS_Principal"
         Me.MenuS_Principal.Size = New System.Drawing.Size(800, 24)
@@ -87,6 +88,12 @@ Partial Class Form_Inventario
         Me.EmpleadosToolStripMenuItem1.Size = New System.Drawing.Size(77, 20)
         Me.EmpleadosToolStripMenuItem1.Text = "Empleados"
         '
+        'ClientesYMascotasToolStripMenuItem
+        '
+        Me.ClientesYMascotasToolStripMenuItem.Name = "ClientesYMascotasToolStripMenuItem"
+        Me.ClientesYMascotasToolStripMenuItem.Size = New System.Drawing.Size(123, 20)
+        Me.ClientesYMascotasToolStripMenuItem.Text = "Clientes y mascotas"
+        '
         'Form_Inventario
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -112,4 +119,5 @@ Partial Class Form_Inventario
     Friend WithEvents ComprasToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents EmpleadosToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents ServiciosToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents ClientesYMascotasToolStripMenuItem As ToolStripMenuItem
 End Class

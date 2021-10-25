@@ -33,4 +33,9 @@
         Form_Servicios.Show()
         Me.Hide()
     End Sub
+
+    Private Sub ClientesYMascotasToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ClientesYMascotasToolStripMenuItem.Click
+        Form_ClientesYMascotas.Show()
+        Me.Hide()
+    End Sub
 End Class

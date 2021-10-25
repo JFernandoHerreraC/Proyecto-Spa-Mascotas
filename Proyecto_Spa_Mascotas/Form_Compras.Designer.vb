@@ -33,6 +33,7 @@ Partial Class Form_Compras
         Me.Tab_Ctr_Compra = New System.Windows.Forms.TabControl()
         Me.Alta_Compra = New System.Windows.Forms.TabPage()
         Me.Devoluciones_Compra = New System.Windows.Forms.TabPage()
+        Me.ClientesYMascotasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuS_Principal.SuspendLayout()
         Me.Tab_Ctr_Compra.SuspendLayout()
         Me.SuspendLayout()
@@ -48,7 +49,7 @@ Partial Class Form_Compras
         '
         'MenuS_Principal
         '
-        Me.MenuS_Principal.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ProductosToolStripMenuItem, Me.ServiciosToolStripMenuItem1, Me.VentasToolStripMenuItem, Me.InventarioToolStripMenuItem, Me.ProveedoresToolStripMenuItem, Me.EmpleadosToolStripMenuItem1})
+        Me.MenuS_Principal.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ProductosToolStripMenuItem, Me.ServiciosToolStripMenuItem1, Me.VentasToolStripMenuItem, Me.InventarioToolStripMenuItem, Me.ProveedoresToolStripMenuItem, Me.EmpleadosToolStripMenuItem1, Me.ClientesYMascotasToolStripMenuItem})
         Me.MenuS_Principal.Location = New System.Drawing.Point(0, 0)
         Me.MenuS_Principal.Name = "MenuS_Principal"
         Me.MenuS_Principal.Size = New System.Drawing.Size(800, 24)
@@ -121,6 +122,12 @@ Partial Class Form_Compras
         Me.Devoluciones_Compra.Text = "Devoluciones"
         Me.Devoluciones_Compra.UseVisualStyleBackColor = True
         '
+        'ClientesYMascotasToolStripMenuItem
+        '
+        Me.ClientesYMascotasToolStripMenuItem.Name = "ClientesYMascotasToolStripMenuItem"
+        Me.ClientesYMascotasToolStripMenuItem.Size = New System.Drawing.Size(123, 20)
+        Me.ClientesYMascotasToolStripMenuItem.Text = "Clientes y mascotas"
+        '
         'Form_Compras
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -151,4 +158,5 @@ Partial Class Form_Compras
     Friend WithEvents Tab_Ctr_Compra As TabControl
     Friend WithEvents Alta_Compra As TabPage
     Friend WithEvents Devoluciones_Compra As TabPage
+    Friend WithEvents ClientesYMascotasToolStripMenuItem As ToolStripMenuItem
 End Class
