@@ -31,6 +31,7 @@ Partial Class Form_Ventas
         Me.ComprasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EmpleadosToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ClientesYMascotasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CorteDeCajaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
@@ -61,7 +62,6 @@ Partial Class Form_Ventas
         Me.Label4 = New System.Windows.Forms.Label()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.CorteDeCajaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuS_Principal.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GrBo_BusquedaProducto.SuspendLayout()
@@ -128,6 +128,12 @@ Partial Class Form_Ventas
         Me.ClientesYMascotasToolStripMenuItem.Size = New System.Drawing.Size(123, 20)
         Me.ClientesYMascotasToolStripMenuItem.Text = "Clientes y mascotas"
         '
+        'CorteDeCajaToolStripMenuItem
+        '
+        Me.CorteDeCajaToolStripMenuItem.Name = "CorteDeCajaToolStripMenuItem"
+        Me.CorteDeCajaToolStripMenuItem.Size = New System.Drawing.Size(88, 20)
+        Me.CorteDeCajaToolStripMenuItem.Text = "Corte de caja"
+        '
         'Label1
         '
         Me.Label1.AutoSize = True
@@ -180,6 +186,7 @@ Partial Class Form_Ventas
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(544, 242)
         Me.DataGridView1.TabIndex = 6
+        Me.DataGridView1.TabStop = False
         '
         'DGV_NumeroItem
         '
@@ -339,9 +346,9 @@ Partial Class Form_Ventas
         '
         'NumericUpDown1
         '
-        Me.NumericUpDown1.Increment = New Decimal(New Integer() {100, 0, 0, 196608})
+        Me.NumericUpDown1.DecimalPlaces = 3
+        Me.NumericUpDown1.Increment = New Decimal(New Integer() {50, 0, 0, 196608})
         Me.NumericUpDown1.Location = New System.Drawing.Point(157, 103)
-        Me.NumericUpDown1.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.NumericUpDown1.Name = "NumericUpDown1"
         Me.NumericUpDown1.Size = New System.Drawing.Size(194, 20)
         Me.NumericUpDown1.TabIndex = 16
@@ -414,12 +421,6 @@ Partial Class Form_Ventas
         Me.Label3.Size = New System.Drawing.Size(145, 17)
         Me.Label3.TabIndex = 9
         Me.Label3.Text = "Nombre del producto:"
-        '
-        'CorteDeCajaToolStripMenuItem
-        '
-        Me.CorteDeCajaToolStripMenuItem.Name = "CorteDeCajaToolStripMenuItem"
-        Me.CorteDeCajaToolStripMenuItem.Size = New System.Drawing.Size(88, 20)
-        Me.CorteDeCajaToolStripMenuItem.Text = "Corte de caja"
         '
         'Form_Ventas
         '
