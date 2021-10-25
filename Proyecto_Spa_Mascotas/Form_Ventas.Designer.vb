@@ -61,6 +61,7 @@ Partial Class Form_Ventas
         Me.Label4 = New System.Windows.Forms.Label()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.CorteDeCajaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuS_Principal.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GrBo_BusquedaProducto.SuspendLayout()
@@ -71,7 +72,7 @@ Partial Class Form_Ventas
         '
         'MenuS_Principal
         '
-        Me.MenuS_Principal.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ProductosToolStripMenuItem, Me.ServiciosToolStripMenuItem, Me.InventarioToolStripMenuItem, Me.ProveedoresToolStripMenuItem, Me.ComprasToolStripMenuItem, Me.EmpleadosToolStripMenuItem1, Me.ClientesYMascotasToolStripMenuItem})
+        Me.MenuS_Principal.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ProductosToolStripMenuItem, Me.ServiciosToolStripMenuItem, Me.InventarioToolStripMenuItem, Me.ProveedoresToolStripMenuItem, Me.ComprasToolStripMenuItem, Me.EmpleadosToolStripMenuItem1, Me.ClientesYMascotasToolStripMenuItem, Me.CorteDeCajaToolStripMenuItem})
         Me.MenuS_Principal.Location = New System.Drawing.Point(0, 0)
         Me.MenuS_Principal.Name = "MenuS_Principal"
         Me.MenuS_Principal.Size = New System.Drawing.Size(800, 24)
@@ -414,6 +415,12 @@ Partial Class Form_Ventas
         Me.Label3.TabIndex = 9
         Me.Label3.Text = "Nombre del producto:"
         '
+        'CorteDeCajaToolStripMenuItem
+        '
+        Me.CorteDeCajaToolStripMenuItem.Name = "CorteDeCajaToolStripMenuItem"
+        Me.CorteDeCajaToolStripMenuItem.Size = New System.Drawing.Size(88, 20)
+        Me.CorteDeCajaToolStripMenuItem.Text = "Corte de caja"
+        '
         'Form_Ventas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -482,4 +489,5 @@ Partial Class Form_Ventas
     Friend WithEvents Label3 As Label
     Friend WithEvents CaducosToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ClientesYMascotasToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents CorteDeCajaToolStripMenuItem As ToolStripMenuItem
 End Class

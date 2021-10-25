@@ -85,6 +85,12 @@
     <Compile Include="Form_Compras.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Form_CorteCaja.Designer.vb">
+      <DependentUpon>Form_CorteCaja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_CorteCaja.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form_Empleados.Designer.vb">
       <DependentUpon>Form_Empleados.vb</DependentUpon>
     </Compile>
@@ -150,6 +156,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Compras.resx">
       <DependentUpon>Form_Compras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_CorteCaja.resx">
+      <DependentUpon>Form_CorteCaja.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Empleados.resx">
       <DependentUpon>Form_Empleados.vb</DependentUpon>
