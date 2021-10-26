@@ -36,6 +36,8 @@ Partial Class Form_Proveedores
         Me.Consulta_Proveedores = New System.Windows.Forms.TabPage()
         Me.Cambio_Proveedor = New System.Windows.Forms.TabPage()
         Me.Baja_Proveedores = New System.Windows.Forms.TabPage()
+        Me.CategoriasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CaducosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuS_Principal.SuspendLayout()
         Me.Tab_Ctr_Proveedor.SuspendLayout()
         Me.SuspendLayout()
@@ -60,6 +62,7 @@ Partial Class Form_Proveedores
         '
         'ProductosToolStripMenuItem
         '
+        Me.ProductosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CategoriasToolStripMenuItem, Me.CaducosToolStripMenuItem})
         Me.ProductosToolStripMenuItem.Name = "ProductosToolStripMenuItem"
         Me.ProductosToolStripMenuItem.Size = New System.Drawing.Size(73, 20)
         Me.ProductosToolStripMenuItem.Text = "Productos"
@@ -150,6 +153,18 @@ Partial Class Form_Proveedores
         Me.Baja_Proveedores.Text = "Baja de proveedor"
         Me.Baja_Proveedores.UseVisualStyleBackColor = True
         '
+        'CategoriasToolStripMenuItem
+        '
+        Me.CategoriasToolStripMenuItem.Name = "CategoriasToolStripMenuItem"
+        Me.CategoriasToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.CategoriasToolStripMenuItem.Text = "Categorias"
+        '
+        'CaducosToolStripMenuItem
+        '
+        Me.CaducosToolStripMenuItem.Name = "CaducosToolStripMenuItem"
+        Me.CaducosToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.CaducosToolStripMenuItem.Text = "Caducos"
+        '
         'Form_Proveedores
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -183,4 +198,6 @@ Partial Class Form_Proveedores
     Friend WithEvents Consulta_Proveedores As TabPage
     Friend WithEvents Cambio_Proveedor As TabPage
     Friend WithEvents Baja_Proveedores As TabPage
+    Friend WithEvents CategoriasToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents CaducosToolStripMenuItem As ToolStripMenuItem
 End Class

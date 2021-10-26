@@ -62,6 +62,7 @@ Partial Class Form_Ventas
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.CategoriasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CaducosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuS_Principal.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GrBo_BusquedaProducto.SuspendLayout()
@@ -81,7 +82,7 @@ Partial Class Form_Ventas
         '
         'ProductosToolStripMenuItem
         '
-        Me.ProductosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CategoriasToolStripMenuItem})
+        Me.ProductosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CategoriasToolStripMenuItem, Me.CaducosToolStripMenuItem})
         Me.ProductosToolStripMenuItem.Name = "ProductosToolStripMenuItem"
         Me.ProductosToolStripMenuItem.Size = New System.Drawing.Size(73, 20)
         Me.ProductosToolStripMenuItem.Text = "Productos"
@@ -422,6 +423,12 @@ Partial Class Form_Ventas
         Me.CategoriasToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.CategoriasToolStripMenuItem.Text = "Categorias"
         '
+        'CaducosToolStripMenuItem
+        '
+        Me.CaducosToolStripMenuItem.Name = "CaducosToolStripMenuItem"
+        Me.CaducosToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.CaducosToolStripMenuItem.Text = "Caducos"
+        '
         'Form_Ventas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -491,4 +498,5 @@ Partial Class Form_Ventas
     Friend WithEvents ClientesYMascotasToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CorteDeCajaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CategoriasToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents CaducosToolStripMenuItem As ToolStripMenuItem
 End Class

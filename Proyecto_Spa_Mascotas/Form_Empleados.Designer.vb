@@ -160,6 +160,8 @@ Partial Class Form_Empleados
         Me.Label49 = New System.Windows.Forms.Label()
         Me.TextBox38 = New System.Windows.Forms.TextBox()
         Me.Label50 = New System.Windows.Forms.Label()
+        Me.CategoriasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CaducosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuS_Principal.SuspendLayout()
         Me.Tab_Ctr_Empleados.SuspendLayout()
         Me.Alta_Empleado.SuspendLayout()
@@ -190,6 +192,7 @@ Partial Class Form_Empleados
         '
         'ProductosToolStripMenuItem
         '
+        Me.ProductosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CategoriasToolStripMenuItem, Me.CaducosToolStripMenuItem})
         Me.ProductosToolStripMenuItem.Name = "ProductosToolStripMenuItem"
         Me.ProductosToolStripMenuItem.Size = New System.Drawing.Size(73, 20)
         Me.ProductosToolStripMenuItem.Text = "Productos"
@@ -1477,6 +1480,18 @@ Partial Class Form_Empleados
         Me.Label50.TabIndex = 42
         Me.Label50.Text = "Nombre/s:"
         '
+        'CategoriasToolStripMenuItem
+        '
+        Me.CategoriasToolStripMenuItem.Name = "CategoriasToolStripMenuItem"
+        Me.CategoriasToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.CategoriasToolStripMenuItem.Text = "Categorias"
+        '
+        'CaducosToolStripMenuItem
+        '
+        Me.CaducosToolStripMenuItem.Name = "CaducosToolStripMenuItem"
+        Me.CaducosToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.CaducosToolStripMenuItem.Text = "Caducos"
+        '
         'Form_Empleados
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1644,4 +1659,6 @@ Partial Class Form_Empleados
     Friend WithEvents TextBox38 As TextBox
     Friend WithEvents Label50 As Label
     Friend WithEvents ClientesYMascotasToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents CategoriasToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents CaducosToolStripMenuItem As ToolStripMenuItem
 End Class

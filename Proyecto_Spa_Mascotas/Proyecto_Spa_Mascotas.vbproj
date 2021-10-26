@@ -73,6 +73,18 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Form_Caducos.Designer.vb">
+      <DependentUpon>Form_Caducos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Caducos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Categorias.Designer.vb">
+      <DependentUpon>Form_Categorias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Categorias.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form_ClientesYMascotas.Designer.vb">
       <DependentUpon>Form_ClientesYMascotas.vb</DependentUpon>
     </Compile>
@@ -151,6 +163,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Form_Caducos.resx">
+      <DependentUpon>Form_Caducos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Categorias.resx">
+      <DependentUpon>Form_Categorias.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_ClientesYMascotas.resx">
       <DependentUpon>Form_ClientesYMascotas.vb</DependentUpon>
     </EmbeddedResource>

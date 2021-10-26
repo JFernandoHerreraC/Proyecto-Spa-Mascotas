@@ -33,4 +33,14 @@
         Form_ClientesYMascotas.Show()
         Me.Hide()
     End Sub
+
+    Private Sub CategoriasToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CategoriasToolStripMenuItem.Click
+        Form_Categorias.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub CaducosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CaducosToolStripMenuItem.Click
+        Form_Caducos.Show()
+        Me.Hide()
+    End Sub
 End Class

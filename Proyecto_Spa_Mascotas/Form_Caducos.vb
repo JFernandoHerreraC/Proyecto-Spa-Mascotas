@@ -1,11 +1,6 @@
-﻿Public Class Form_Ventas
+﻿Public Class Form_Caducos
     Private Sub ProductosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ProductosToolStripMenuItem.Click
         Form_Productos.Show()
-        Me.Hide()
-    End Sub
-
-    Private Sub EmpleadosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ServiciosToolStripMenuItem.Click
-        Form_Servicios.Show()
         Me.Hide()
     End Sub
 
@@ -14,7 +9,12 @@
         Me.Hide()
     End Sub
 
-    Private Sub ServiciosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ProveedoresToolStripMenuItem.Click
+    Private Sub VentasToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles VentasToolStripMenuItem.Click
+        Form_Ventas.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub ProveedoresToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ProveedoresToolStripMenuItem.Click
         Form_Proveedores.Show()
         Me.Hide()
     End Sub
@@ -34,12 +34,13 @@
         Me.Hide()
     End Sub
 
-    Private Sub CaducosToolStripMenuItem_Click(sender As Object, e As EventArgs)
-
+    Private Sub CategoriasToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles CategoriasToolStripMenuItem1.Click
+        Form_Categorias.Show()
+        Me.Hide()
     End Sub
 
-    Private Sub CorteDeCajaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CorteDeCajaToolStripMenuItem.Click
-        Form_CorteCaja.Show()
+    Private Sub Btn_atras_Click(sender As Object, e As EventArgs) Handles Btn_atras.Click
+        Form_Productos.Show()
         Me.Hide()
     End Sub
 End Class

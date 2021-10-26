@@ -24,7 +24,6 @@ Partial Class Form_CorteCaja
     Private Sub InitializeComponent()
         Me.MenuS_Principal = New System.Windows.Forms.MenuStrip()
         Me.ProductosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CaducosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ServiciosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.InventarioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.VentasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -60,9 +59,6 @@ Partial Class Form_CorteCaja
         Me.Consulta_CorteCajaHist = New System.Windows.Forms.TabPage()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.DGV_ID_CorCaja = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DGV_FECHA_CorCaja = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DGV_HORA_CorCaja = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -70,6 +66,11 @@ Partial Class Form_CorteCaja
         Me.DGV_SalCaja_CorCaja = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DGV_TOTAL_CorCaja = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DGV_NOMBCAJERO_CorCaja = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.CategoriasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CaducosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuS_Principal.SuspendLayout()
         Me.Tab_Ctr_CorteCaja.SuspendLayout()
         Me.Alta_CorteCajaFinal.SuspendLayout()
@@ -90,16 +91,10 @@ Partial Class Form_CorteCaja
         '
         'ProductosToolStripMenuItem
         '
-        Me.ProductosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CaducosToolStripMenuItem})
+        Me.ProductosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CategoriasToolStripMenuItem, Me.CaducosToolStripMenuItem})
         Me.ProductosToolStripMenuItem.Name = "ProductosToolStripMenuItem"
         Me.ProductosToolStripMenuItem.Size = New System.Drawing.Size(73, 20)
         Me.ProductosToolStripMenuItem.Text = "Productos"
-        '
-        'CaducosToolStripMenuItem
-        '
-        Me.CaducosToolStripMenuItem.Name = "CaducosToolStripMenuItem"
-        Me.CaducosToolStripMenuItem.Size = New System.Drawing.Size(120, 22)
-        Me.CaducosToolStripMenuItem.Text = "Caducos"
         '
         'ServiciosToolStripMenuItem
         '
@@ -432,32 +427,6 @@ Partial Class Form_CorteCaja
         Me.DataGridView1.Size = New System.Drawing.Size(740, 150)
         Me.DataGridView1.TabIndex = 2
         '
-        'DateTimePicker1
-        '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(373, 44)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 20)
-        Me.DateTimePicker1.TabIndex = 1
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label8.Location = New System.Drawing.Point(123, 44)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(244, 17)
-        Me.Label8.TabIndex = 0
-        Me.Label8.Text = "Seleccione la fecha del corte de caja:"
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(16, 28)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 3
-        Me.Button1.Text = "< Atras"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
         'DGV_ID_CorCaja
         '
         Me.DGV_ID_CorCaja.HeaderText = "ID"
@@ -499,6 +468,44 @@ Partial Class Form_CorteCaja
         Me.DGV_NOMBCAJERO_CorCaja.HeaderText = "NOMBRE DEL CAJERO"
         Me.DGV_NOMBCAJERO_CorCaja.Name = "DGV_NOMBCAJERO_CorCaja"
         '
+        'DateTimePicker1
+        '
+        Me.DateTimePicker1.Location = New System.Drawing.Point(373, 44)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 20)
+        Me.DateTimePicker1.TabIndex = 1
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Label8.Location = New System.Drawing.Point(123, 44)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(244, 17)
+        Me.Label8.TabIndex = 0
+        Me.Label8.Text = "Seleccione la fecha del corte de caja:"
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(16, 28)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 3
+        Me.Button1.Text = "< Atras"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'CategoriasToolStripMenuItem
+        '
+        Me.CategoriasToolStripMenuItem.Name = "CategoriasToolStripMenuItem"
+        Me.CategoriasToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.CategoriasToolStripMenuItem.Text = "Categorias"
+        '
+        'CaducosToolStripMenuItem
+        '
+        Me.CaducosToolStripMenuItem.Name = "CaducosToolStripMenuItem"
+        Me.CaducosToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.CaducosToolStripMenuItem.Text = "Caducos"
+        '
         'Form_CorteCaja
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -529,7 +536,6 @@ Partial Class Form_CorteCaja
 
     Friend WithEvents MenuS_Principal As MenuStrip
     Friend WithEvents ProductosToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents CaducosToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ServiciosToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents InventarioToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ProveedoresToolStripMenuItem As ToolStripMenuItem
@@ -575,4 +581,6 @@ Partial Class Form_CorteCaja
     Friend WithEvents DGV_SalCaja_CorCaja As DataGridViewTextBoxColumn
     Friend WithEvents DGV_TOTAL_CorCaja As DataGridViewTextBoxColumn
     Friend WithEvents DGV_NOMBCAJERO_CorCaja As DataGridViewTextBoxColumn
+    Friend WithEvents CategoriasToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents CaducosToolStripMenuItem As ToolStripMenuItem
 End Class
