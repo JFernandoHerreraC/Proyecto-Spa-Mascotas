@@ -30,6 +30,7 @@ Partial Class Form_Empleados
         Me.VentasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ProveedoresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ComprasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ClientesYMascotasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Tab_Ctr_Empleados = New System.Windows.Forms.TabControl()
         Me.Alta_Empleado = New System.Windows.Forms.TabPage()
         Me.TextBox15 = New System.Windows.Forms.TextBox()
@@ -159,7 +160,6 @@ Partial Class Form_Empleados
         Me.Label49 = New System.Windows.Forms.Label()
         Me.TextBox38 = New System.Windows.Forms.TextBox()
         Me.Label50 = New System.Windows.Forms.Label()
-        Me.ClientesYMascotasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuS_Principal.SuspendLayout()
         Me.Tab_Ctr_Empleados.SuspendLayout()
         Me.Alta_Empleado.SuspendLayout()
@@ -223,6 +223,12 @@ Partial Class Form_Empleados
         Me.ComprasToolStripMenuItem.Name = "ComprasToolStripMenuItem"
         Me.ComprasToolStripMenuItem.Size = New System.Drawing.Size(67, 20)
         Me.ComprasToolStripMenuItem.Text = "Compras"
+        '
+        'ClientesYMascotasToolStripMenuItem
+        '
+        Me.ClientesYMascotasToolStripMenuItem.Name = "ClientesYMascotasToolStripMenuItem"
+        Me.ClientesYMascotasToolStripMenuItem.Size = New System.Drawing.Size(123, 20)
+        Me.ClientesYMascotasToolStripMenuItem.Text = "Clientes y mascotas"
         '
         'Tab_Ctr_Empleados
         '
@@ -308,18 +314,18 @@ Partial Class Form_Empleados
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(562, 322)
+        Me.Button2.Location = New System.Drawing.Point(638, 299)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(118, 23)
+        Me.Button2.Size = New System.Drawing.Size(69, 23)
         Me.Button2.TabIndex = 42
         Me.Button2.Text = "Limpiar"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(548, 293)
+        Me.Button1.Location = New System.Drawing.Point(498, 299)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(147, 23)
+        Me.Button1.Size = New System.Drawing.Size(124, 23)
         Me.Button1.TabIndex = 41
         Me.Button1.Text = "Guardar"
         Me.Button1.UseVisualStyleBackColor = True
@@ -363,9 +369,9 @@ Partial Class Form_Empleados
         Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.Label18.Location = New System.Drawing.Point(17, 251)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(83, 17)
+        Me.Label18.Size = New System.Drawing.Size(91, 17)
         Me.Label18.TabIndex = 36
-        Me.Label18.Text = "Curp o RNE"
+        Me.Label18.Text = "CURP o RNE"
         '
         'TextBox13
         '
@@ -387,30 +393,32 @@ Partial Class Form_Empleados
         'RadioButton4
         '
         Me.RadioButton4.AutoSize = True
-        Me.RadioButton4.Location = New System.Drawing.Point(277, 194)
+        Me.RadioButton4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.RadioButton4.Location = New System.Drawing.Point(264, 189)
         Me.RadioButton4.Name = "RadioButton4"
-        Me.RadioButton4.Size = New System.Drawing.Size(83, 17)
+        Me.RadioButton4.Size = New System.Drawing.Size(102, 21)
         Me.RadioButton4.TabIndex = 33
         Me.RadioButton4.TabStop = True
-        Me.RadioButton4.Text = "Extranjero/a"
+        Me.RadioButton4.Text = "Extranjera/o"
         Me.RadioButton4.UseVisualStyleBackColor = True
         '
         'RadioButton3
         '
         Me.RadioButton3.AutoSize = True
-        Me.RadioButton3.Location = New System.Drawing.Point(140, 194)
+        Me.RadioButton3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.RadioButton3.Location = New System.Drawing.Point(140, 189)
         Me.RadioButton3.Name = "RadioButton3"
-        Me.RadioButton3.Size = New System.Drawing.Size(82, 17)
+        Me.RadioButton3.Size = New System.Drawing.Size(97, 21)
         Me.RadioButton3.TabIndex = 32
         Me.RadioButton3.TabStop = True
-        Me.RadioButton3.Text = "Mexicano/a"
+        Me.RadioButton3.Text = "Mexicana/o"
         Me.RadioButton3.UseVisualStyleBackColor = True
         '
         'Label16
         '
         Me.Label16.AutoSize = True
         Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label16.Location = New System.Drawing.Point(17, 195)
+        Me.Label16.Location = New System.Drawing.Point(17, 191)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(94, 17)
         Me.Label16.TabIndex = 31
@@ -574,9 +582,10 @@ Partial Class Form_Empleados
         'RadioButton2
         '
         Me.RadioButton2.AutoSize = True
+        Me.RadioButton2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.RadioButton2.Location = New System.Drawing.Point(277, 162)
         Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(73, 17)
+        Me.RadioButton2.Size = New System.Drawing.Size(89, 21)
         Me.RadioButton2.TabIndex = 10
         Me.RadioButton2.TabStop = True
         Me.RadioButton2.Text = "Masculino"
@@ -585,9 +594,10 @@ Partial Class Form_Empleados
         'RadioButton1
         '
         Me.RadioButton1.AutoSize = True
+        Me.RadioButton1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.RadioButton1.Location = New System.Drawing.Point(140, 162)
         Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(71, 17)
+        Me.RadioButton1.Size = New System.Drawing.Size(88, 21)
         Me.RadioButton1.TabIndex = 9
         Me.RadioButton1.TabStop = True
         Me.RadioButton1.Text = "Femenino"
@@ -775,9 +785,9 @@ Partial Class Form_Empleados
         Me.Label25.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.Label25.Location = New System.Drawing.Point(25, 122)
         Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(83, 17)
+        Me.Label25.Size = New System.Drawing.Size(91, 17)
         Me.Label25.TabIndex = 39
-        Me.Label25.Text = "Curp o RNE"
+        Me.Label25.Text = "CURP o RNE"
         '
         'TextBox16
         '
@@ -996,31 +1006,33 @@ Partial Class Form_Empleados
         '
         Me.RadioButton5.AutoSize = True
         Me.RadioButton5.Enabled = False
-        Me.RadioButton5.Location = New System.Drawing.Point(299, 188)
+        Me.RadioButton5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.RadioButton5.Location = New System.Drawing.Point(286, 185)
         Me.RadioButton5.Name = "RadioButton5"
-        Me.RadioButton5.Size = New System.Drawing.Size(83, 17)
+        Me.RadioButton5.Size = New System.Drawing.Size(102, 21)
         Me.RadioButton5.TabIndex = 76
         Me.RadioButton5.TabStop = True
-        Me.RadioButton5.Text = "Extranjero/a"
+        Me.RadioButton5.Text = "Extranjera/o"
         Me.RadioButton5.UseVisualStyleBackColor = True
         '
         'RadioButton6
         '
         Me.RadioButton6.AutoSize = True
         Me.RadioButton6.Enabled = False
-        Me.RadioButton6.Location = New System.Drawing.Point(162, 188)
+        Me.RadioButton6.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.RadioButton6.Location = New System.Drawing.Point(162, 185)
         Me.RadioButton6.Name = "RadioButton6"
-        Me.RadioButton6.Size = New System.Drawing.Size(82, 17)
+        Me.RadioButton6.Size = New System.Drawing.Size(97, 21)
         Me.RadioButton6.TabIndex = 75
         Me.RadioButton6.TabStop = True
-        Me.RadioButton6.Text = "Mexicano/a"
+        Me.RadioButton6.Text = "Mexicana/o"
         Me.RadioButton6.UseVisualStyleBackColor = True
         '
         'Label31
         '
         Me.Label31.AutoSize = True
         Me.Label31.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label31.Location = New System.Drawing.Point(39, 189)
+        Me.Label31.Location = New System.Drawing.Point(39, 187)
         Me.Label31.Name = "Label31"
         Me.Label31.Size = New System.Drawing.Size(94, 17)
         Me.Label31.TabIndex = 74
@@ -1194,9 +1206,10 @@ Partial Class Form_Empleados
         '
         Me.RadioButton7.AutoSize = True
         Me.RadioButton7.Enabled = False
+        Me.RadioButton7.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.RadioButton7.Location = New System.Drawing.Point(299, 156)
         Me.RadioButton7.Name = "RadioButton7"
-        Me.RadioButton7.Size = New System.Drawing.Size(73, 17)
+        Me.RadioButton7.Size = New System.Drawing.Size(89, 21)
         Me.RadioButton7.TabIndex = 55
         Me.RadioButton7.TabStop = True
         Me.RadioButton7.Text = "Masculino"
@@ -1206,9 +1219,10 @@ Partial Class Form_Empleados
         '
         Me.RadioButton8.AutoSize = True
         Me.RadioButton8.Enabled = False
+        Me.RadioButton8.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.RadioButton8.Location = New System.Drawing.Point(162, 156)
         Me.RadioButton8.Name = "RadioButton8"
-        Me.RadioButton8.Size = New System.Drawing.Size(71, 17)
+        Me.RadioButton8.Size = New System.Drawing.Size(88, 21)
         Me.RadioButton8.TabIndex = 54
         Me.RadioButton8.TabStop = True
         Me.RadioButton8.Text = "Femenino"
@@ -1408,9 +1422,9 @@ Partial Class Form_Empleados
         Me.Label47.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.Label47.Location = New System.Drawing.Point(21, 114)
         Me.Label47.Name = "Label47"
-        Me.Label47.Size = New System.Drawing.Size(83, 17)
+        Me.Label47.Size = New System.Drawing.Size(91, 17)
         Me.Label47.TabIndex = 48
-        Me.Label47.Text = "Curp o RNE"
+        Me.Label47.Text = "CURP o RNE"
         '
         'TextBox36
         '
@@ -1462,12 +1476,6 @@ Partial Class Form_Empleados
         Me.Label50.Size = New System.Drawing.Size(73, 17)
         Me.Label50.TabIndex = 42
         Me.Label50.Text = "Nombre/s:"
-        '
-        'ClientesYMascotasToolStripMenuItem
-        '
-        Me.ClientesYMascotasToolStripMenuItem.Name = "ClientesYMascotasToolStripMenuItem"
-        Me.ClientesYMascotasToolStripMenuItem.Size = New System.Drawing.Size(123, 20)
-        Me.ClientesYMascotasToolStripMenuItem.Text = "Clientes y mascotas"
         '
         'Form_Empleados
         '

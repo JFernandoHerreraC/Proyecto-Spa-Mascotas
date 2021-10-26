@@ -34,7 +34,12 @@
         Me.Hide()
     End Sub
 
-    Private Sub CaducosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CaducosToolStripMenuItem.Click
+    Private Sub CaducosToolStripMenuItem_Click(sender As Object, e As EventArgs) 
 
+    End Sub
+
+    Private Sub CorteDeCajaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CorteDeCajaToolStripMenuItem.Click
+        Form_CorteCaja.Show()
+        Me.Hide()
     End Sub
 End Class
