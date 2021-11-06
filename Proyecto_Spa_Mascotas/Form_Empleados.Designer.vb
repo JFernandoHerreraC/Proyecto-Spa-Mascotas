@@ -25,6 +25,8 @@ Partial Class Form_Empleados
         Me.Btn_atras = New System.Windows.Forms.Button()
         Me.MenuS_Principal = New System.Windows.Forms.MenuStrip()
         Me.ProductosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CategoriasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CaducosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ServiciosToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.InventarioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.VentasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -33,12 +35,21 @@ Partial Class Form_Empleados
         Me.ClientesYMascotasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Tab_Ctr_Empleados = New System.Windows.Forms.TabControl()
         Me.Alta_Empleado = New System.Windows.Forms.TabPage()
+        Me.MaskedTextBox1 = New System.Windows.Forms.MaskedTextBox()
+        Me.Label53 = New System.Windows.Forms.Label()
+        Me.ComboBox6 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox7 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox5 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox4 = New System.Windows.Forms.ComboBox()
+        Me.Label52 = New System.Windows.Forms.Label()
+        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
+        Me.Label51 = New System.Windows.Forms.Label()
+        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
         Me.TextBox15 = New System.Windows.Forms.TextBox()
         Me.Label20 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.Label8 = New System.Windows.Forms.Label()
         Me.Label19 = New System.Windows.Forms.Label()
         Me.TextBox14 = New System.Windows.Forms.TextBox()
         Me.Label18 = New System.Windows.Forms.Label()
@@ -160,8 +171,6 @@ Partial Class Form_Empleados
         Me.Label49 = New System.Windows.Forms.Label()
         Me.TextBox38 = New System.Windows.Forms.TextBox()
         Me.Label50 = New System.Windows.Forms.Label()
-        Me.CategoriasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CaducosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuS_Principal.SuspendLayout()
         Me.Tab_Ctr_Empleados.SuspendLayout()
         Me.Alta_Empleado.SuspendLayout()
@@ -177,7 +186,7 @@ Partial Class Form_Empleados
         Me.Btn_atras.Location = New System.Drawing.Point(12, 27)
         Me.Btn_atras.Name = "Btn_atras"
         Me.Btn_atras.Size = New System.Drawing.Size(75, 23)
-        Me.Btn_atras.TabIndex = 4
+        Me.Btn_atras.TabIndex = 0
         Me.Btn_atras.Text = "< Atras"
         Me.Btn_atras.UseVisualStyleBackColor = True
         '
@@ -196,6 +205,18 @@ Partial Class Form_Empleados
         Me.ProductosToolStripMenuItem.Name = "ProductosToolStripMenuItem"
         Me.ProductosToolStripMenuItem.Size = New System.Drawing.Size(73, 20)
         Me.ProductosToolStripMenuItem.Text = "Productos"
+        '
+        'CategoriasToolStripMenuItem
+        '
+        Me.CategoriasToolStripMenuItem.Name = "CategoriasToolStripMenuItem"
+        Me.CategoriasToolStripMenuItem.Size = New System.Drawing.Size(130, 22)
+        Me.CategoriasToolStripMenuItem.Text = "Categorias"
+        '
+        'CaducosToolStripMenuItem
+        '
+        Me.CaducosToolStripMenuItem.Name = "CaducosToolStripMenuItem"
+        Me.CaducosToolStripMenuItem.Size = New System.Drawing.Size(130, 22)
+        Me.CaducosToolStripMenuItem.Text = "Caducos"
         '
         'ServiciosToolStripMenuItem1
         '
@@ -242,17 +263,26 @@ Partial Class Form_Empleados
         Me.Tab_Ctr_Empleados.Location = New System.Drawing.Point(12, 56)
         Me.Tab_Ctr_Empleados.Name = "Tab_Ctr_Empleados"
         Me.Tab_Ctr_Empleados.SelectedIndex = 0
-        Me.Tab_Ctr_Empleados.Size = New System.Drawing.Size(776, 382)
-        Me.Tab_Ctr_Empleados.TabIndex = 5
+        Me.Tab_Ctr_Empleados.Size = New System.Drawing.Size(776, 400)
+        Me.Tab_Ctr_Empleados.TabIndex = 0
         '
         'Alta_Empleado
         '
+        Me.Alta_Empleado.Controls.Add(Me.MaskedTextBox1)
+        Me.Alta_Empleado.Controls.Add(Me.Label53)
+        Me.Alta_Empleado.Controls.Add(Me.ComboBox6)
+        Me.Alta_Empleado.Controls.Add(Me.ComboBox7)
+        Me.Alta_Empleado.Controls.Add(Me.ComboBox5)
+        Me.Alta_Empleado.Controls.Add(Me.ComboBox4)
+        Me.Alta_Empleado.Controls.Add(Me.Label52)
+        Me.Alta_Empleado.Controls.Add(Me.ComboBox3)
+        Me.Alta_Empleado.Controls.Add(Me.Label51)
+        Me.Alta_Empleado.Controls.Add(Me.TextBox6)
+        Me.Alta_Empleado.Controls.Add(Me.Label8)
         Me.Alta_Empleado.Controls.Add(Me.TextBox15)
         Me.Alta_Empleado.Controls.Add(Me.Label20)
         Me.Alta_Empleado.Controls.Add(Me.Button2)
         Me.Alta_Empleado.Controls.Add(Me.Button1)
-        Me.Alta_Empleado.Controls.Add(Me.TextBox6)
-        Me.Alta_Empleado.Controls.Add(Me.Label8)
         Me.Alta_Empleado.Controls.Add(Me.Label19)
         Me.Alta_Empleado.Controls.Add(Me.TextBox14)
         Me.Alta_Empleado.Controls.Add(Me.Label18)
@@ -293,17 +323,115 @@ Partial Class Form_Empleados
         Me.Alta_Empleado.Location = New System.Drawing.Point(4, 22)
         Me.Alta_Empleado.Name = "Alta_Empleado"
         Me.Alta_Empleado.Padding = New System.Windows.Forms.Padding(3)
-        Me.Alta_Empleado.Size = New System.Drawing.Size(768, 356)
+        Me.Alta_Empleado.Size = New System.Drawing.Size(768, 374)
         Me.Alta_Empleado.TabIndex = 0
         Me.Alta_Empleado.Text = "Alta de empleado"
         Me.Alta_Empleado.UseVisualStyleBackColor = True
+        '
+        'MaskedTextBox1
+        '
+        Me.MaskedTextBox1.Location = New System.Drawing.Point(497, 24)
+        Me.MaskedTextBox1.Mask = "99999.99"
+        Me.MaskedTextBox1.Name = "MaskedTextBox1"
+        Me.MaskedTextBox1.Size = New System.Drawing.Size(209, 20)
+        Me.MaskedTextBox1.TabIndex = 17
+        Me.MaskedTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label53
+        '
+        Me.Label53.AutoSize = True
+        Me.Label53.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Label53.Location = New System.Drawing.Point(386, 24)
+        Me.Label53.Name = "Label53"
+        Me.Label53.Size = New System.Drawing.Size(56, 17)
+        Me.Label53.TabIndex = 55
+        Me.Label53.Text = "Sueldo:"
+        '
+        'ComboBox6
+        '
+        Me.ComboBox6.FormattingEnabled = True
+        Me.ComboBox6.Location = New System.Drawing.Point(277, 350)
+        Me.ComboBox6.Name = "ComboBox6"
+        Me.ComboBox6.Size = New System.Drawing.Size(44, 21)
+        Me.ComboBox6.TabIndex = 15
+        '
+        'ComboBox7
+        '
+        Me.ComboBox7.FormattingEnabled = True
+        Me.ComboBox7.Location = New System.Drawing.Point(327, 350)
+        Me.ComboBox7.Name = "ComboBox7"
+        Me.ComboBox7.Size = New System.Drawing.Size(60, 21)
+        Me.ComboBox7.TabIndex = 16
+        '
+        'ComboBox5
+        '
+        Me.ComboBox5.FormattingEnabled = True
+        Me.ComboBox5.Location = New System.Drawing.Point(208, 350)
+        Me.ComboBox5.Name = "ComboBox5"
+        Me.ComboBox5.Size = New System.Drawing.Size(60, 21)
+        Me.ComboBox5.TabIndex = 14
+        '
+        'ComboBox4
+        '
+        Me.ComboBox4.FormattingEnabled = True
+        Me.ComboBox4.Location = New System.Drawing.Point(158, 349)
+        Me.ComboBox4.Name = "ComboBox4"
+        Me.ComboBox4.Size = New System.Drawing.Size(44, 21)
+        Me.ComboBox4.TabIndex = 13
+        '
+        'Label52
+        '
+        Me.Label52.AutoSize = True
+        Me.Label52.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Label52.Location = New System.Drawing.Point(17, 349)
+        Me.Label52.Name = "Label52"
+        Me.Label52.Size = New System.Drawing.Size(127, 17)
+        Me.Label52.TabIndex = 49
+        Me.Label52.Text = "Horario de trabajo:"
+        '
+        'ComboBox3
+        '
+        Me.ComboBox3.FormattingEnabled = True
+        Me.ComboBox3.Items.AddRange(New Object() {"Diurno", "Nocturno"})
+        Me.ComboBox3.Location = New System.Drawing.Point(158, 325)
+        Me.ComboBox3.Name = "ComboBox3"
+        Me.ComboBox3.Size = New System.Drawing.Size(209, 21)
+        Me.ComboBox3.TabIndex = 12
+        '
+        'Label51
+        '
+        Me.Label51.AutoSize = True
+        Me.Label51.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Label51.Location = New System.Drawing.Point(17, 325)
+        Me.Label51.Name = "Label51"
+        Me.Label51.Size = New System.Drawing.Size(50, 17)
+        Me.Label51.TabIndex = 47
+        Me.Label51.Text = "Turno:"
+        '
+        'TextBox6
+        '
+        Me.TextBox6.Location = New System.Drawing.Point(497, 57)
+        Me.TextBox6.MaxLength = 40
+        Me.TextBox6.Name = "TextBox6"
+        Me.TextBox6.Size = New System.Drawing.Size(209, 20)
+        Me.TextBox6.TabIndex = 18
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Label8.Location = New System.Drawing.Point(386, 58)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(43, 17)
+        Me.Label8.TabIndex = 45
+        Me.Label8.Text = "Calle:"
         '
         'TextBox15
         '
         Me.TextBox15.Location = New System.Drawing.Point(158, 295)
         Me.TextBox15.Name = "TextBox15"
         Me.TextBox15.Size = New System.Drawing.Size(209, 20)
-        Me.TextBox15.TabIndex = 44
+        Me.TextBox15.TabIndex = 11
         '
         'Label20
         '
@@ -317,38 +445,21 @@ Partial Class Form_Empleados
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(638, 299)
+        Me.Button2.Location = New System.Drawing.Point(637, 346)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(69, 23)
-        Me.Button2.TabIndex = 42
+        Me.Button2.TabIndex = 29
         Me.Button2.Text = "Limpiar"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(498, 299)
+        Me.Button1.Location = New System.Drawing.Point(497, 346)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(124, 23)
-        Me.Button1.TabIndex = 41
+        Me.Button1.TabIndex = 28
         Me.Button1.Text = "Guardar"
         Me.Button1.UseVisualStyleBackColor = True
-        '
-        'TextBox6
-        '
-        Me.TextBox6.Location = New System.Drawing.Point(140, 324)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(227, 20)
-        Me.TextBox6.TabIndex = 40
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label8.Location = New System.Drawing.Point(17, 322)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(43, 17)
-        Me.Label8.TabIndex = 39
-        Me.Label8.Text = "Calle:"
         '
         'Label19
         '
@@ -362,9 +473,10 @@ Partial Class Form_Empleados
         'TextBox14
         '
         Me.TextBox14.Location = New System.Drawing.Point(140, 251)
+        Me.TextBox14.MaxLength = 18
         Me.TextBox14.Name = "TextBox14"
         Me.TextBox14.Size = New System.Drawing.Size(227, 20)
-        Me.TextBox14.TabIndex = 37
+        Me.TextBox14.TabIndex = 10
         '
         'Label18
         '
@@ -378,10 +490,12 @@ Partial Class Form_Empleados
         '
         'TextBox13
         '
+        Me.TextBox13.Enabled = False
         Me.TextBox13.Location = New System.Drawing.Point(182, 221)
+        Me.TextBox13.MaxLength = 40
         Me.TextBox13.Name = "TextBox13"
         Me.TextBox13.Size = New System.Drawing.Size(185, 20)
-        Me.TextBox13.TabIndex = 35
+        Me.TextBox13.TabIndex = 9
         '
         'Label17
         '
@@ -400,7 +514,7 @@ Partial Class Form_Empleados
         Me.RadioButton4.Location = New System.Drawing.Point(264, 189)
         Me.RadioButton4.Name = "RadioButton4"
         Me.RadioButton4.Size = New System.Drawing.Size(102, 21)
-        Me.RadioButton4.TabIndex = 33
+        Me.RadioButton4.TabIndex = 8
         Me.RadioButton4.TabStop = True
         Me.RadioButton4.Text = "Extranjera/o"
         Me.RadioButton4.UseVisualStyleBackColor = True
@@ -412,7 +526,7 @@ Partial Class Form_Empleados
         Me.RadioButton3.Location = New System.Drawing.Point(140, 189)
         Me.RadioButton3.Name = "RadioButton3"
         Me.RadioButton3.Size = New System.Drawing.Size(97, 21)
-        Me.RadioButton3.TabIndex = 32
+        Me.RadioButton3.TabIndex = 7
         Me.RadioButton3.TabStop = True
         Me.RadioButton3.Text = "Mexicana/o"
         Me.RadioButton3.UseVisualStyleBackColor = True
@@ -429,16 +543,17 @@ Partial Class Form_Empleados
         '
         'TextBox12
         '
-        Me.TextBox12.Location = New System.Drawing.Point(521, 258)
+        Me.TextBox12.Location = New System.Drawing.Point(520, 317)
+        Me.TextBox12.MaxLength = 45
         Me.TextBox12.Name = "TextBox12"
         Me.TextBox12.Size = New System.Drawing.Size(186, 20)
-        Me.TextBox12.TabIndex = 30
+        Me.TextBox12.TabIndex = 27
         '
         'Label15
         '
         Me.Label15.AutoSize = True
         Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label15.Location = New System.Drawing.Point(387, 259)
+        Me.Label15.Location = New System.Drawing.Point(386, 318)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(128, 17)
         Me.Label15.TabIndex = 29
@@ -446,16 +561,17 @@ Partial Class Form_Empleados
         '
         'TextBox11
         '
-        Me.TextBox11.Location = New System.Drawing.Point(498, 145)
+        Me.TextBox11.Location = New System.Drawing.Point(497, 204)
+        Me.TextBox11.MaxLength = 5
         Me.TextBox11.Name = "TextBox11"
         Me.TextBox11.Size = New System.Drawing.Size(209, 20)
-        Me.TextBox11.TabIndex = 28
+        Me.TextBox11.TabIndex = 23
         '
         'Label14
         '
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label14.Location = New System.Drawing.Point(387, 145)
+        Me.Label14.Location = New System.Drawing.Point(386, 204)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(98, 17)
         Me.Label14.TabIndex = 27
@@ -464,45 +580,50 @@ Partial Class Form_Empleados
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(498, 174)
+        Me.ComboBox1.Items.AddRange(New Object() {"Aguascalientes", "Baja California", "Baja California Sur", "Campeche", "Chiapas", "Chihuahua", "Ciudad de México", "Coahuila", "Colima", "Durango", "Estado de México", "Guanajuato", "Guerrero", "Hidalgo", "Jalisco", "Michoacán", "Morelos", "Nayarit", "Nuevo León", "Oaxaca", "Puebla", "Querétaro", "Quintana Roo", "San Luis Potosí", "Sinaloa", "Sonora", "Tabasco", "Tamaulipas", "Tlaxcala", "Veracruz", "Yucatán", "Zacatecas"})
+        Me.ComboBox1.Location = New System.Drawing.Point(497, 233)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(209, 21)
-        Me.ComboBox1.TabIndex = 26
+        Me.ComboBox1.TabIndex = 24
         Me.ComboBox1.Text = "Seleccione un estado"
         '
         'TextBox10
         '
-        Me.TextBox10.Location = New System.Drawing.Point(548, 115)
+        Me.TextBox10.Location = New System.Drawing.Point(547, 174)
+        Me.TextBox10.MaxLength = 40
         Me.TextBox10.Name = "TextBox10"
         Me.TextBox10.Size = New System.Drawing.Size(159, 20)
-        Me.TextBox10.TabIndex = 25
+        Me.TextBox10.TabIndex = 22
         '
         'TextBox9
         '
-        Me.TextBox9.Location = New System.Drawing.Point(498, 89)
+        Me.TextBox9.Location = New System.Drawing.Point(497, 148)
+        Me.TextBox9.MaxLength = 40
         Me.TextBox9.Name = "TextBox9"
         Me.TextBox9.Size = New System.Drawing.Size(209, 20)
-        Me.TextBox9.TabIndex = 24
+        Me.TextBox9.TabIndex = 21
         '
         'TextBox8
         '
-        Me.TextBox8.Location = New System.Drawing.Point(498, 55)
+        Me.TextBox8.Location = New System.Drawing.Point(497, 114)
+        Me.TextBox8.MaxLength = 5
         Me.TextBox8.Name = "TextBox8"
         Me.TextBox8.Size = New System.Drawing.Size(209, 20)
-        Me.TextBox8.TabIndex = 23
+        Me.TextBox8.TabIndex = 20
         '
         'TextBox7
         '
-        Me.TextBox7.Location = New System.Drawing.Point(498, 24)
+        Me.TextBox7.Location = New System.Drawing.Point(497, 83)
+        Me.TextBox7.MaxLength = 3
         Me.TextBox7.Name = "TextBox7"
         Me.TextBox7.Size = New System.Drawing.Size(209, 20)
-        Me.TextBox7.TabIndex = 22
+        Me.TextBox7.TabIndex = 19
         '
         'Label13
         '
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label13.Location = New System.Drawing.Point(387, 178)
+        Me.Label13.Location = New System.Drawing.Point(386, 237)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(56, 17)
         Me.Label13.TabIndex = 20
@@ -512,7 +633,7 @@ Partial Class Form_Empleados
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label12.Location = New System.Drawing.Point(387, 115)
+        Me.Label12.Location = New System.Drawing.Point(386, 174)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(154, 17)
         Me.Label12.TabIndex = 19
@@ -522,7 +643,7 @@ Partial Class Form_Empleados
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label11.Location = New System.Drawing.Point(387, 89)
+        Me.Label11.Location = New System.Drawing.Point(386, 148)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(59, 17)
         Me.Label11.TabIndex = 18
@@ -532,7 +653,7 @@ Partial Class Form_Empleados
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label10.Location = New System.Drawing.Point(387, 56)
+        Me.Label10.Location = New System.Drawing.Point(386, 115)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(113, 17)
         Me.Label10.TabIndex = 17
@@ -542,7 +663,7 @@ Partial Class Form_Empleados
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label9.Location = New System.Drawing.Point(387, 24)
+        Me.Label9.Location = New System.Drawing.Point(386, 83)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(110, 17)
         Me.Label9.TabIndex = 16
@@ -550,16 +671,17 @@ Partial Class Form_Empleados
         '
         'TextBox5
         '
-        Me.TextBox5.Location = New System.Drawing.Point(498, 227)
+        Me.TextBox5.Location = New System.Drawing.Point(497, 286)
+        Me.TextBox5.MaxLength = 10
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(209, 20)
-        Me.TextBox5.TabIndex = 14
+        Me.TextBox5.TabIndex = 26
         '
         'Label7
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label7.Location = New System.Drawing.Point(387, 227)
+        Me.Label7.Location = New System.Drawing.Point(386, 286)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(90, 17)
         Me.Label7.TabIndex = 13
@@ -567,16 +689,17 @@ Partial Class Form_Empleados
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(498, 201)
+        Me.TextBox4.Location = New System.Drawing.Point(497, 260)
+        Me.TextBox4.MaxLength = 10
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(209, 20)
-        Me.TextBox4.TabIndex = 12
+        Me.TextBox4.TabIndex = 25
         '
         'Label6
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label6.Location = New System.Drawing.Point(387, 204)
+        Me.Label6.Location = New System.Drawing.Point(386, 263)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(114, 17)
         Me.Label6.TabIndex = 11
@@ -589,7 +712,7 @@ Partial Class Form_Empleados
         Me.RadioButton2.Location = New System.Drawing.Point(277, 162)
         Me.RadioButton2.Name = "RadioButton2"
         Me.RadioButton2.Size = New System.Drawing.Size(89, 21)
-        Me.RadioButton2.TabIndex = 10
+        Me.RadioButton2.TabIndex = 6
         Me.RadioButton2.TabStop = True
         Me.RadioButton2.Text = "Masculino"
         Me.RadioButton2.UseVisualStyleBackColor = True
@@ -601,7 +724,7 @@ Partial Class Form_Empleados
         Me.RadioButton1.Location = New System.Drawing.Point(140, 162)
         Me.RadioButton1.Name = "RadioButton1"
         Me.RadioButton1.Size = New System.Drawing.Size(88, 21)
-        Me.RadioButton1.TabIndex = 9
+        Me.RadioButton1.TabIndex = 5
         Me.RadioButton1.TabStop = True
         Me.RadioButton1.Text = "Femenino"
         Me.RadioButton1.UseVisualStyleBackColor = True
@@ -619,9 +742,11 @@ Partial Class Form_Empleados
         'DateTimePicker1
         '
         Me.DateTimePicker1.Location = New System.Drawing.Point(167, 127)
+        Me.DateTimePicker1.MaxDate = New Date(2021, 12, 31, 0, 0, 0, 0)
+        Me.DateTimePicker1.MinDate = New Date(1920, 1, 1, 0, 0, 0, 0)
         Me.DateTimePicker1.Name = "DateTimePicker1"
         Me.DateTimePicker1.Size = New System.Drawing.Size(200, 20)
-        Me.DateTimePicker1.TabIndex = 7
+        Me.DateTimePicker1.TabIndex = 4
         '
         'Label4
         '
@@ -636,16 +761,18 @@ Partial Class Form_Empleados
         'TextBox3
         '
         Me.TextBox3.Location = New System.Drawing.Point(140, 94)
+        Me.TextBox3.MaxLength = 40
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(227, 20)
-        Me.TextBox3.TabIndex = 5
+        Me.TextBox3.TabIndex = 3
         '
         'TextBox2
         '
         Me.TextBox2.Location = New System.Drawing.Point(140, 62)
+        Me.TextBox2.MaxLength = 40
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(227, 20)
-        Me.TextBox2.TabIndex = 4
+        Me.TextBox2.TabIndex = 2
         '
         'Label3
         '
@@ -670,6 +797,7 @@ Partial Class Form_Empleados
         'TextBox1
         '
         Me.TextBox1.Location = New System.Drawing.Point(140, 24)
+        Me.TextBox1.MaxLength = 40
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(227, 20)
         Me.TextBox1.TabIndex = 1
@@ -699,7 +827,7 @@ Partial Class Form_Empleados
         Me.Consulta_Empleado.Controls.Add(Me.Label23)
         Me.Consulta_Empleado.Location = New System.Drawing.Point(4, 22)
         Me.Consulta_Empleado.Name = "Consulta_Empleado"
-        Me.Consulta_Empleado.Size = New System.Drawing.Size(768, 356)
+        Me.Consulta_Empleado.Size = New System.Drawing.Size(768, 374)
         Me.Consulta_Empleado.TabIndex = 3
         Me.Consulta_Empleado.Text = "Consulta de empleado"
         Me.Consulta_Empleado.UseVisualStyleBackColor = True
@@ -713,7 +841,7 @@ Partial Class Form_Empleados
         Me.DataGridView1.Location = New System.Drawing.Point(14, 212)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(739, 141)
-        Me.DataGridView1.TabIndex = 43
+        Me.DataGridView1.TabIndex = 0
         '
         'DGV_ID
         '
@@ -762,7 +890,7 @@ Partial Class Form_Empleados
         Me.Button3.Location = New System.Drawing.Point(148, 162)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(227, 23)
-        Me.Button3.TabIndex = 42
+        Me.Button3.TabIndex = 5
         Me.Button3.Text = "Consultar"
         Me.Button3.UseVisualStyleBackColor = True
         '
@@ -778,9 +906,10 @@ Partial Class Form_Empleados
         'TextBox19
         '
         Me.TextBox19.Location = New System.Drawing.Point(148, 122)
+        Me.TextBox19.MaxLength = 18
         Me.TextBox19.Name = "TextBox19"
         Me.TextBox19.Size = New System.Drawing.Size(227, 20)
-        Me.TextBox19.TabIndex = 40
+        Me.TextBox19.TabIndex = 4
         '
         'Label25
         '
@@ -797,14 +926,14 @@ Partial Class Form_Empleados
         Me.TextBox16.Location = New System.Drawing.Point(148, 91)
         Me.TextBox16.Name = "TextBox16"
         Me.TextBox16.Size = New System.Drawing.Size(227, 20)
-        Me.TextBox16.TabIndex = 11
+        Me.TextBox16.TabIndex = 3
         '
         'TextBox17
         '
         Me.TextBox17.Location = New System.Drawing.Point(148, 59)
         Me.TextBox17.Name = "TextBox17"
         Me.TextBox17.Size = New System.Drawing.Size(227, 20)
-        Me.TextBox17.TabIndex = 10
+        Me.TextBox17.TabIndex = 2
         '
         'Label21
         '
@@ -831,7 +960,7 @@ Partial Class Form_Empleados
         Me.TextBox18.Location = New System.Drawing.Point(148, 21)
         Me.TextBox18.Name = "TextBox18"
         Me.TextBox18.Size = New System.Drawing.Size(227, 20)
-        Me.TextBox18.TabIndex = 7
+        Me.TextBox18.TabIndex = 1
         '
         'Label23
         '
@@ -891,7 +1020,7 @@ Partial Class Form_Empleados
         Me.Cambio_Empleado.Controls.Add(Me.Label45)
         Me.Cambio_Empleado.Location = New System.Drawing.Point(4, 22)
         Me.Cambio_Empleado.Name = "Cambio_Empleado"
-        Me.Cambio_Empleado.Size = New System.Drawing.Size(768, 356)
+        Me.Cambio_Empleado.Size = New System.Drawing.Size(768, 374)
         Me.Cambio_Empleado.TabIndex = 2
         Me.Cambio_Empleado.Text = "Cambios en el empleado"
         Me.Cambio_Empleado.UseVisualStyleBackColor = True
@@ -901,7 +1030,7 @@ Partial Class Form_Empleados
         Me.Button6.Location = New System.Drawing.Point(543, 289)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(186, 23)
-        Me.Button6.TabIndex = 88
+        Me.Button6.TabIndex = 21
         Me.Button6.Text = "Buscar"
         Me.Button6.UseVisualStyleBackColor = True
         '
@@ -911,7 +1040,7 @@ Partial Class Form_Empleados
         Me.TextBox20.Location = New System.Drawing.Point(180, 289)
         Me.TextBox20.Name = "TextBox20"
         Me.TextBox20.Size = New System.Drawing.Size(209, 20)
-        Me.TextBox20.TabIndex = 87
+        Me.TextBox20.TabIndex = 11
         '
         'Label26
         '
@@ -929,7 +1058,7 @@ Partial Class Form_Empleados
         Me.Button4.Location = New System.Drawing.Point(638, 318)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(91, 23)
-        Me.Button4.TabIndex = 85
+        Me.Button4.TabIndex = 23
         Me.Button4.Text = "Limpiar"
         Me.Button4.UseVisualStyleBackColor = True
         '
@@ -939,7 +1068,7 @@ Partial Class Form_Empleados
         Me.Button5.Location = New System.Drawing.Point(543, 318)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(91, 23)
-        Me.Button5.TabIndex = 84
+        Me.Button5.TabIndex = 22
         Me.Button5.Text = "Guardar"
         Me.Button5.UseVisualStyleBackColor = True
         '
@@ -949,7 +1078,7 @@ Partial Class Form_Empleados
         Me.TextBox21.Location = New System.Drawing.Point(162, 318)
         Me.TextBox21.Name = "TextBox21"
         Me.TextBox21.Size = New System.Drawing.Size(227, 20)
-        Me.TextBox21.TabIndex = 83
+        Me.TextBox21.TabIndex = 12
         '
         'Label27
         '
@@ -973,9 +1102,10 @@ Partial Class Form_Empleados
         'TextBox22
         '
         Me.TextBox22.Location = New System.Drawing.Point(162, 245)
+        Me.TextBox22.MaxLength = 18
         Me.TextBox22.Name = "TextBox22"
         Me.TextBox22.Size = New System.Drawing.Size(227, 20)
-        Me.TextBox22.TabIndex = 80
+        Me.TextBox22.TabIndex = 10
         '
         'Label29
         '
@@ -993,7 +1123,7 @@ Partial Class Form_Empleados
         Me.TextBox23.Location = New System.Drawing.Point(204, 215)
         Me.TextBox23.Name = "TextBox23"
         Me.TextBox23.Size = New System.Drawing.Size(185, 20)
-        Me.TextBox23.TabIndex = 78
+        Me.TextBox23.TabIndex = 9
         '
         'Label30
         '
@@ -1013,7 +1143,7 @@ Partial Class Form_Empleados
         Me.RadioButton5.Location = New System.Drawing.Point(286, 185)
         Me.RadioButton5.Name = "RadioButton5"
         Me.RadioButton5.Size = New System.Drawing.Size(102, 21)
-        Me.RadioButton5.TabIndex = 76
+        Me.RadioButton5.TabIndex = 8
         Me.RadioButton5.TabStop = True
         Me.RadioButton5.Text = "Extranjera/o"
         Me.RadioButton5.UseVisualStyleBackColor = True
@@ -1026,7 +1156,7 @@ Partial Class Form_Empleados
         Me.RadioButton6.Location = New System.Drawing.Point(162, 185)
         Me.RadioButton6.Name = "RadioButton6"
         Me.RadioButton6.Size = New System.Drawing.Size(97, 21)
-        Me.RadioButton6.TabIndex = 75
+        Me.RadioButton6.TabIndex = 7
         Me.RadioButton6.TabStop = True
         Me.RadioButton6.Text = "Mexicana/o"
         Me.RadioButton6.UseVisualStyleBackColor = True
@@ -1047,7 +1177,7 @@ Partial Class Form_Empleados
         Me.TextBox24.Location = New System.Drawing.Point(543, 252)
         Me.TextBox24.Name = "TextBox24"
         Me.TextBox24.Size = New System.Drawing.Size(186, 20)
-        Me.TextBox24.TabIndex = 73
+        Me.TextBox24.TabIndex = 20
         '
         'Label32
         '
@@ -1065,7 +1195,7 @@ Partial Class Form_Empleados
         Me.TextBox25.Location = New System.Drawing.Point(520, 139)
         Me.TextBox25.Name = "TextBox25"
         Me.TextBox25.Size = New System.Drawing.Size(209, 20)
-        Me.TextBox25.TabIndex = 71
+        Me.TextBox25.TabIndex = 17
         '
         'Label33
         '
@@ -1084,7 +1214,7 @@ Partial Class Form_Empleados
         Me.ComboBox2.Location = New System.Drawing.Point(520, 168)
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(209, 21)
-        Me.ComboBox2.TabIndex = 69
+        Me.ComboBox2.TabIndex = 18
         Me.ComboBox2.Text = "Seleccione un estado"
         '
         'TextBox26
@@ -1093,7 +1223,7 @@ Partial Class Form_Empleados
         Me.TextBox26.Location = New System.Drawing.Point(570, 109)
         Me.TextBox26.Name = "TextBox26"
         Me.TextBox26.Size = New System.Drawing.Size(159, 20)
-        Me.TextBox26.TabIndex = 68
+        Me.TextBox26.TabIndex = 16
         '
         'TextBox27
         '
@@ -1101,7 +1231,7 @@ Partial Class Form_Empleados
         Me.TextBox27.Location = New System.Drawing.Point(520, 83)
         Me.TextBox27.Name = "TextBox27"
         Me.TextBox27.Size = New System.Drawing.Size(209, 20)
-        Me.TextBox27.TabIndex = 67
+        Me.TextBox27.TabIndex = 15
         '
         'TextBox28
         '
@@ -1109,7 +1239,7 @@ Partial Class Form_Empleados
         Me.TextBox28.Location = New System.Drawing.Point(520, 49)
         Me.TextBox28.Name = "TextBox28"
         Me.TextBox28.Size = New System.Drawing.Size(209, 20)
-        Me.TextBox28.TabIndex = 66
+        Me.TextBox28.TabIndex = 14
         '
         'TextBox29
         '
@@ -1117,7 +1247,7 @@ Partial Class Form_Empleados
         Me.TextBox29.Location = New System.Drawing.Point(520, 18)
         Me.TextBox29.Name = "TextBox29"
         Me.TextBox29.Size = New System.Drawing.Size(209, 20)
-        Me.TextBox29.TabIndex = 65
+        Me.TextBox29.TabIndex = 13
         '
         'Label34
         '
@@ -1175,7 +1305,7 @@ Partial Class Form_Empleados
         Me.TextBox30.Location = New System.Drawing.Point(520, 221)
         Me.TextBox30.Name = "TextBox30"
         Me.TextBox30.Size = New System.Drawing.Size(209, 20)
-        Me.TextBox30.TabIndex = 59
+        Me.TextBox30.TabIndex = 20
         '
         'Label39
         '
@@ -1193,7 +1323,7 @@ Partial Class Form_Empleados
         Me.TextBox31.Location = New System.Drawing.Point(520, 195)
         Me.TextBox31.Name = "TextBox31"
         Me.TextBox31.Size = New System.Drawing.Size(209, 20)
-        Me.TextBox31.TabIndex = 57
+        Me.TextBox31.TabIndex = 19
         '
         'Label40
         '
@@ -1213,7 +1343,7 @@ Partial Class Form_Empleados
         Me.RadioButton7.Location = New System.Drawing.Point(299, 156)
         Me.RadioButton7.Name = "RadioButton7"
         Me.RadioButton7.Size = New System.Drawing.Size(89, 21)
-        Me.RadioButton7.TabIndex = 55
+        Me.RadioButton7.TabIndex = 6
         Me.RadioButton7.TabStop = True
         Me.RadioButton7.Text = "Masculino"
         Me.RadioButton7.UseVisualStyleBackColor = True
@@ -1226,7 +1356,7 @@ Partial Class Form_Empleados
         Me.RadioButton8.Location = New System.Drawing.Point(162, 156)
         Me.RadioButton8.Name = "RadioButton8"
         Me.RadioButton8.Size = New System.Drawing.Size(88, 21)
-        Me.RadioButton8.TabIndex = 54
+        Me.RadioButton8.TabIndex = 5
         Me.RadioButton8.TabStop = True
         Me.RadioButton8.Text = "Femenino"
         Me.RadioButton8.UseVisualStyleBackColor = True
@@ -1243,10 +1373,11 @@ Partial Class Form_Empleados
         '
         'DateTimePicker2
         '
+        Me.DateTimePicker2.Enabled = False
         Me.DateTimePicker2.Location = New System.Drawing.Point(189, 121)
         Me.DateTimePicker2.Name = "DateTimePicker2"
         Me.DateTimePicker2.Size = New System.Drawing.Size(200, 20)
-        Me.DateTimePicker2.TabIndex = 52
+        Me.DateTimePicker2.TabIndex = 4
         '
         'Label42
         '
@@ -1263,14 +1394,14 @@ Partial Class Form_Empleados
         Me.TextBox32.Location = New System.Drawing.Point(162, 88)
         Me.TextBox32.Name = "TextBox32"
         Me.TextBox32.Size = New System.Drawing.Size(227, 20)
-        Me.TextBox32.TabIndex = 50
+        Me.TextBox32.TabIndex = 3
         '
         'TextBox33
         '
         Me.TextBox33.Location = New System.Drawing.Point(162, 56)
         Me.TextBox33.Name = "TextBox33"
         Me.TextBox33.Size = New System.Drawing.Size(227, 20)
-        Me.TextBox33.TabIndex = 49
+        Me.TextBox33.TabIndex = 2
         '
         'Label43
         '
@@ -1297,7 +1428,7 @@ Partial Class Form_Empleados
         Me.TextBox34.Location = New System.Drawing.Point(162, 18)
         Me.TextBox34.Name = "TextBox34"
         Me.TextBox34.Size = New System.Drawing.Size(227, 20)
-        Me.TextBox34.TabIndex = 46
+        Me.TextBox34.TabIndex = 1
         '
         'Label45
         '
@@ -1326,7 +1457,7 @@ Partial Class Form_Empleados
         Me.Baja_Empleado.Location = New System.Drawing.Point(4, 22)
         Me.Baja_Empleado.Name = "Baja_Empleado"
         Me.Baja_Empleado.Padding = New System.Windows.Forms.Padding(3)
-        Me.Baja_Empleado.Size = New System.Drawing.Size(768, 356)
+        Me.Baja_Empleado.Size = New System.Drawing.Size(768, 374)
         Me.Baja_Empleado.TabIndex = 1
         Me.Baja_Empleado.Text = "Baja de empleado"
         Me.Baja_Empleado.UseVisualStyleBackColor = True
@@ -1340,7 +1471,7 @@ Partial Class Form_Empleados
         Me.DataGridView2.Location = New System.Drawing.Point(6, 209)
         Me.DataGridView2.Name = "DataGridView2"
         Me.DataGridView2.Size = New System.Drawing.Size(743, 141)
-        Me.DataGridView2.TabIndex = 53
+        Me.DataGridView2.TabIndex = 0
         '
         'DataGridViewTextBoxColumn1
         '
@@ -1390,7 +1521,7 @@ Partial Class Form_Empleados
         Me.Button8.Location = New System.Drawing.Point(271, 172)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(100, 23)
-        Me.Button8.TabIndex = 52
+        Me.Button8.TabIndex = 6
         Me.Button8.Text = "Eliminar"
         Me.Button8.UseVisualStyleBackColor = True
         '
@@ -1399,7 +1530,7 @@ Partial Class Form_Empleados
         Me.Button7.Location = New System.Drawing.Point(144, 172)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(100, 23)
-        Me.Button7.TabIndex = 51
+        Me.Button7.TabIndex = 5
         Me.Button7.Text = "Buscar"
         Me.Button7.UseVisualStyleBackColor = True
         '
@@ -1415,9 +1546,10 @@ Partial Class Form_Empleados
         'TextBox35
         '
         Me.TextBox35.Location = New System.Drawing.Point(144, 114)
+        Me.TextBox35.MaxLength = 18
         Me.TextBox35.Name = "TextBox35"
         Me.TextBox35.Size = New System.Drawing.Size(227, 20)
-        Me.TextBox35.TabIndex = 49
+        Me.TextBox35.TabIndex = 4
         '
         'Label47
         '
@@ -1434,14 +1566,14 @@ Partial Class Form_Empleados
         Me.TextBox36.Location = New System.Drawing.Point(144, 83)
         Me.TextBox36.Name = "TextBox36"
         Me.TextBox36.Size = New System.Drawing.Size(227, 20)
-        Me.TextBox36.TabIndex = 47
+        Me.TextBox36.TabIndex = 3
         '
         'TextBox37
         '
         Me.TextBox37.Location = New System.Drawing.Point(144, 51)
         Me.TextBox37.Name = "TextBox37"
         Me.TextBox37.Size = New System.Drawing.Size(227, 20)
-        Me.TextBox37.TabIndex = 46
+        Me.TextBox37.TabIndex = 2
         '
         'Label48
         '
@@ -1468,7 +1600,7 @@ Partial Class Form_Empleados
         Me.TextBox38.Location = New System.Drawing.Point(144, 13)
         Me.TextBox38.Name = "TextBox38"
         Me.TextBox38.Size = New System.Drawing.Size(227, 20)
-        Me.TextBox38.TabIndex = 43
+        Me.TextBox38.TabIndex = 1
         '
         'Label50
         '
@@ -1480,23 +1612,11 @@ Partial Class Form_Empleados
         Me.Label50.TabIndex = 42
         Me.Label50.Text = "Nombre/s:"
         '
-        'CategoriasToolStripMenuItem
-        '
-        Me.CategoriasToolStripMenuItem.Name = "CategoriasToolStripMenuItem"
-        Me.CategoriasToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.CategoriasToolStripMenuItem.Text = "Categorias"
-        '
-        'CaducosToolStripMenuItem
-        '
-        Me.CaducosToolStripMenuItem.Name = "CaducosToolStripMenuItem"
-        Me.CaducosToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.CaducosToolStripMenuItem.Text = "Caducos"
-        '
         'Form_Empleados
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(800, 461)
         Me.Controls.Add(Me.Tab_Ctr_Empleados)
         Me.Controls.Add(Me.Btn_atras)
         Me.Controls.Add(Me.MenuS_Principal)
@@ -1544,8 +1664,6 @@ Partial Class Form_Empleados
     Friend WithEvents Label1 As Label
     Friend WithEvents Button2 As Button
     Friend WithEvents Button1 As Button
-    Friend WithEvents TextBox6 As TextBox
-    Friend WithEvents Label8 As Label
     Friend WithEvents Label19 As Label
     Friend WithEvents TextBox14 As TextBox
     Friend WithEvents Label18 As Label
@@ -1661,4 +1779,15 @@ Partial Class Form_Empleados
     Friend WithEvents ClientesYMascotasToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CategoriasToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CaducosToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ComboBox6 As ComboBox
+    Friend WithEvents ComboBox7 As ComboBox
+    Friend WithEvents ComboBox5 As ComboBox
+    Friend WithEvents ComboBox4 As ComboBox
+    Friend WithEvents Label52 As Label
+    Friend WithEvents ComboBox3 As ComboBox
+    Friend WithEvents Label51 As Label
+    Friend WithEvents TextBox6 As TextBox
+    Friend WithEvents Label8 As Label
+    Friend WithEvents Label53 As Label
+    Friend WithEvents MaskedTextBox1 As MaskedTextBox
 End Class

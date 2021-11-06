@@ -34,7 +34,7 @@
         Me.Hide()
     End Sub
 
-    Private Sub CategoriasToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CategoriasToolStripMenuItem.Click
+    Private Sub CategoriasToolStripMenuItem_Click(sr As Object, e As EventArgs) Handles CategoriasToolStripMenuItem.Click
         Form_Categorias.Show()
         Me.Hide()
     End Sub
@@ -42,5 +42,22 @@
     Private Sub CaducosToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CaducosToolStripMenuItem.Click
         Form_Caducos.Show()
         Me.Hide()
+    End Sub
+
+    Private Sub Form_Productos_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        TextBox1.TabIndex = 1
+        TextBox1.TabStop = True
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Dim File As New OpenFileDialog()
+        Dim informacion = My.Computer.FileSystem
+        File.InitialDirectory = "c:\\"
+        File.Filter = "Archivo JPG| *.jpg"
+        If File.ShowDialog() = DialogResult.OK Then
+            PictureBox1.Image = Image.FromFile(File.FileName)
+            Dim Path_Img = informacion.GetFileInfo(File.FileName).FullName
+            Console.WriteLine("Path file: " + File.FileName)
+        End If
     End Sub
 End Class
