@@ -33,42 +33,45 @@ Partial Class Form_Ventas
         Me.EmpleadosToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ClientesYMascotasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CorteDeCajaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.DGV_ListaProd = New System.Windows.Forms.DataGridView()
         Me.DGV_NumeroItem = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DGV_Producto = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DGV_Precio = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DGV_Cantidad = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DGV_Subtotal = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GrBo_BusquedaProducto = New System.Windows.Forms.GroupBox()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Btn_Bus_Buscar = New System.Windows.Forms.Button()
+        Me.Lab_Bus_NombProd = New System.Windows.Forms.Label()
+        Me.Lab_Bus_CodBarra = New System.Windows.Forms.Label()
+        Me.TtBo_Bus_CodBarra = New System.Windows.Forms.TextBox()
+        Me.TtBo_Bus_NombProd = New System.Windows.Forms.TextBox()
+        Me.Btn_ArPg_Pagar = New System.Windows.Forms.Button()
+        Me.Lab_ArPg_SigDolar3 = New System.Windows.Forms.Label()
+        Me.Lab_ArPg_SigDolar2 = New System.Windows.Forms.Label()
+        Me.Lab_ArPg_SigDolar1 = New System.Windows.Forms.Label()
+        Me.Lab_ArPg_Total = New System.Windows.Forms.Label()
+        Me.Lab_ArPg_IVA = New System.Windows.Forms.Label()
+        Me.Lab_ArPg_Subtatal = New System.Windows.Forms.Label()
+        Me.GrBo_AreaPago = New System.Windows.Forms.GroupBox()
         Me.GrBo_AgregarProducto = New System.Windows.Forms.GroupBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Btn_Ag_Agregar = New System.Windows.Forms.Button()
+        Me.NumUDo_CantProd = New System.Windows.Forms.NumericUpDown()
+        Me.Lab_Ag_Cantidad = New System.Windows.Forms.Label()
+        Me.TtBo_Ag_Precio = New System.Windows.Forms.TextBox()
+        Me.Lab_Ag_Precio = New System.Windows.Forms.Label()
+        Me.CoBo_Ag_Marca = New System.Windows.Forms.ComboBox()
+        Me.Lab_Ag_Marca = New System.Windows.Forms.Label()
+        Me.CoBo_Ag_NombProd = New System.Windows.Forms.ComboBox()
+        Me.Lab_Ag_NombProd = New System.Windows.Forms.Label()
+        Me.Lab_ArPg_EspSubtotal = New System.Windows.Forms.Label()
+        Me.Lab_ArPg_EspIVA = New System.Windows.Forms.Label()
+        Me.Lab_ArPg_EspTotal = New System.Windows.Forms.Label()
         Me.MenuS_Principal.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DGV_ListaProd, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GrBo_BusquedaProducto.SuspendLayout()
-        Me.GroupBox2.SuspendLayout()
+        Me.GrBo_AreaPago.SuspendLayout()
         Me.GrBo_AgregarProducto.SuspendLayout()
-        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumUDo_CantProd, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MenuS_Principal
@@ -141,15 +144,16 @@ Partial Class Form_Ventas
         Me.CorteDeCajaToolStripMenuItem.Size = New System.Drawing.Size(88, 20)
         Me.CorteDeCajaToolStripMenuItem.Text = "Corte de caja"
         '
-        'DataGridView1
+        'DGV_ListaProd
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DGV_NumeroItem, Me.DGV_Producto, Me.DGV_Precio, Me.DGV_Cantidad, Me.DGV_Subtotal})
-        Me.DataGridView1.Location = New System.Drawing.Point(12, 204)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(544, 242)
-        Me.DataGridView1.TabIndex = 0
-        Me.DataGridView1.TabStop = False
+        Me.DGV_ListaProd.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.DGV_ListaProd.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGV_ListaProd.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DGV_NumeroItem, Me.DGV_Producto, Me.DGV_Precio, Me.DGV_Cantidad, Me.DGV_Subtotal})
+        Me.DGV_ListaProd.Location = New System.Drawing.Point(12, 204)
+        Me.DGV_ListaProd.Name = "DGV_ListaProd"
+        Me.DGV_ListaProd.Size = New System.Drawing.Size(544, 242)
+        Me.DGV_ListaProd.TabIndex = 0
+        Me.DGV_ListaProd.TabStop = False
         '
         'DGV_NumeroItem
         '
@@ -183,11 +187,11 @@ Partial Class Form_Ventas
         '
         'GrBo_BusquedaProducto
         '
-        Me.GrBo_BusquedaProducto.Controls.Add(Me.Button1)
-        Me.GrBo_BusquedaProducto.Controls.Add(Me.Label1)
-        Me.GrBo_BusquedaProducto.Controls.Add(Me.Label2)
-        Me.GrBo_BusquedaProducto.Controls.Add(Me.TextBox2)
-        Me.GrBo_BusquedaProducto.Controls.Add(Me.TextBox1)
+        Me.GrBo_BusquedaProducto.Controls.Add(Me.Btn_Bus_Buscar)
+        Me.GrBo_BusquedaProducto.Controls.Add(Me.Lab_Bus_NombProd)
+        Me.GrBo_BusquedaProducto.Controls.Add(Me.Lab_Bus_CodBarra)
+        Me.GrBo_BusquedaProducto.Controls.Add(Me.TtBo_Bus_CodBarra)
+        Me.GrBo_BusquedaProducto.Controls.Add(Me.TtBo_Bus_NombProd)
         Me.GrBo_BusquedaProducto.Location = New System.Drawing.Point(12, 57)
         Me.GrBo_BusquedaProducto.Name = "GrBo_BusquedaProducto"
         Me.GrBo_BusquedaProducto.Size = New System.Drawing.Size(366, 130)
@@ -195,102 +199,152 @@ Partial Class Form_Ventas
         Me.GrBo_BusquedaProducto.TabStop = False
         Me.GrBo_BusquedaProducto.Text = "Búsqueda de producto"
         '
-        'Button3
+        'Btn_Bus_Buscar
         '
-        Me.Button3.Location = New System.Drawing.Point(9, 119)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(211, 23)
-        Me.Button3.TabIndex = 9
-        Me.Button3.Text = "Pagar"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.Btn_Bus_Buscar.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Btn_Bus_Buscar.Location = New System.Drawing.Point(174, 99)
+        Me.Btn_Bus_Buscar.Name = "Btn_Bus_Buscar"
+        Me.Btn_Bus_Buscar.Size = New System.Drawing.Size(170, 23)
+        Me.Btn_Bus_Buscar.TabIndex = 3
+        Me.Btn_Bus_Buscar.Text = "Buscar"
+        Me.Btn_Bus_Buscar.UseVisualStyleBackColor = False
         '
-        'Label12
+        'Lab_Bus_NombProd
         '
-        Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label12.Location = New System.Drawing.Point(76, 96)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(16, 17)
-        Me.Label12.TabIndex = 0
-        Me.Label12.Text = "$"
+        Me.Lab_Bus_NombProd.AutoSize = True
+        Me.Lab_Bus_NombProd.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Bus_NombProd.Location = New System.Drawing.Point(23, 38)
+        Me.Lab_Bus_NombProd.Name = "Lab_Bus_NombProd"
+        Me.Lab_Bus_NombProd.Size = New System.Drawing.Size(145, 17)
+        Me.Lab_Bus_NombProd.TabIndex = 4
+        Me.Lab_Bus_NombProd.Text = "Nombre del producto:"
         '
-        'Label11
+        'Lab_Bus_CodBarra
         '
-        Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label11.Location = New System.Drawing.Point(76, 58)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(16, 17)
-        Me.Label11.TabIndex = 0
-        Me.Label11.Text = "$"
+        Me.Lab_Bus_CodBarra.AutoSize = True
+        Me.Lab_Bus_CodBarra.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Bus_CodBarra.Location = New System.Drawing.Point(23, 64)
+        Me.Lab_Bus_CodBarra.Name = "Lab_Bus_CodBarra"
+        Me.Lab_Bus_CodBarra.Size = New System.Drawing.Size(114, 17)
+        Me.Lab_Bus_CodBarra.TabIndex = 5
+        Me.Lab_Bus_CodBarra.Text = "Código de barra:"
         '
-        'Label10
+        'TtBo_Bus_CodBarra
         '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label10.Location = New System.Drawing.Point(76, 27)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(16, 17)
-        Me.Label10.TabIndex = 0
-        Me.Label10.Text = "$"
+        Me.TtBo_Bus_CodBarra.Location = New System.Drawing.Point(174, 64)
+        Me.TtBo_Bus_CodBarra.MaxLength = 15
+        Me.TtBo_Bus_CodBarra.Name = "TtBo_Bus_CodBarra"
+        Me.TtBo_Bus_CodBarra.Size = New System.Drawing.Size(170, 20)
+        Me.TtBo_Bus_CodBarra.TabIndex = 2
         '
-        'Label9
+        'TtBo_Bus_NombProd
         '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label9.Location = New System.Drawing.Point(6, 96)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(44, 17)
-        Me.Label9.TabIndex = 0
-        Me.Label9.Text = "Total:"
+        Me.TtBo_Bus_NombProd.Location = New System.Drawing.Point(174, 38)
+        Me.TtBo_Bus_NombProd.MaxLength = 40
+        Me.TtBo_Bus_NombProd.Name = "TtBo_Bus_NombProd"
+        Me.TtBo_Bus_NombProd.Size = New System.Drawing.Size(170, 20)
+        Me.TtBo_Bus_NombProd.TabIndex = 1
         '
-        'Label8
+        'Btn_ArPg_Pagar
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label8.Location = New System.Drawing.Point(6, 58)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(33, 17)
-        Me.Label8.TabIndex = 0
-        Me.Label8.Text = "IVA:"
+        Me.Btn_ArPg_Pagar.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Btn_ArPg_Pagar.Location = New System.Drawing.Point(9, 119)
+        Me.Btn_ArPg_Pagar.Name = "Btn_ArPg_Pagar"
+        Me.Btn_ArPg_Pagar.Size = New System.Drawing.Size(211, 23)
+        Me.Btn_ArPg_Pagar.TabIndex = 9
+        Me.Btn_ArPg_Pagar.Text = "Pagar"
+        Me.Btn_ArPg_Pagar.UseVisualStyleBackColor = False
         '
-        'Label7
+        'Lab_ArPg_SigDolar3
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label7.Location = New System.Drawing.Point(6, 27)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(64, 17)
-        Me.Label7.TabIndex = 0
-        Me.Label7.Text = "Subtotal:"
+        Me.Lab_ArPg_SigDolar3.AutoSize = True
+        Me.Lab_ArPg_SigDolar3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_ArPg_SigDolar3.Location = New System.Drawing.Point(76, 96)
+        Me.Lab_ArPg_SigDolar3.Name = "Lab_ArPg_SigDolar3"
+        Me.Lab_ArPg_SigDolar3.Size = New System.Drawing.Size(16, 17)
+        Me.Lab_ArPg_SigDolar3.TabIndex = 0
+        Me.Lab_ArPg_SigDolar3.Text = "$"
         '
-        'GroupBox2
+        'Lab_ArPg_SigDolar2
         '
-        Me.GroupBox2.Controls.Add(Me.Label7)
-        Me.GroupBox2.Controls.Add(Me.Button3)
-        Me.GroupBox2.Controls.Add(Me.Label10)
-        Me.GroupBox2.Controls.Add(Me.Label12)
-        Me.GroupBox2.Controls.Add(Me.Label8)
-        Me.GroupBox2.Controls.Add(Me.Label9)
-        Me.GroupBox2.Controls.Add(Me.Label11)
-        Me.GroupBox2.Location = New System.Drawing.Point(562, 204)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(226, 169)
-        Me.GroupBox2.TabIndex = 0
-        Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "Área de pago"
+        Me.Lab_ArPg_SigDolar2.AutoSize = True
+        Me.Lab_ArPg_SigDolar2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_ArPg_SigDolar2.Location = New System.Drawing.Point(76, 58)
+        Me.Lab_ArPg_SigDolar2.Name = "Lab_ArPg_SigDolar2"
+        Me.Lab_ArPg_SigDolar2.Size = New System.Drawing.Size(16, 17)
+        Me.Lab_ArPg_SigDolar2.TabIndex = 0
+        Me.Lab_ArPg_SigDolar2.Text = "$"
+        '
+        'Lab_ArPg_SigDolar1
+        '
+        Me.Lab_ArPg_SigDolar1.AutoSize = True
+        Me.Lab_ArPg_SigDolar1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_ArPg_SigDolar1.Location = New System.Drawing.Point(76, 27)
+        Me.Lab_ArPg_SigDolar1.Name = "Lab_ArPg_SigDolar1"
+        Me.Lab_ArPg_SigDolar1.Size = New System.Drawing.Size(16, 17)
+        Me.Lab_ArPg_SigDolar1.TabIndex = 0
+        Me.Lab_ArPg_SigDolar1.Text = "$"
+        '
+        'Lab_ArPg_Total
+        '
+        Me.Lab_ArPg_Total.AutoSize = True
+        Me.Lab_ArPg_Total.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_ArPg_Total.Location = New System.Drawing.Point(6, 96)
+        Me.Lab_ArPg_Total.Name = "Lab_ArPg_Total"
+        Me.Lab_ArPg_Total.Size = New System.Drawing.Size(44, 17)
+        Me.Lab_ArPg_Total.TabIndex = 0
+        Me.Lab_ArPg_Total.Text = "Total:"
+        '
+        'Lab_ArPg_IVA
+        '
+        Me.Lab_ArPg_IVA.AutoSize = True
+        Me.Lab_ArPg_IVA.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_ArPg_IVA.Location = New System.Drawing.Point(6, 58)
+        Me.Lab_ArPg_IVA.Name = "Lab_ArPg_IVA"
+        Me.Lab_ArPg_IVA.Size = New System.Drawing.Size(33, 17)
+        Me.Lab_ArPg_IVA.TabIndex = 0
+        Me.Lab_ArPg_IVA.Text = "IVA:"
+        '
+        'Lab_ArPg_Subtatal
+        '
+        Me.Lab_ArPg_Subtatal.AutoSize = True
+        Me.Lab_ArPg_Subtatal.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_ArPg_Subtatal.Location = New System.Drawing.Point(6, 27)
+        Me.Lab_ArPg_Subtatal.Name = "Lab_ArPg_Subtatal"
+        Me.Lab_ArPg_Subtatal.Size = New System.Drawing.Size(64, 17)
+        Me.Lab_ArPg_Subtatal.TabIndex = 0
+        Me.Lab_ArPg_Subtatal.Text = "Subtotal:"
+        '
+        'GrBo_AreaPago
+        '
+        Me.GrBo_AreaPago.Controls.Add(Me.Lab_ArPg_EspTotal)
+        Me.GrBo_AreaPago.Controls.Add(Me.Lab_ArPg_EspIVA)
+        Me.GrBo_AreaPago.Controls.Add(Me.Lab_ArPg_EspSubtotal)
+        Me.GrBo_AreaPago.Controls.Add(Me.Lab_ArPg_Subtatal)
+        Me.GrBo_AreaPago.Controls.Add(Me.Btn_ArPg_Pagar)
+        Me.GrBo_AreaPago.Controls.Add(Me.Lab_ArPg_SigDolar1)
+        Me.GrBo_AreaPago.Controls.Add(Me.Lab_ArPg_SigDolar3)
+        Me.GrBo_AreaPago.Controls.Add(Me.Lab_ArPg_IVA)
+        Me.GrBo_AreaPago.Controls.Add(Me.Lab_ArPg_Total)
+        Me.GrBo_AreaPago.Controls.Add(Me.Lab_ArPg_SigDolar2)
+        Me.GrBo_AreaPago.Location = New System.Drawing.Point(562, 204)
+        Me.GrBo_AreaPago.Name = "GrBo_AreaPago"
+        Me.GrBo_AreaPago.Size = New System.Drawing.Size(226, 169)
+        Me.GrBo_AreaPago.TabIndex = 0
+        Me.GrBo_AreaPago.TabStop = False
+        Me.GrBo_AreaPago.Text = "Área de pago"
         '
         'GrBo_AgregarProducto
         '
-        Me.GrBo_AgregarProducto.Controls.Add(Me.Button2)
-        Me.GrBo_AgregarProducto.Controls.Add(Me.NumericUpDown1)
-        Me.GrBo_AgregarProducto.Controls.Add(Me.Label6)
-        Me.GrBo_AgregarProducto.Controls.Add(Me.TextBox3)
-        Me.GrBo_AgregarProducto.Controls.Add(Me.Label5)
-        Me.GrBo_AgregarProducto.Controls.Add(Me.ComboBox2)
-        Me.GrBo_AgregarProducto.Controls.Add(Me.Label4)
-        Me.GrBo_AgregarProducto.Controls.Add(Me.ComboBox1)
-        Me.GrBo_AgregarProducto.Controls.Add(Me.Label3)
+        Me.GrBo_AgregarProducto.Controls.Add(Me.Btn_Ag_Agregar)
+        Me.GrBo_AgregarProducto.Controls.Add(Me.NumUDo_CantProd)
+        Me.GrBo_AgregarProducto.Controls.Add(Me.Lab_Ag_Cantidad)
+        Me.GrBo_AgregarProducto.Controls.Add(Me.TtBo_Ag_Precio)
+        Me.GrBo_AgregarProducto.Controls.Add(Me.Lab_Ag_Precio)
+        Me.GrBo_AgregarProducto.Controls.Add(Me.CoBo_Ag_Marca)
+        Me.GrBo_AgregarProducto.Controls.Add(Me.Lab_Ag_Marca)
+        Me.GrBo_AgregarProducto.Controls.Add(Me.CoBo_Ag_NombProd)
+        Me.GrBo_AgregarProducto.Controls.Add(Me.Lab_Ag_NombProd)
         Me.GrBo_AgregarProducto.Location = New System.Drawing.Point(414, 27)
         Me.GrBo_AgregarProducto.Name = "GrBo_AgregarProducto"
         Me.GrBo_AgregarProducto.Size = New System.Drawing.Size(368, 160)
@@ -298,136 +352,116 @@ Partial Class Form_Ventas
         Me.GrBo_AgregarProducto.TabStop = False
         Me.GrBo_AgregarProducto.Text = "Área de agregar producto"
         '
-        'Button1
+        'Btn_Ag_Agregar
         '
-        Me.Button1.Location = New System.Drawing.Point(174, 99)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(170, 23)
-        Me.Button1.TabIndex = 3
-        Me.Button1.Text = "Buscar"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Btn_Ag_Agregar.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Btn_Ag_Agregar.Location = New System.Drawing.Point(163, 125)
+        Me.Btn_Ag_Agregar.Name = "Btn_Ag_Agregar"
+        Me.Btn_Ag_Agregar.Size = New System.Drawing.Size(194, 23)
+        Me.Btn_Ag_Agregar.TabIndex = 17
+        Me.Btn_Ag_Agregar.Text = "Agregar"
+        Me.Btn_Ag_Agregar.UseVisualStyleBackColor = False
         '
-        'Label1
+        'NumUDo_CantProd
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label1.Location = New System.Drawing.Point(23, 38)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(145, 17)
-        Me.Label1.TabIndex = 4
-        Me.Label1.Text = "Nombre del producto:"
+        Me.NumUDo_CantProd.DecimalPlaces = 3
+        Me.NumUDo_CantProd.Increment = New Decimal(New Integer() {50, 0, 0, 196608})
+        Me.NumUDo_CantProd.Location = New System.Drawing.Point(163, 99)
+        Me.NumUDo_CantProd.Name = "NumUDo_CantProd"
+        Me.NumUDo_CantProd.Size = New System.Drawing.Size(194, 20)
+        Me.NumUDo_CantProd.TabIndex = 16
+        Me.NumUDo_CantProd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.NumUDo_CantProd.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
-        'Label2
+        'Lab_Ag_Cantidad
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label2.Location = New System.Drawing.Point(23, 64)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(114, 17)
-        Me.Label2.TabIndex = 5
-        Me.Label2.Text = "Código de barra:"
+        Me.Lab_Ag_Cantidad.AutoSize = True
+        Me.Lab_Ag_Cantidad.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Ag_Cantidad.Location = New System.Drawing.Point(12, 102)
+        Me.Lab_Ag_Cantidad.Name = "Lab_Ag_Cantidad"
+        Me.Lab_Ag_Cantidad.Size = New System.Drawing.Size(68, 17)
+        Me.Lab_Ag_Cantidad.TabIndex = 9
+        Me.Lab_Ag_Cantidad.Text = "Cantidad:"
         '
-        'TextBox2
+        'TtBo_Ag_Precio
         '
-        Me.TextBox2.Location = New System.Drawing.Point(174, 64)
-        Me.TextBox2.MaxLength = 15
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(170, 20)
-        Me.TextBox2.TabIndex = 2
+        Me.TtBo_Ag_Precio.Location = New System.Drawing.Point(163, 74)
+        Me.TtBo_Ag_Precio.MaxLength = 5
+        Me.TtBo_Ag_Precio.Name = "TtBo_Ag_Precio"
+        Me.TtBo_Ag_Precio.Size = New System.Drawing.Size(194, 20)
+        Me.TtBo_Ag_Precio.TabIndex = 15
         '
-        'TextBox1
+        'Lab_Ag_Precio
         '
-        Me.TextBox1.Location = New System.Drawing.Point(174, 38)
-        Me.TextBox1.MaxLength = 40
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(170, 20)
-        Me.TextBox1.TabIndex = 1
+        Me.Lab_Ag_Precio.AutoSize = True
+        Me.Lab_Ag_Precio.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Ag_Precio.Location = New System.Drawing.Point(12, 75)
+        Me.Lab_Ag_Precio.Name = "Lab_Ag_Precio"
+        Me.Lab_Ag_Precio.Size = New System.Drawing.Size(52, 17)
+        Me.Lab_Ag_Precio.TabIndex = 10
+        Me.Lab_Ag_Precio.Text = "Precio:"
         '
-        'Button2
+        'CoBo_Ag_Marca
         '
-        Me.Button2.Location = New System.Drawing.Point(163, 125)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(194, 23)
-        Me.Button2.TabIndex = 17
-        Me.Button2.Text = "Agregar"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.CoBo_Ag_Marca.FormattingEnabled = True
+        Me.CoBo_Ag_Marca.Location = New System.Drawing.Point(163, 42)
+        Me.CoBo_Ag_Marca.MaxLength = 40
+        Me.CoBo_Ag_Marca.Name = "CoBo_Ag_Marca"
+        Me.CoBo_Ag_Marca.Size = New System.Drawing.Size(194, 21)
+        Me.CoBo_Ag_Marca.TabIndex = 14
         '
-        'NumericUpDown1
+        'Lab_Ag_Marca
         '
-        Me.NumericUpDown1.DecimalPlaces = 3
-        Me.NumericUpDown1.Increment = New Decimal(New Integer() {50, 0, 0, 196608})
-        Me.NumericUpDown1.Location = New System.Drawing.Point(163, 99)
-        Me.NumericUpDown1.Name = "NumericUpDown1"
-        Me.NumericUpDown1.Size = New System.Drawing.Size(194, 20)
-        Me.NumericUpDown1.TabIndex = 16
-        Me.NumericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.NumericUpDown1.Value = New Decimal(New Integer() {1, 0, 0, 0})
+        Me.Lab_Ag_Marca.AutoSize = True
+        Me.Lab_Ag_Marca.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Ag_Marca.Location = New System.Drawing.Point(12, 42)
+        Me.Lab_Ag_Marca.Name = "Lab_Ag_Marca"
+        Me.Lab_Ag_Marca.Size = New System.Drawing.Size(51, 17)
+        Me.Lab_Ag_Marca.TabIndex = 11
+        Me.Lab_Ag_Marca.Text = "Marca:"
         '
-        'Label6
+        'CoBo_Ag_NombProd
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label6.Location = New System.Drawing.Point(12, 102)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(68, 17)
-        Me.Label6.TabIndex = 9
-        Me.Label6.Text = "Cantidad:"
+        Me.CoBo_Ag_NombProd.FormattingEnabled = True
+        Me.CoBo_Ag_NombProd.Location = New System.Drawing.Point(163, 12)
+        Me.CoBo_Ag_NombProd.MaxLength = 40
+        Me.CoBo_Ag_NombProd.Name = "CoBo_Ag_NombProd"
+        Me.CoBo_Ag_NombProd.Size = New System.Drawing.Size(194, 21)
+        Me.CoBo_Ag_NombProd.TabIndex = 13
         '
-        'TextBox3
+        'Lab_Ag_NombProd
         '
-        Me.TextBox3.Location = New System.Drawing.Point(163, 74)
-        Me.TextBox3.MaxLength = 5
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(194, 20)
-        Me.TextBox3.TabIndex = 15
+        Me.Lab_Ag_NombProd.AutoSize = True
+        Me.Lab_Ag_NombProd.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Ag_NombProd.Location = New System.Drawing.Point(12, 12)
+        Me.Lab_Ag_NombProd.Name = "Lab_Ag_NombProd"
+        Me.Lab_Ag_NombProd.Size = New System.Drawing.Size(145, 17)
+        Me.Lab_Ag_NombProd.TabIndex = 12
+        Me.Lab_Ag_NombProd.Text = "Nombre del producto:"
         '
-        'Label5
+        'Lab_ArPg_EspSubtotal
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label5.Location = New System.Drawing.Point(12, 75)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(52, 17)
-        Me.Label5.TabIndex = 10
-        Me.Label5.Text = "Precio:"
+        Me.Lab_ArPg_EspSubtotal.AutoSize = True
+        Me.Lab_ArPg_EspSubtotal.Location = New System.Drawing.Point(111, 29)
+        Me.Lab_ArPg_EspSubtotal.Name = "Lab_ArPg_EspSubtotal"
+        Me.Lab_ArPg_EspSubtotal.Size = New System.Drawing.Size(0, 13)
+        Me.Lab_ArPg_EspSubtotal.TabIndex = 10
         '
-        'ComboBox2
+        'Lab_ArPg_EspIVA
         '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(163, 42)
-        Me.ComboBox2.MaxLength = 40
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(194, 21)
-        Me.ComboBox2.TabIndex = 14
+        Me.Lab_ArPg_EspIVA.AutoSize = True
+        Me.Lab_ArPg_EspIVA.Location = New System.Drawing.Point(111, 60)
+        Me.Lab_ArPg_EspIVA.Name = "Lab_ArPg_EspIVA"
+        Me.Lab_ArPg_EspIVA.Size = New System.Drawing.Size(0, 13)
+        Me.Lab_ArPg_EspIVA.TabIndex = 11
         '
-        'Label4
+        'Lab_ArPg_EspTotal
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label4.Location = New System.Drawing.Point(12, 42)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(51, 17)
-        Me.Label4.TabIndex = 11
-        Me.Label4.Text = "Marca:"
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(163, 12)
-        Me.ComboBox1.MaxLength = 40
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(194, 21)
-        Me.ComboBox1.TabIndex = 13
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label3.Location = New System.Drawing.Point(12, 12)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(145, 17)
-        Me.Label3.TabIndex = 12
-        Me.Label3.Text = "Nombre del producto:"
+        Me.Lab_ArPg_EspTotal.AutoSize = True
+        Me.Lab_ArPg_EspTotal.Location = New System.Drawing.Point(111, 100)
+        Me.Lab_ArPg_EspTotal.Name = "Lab_ArPg_EspTotal"
+        Me.Lab_ArPg_EspTotal.Size = New System.Drawing.Size(0, 13)
+        Me.Lab_ArPg_EspTotal.TabIndex = 12
         '
         'Form_Ventas
         '
@@ -435,9 +469,9 @@ Partial Class Form_Ventas
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.GrBo_AgregarProducto)
-        Me.Controls.Add(Me.GroupBox2)
+        Me.Controls.Add(Me.GrBo_AreaPago)
         Me.Controls.Add(Me.GrBo_BusquedaProducto)
-        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.DGV_ListaProd)
         Me.Controls.Add(Me.MenuS_Principal)
         Me.MainMenuStrip = Me.MenuS_Principal
         Me.Name = "Form_Ventas"
@@ -445,14 +479,14 @@ Partial Class Form_Ventas
         Me.Text = "Inicio"
         Me.MenuS_Principal.ResumeLayout(False)
         Me.MenuS_Principal.PerformLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DGV_ListaProd, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GrBo_BusquedaProducto.ResumeLayout(False)
         Me.GrBo_BusquedaProducto.PerformLayout()
-        Me.GroupBox2.ResumeLayout(False)
-        Me.GroupBox2.PerformLayout()
+        Me.GrBo_AreaPago.ResumeLayout(False)
+        Me.GrBo_AreaPago.PerformLayout()
         Me.GrBo_AgregarProducto.ResumeLayout(False)
         Me.GrBo_AgregarProducto.PerformLayout()
-        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumUDo_CantProd, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -465,38 +499,41 @@ Partial Class Form_Ventas
     Friend WithEvents ProveedoresToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ComprasToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents EmpleadosToolStripMenuItem1 As ToolStripMenuItem
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents DGV_ListaProd As DataGridView
     Friend WithEvents GrBo_BusquedaProducto As GroupBox
     Friend WithEvents DGV_NumeroItem As DataGridViewTextBoxColumn
     Friend WithEvents DGV_Producto As DataGridViewTextBoxColumn
     Friend WithEvents DGV_Precio As DataGridViewTextBoxColumn
     Friend WithEvents DGV_Cantidad As DataGridViewTextBoxColumn
     Friend WithEvents DGV_Subtotal As DataGridViewTextBoxColumn
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Label12 As Label
-    Friend WithEvents Label11 As Label
-    Friend WithEvents Label10 As Label
-    Friend WithEvents Label9 As Label
-    Friend WithEvents Label8 As Label
-    Friend WithEvents Label7 As Label
-    Friend WithEvents GroupBox2 As GroupBox
+    Friend WithEvents Btn_ArPg_Pagar As Button
+    Friend WithEvents Lab_ArPg_SigDolar3 As Label
+    Friend WithEvents Lab_ArPg_SigDolar2 As Label
+    Friend WithEvents Lab_ArPg_SigDolar1 As Label
+    Friend WithEvents Lab_ArPg_Total As Label
+    Friend WithEvents Lab_ArPg_IVA As Label
+    Friend WithEvents Lab_ArPg_Subtatal As Label
+    Friend WithEvents GrBo_AreaPago As GroupBox
     Friend WithEvents GrBo_AgregarProducto As GroupBox
     Friend WithEvents ClientesYMascotasToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CorteDeCajaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CategoriasToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CaducosToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Button2 As Button
-    Friend WithEvents NumericUpDown1 As NumericUpDown
-    Friend WithEvents Label6 As Label
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents Label5 As Label
-    Friend WithEvents ComboBox2 As ComboBox
-    Friend WithEvents Label4 As Label
-    Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents Label3 As Label
+    Friend WithEvents Btn_Bus_Buscar As Button
+    Friend WithEvents Lab_Bus_NombProd As Label
+    Friend WithEvents Lab_Bus_CodBarra As Label
+    Friend WithEvents TtBo_Bus_CodBarra As TextBox
+    Friend WithEvents TtBo_Bus_NombProd As TextBox
+    Friend WithEvents Btn_Ag_Agregar As Button
+    Friend WithEvents NumUDo_CantProd As NumericUpDown
+    Friend WithEvents Lab_Ag_Cantidad As Label
+    Friend WithEvents TtBo_Ag_Precio As TextBox
+    Friend WithEvents Lab_Ag_Precio As Label
+    Friend WithEvents CoBo_Ag_Marca As ComboBox
+    Friend WithEvents Lab_Ag_Marca As Label
+    Friend WithEvents CoBo_Ag_NombProd As ComboBox
+    Friend WithEvents Lab_Ag_NombProd As Label
+    Friend WithEvents Lab_ArPg_EspTotal As Label
+    Friend WithEvents Lab_ArPg_EspIVA As Label
+    Friend WithEvents Lab_ArPg_EspSubtotal As Label
 End Class

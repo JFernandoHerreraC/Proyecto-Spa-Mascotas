@@ -43,4 +43,37 @@
         Form_Productos.Show()
         Me.Hide()
     End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        If TextBox1.TextLength > 2 And TextBox2.TextLength > 2 Then
+            'aqui va la funcion de agregar la categiria
+        Else
+            MsgBox("Lo sentimos, los campos están vacíos", MsgBoxStyle.Critical)
+        End If
+    End Sub
+
+    Private Sub TextBox3_TextChanged(sender As Object, e As EventArgs) Handles TextBox3.TextChanged
+        If TextBox3.TextAlign > 2 Then
+            Button3.Enabled = True
+        End If
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        If TextBox5.TextLength > 2 Then
+            'aqui va la opcion de buscar
+
+            TextBox5.Text = "Guardar"
+        Else
+            MsgBox("Lo sentimos, el campo de nombre esta vacío", MsgBoxStyle.Critical)
+        End If
+    End Sub
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        If TextBox7.TextLength > 2 Then
+            'aqui va la opcion de buscar
+            Button7.Text = "Eliminar"
+        Else
+            MsgBox("Lo sentimos, el campo de nombre esta vacío", MsgBoxStyle.Critical)
+        End If
+    End Sub
 End Class

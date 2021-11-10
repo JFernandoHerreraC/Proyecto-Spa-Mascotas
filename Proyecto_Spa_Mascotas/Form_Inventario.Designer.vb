@@ -25,15 +25,25 @@ Partial Class Form_Inventario
         Me.Btn_atras = New System.Windows.Forms.Button()
         Me.MenuS_Principal = New System.Windows.Forms.MenuStrip()
         Me.ProductosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CategoriasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CaducosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ServiciosToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.VentasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ProveedoresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ComprasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EmpleadosToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ClientesYMascotasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CategoriasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CaducosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.DGV_CodigoBarra_Producto = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DGV_Nombre_Producto = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DGV_Desc_Producto = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DGV_Fcaducidad_Producto = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DGV_PrecioPub_Producto = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DGV_PrecioProv_Producto = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DGV_CantidadEx_Producto = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.MenuS_Principal.SuspendLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Btn_atras
@@ -60,6 +70,18 @@ Partial Class Form_Inventario
         Me.ProductosToolStripMenuItem.Name = "ProductosToolStripMenuItem"
         Me.ProductosToolStripMenuItem.Size = New System.Drawing.Size(73, 20)
         Me.ProductosToolStripMenuItem.Text = "Productos"
+        '
+        'CategoriasToolStripMenuItem
+        '
+        Me.CategoriasToolStripMenuItem.Name = "CategoriasToolStripMenuItem"
+        Me.CategoriasToolStripMenuItem.Size = New System.Drawing.Size(130, 22)
+        Me.CategoriasToolStripMenuItem.Text = "Categorias"
+        '
+        'CaducosToolStripMenuItem
+        '
+        Me.CaducosToolStripMenuItem.Name = "CaducosToolStripMenuItem"
+        Me.CaducosToolStripMenuItem.Size = New System.Drawing.Size(130, 22)
+        Me.CaducosToolStripMenuItem.Text = "Caducos"
         '
         'ServiciosToolStripMenuItem1
         '
@@ -97,23 +119,73 @@ Partial Class Form_Inventario
         Me.ClientesYMascotasToolStripMenuItem.Size = New System.Drawing.Size(123, 20)
         Me.ClientesYMascotasToolStripMenuItem.Text = "Clientes y mascotas"
         '
-        'CategoriasToolStripMenuItem
+        'Button1
         '
-        Me.CategoriasToolStripMenuItem.Name = "CategoriasToolStripMenuItem"
-        Me.CategoriasToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.CategoriasToolStripMenuItem.Text = "Categorias"
+        Me.Button1.Location = New System.Drawing.Point(286, 90)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(120, 27)
+        Me.Button1.TabIndex = 5
+        Me.Button1.Text = "Mostrar productos"
+        Me.Button1.UseVisualStyleBackColor = True
         '
-        'CaducosToolStripMenuItem
+        'DataGridView1
         '
-        Me.CaducosToolStripMenuItem.Name = "CaducosToolStripMenuItem"
-        Me.CaducosToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.CaducosToolStripMenuItem.Text = "Caducos"
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DGV_CodigoBarra_Producto, Me.DGV_Nombre_Producto, Me.DGV_Desc_Producto, Me.DGV_Fcaducidad_Producto, Me.DGV_PrecioPub_Producto, Me.DGV_PrecioProv_Producto, Me.DGV_CantidadEx_Producto})
+        Me.DataGridView1.Location = New System.Drawing.Point(30, 133)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.Size = New System.Drawing.Size(741, 284)
+        Me.DataGridView1.TabIndex = 6
+        '
+        'DGV_CodigoBarra_Producto
+        '
+        Me.DGV_CodigoBarra_Producto.HeaderText = "Código de barra"
+        Me.DGV_CodigoBarra_Producto.MaxInputLength = 15
+        Me.DGV_CodigoBarra_Producto.Name = "DGV_CodigoBarra_Producto"
+        '
+        'DGV_Nombre_Producto
+        '
+        Me.DGV_Nombre_Producto.HeaderText = "Nombre"
+        Me.DGV_Nombre_Producto.MaxInputLength = 100
+        Me.DGV_Nombre_Producto.Name = "DGV_Nombre_Producto"
+        '
+        'DGV_Desc_Producto
+        '
+        Me.DGV_Desc_Producto.HeaderText = "Descripción"
+        Me.DGV_Desc_Producto.MaxInputLength = 120
+        Me.DGV_Desc_Producto.Name = "DGV_Desc_Producto"
+        '
+        'DGV_Fcaducidad_Producto
+        '
+        Me.DGV_Fcaducidad_Producto.HeaderText = "Fecha de caducidad"
+        Me.DGV_Fcaducidad_Producto.MaxInputLength = 10
+        Me.DGV_Fcaducidad_Producto.Name = "DGV_Fcaducidad_Producto"
+        '
+        'DGV_PrecioPub_Producto
+        '
+        Me.DGV_PrecioPub_Producto.HeaderText = "Precio al publico"
+        Me.DGV_PrecioPub_Producto.MaxInputLength = 5
+        Me.DGV_PrecioPub_Producto.Name = "DGV_PrecioPub_Producto"
+        '
+        'DGV_PrecioProv_Producto
+        '
+        Me.DGV_PrecioProv_Producto.HeaderText = "Precio de proveedor"
+        Me.DGV_PrecioProv_Producto.MaxInputLength = 5
+        Me.DGV_PrecioProv_Producto.Name = "DGV_PrecioProv_Producto"
+        '
+        'DGV_CantidadEx_Producto
+        '
+        Me.DGV_CantidadEx_Producto.HeaderText = "Cantidad de producto en existencia"
+        Me.DGV_CantidadEx_Producto.MaxInputLength = 3
+        Me.DGV_CantidadEx_Producto.Name = "DGV_CantidadEx_Producto"
         '
         'Form_Inventario
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Btn_atras)
         Me.Controls.Add(Me.MenuS_Principal)
         Me.Name = "Form_Inventario"
@@ -121,6 +193,7 @@ Partial Class Form_Inventario
         Me.Text = "Inventario"
         Me.MenuS_Principal.ResumeLayout(False)
         Me.MenuS_Principal.PerformLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -137,4 +210,13 @@ Partial Class Form_Inventario
     Friend WithEvents ClientesYMascotasToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CategoriasToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CaducosToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents Button1 As Button
+    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents DGV_CodigoBarra_Producto As DataGridViewTextBoxColumn
+    Friend WithEvents DGV_Nombre_Producto As DataGridViewTextBoxColumn
+    Friend WithEvents DGV_Desc_Producto As DataGridViewTextBoxColumn
+    Friend WithEvents DGV_Fcaducidad_Producto As DataGridViewTextBoxColumn
+    Friend WithEvents DGV_PrecioPub_Producto As DataGridViewTextBoxColumn
+    Friend WithEvents DGV_PrecioProv_Producto As DataGridViewTextBoxColumn
+    Friend WithEvents DGV_CantidadEx_Producto As DataGridViewTextBoxColumn
 End Class

@@ -33,4 +33,8 @@
         Form_Ventas.Show()
         Me.Hide()
     End Sub
+
+    Private Sub Alta_Clientes_Click(sender As Object, e As EventArgs) Handles Alta_Clientes.Click
+
+    End Sub
 End Class

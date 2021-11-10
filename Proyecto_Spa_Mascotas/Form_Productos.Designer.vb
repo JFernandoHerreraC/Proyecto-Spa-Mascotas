@@ -66,12 +66,6 @@ Partial Class Form_Productos
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Consulta_Productos = New System.Windows.Forms.TabPage()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.DGV_CodigoBarra_Producto = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DGV_Nombre_Producto = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DGV_Desc_Producto = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DGV_PrecioPub_Producto = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DGV_PrecioProv_Producto = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DGV_CantidadEx_Producto = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
@@ -131,6 +125,13 @@ Partial Class Form_Productos
         Me.ComboBox7 = New System.Windows.Forms.ComboBox()
         Me.Label30 = New System.Windows.Forms.Label()
         Me.TextBox19 = New System.Windows.Forms.TextBox()
+        Me.DGV_CodigoBarra_Producto = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DGV_Nombre_Producto = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DGV_Desc_Producto = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DGV_Fcaducidad_Producto = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DGV_PrecioPub_Producto = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DGV_PrecioProv_Producto = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DGV_CantidadEx_Producto = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.MenuS_Principal.SuspendLayout()
         Me.Tab_ABCC_Productos.SuspendLayout()
         Me.Alta_Productos.SuspendLayout()
@@ -576,47 +577,11 @@ Partial Class Form_Productos
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DGV_CodigoBarra_Producto, Me.DGV_Nombre_Producto, Me.DGV_Desc_Producto, Me.DGV_PrecioPub_Producto, Me.DGV_PrecioProv_Producto, Me.DGV_CantidadEx_Producto})
-        Me.DataGridView1.Location = New System.Drawing.Point(96, 165)
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DGV_CodigoBarra_Producto, Me.DGV_Nombre_Producto, Me.DGV_Desc_Producto, Me.DGV_Fcaducidad_Producto, Me.DGV_PrecioPub_Producto, Me.DGV_PrecioProv_Producto, Me.DGV_CantidadEx_Producto})
+        Me.DataGridView1.Location = New System.Drawing.Point(21, 167)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(636, 150)
+        Me.DataGridView1.Size = New System.Drawing.Size(741, 163)
         Me.DataGridView1.TabIndex = 0
-        '
-        'DGV_CodigoBarra_Producto
-        '
-        Me.DGV_CodigoBarra_Producto.HeaderText = "Código de barra"
-        Me.DGV_CodigoBarra_Producto.MaxInputLength = 15
-        Me.DGV_CodigoBarra_Producto.Name = "DGV_CodigoBarra_Producto"
-        '
-        'DGV_Nombre_Producto
-        '
-        Me.DGV_Nombre_Producto.HeaderText = "Nombre"
-        Me.DGV_Nombre_Producto.MaxInputLength = 100
-        Me.DGV_Nombre_Producto.Name = "DGV_Nombre_Producto"
-        '
-        'DGV_Desc_Producto
-        '
-        Me.DGV_Desc_Producto.HeaderText = "Descripción"
-        Me.DGV_Desc_Producto.MaxInputLength = 120
-        Me.DGV_Desc_Producto.Name = "DGV_Desc_Producto"
-        '
-        'DGV_PrecioPub_Producto
-        '
-        Me.DGV_PrecioPub_Producto.HeaderText = "Precio al publico"
-        Me.DGV_PrecioPub_Producto.MaxInputLength = 5
-        Me.DGV_PrecioPub_Producto.Name = "DGV_PrecioPub_Producto"
-        '
-        'DGV_PrecioProv_Producto
-        '
-        Me.DGV_PrecioProv_Producto.HeaderText = "Precio de proveedor"
-        Me.DGV_PrecioProv_Producto.MaxInputLength = 5
-        Me.DGV_PrecioProv_Producto.Name = "DGV_PrecioProv_Producto"
-        '
-        'DGV_CantidadEx_Producto
-        '
-        Me.DGV_CantidadEx_Producto.HeaderText = "Cantidad de producto en existencia"
-        Me.DGV_CantidadEx_Producto.MaxInputLength = 3
-        Me.DGV_CantidadEx_Producto.Name = "DGV_CantidadEx_Producto"
         '
         'GroupBox1
         '
@@ -1234,6 +1199,48 @@ Partial Class Form_Productos
         Me.TextBox19.Size = New System.Drawing.Size(150, 23)
         Me.TextBox19.TabIndex = 7
         '
+        'DGV_CodigoBarra_Producto
+        '
+        Me.DGV_CodigoBarra_Producto.HeaderText = "Código de barra"
+        Me.DGV_CodigoBarra_Producto.MaxInputLength = 15
+        Me.DGV_CodigoBarra_Producto.Name = "DGV_CodigoBarra_Producto"
+        '
+        'DGV_Nombre_Producto
+        '
+        Me.DGV_Nombre_Producto.HeaderText = "Nombre"
+        Me.DGV_Nombre_Producto.MaxInputLength = 100
+        Me.DGV_Nombre_Producto.Name = "DGV_Nombre_Producto"
+        '
+        'DGV_Desc_Producto
+        '
+        Me.DGV_Desc_Producto.HeaderText = "Descripción"
+        Me.DGV_Desc_Producto.MaxInputLength = 120
+        Me.DGV_Desc_Producto.Name = "DGV_Desc_Producto"
+        '
+        'DGV_Fcaducidad_Producto
+        '
+        Me.DGV_Fcaducidad_Producto.HeaderText = "Fecha de caducidad"
+        Me.DGV_Fcaducidad_Producto.MaxInputLength = 10
+        Me.DGV_Fcaducidad_Producto.Name = "DGV_Fcaducidad_Producto"
+        '
+        'DGV_PrecioPub_Producto
+        '
+        Me.DGV_PrecioPub_Producto.HeaderText = "Precio al publico"
+        Me.DGV_PrecioPub_Producto.MaxInputLength = 5
+        Me.DGV_PrecioPub_Producto.Name = "DGV_PrecioPub_Producto"
+        '
+        'DGV_PrecioProv_Producto
+        '
+        Me.DGV_PrecioProv_Producto.HeaderText = "Precio de proveedor"
+        Me.DGV_PrecioProv_Producto.MaxInputLength = 5
+        Me.DGV_PrecioProv_Producto.Name = "DGV_PrecioProv_Producto"
+        '
+        'DGV_CantidadEx_Producto
+        '
+        Me.DGV_CantidadEx_Producto.HeaderText = "Cantidad de producto en existencia"
+        Me.DGV_CantidadEx_Producto.MaxInputLength = 3
+        Me.DGV_CantidadEx_Producto.Name = "DGV_CantidadEx_Producto"
+        '
         'Form_Productos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1325,12 +1332,6 @@ Partial Class Form_Productos
     Friend WithEvents Label10 As Label
     Friend WithEvents Button4 As Button
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents DGV_CodigoBarra_Producto As DataGridViewTextBoxColumn
-    Friend WithEvents DGV_Nombre_Producto As DataGridViewTextBoxColumn
-    Friend WithEvents DGV_Desc_Producto As DataGridViewTextBoxColumn
-    Friend WithEvents DGV_PrecioPub_Producto As DataGridViewTextBoxColumn
-    Friend WithEvents DGV_PrecioProv_Producto As DataGridViewTextBoxColumn
-    Friend WithEvents DGV_CantidadEx_Producto As DataGridViewTextBoxColumn
     Friend WithEvents GroupBox5 As GroupBox
     Friend WithEvents Label19 As Label
     Friend WithEvents Label18 As Label
@@ -1386,4 +1387,11 @@ Partial Class Form_Productos
     Friend WithEvents ComboBox7 As ComboBox
     Friend WithEvents Label30 As Label
     Friend WithEvents TextBox19 As TextBox
+    Friend WithEvents DGV_CodigoBarra_Producto As DataGridViewTextBoxColumn
+    Friend WithEvents DGV_Nombre_Producto As DataGridViewTextBoxColumn
+    Friend WithEvents DGV_Desc_Producto As DataGridViewTextBoxColumn
+    Friend WithEvents DGV_Fcaducidad_Producto As DataGridViewTextBoxColumn
+    Friend WithEvents DGV_PrecioPub_Producto As DataGridViewTextBoxColumn
+    Friend WithEvents DGV_PrecioProv_Producto As DataGridViewTextBoxColumn
+    Friend WithEvents DGV_CantidadEx_Producto As DataGridViewTextBoxColumn
 End Class

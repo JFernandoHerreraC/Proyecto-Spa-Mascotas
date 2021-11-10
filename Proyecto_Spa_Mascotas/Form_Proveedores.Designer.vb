@@ -35,9 +35,6 @@ Partial Class Form_Proveedores
         Me.ClientesYMascotasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Tab_Ctr_Proveedor = New System.Windows.Forms.TabControl()
         Me.Alta_Proveedores = New System.Windows.Forms.TabPage()
-        Me.Consulta_Proveedores = New System.Windows.Forms.TabPage()
-        Me.Cambio_Proveedor = New System.Windows.Forms.TabPage()
-        Me.Baja_Proveedores = New System.Windows.Forms.TabPage()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.ComboBox3 = New System.Windows.Forms.ComboBox()
@@ -74,6 +71,7 @@ Partial Class Form_Proveedores
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Consulta_Proveedores = New System.Windows.Forms.TabPage()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.DVG_ID_Prov = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DVG_NombORazonS_Prov = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -89,6 +87,7 @@ Partial Class Form_Proveedores
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.Label19 = New System.Windows.Forms.Label()
+        Me.Cambio_Proveedor = New System.Windows.Forms.TabPage()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.ComboBox4 = New System.Windows.Forms.ComboBox()
@@ -125,6 +124,7 @@ Partial Class Form_Proveedores
         Me.TextBox30 = New System.Windows.Forms.TextBox()
         Me.Label35 = New System.Windows.Forms.Label()
         Me.Label36 = New System.Windows.Forms.Label()
+        Me.Baja_Proveedores = New System.Windows.Forms.TabPage()
         Me.Button7 = New System.Windows.Forms.Button()
         Me.Button8 = New System.Windows.Forms.Button()
         Me.TextBox35 = New System.Windows.Forms.TextBox()
@@ -146,13 +146,15 @@ Partial Class Form_Proveedores
         Me.TextBox32 = New System.Windows.Forms.TextBox()
         Me.Label37 = New System.Windows.Forms.Label()
         Me.Label38 = New System.Windows.Forms.Label()
+        Me.TextBox15 = New System.Windows.Forms.TextBox()
+        Me.TextBox16 = New System.Windows.Forms.TextBox()
         Me.MenuS_Principal.SuspendLayout()
         Me.Tab_Ctr_Proveedor.SuspendLayout()
         Me.Alta_Proveedores.SuspendLayout()
         Me.Consulta_Proveedores.SuspendLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Cambio_Proveedor.SuspendLayout()
         Me.Baja_Proveedores.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Btn_atras
@@ -285,95 +287,6 @@ Partial Class Form_Proveedores
         Me.Alta_Proveedores.TabIndex = 0
         Me.Alta_Proveedores.Text = "Alta de proveedor"
         Me.Alta_Proveedores.UseVisualStyleBackColor = True
-        '
-        'Consulta_Proveedores
-        '
-        Me.Consulta_Proveedores.Controls.Add(Me.DataGridView1)
-        Me.Consulta_Proveedores.Controls.Add(Me.Button1)
-        Me.Consulta_Proveedores.Controls.Add(Me.Label18)
-        Me.Consulta_Proveedores.Controls.Add(Me.Label19)
-        Me.Consulta_Proveedores.Location = New System.Drawing.Point(4, 22)
-        Me.Consulta_Proveedores.Name = "Consulta_Proveedores"
-        Me.Consulta_Proveedores.Size = New System.Drawing.Size(768, 356)
-        Me.Consulta_Proveedores.TabIndex = 2
-        Me.Consulta_Proveedores.Text = "Consulta de proveedores"
-        Me.Consulta_Proveedores.UseVisualStyleBackColor = True
-        '
-        'Cambio_Proveedor
-        '
-        Me.Cambio_Proveedor.Controls.Add(Me.Button4)
-        Me.Cambio_Proveedor.Controls.Add(Me.Button5)
-        Me.Cambio_Proveedor.Controls.Add(Me.ComboBox4)
-        Me.Cambio_Proveedor.Controls.Add(Me.TextBox17)
-        Me.Cambio_Proveedor.Controls.Add(Me.TextBox18)
-        Me.Cambio_Proveedor.Controls.Add(Me.TextBox19)
-        Me.Cambio_Proveedor.Controls.Add(Me.TextBox20)
-        Me.Cambio_Proveedor.Controls.Add(Me.TextBox21)
-        Me.Cambio_Proveedor.Controls.Add(Me.TextBox22)
-        Me.Cambio_Proveedor.Controls.Add(Me.TextBox23)
-        Me.Cambio_Proveedor.Controls.Add(Me.Label20)
-        Me.Cambio_Proveedor.Controls.Add(Me.TextBox24)
-        Me.Cambio_Proveedor.Controls.Add(Me.Label21)
-        Me.Cambio_Proveedor.Controls.Add(Me.ComboBox5)
-        Me.Cambio_Proveedor.Controls.Add(Me.TextBox25)
-        Me.Cambio_Proveedor.Controls.Add(Me.TextBox26)
-        Me.Cambio_Proveedor.Controls.Add(Me.TextBox27)
-        Me.Cambio_Proveedor.Controls.Add(Me.Label22)
-        Me.Cambio_Proveedor.Controls.Add(Me.Label23)
-        Me.Cambio_Proveedor.Controls.Add(Me.ComboBox6)
-        Me.Cambio_Proveedor.Controls.Add(Me.Label24)
-        Me.Cambio_Proveedor.Controls.Add(Me.Label25)
-        Me.Cambio_Proveedor.Controls.Add(Me.Label26)
-        Me.Cambio_Proveedor.Controls.Add(Me.Label27)
-        Me.Cambio_Proveedor.Controls.Add(Me.Label28)
-        Me.Cambio_Proveedor.Controls.Add(Me.Label29)
-        Me.Cambio_Proveedor.Controls.Add(Me.Label30)
-        Me.Cambio_Proveedor.Controls.Add(Me.Label31)
-        Me.Cambio_Proveedor.Controls.Add(Me.Label32)
-        Me.Cambio_Proveedor.Controls.Add(Me.Label33)
-        Me.Cambio_Proveedor.Controls.Add(Me.TextBox28)
-        Me.Cambio_Proveedor.Controls.Add(Me.Label34)
-        Me.Cambio_Proveedor.Controls.Add(Me.TextBox29)
-        Me.Cambio_Proveedor.Controls.Add(Me.TextBox30)
-        Me.Cambio_Proveedor.Controls.Add(Me.Label35)
-        Me.Cambio_Proveedor.Controls.Add(Me.Label36)
-        Me.Cambio_Proveedor.Location = New System.Drawing.Point(4, 22)
-        Me.Cambio_Proveedor.Name = "Cambio_Proveedor"
-        Me.Cambio_Proveedor.Size = New System.Drawing.Size(768, 356)
-        Me.Cambio_Proveedor.TabIndex = 3
-        Me.Cambio_Proveedor.Text = "Cambios en el proveedor"
-        Me.Cambio_Proveedor.UseVisualStyleBackColor = True
-        '
-        'Baja_Proveedores
-        '
-        Me.Baja_Proveedores.Controls.Add(Me.Button7)
-        Me.Baja_Proveedores.Controls.Add(Me.Button8)
-        Me.Baja_Proveedores.Controls.Add(Me.TextBox35)
-        Me.Baja_Proveedores.Controls.Add(Me.TextBox36)
-        Me.Baja_Proveedores.Controls.Add(Me.TextBox37)
-        Me.Baja_Proveedores.Controls.Add(Me.TextBox38)
-        Me.Baja_Proveedores.Controls.Add(Me.Label39)
-        Me.Baja_Proveedores.Controls.Add(Me.Label42)
-        Me.Baja_Proveedores.Controls.Add(Me.Label43)
-        Me.Baja_Proveedores.Controls.Add(Me.Label44)
-        Me.Baja_Proveedores.Controls.Add(Me.TextBox39)
-        Me.Baja_Proveedores.Controls.Add(Me.Label45)
-        Me.Baja_Proveedores.Controls.Add(Me.TextBox40)
-        Me.Baja_Proveedores.Controls.Add(Me.TextBox41)
-        Me.Baja_Proveedores.Controls.Add(Me.Label46)
-        Me.Baja_Proveedores.Controls.Add(Me.Label47)
-        Me.Baja_Proveedores.Controls.Add(Me.Button6)
-        Me.Baja_Proveedores.Controls.Add(Me.TextBox31)
-        Me.Baja_Proveedores.Controls.Add(Me.TextBox32)
-        Me.Baja_Proveedores.Controls.Add(Me.Label37)
-        Me.Baja_Proveedores.Controls.Add(Me.Label38)
-        Me.Baja_Proveedores.Location = New System.Drawing.Point(4, 22)
-        Me.Baja_Proveedores.Name = "Baja_Proveedores"
-        Me.Baja_Proveedores.Padding = New System.Windows.Forms.Padding(3)
-        Me.Baja_Proveedores.Size = New System.Drawing.Size(768, 356)
-        Me.Baja_Proveedores.TabIndex = 1
-        Me.Baja_Proveedores.Text = "Baja de proveedor"
-        Me.Baja_Proveedores.UseVisualStyleBackColor = True
         '
         'Button3
         '
@@ -656,6 +569,7 @@ Partial Class Form_Proveedores
         'TextBox2
         '
         Me.TextBox2.Location = New System.Drawing.Point(190, 56)
+        Me.TextBox2.MaxLength = 20
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(164, 20)
         Me.TextBox2.TabIndex = 40
@@ -663,6 +577,7 @@ Partial Class Form_Proveedores
         'TextBox1
         '
         Me.TextBox1.Location = New System.Drawing.Point(190, 29)
+        Me.TextBox1.MaxLength = 100
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(164, 20)
         Me.TextBox1.TabIndex = 39
@@ -686,6 +601,21 @@ Partial Class Form_Proveedores
         Me.Label1.Size = New System.Drawing.Size(154, 17)
         Me.Label1.TabIndex = 37
         Me.Label1.Text = "Nombre o razón social:"
+        '
+        'Consulta_Proveedores
+        '
+        Me.Consulta_Proveedores.Controls.Add(Me.TextBox16)
+        Me.Consulta_Proveedores.Controls.Add(Me.TextBox15)
+        Me.Consulta_Proveedores.Controls.Add(Me.DataGridView1)
+        Me.Consulta_Proveedores.Controls.Add(Me.Button1)
+        Me.Consulta_Proveedores.Controls.Add(Me.Label18)
+        Me.Consulta_Proveedores.Controls.Add(Me.Label19)
+        Me.Consulta_Proveedores.Location = New System.Drawing.Point(4, 22)
+        Me.Consulta_Proveedores.Name = "Consulta_Proveedores"
+        Me.Consulta_Proveedores.Size = New System.Drawing.Size(768, 356)
+        Me.Consulta_Proveedores.TabIndex = 2
+        Me.Consulta_Proveedores.Text = "Consulta de proveedores"
+        Me.Consulta_Proveedores.UseVisualStyleBackColor = True
         '
         'DataGridView1
         '
@@ -792,6 +722,51 @@ Partial Class Form_Proveedores
         Me.Label19.Size = New System.Drawing.Size(154, 17)
         Me.Label19.TabIndex = 10
         Me.Label19.Text = "Nombre o razón social:"
+        '
+        'Cambio_Proveedor
+        '
+        Me.Cambio_Proveedor.Controls.Add(Me.Button4)
+        Me.Cambio_Proveedor.Controls.Add(Me.Button5)
+        Me.Cambio_Proveedor.Controls.Add(Me.ComboBox4)
+        Me.Cambio_Proveedor.Controls.Add(Me.TextBox17)
+        Me.Cambio_Proveedor.Controls.Add(Me.TextBox18)
+        Me.Cambio_Proveedor.Controls.Add(Me.TextBox19)
+        Me.Cambio_Proveedor.Controls.Add(Me.TextBox20)
+        Me.Cambio_Proveedor.Controls.Add(Me.TextBox21)
+        Me.Cambio_Proveedor.Controls.Add(Me.TextBox22)
+        Me.Cambio_Proveedor.Controls.Add(Me.TextBox23)
+        Me.Cambio_Proveedor.Controls.Add(Me.Label20)
+        Me.Cambio_Proveedor.Controls.Add(Me.TextBox24)
+        Me.Cambio_Proveedor.Controls.Add(Me.Label21)
+        Me.Cambio_Proveedor.Controls.Add(Me.ComboBox5)
+        Me.Cambio_Proveedor.Controls.Add(Me.TextBox25)
+        Me.Cambio_Proveedor.Controls.Add(Me.TextBox26)
+        Me.Cambio_Proveedor.Controls.Add(Me.TextBox27)
+        Me.Cambio_Proveedor.Controls.Add(Me.Label22)
+        Me.Cambio_Proveedor.Controls.Add(Me.Label23)
+        Me.Cambio_Proveedor.Controls.Add(Me.ComboBox6)
+        Me.Cambio_Proveedor.Controls.Add(Me.Label24)
+        Me.Cambio_Proveedor.Controls.Add(Me.Label25)
+        Me.Cambio_Proveedor.Controls.Add(Me.Label26)
+        Me.Cambio_Proveedor.Controls.Add(Me.Label27)
+        Me.Cambio_Proveedor.Controls.Add(Me.Label28)
+        Me.Cambio_Proveedor.Controls.Add(Me.Label29)
+        Me.Cambio_Proveedor.Controls.Add(Me.Label30)
+        Me.Cambio_Proveedor.Controls.Add(Me.Label31)
+        Me.Cambio_Proveedor.Controls.Add(Me.Label32)
+        Me.Cambio_Proveedor.Controls.Add(Me.Label33)
+        Me.Cambio_Proveedor.Controls.Add(Me.TextBox28)
+        Me.Cambio_Proveedor.Controls.Add(Me.Label34)
+        Me.Cambio_Proveedor.Controls.Add(Me.TextBox29)
+        Me.Cambio_Proveedor.Controls.Add(Me.TextBox30)
+        Me.Cambio_Proveedor.Controls.Add(Me.Label35)
+        Me.Cambio_Proveedor.Controls.Add(Me.Label36)
+        Me.Cambio_Proveedor.Location = New System.Drawing.Point(4, 22)
+        Me.Cambio_Proveedor.Name = "Cambio_Proveedor"
+        Me.Cambio_Proveedor.Size = New System.Drawing.Size(768, 356)
+        Me.Cambio_Proveedor.TabIndex = 3
+        Me.Cambio_Proveedor.Text = "Cambios en el proveedor"
+        Me.Cambio_Proveedor.UseVisualStyleBackColor = True
         '
         'Button4
         '
@@ -1106,6 +1081,37 @@ Partial Class Form_Proveedores
         Me.Label36.TabIndex = 73
         Me.Label36.Text = "Nombre o razón social:"
         '
+        'Baja_Proveedores
+        '
+        Me.Baja_Proveedores.Controls.Add(Me.Button7)
+        Me.Baja_Proveedores.Controls.Add(Me.Button8)
+        Me.Baja_Proveedores.Controls.Add(Me.TextBox35)
+        Me.Baja_Proveedores.Controls.Add(Me.TextBox36)
+        Me.Baja_Proveedores.Controls.Add(Me.TextBox37)
+        Me.Baja_Proveedores.Controls.Add(Me.TextBox38)
+        Me.Baja_Proveedores.Controls.Add(Me.Label39)
+        Me.Baja_Proveedores.Controls.Add(Me.Label42)
+        Me.Baja_Proveedores.Controls.Add(Me.Label43)
+        Me.Baja_Proveedores.Controls.Add(Me.Label44)
+        Me.Baja_Proveedores.Controls.Add(Me.TextBox39)
+        Me.Baja_Proveedores.Controls.Add(Me.Label45)
+        Me.Baja_Proveedores.Controls.Add(Me.TextBox40)
+        Me.Baja_Proveedores.Controls.Add(Me.TextBox41)
+        Me.Baja_Proveedores.Controls.Add(Me.Label46)
+        Me.Baja_Proveedores.Controls.Add(Me.Label47)
+        Me.Baja_Proveedores.Controls.Add(Me.Button6)
+        Me.Baja_Proveedores.Controls.Add(Me.TextBox31)
+        Me.Baja_Proveedores.Controls.Add(Me.TextBox32)
+        Me.Baja_Proveedores.Controls.Add(Me.Label37)
+        Me.Baja_Proveedores.Controls.Add(Me.Label38)
+        Me.Baja_Proveedores.Location = New System.Drawing.Point(4, 22)
+        Me.Baja_Proveedores.Name = "Baja_Proveedores"
+        Me.Baja_Proveedores.Padding = New System.Windows.Forms.Padding(3)
+        Me.Baja_Proveedores.Size = New System.Drawing.Size(768, 356)
+        Me.Baja_Proveedores.TabIndex = 1
+        Me.Baja_Proveedores.Text = "Baja de proveedor"
+        Me.Baja_Proveedores.UseVisualStyleBackColor = True
+        '
         'Button7
         '
         Me.Button7.Location = New System.Drawing.Point(652, 214)
@@ -1288,6 +1294,22 @@ Partial Class Form_Proveedores
         Me.Label38.TabIndex = 90
         Me.Label38.Text = "Nombre o razón social:"
         '
+        'TextBox15
+        '
+        Me.TextBox15.Location = New System.Drawing.Point(395, 9)
+        Me.TextBox15.MaxLength = 100
+        Me.TextBox15.Name = "TextBox15"
+        Me.TextBox15.Size = New System.Drawing.Size(162, 20)
+        Me.TextBox15.TabIndex = 14
+        '
+        'TextBox16
+        '
+        Me.TextBox16.Location = New System.Drawing.Point(395, 35)
+        Me.TextBox16.MaxLength = 20
+        Me.TextBox16.Name = "TextBox16"
+        Me.TextBox16.Size = New System.Drawing.Size(162, 20)
+        Me.TextBox16.TabIndex = 15
+        '
         'Form_Proveedores
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1306,11 +1328,11 @@ Partial Class Form_Proveedores
         Me.Alta_Proveedores.PerformLayout()
         Me.Consulta_Proveedores.ResumeLayout(False)
         Me.Consulta_Proveedores.PerformLayout()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Cambio_Proveedor.ResumeLayout(False)
         Me.Cambio_Proveedor.PerformLayout()
         Me.Baja_Proveedores.ResumeLayout(False)
         Me.Baja_Proveedores.PerformLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1440,4 +1462,6 @@ Partial Class Form_Proveedores
     Friend WithEvents TextBox32 As TextBox
     Friend WithEvents Label37 As Label
     Friend WithEvents Label38 As Label
+    Friend WithEvents TextBox16 As TextBox
+    Friend WithEvents TextBox15 As TextBox
 End Class
