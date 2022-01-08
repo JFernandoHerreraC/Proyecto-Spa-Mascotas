@@ -22,6 +22,7 @@ Partial Class Form_ClientesYMascotas
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form_ClientesYMascotas))
         Me.Btn_atras = New System.Windows.Forms.Button()
         Me.MenuS_Principal = New System.Windows.Forms.MenuStrip()
         Me.ProductosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -32,64 +33,57 @@ Partial Class Form_ClientesYMascotas
         Me.ProveedoresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ComprasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EmpleadosToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.TabControl1 = New System.Windows.Forms.TabControl()
+        Me.Tab_Ctr_ClientesYMascotas = New System.Windows.Forms.TabControl()
         Me.Alta_Clientes = New System.Windows.Forms.TabPage()
-        Me.Baja_Clientes = New System.Windows.Forms.TabPage()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.TextBox9 = New System.Windows.Forms.TextBox()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.TextBox10 = New System.Windows.Forms.TextBox()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.TtBo_Alta_MunicipioDueno = New System.Windows.Forms.TextBox()
+        Me.Lab_Alta_MunicipioDueno = New System.Windows.Forms.Label()
+        Me.TtBo_Alta_CpDueno = New System.Windows.Forms.TextBox()
+        Me.Lab_Alta_CpDueno = New System.Windows.Forms.Label()
+        Me.TtBo_Alta_TelefDueno = New System.Windows.Forms.TextBox()
+        Me.TtBo_Alta_NumeroDueno = New System.Windows.Forms.TextBox()
+        Me.Lab_Alta_NumeroDueno = New System.Windows.Forms.Label()
+        Me.Btn_Alta_AgregarMascotaDueno = New System.Windows.Forms.Button()
+        Me.TtBo_Alta_EmailDueno = New System.Windows.Forms.TextBox()
+        Me.Lab_Alta_AmatDueno = New System.Windows.Forms.Label()
+        Me.TtBo_Alta_IdDueno = New System.Windows.Forms.TextBox()
+        Me.Lab_Alta_IdDueno = New System.Windows.Forms.Label()
+        Me.Btn_Alta_LimpiarDueno = New System.Windows.Forms.Button()
+        Me.Btn_Alta_GuardarDueno = New System.Windows.Forms.Button()
+        Me.DGV_Alta_ListaDueno = New System.Windows.Forms.DataGridView()
+        Me.Id_Cliente = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Nombre_Cliente = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Apellido = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Apellido_paterno = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Apellido_materno = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Direccion = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Telefono = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Correo_Electronico = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Nombre_Mascota = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Tipo_de_Mascota = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Edad_de_la_Mascota = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Color_de_la_Mascota = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Raza = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.TtBo_Alta_CalleDueno = New System.Windows.Forms.TextBox()
+        Me.Lab_Alta_EmailDueno = New System.Windows.Forms.Label()
+        Me.Lab_Alta_TelefDueno = New System.Windows.Forms.Label()
+        Me.TtBo_Alta_AmatDueno = New System.Windows.Forms.TextBox()
+        Me.Lab_Alta_CalleDueno = New System.Windows.Forms.Label()
+        Me.TtBo_Alta_ApatDueno = New System.Windows.Forms.TextBox()
+        Me.TtBo_Alta_NombDueno = New System.Windows.Forms.TextBox()
+        Me.Lab_Alta_ApatDueno = New System.Windows.Forms.Label()
+        Me.Lab_Alta_NombDueno = New System.Windows.Forms.Label()
         Me.Consulta_Clientes = New System.Windows.Forms.TabPage()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.TextBox11 = New System.Windows.Forms.TextBox()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.DataGridView2 = New System.Windows.Forms.DataGridView()
-        Me.Nombre_cliente1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Apellido1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Direccion1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Telefono1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Correo = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NombreMascota = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TipoMascota = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.EdadMascota = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ColordeMascota = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Raza1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.TextBox12 = New System.Windows.Forms.TextBox()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.DataGridView3 = New System.Windows.Forms.DataGridView()
+        Me.DGV_Cons_ListDueno = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewTextBoxColumn11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn12 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn13 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn14 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn15 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn16 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn17 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn18 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.GoBo_Cons_DatosBusqClienteDueno = New System.Windows.Forms.GroupBox()
+        Me.Btn_Const_BuscarTodoDueno = New System.Windows.Forms.Button()
+        Me.Btn_Cons_BuscarDueno = New System.Windows.Forms.Button()
+        Me.TtBo_Cons_NombDueno = New System.Windows.Forms.TextBox()
+        Me.Lab_Cons_NombDueno = New System.Windows.Forms.Label()
+        Me.Baja_Clientes = New System.Windows.Forms.TabPage()
+        Me.DGV_Baja_ListDueno = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -98,55 +92,57 @@ Partial Class Form_ClientesYMascotas
         Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Button5 = New System.Windows.Forms.Button()
-        Me.TabPage1 = New System.Windows.Forms.TabPage()
-        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.Label15 = New System.Windows.Forms.Label()
-        Me.Label16 = New System.Windows.Forms.Label()
-        Me.Label17 = New System.Windows.Forms.Label()
-        Me.Label18 = New System.Windows.Forms.Label()
-        Me.Label19 = New System.Windows.Forms.Label()
-        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
-        Me.Label20 = New System.Windows.Forms.Label()
-        Me.Label21 = New System.Windows.Forms.Label()
-        Me.TextBox13 = New System.Windows.Forms.TextBox()
-        Me.TextBox14 = New System.Windows.Forms.TextBox()
-        Me.TextBox15 = New System.Windows.Forms.TextBox()
-        Me.TextBox16 = New System.Windows.Forms.TextBox()
-        Me.TextBox17 = New System.Windows.Forms.TextBox()
-        Me.TextBox18 = New System.Windows.Forms.TextBox()
-        Me.TextBox19 = New System.Windows.Forms.TextBox()
-        Me.TextBox20 = New System.Windows.Forms.TextBox()
-        Me.Label22 = New System.Windows.Forms.Label()
-        Me.TextBox21 = New System.Windows.Forms.TextBox()
-        Me.TextBox22 = New System.Windows.Forms.TextBox()
-        Me.Label23 = New System.Windows.Forms.Label()
-        Me.Label24 = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.Label25 = New System.Windows.Forms.Label()
-        Me.Label26 = New System.Windows.Forms.Label()
-        Me.Foto_Mascota = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
+        Me.GoBo_Baja_DatosBusqClienteDueno = New System.Windows.Forms.GroupBox()
+        Me.Btn_Baja_BuscarDueno = New System.Windows.Forms.Button()
+        Me.TtBo_Baja_NombDueno = New System.Windows.Forms.TextBox()
+        Me.Lab_Baja_NombDueno = New System.Windows.Forms.Label()
+        Me.Cambio_Clientes = New System.Windows.Forms.TabPage()
+        Me.Btn_Camb_LimpiarDueno = New System.Windows.Forms.Button()
+        Me.Btn_Camb_ActualizarDueno = New System.Windows.Forms.Button()
+        Me.GoBo_Camb_DatosGenerMascoDueno = New System.Windows.Forms.GroupBox()
+        Me.Btn_Camb_CambiarImgMasDueno = New System.Windows.Forms.Button()
+        Me.PiBo_Camb_ImgMasDueno = New System.Windows.Forms.PictureBox()
+        Me.Lab_Camb_ImgMasDueno = New System.Windows.Forms.Label()
+        Me.Lab_Camb_RazaMasDueno = New System.Windows.Forms.Label()
+        Me.TtBo_Camb_RazaMasDueno = New System.Windows.Forms.TextBox()
+        Me.TtBo_Camb_ColorMasDueno = New System.Windows.Forms.TextBox()
+        Me.Lab_Camb_ColorMasDueno = New System.Windows.Forms.Label()
+        Me.TtBo_Camb_EdadMasDueno = New System.Windows.Forms.TextBox()
+        Me.TtBo_Camb_TipoMasDueno = New System.Windows.Forms.TextBox()
+        Me.TtBo_Camb_NombMasDueno = New System.Windows.Forms.TextBox()
+        Me.Lab_Camb_EdadMasDueno = New System.Windows.Forms.Label()
+        Me.Lab_Camb_TipoMasDueno = New System.Windows.Forms.Label()
+        Me.Lab_Camb_NombMasDueno = New System.Windows.Forms.Label()
+        Me.GoBo_Camb_DatosGenerDueno = New System.Windows.Forms.GroupBox()
+        Me.TtBo_Camb_EmailDueno = New System.Windows.Forms.TextBox()
+        Me.Lab_Camb_AmatDueno = New System.Windows.Forms.Label()
+        Me.TtBo_Camb_IdDueno = New System.Windows.Forms.TextBox()
+        Me.Lab_Camb_IdDueno = New System.Windows.Forms.Label()
+        Me.TtBo_Camb_DireccDueno = New System.Windows.Forms.TextBox()
+        Me.Lab_Camb_EmailDueno = New System.Windows.Forms.Label()
+        Me.TtBo_Camb_TelefDueno = New System.Windows.Forms.TextBox()
+        Me.Lab_Camb_TelefDueno = New System.Windows.Forms.Label()
+        Me.TtBo_Camb_AmatDueno = New System.Windows.Forms.TextBox()
+        Me.Lab_Camb_DireccDueno = New System.Windows.Forms.Label()
+        Me.TtBo_Camb_ApatDueno = New System.Windows.Forms.TextBox()
+        Me.TtBo_Camb_NombDueno = New System.Windows.Forms.TextBox()
+        Me.Lab_Camb_ApatDueno = New System.Windows.Forms.Label()
+        Me.Lab_Camb_NombDueno = New System.Windows.Forms.Label()
         Me.MenuS_Principal.SuspendLayout()
-        Me.TabControl1.SuspendLayout()
+        Me.Tab_Ctr_ClientesYMascotas.SuspendLayout()
         Me.Alta_Clientes.SuspendLayout()
-        Me.Baja_Clientes.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DGV_Alta_ListaDueno, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Consulta_Clientes.SuspendLayout()
-        Me.GroupBox1.SuspendLayout()
-        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox2.SuspendLayout()
-        CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.TabPage1.SuspendLayout()
-        Me.GroupBox3.SuspendLayout()
-        Me.GroupBox4.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DGV_Cons_ListDueno, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GoBo_Cons_DatosBusqClienteDueno.SuspendLayout()
+        Me.Baja_Clientes.SuspendLayout()
+        CType(Me.DGV_Baja_ListDueno, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GoBo_Baja_DatosBusqClienteDueno.SuspendLayout()
+        Me.Cambio_Clientes.SuspendLayout()
+        Me.GoBo_Camb_DatosGenerMascoDueno.SuspendLayout()
+        CType(Me.PiBo_Camb_ImgMasDueno, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GoBo_Camb_DatosGenerDueno.SuspendLayout()
         Me.SuspendLayout()
         '
         'Btn_atras
@@ -216,266 +212,203 @@ Partial Class Form_ClientesYMascotas
         Me.EmpleadosToolStripMenuItem1.Size = New System.Drawing.Size(77, 20)
         Me.EmpleadosToolStripMenuItem1.Text = "Empleados"
         '
-        'TabControl1
+        'Tab_Ctr_ClientesYMascotas
         '
-        Me.TabControl1.Controls.Add(Me.Alta_Clientes)
-        Me.TabControl1.Controls.Add(Me.Consulta_Clientes)
-        Me.TabControl1.Controls.Add(Me.Baja_Clientes)
-        Me.TabControl1.Controls.Add(Me.TabPage1)
-        Me.TabControl1.Location = New System.Drawing.Point(12, 56)
-        Me.TabControl1.Name = "TabControl1"
-        Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(776, 382)
-        Me.TabControl1.TabIndex = 5
+        Me.Tab_Ctr_ClientesYMascotas.Controls.Add(Me.Alta_Clientes)
+        Me.Tab_Ctr_ClientesYMascotas.Controls.Add(Me.Consulta_Clientes)
+        Me.Tab_Ctr_ClientesYMascotas.Controls.Add(Me.Baja_Clientes)
+        Me.Tab_Ctr_ClientesYMascotas.Controls.Add(Me.Cambio_Clientes)
+        Me.Tab_Ctr_ClientesYMascotas.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Tab_Ctr_ClientesYMascotas.Location = New System.Drawing.Point(12, 56)
+        Me.Tab_Ctr_ClientesYMascotas.Name = "Tab_Ctr_ClientesYMascotas"
+        Me.Tab_Ctr_ClientesYMascotas.SelectedIndex = 0
+        Me.Tab_Ctr_ClientesYMascotas.Size = New System.Drawing.Size(776, 382)
+        Me.Tab_Ctr_ClientesYMascotas.TabIndex = 5
         '
         'Alta_Clientes
         '
         Me.Alta_Clientes.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Alta_Clientes.Controls.Add(Me.Label26)
-        Me.Alta_Clientes.Controls.Add(Me.Label25)
-        Me.Alta_Clientes.Controls.Add(Me.PictureBox2)
-        Me.Alta_Clientes.Controls.Add(Me.Button2)
-        Me.Alta_Clientes.Controls.Add(Me.Button1)
-        Me.Alta_Clientes.Controls.Add(Me.DataGridView1)
-        Me.Alta_Clientes.Controls.Add(Me.TextBox10)
-        Me.Alta_Clientes.Controls.Add(Me.Label11)
-        Me.Alta_Clientes.Controls.Add(Me.TextBox9)
-        Me.Alta_Clientes.Controls.Add(Me.Label10)
-        Me.Alta_Clientes.Controls.Add(Me.Label9)
-        Me.Alta_Clientes.Controls.Add(Me.TextBox8)
-        Me.Alta_Clientes.Controls.Add(Me.Label8)
-        Me.Alta_Clientes.Controls.Add(Me.TextBox7)
-        Me.Alta_Clientes.Controls.Add(Me.TextBox6)
-        Me.Alta_Clientes.Controls.Add(Me.Label7)
-        Me.Alta_Clientes.Controls.Add(Me.Label6)
-        Me.Alta_Clientes.Controls.Add(Me.TextBox5)
-        Me.Alta_Clientes.Controls.Add(Me.Label5)
-        Me.Alta_Clientes.Controls.Add(Me.TextBox4)
-        Me.Alta_Clientes.Controls.Add(Me.Label4)
-        Me.Alta_Clientes.Controls.Add(Me.TextBox3)
-        Me.Alta_Clientes.Controls.Add(Me.Label3)
-        Me.Alta_Clientes.Controls.Add(Me.TextBox2)
-        Me.Alta_Clientes.Controls.Add(Me.TextBox1)
-        Me.Alta_Clientes.Controls.Add(Me.Label2)
-        Me.Alta_Clientes.Controls.Add(Me.Label1)
-        Me.Alta_Clientes.Location = New System.Drawing.Point(4, 22)
+        Me.Alta_Clientes.Controls.Add(Me.TtBo_Alta_MunicipioDueno)
+        Me.Alta_Clientes.Controls.Add(Me.Lab_Alta_MunicipioDueno)
+        Me.Alta_Clientes.Controls.Add(Me.TtBo_Alta_CpDueno)
+        Me.Alta_Clientes.Controls.Add(Me.Lab_Alta_CpDueno)
+        Me.Alta_Clientes.Controls.Add(Me.TtBo_Alta_TelefDueno)
+        Me.Alta_Clientes.Controls.Add(Me.TtBo_Alta_NumeroDueno)
+        Me.Alta_Clientes.Controls.Add(Me.Lab_Alta_NumeroDueno)
+        Me.Alta_Clientes.Controls.Add(Me.Btn_Alta_AgregarMascotaDueno)
+        Me.Alta_Clientes.Controls.Add(Me.TtBo_Alta_EmailDueno)
+        Me.Alta_Clientes.Controls.Add(Me.Lab_Alta_AmatDueno)
+        Me.Alta_Clientes.Controls.Add(Me.TtBo_Alta_IdDueno)
+        Me.Alta_Clientes.Controls.Add(Me.Lab_Alta_IdDueno)
+        Me.Alta_Clientes.Controls.Add(Me.Btn_Alta_LimpiarDueno)
+        Me.Alta_Clientes.Controls.Add(Me.Btn_Alta_GuardarDueno)
+        Me.Alta_Clientes.Controls.Add(Me.DGV_Alta_ListaDueno)
+        Me.Alta_Clientes.Controls.Add(Me.TtBo_Alta_CalleDueno)
+        Me.Alta_Clientes.Controls.Add(Me.Lab_Alta_EmailDueno)
+        Me.Alta_Clientes.Controls.Add(Me.Lab_Alta_TelefDueno)
+        Me.Alta_Clientes.Controls.Add(Me.TtBo_Alta_AmatDueno)
+        Me.Alta_Clientes.Controls.Add(Me.Lab_Alta_CalleDueno)
+        Me.Alta_Clientes.Controls.Add(Me.TtBo_Alta_ApatDueno)
+        Me.Alta_Clientes.Controls.Add(Me.TtBo_Alta_NombDueno)
+        Me.Alta_Clientes.Controls.Add(Me.Lab_Alta_ApatDueno)
+        Me.Alta_Clientes.Controls.Add(Me.Lab_Alta_NombDueno)
+        Me.Alta_Clientes.Location = New System.Drawing.Point(4, 25)
         Me.Alta_Clientes.Name = "Alta_Clientes"
         Me.Alta_Clientes.Padding = New System.Windows.Forms.Padding(3)
-        Me.Alta_Clientes.Size = New System.Drawing.Size(768, 356)
+        Me.Alta_Clientes.Size = New System.Drawing.Size(768, 353)
         Me.Alta_Clientes.TabIndex = 0
-        Me.Alta_Clientes.Text = "Alta"
+        Me.Alta_Clientes.Text = "Alta de clientes"
         '
-        'Baja_Clientes
+        'TtBo_Alta_MunicipioDueno
         '
-        Me.Baja_Clientes.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Baja_Clientes.Controls.Add(Me.Button5)
-        Me.Baja_Clientes.Controls.Add(Me.DataGridView3)
-        Me.Baja_Clientes.Controls.Add(Me.GroupBox2)
-        Me.Baja_Clientes.Location = New System.Drawing.Point(4, 22)
-        Me.Baja_Clientes.Name = "Baja_Clientes"
-        Me.Baja_Clientes.Padding = New System.Windows.Forms.Padding(3)
-        Me.Baja_Clientes.Size = New System.Drawing.Size(768, 356)
-        Me.Baja_Clientes.TabIndex = 1
-        Me.Baja_Clientes.Text = "Baja"
+        Me.TtBo_Alta_MunicipioDueno.Location = New System.Drawing.Point(455, 77)
+        Me.TtBo_Alta_MunicipioDueno.Name = "TtBo_Alta_MunicipioDueno"
+        Me.TtBo_Alta_MunicipioDueno.Size = New System.Drawing.Size(139, 22)
+        Me.TtBo_Alta_MunicipioDueno.TabIndex = 36
         '
-        'Label1
+        'Lab_Alta_MunicipioDueno
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(22, 36)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(123, 16)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Nombre del dueño:"
+        Me.Lab_Alta_MunicipioDueno.AutoSize = True
+        Me.Lab_Alta_MunicipioDueno.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lab_Alta_MunicipioDueno.Location = New System.Drawing.Point(307, 80)
+        Me.Lab_Alta_MunicipioDueno.Name = "Lab_Alta_MunicipioDueno"
+        Me.Lab_Alta_MunicipioDueno.Size = New System.Drawing.Size(142, 16)
+        Me.Lab_Alta_MunicipioDueno.TabIndex = 35
+        Me.Lab_Alta_MunicipioDueno.Text = "Municipio/Delegación:"
         '
-        'Label2
+        'TtBo_Alta_CpDueno
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(22, 65)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(61, 16)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Apellido:"
+        Me.TtBo_Alta_CpDueno.Location = New System.Drawing.Point(455, 49)
+        Me.TtBo_Alta_CpDueno.Name = "TtBo_Alta_CpDueno"
+        Me.TtBo_Alta_CpDueno.Size = New System.Drawing.Size(139, 22)
+        Me.TtBo_Alta_CpDueno.TabIndex = 34
         '
-        'TextBox1
+        'Lab_Alta_CpDueno
         '
-        Me.TextBox1.Location = New System.Drawing.Point(151, 32)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox1.TabIndex = 2
+        Me.Lab_Alta_CpDueno.AutoSize = True
+        Me.Lab_Alta_CpDueno.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lab_Alta_CpDueno.Location = New System.Drawing.Point(337, 52)
+        Me.Lab_Alta_CpDueno.Name = "Lab_Alta_CpDueno"
+        Me.Lab_Alta_CpDueno.Size = New System.Drawing.Size(29, 16)
+        Me.Lab_Alta_CpDueno.TabIndex = 33
+        Me.Lab_Alta_CpDueno.Text = "CP:"
         '
-        'TextBox2
+        'TtBo_Alta_TelefDueno
         '
-        Me.TextBox2.Location = New System.Drawing.Point(151, 65)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox2.TabIndex = 3
+        Me.TtBo_Alta_TelefDueno.Location = New System.Drawing.Point(455, 105)
+        Me.TtBo_Alta_TelefDueno.Name = "TtBo_Alta_TelefDueno"
+        Me.TtBo_Alta_TelefDueno.Size = New System.Drawing.Size(139, 22)
+        Me.TtBo_Alta_TelefDueno.TabIndex = 32
         '
-        'Label3
+        'TtBo_Alta_NumeroDueno
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(22, 102)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(68, 16)
-        Me.Label3.TabIndex = 4
-        Me.Label3.Text = "Direccion:"
+        Me.TtBo_Alta_NumeroDueno.Location = New System.Drawing.Point(455, 21)
+        Me.TtBo_Alta_NumeroDueno.Name = "TtBo_Alta_NumeroDueno"
+        Me.TtBo_Alta_NumeroDueno.Size = New System.Drawing.Size(139, 22)
+        Me.TtBo_Alta_NumeroDueno.TabIndex = 30
         '
-        'TextBox3
+        'Lab_Alta_NumeroDueno
         '
-        Me.TextBox3.Location = New System.Drawing.Point(151, 99)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox3.TabIndex = 5
+        Me.Lab_Alta_NumeroDueno.AutoSize = True
+        Me.Lab_Alta_NumeroDueno.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lab_Alta_NumeroDueno.Location = New System.Drawing.Point(337, 22)
+        Me.Lab_Alta_NumeroDueno.Name = "Lab_Alta_NumeroDueno"
+        Me.Lab_Alta_NumeroDueno.Size = New System.Drawing.Size(59, 16)
+        Me.Lab_Alta_NumeroDueno.TabIndex = 29
+        Me.Lab_Alta_NumeroDueno.Text = "Numero:"
         '
-        'Label4
+        'Btn_Alta_AgregarMascotaDueno
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(22, 131)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(65, 16)
-        Me.Label4.TabIndex = 6
-        Me.Label4.Text = "Telefono:"
+        Me.Btn_Alta_AgregarMascotaDueno.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Btn_Alta_AgregarMascotaDueno.Location = New System.Drawing.Point(615, 64)
+        Me.Btn_Alta_AgregarMascotaDueno.Name = "Btn_Alta_AgregarMascotaDueno"
+        Me.Btn_Alta_AgregarMascotaDueno.Size = New System.Drawing.Size(92, 48)
+        Me.Btn_Alta_AgregarMascotaDueno.TabIndex = 28
+        Me.Btn_Alta_AgregarMascotaDueno.Text = "Agregar Mascota"
+        Me.Btn_Alta_AgregarMascotaDueno.UseVisualStyleBackColor = False
         '
-        'TextBox4
+        'TtBo_Alta_EmailDueno
         '
-        Me.TextBox4.Location = New System.Drawing.Point(151, 132)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox4.TabIndex = 7
+        Me.TtBo_Alta_EmailDueno.Location = New System.Drawing.Point(455, 133)
+        Me.TtBo_Alta_EmailDueno.Name = "TtBo_Alta_EmailDueno"
+        Me.TtBo_Alta_EmailDueno.Size = New System.Drawing.Size(139, 22)
+        Me.TtBo_Alta_EmailDueno.TabIndex = 27
         '
-        'Label5
+        'Lab_Alta_AmatDueno
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(292, 69)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(148, 16)
-        Me.Label5.TabIndex = 8
-        Me.Label5.Text = "Nombre de la mascota:"
+        Me.Lab_Alta_AmatDueno.AutoSize = True
+        Me.Lab_Alta_AmatDueno.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lab_Alta_AmatDueno.Location = New System.Drawing.Point(25, 123)
+        Me.Lab_Alta_AmatDueno.Name = "Lab_Alta_AmatDueno"
+        Me.Lab_Alta_AmatDueno.Size = New System.Drawing.Size(113, 16)
+        Me.Lab_Alta_AmatDueno.TabIndex = 26
+        Me.Lab_Alta_AmatDueno.Text = "Apellido materno:"
         '
-        'TextBox5
+        'TtBo_Alta_IdDueno
         '
-        Me.TextBox5.Location = New System.Drawing.Point(440, 69)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(116, 20)
-        Me.TextBox5.TabIndex = 9
+        Me.TtBo_Alta_IdDueno.Location = New System.Drawing.Point(151, 23)
+        Me.TtBo_Alta_IdDueno.Name = "TtBo_Alta_IdDueno"
+        Me.TtBo_Alta_IdDueno.Size = New System.Drawing.Size(139, 22)
+        Me.TtBo_Alta_IdDueno.TabIndex = 25
         '
-        'Label6
+        'Lab_Alta_IdDueno
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(292, 102)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(113, 16)
-        Me.Label6.TabIndex = 10
-        Me.Label6.Text = "Tipo de Mascota:"
+        Me.Lab_Alta_IdDueno.AutoSize = True
+        Me.Lab_Alta_IdDueno.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Alta_IdDueno.Location = New System.Drawing.Point(25, 24)
+        Me.Lab_Alta_IdDueno.Name = "Lab_Alta_IdDueno"
+        Me.Lab_Alta_IdDueno.Size = New System.Drawing.Size(69, 17)
+        Me.Lab_Alta_IdDueno.TabIndex = 24
+        Me.Lab_Alta_IdDueno.Text = "Id Dueño:"
         '
-        'Label7
+        'Btn_Alta_LimpiarDueno
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(576, 87)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(43, 16)
-        Me.Label7.TabIndex = 11
-        Me.Label7.Text = "Raza:"
+        Me.Btn_Alta_LimpiarDueno.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Btn_Alta_LimpiarDueno.Location = New System.Drawing.Point(438, 175)
+        Me.Btn_Alta_LimpiarDueno.Name = "Btn_Alta_LimpiarDueno"
+        Me.Btn_Alta_LimpiarDueno.Size = New System.Drawing.Size(75, 25)
+        Me.Btn_Alta_LimpiarDueno.TabIndex = 23
+        Me.Btn_Alta_LimpiarDueno.Text = "Limpiar"
+        Me.Btn_Alta_LimpiarDueno.UseVisualStyleBackColor = False
         '
-        'TextBox6
+        'Btn_Alta_GuardarDueno
         '
-        Me.TextBox6.Location = New System.Drawing.Point(440, 99)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(116, 20)
-        Me.TextBox6.TabIndex = 12
+        Me.Btn_Alta_GuardarDueno.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Btn_Alta_GuardarDueno.Location = New System.Drawing.Point(519, 175)
+        Me.Btn_Alta_GuardarDueno.Name = "Btn_Alta_GuardarDueno"
+        Me.Btn_Alta_GuardarDueno.Size = New System.Drawing.Size(75, 25)
+        Me.Btn_Alta_GuardarDueno.TabIndex = 22
+        Me.Btn_Alta_GuardarDueno.Text = "Guardar"
+        Me.Btn_Alta_GuardarDueno.UseVisualStyleBackColor = False
         '
-        'TextBox7
+        'DGV_Alta_ListaDueno
         '
-        Me.TextBox7.Location = New System.Drawing.Point(650, 86)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(116, 20)
-        Me.TextBox7.TabIndex = 13
+        Me.DGV_Alta_ListaDueno.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGV_Alta_ListaDueno.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Id_Cliente, Me.Nombre_Cliente, Me.Apellido_paterno, Me.Apellido_materno, Me.Direccion, Me.Telefono, Me.Correo_Electronico, Me.Nombre_Mascota})
+        Me.DGV_Alta_ListaDueno.Location = New System.Drawing.Point(14, 206)
+        Me.DGV_Alta_ListaDueno.Name = "DGV_Alta_ListaDueno"
+        Me.DGV_Alta_ListaDueno.Size = New System.Drawing.Size(748, 141)
+        Me.DGV_Alta_ListaDueno.TabIndex = 21
         '
-        'Label8
+        'Id_Cliente
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(292, 135)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(132, 16)
-        Me.Label8.TabIndex = 14
-        Me.Label8.Text = "Edad de la Mascota:"
-        '
-        'TextBox8
-        '
-        Me.TextBox8.Location = New System.Drawing.Point(440, 135)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(116, 20)
-        Me.TextBox8.TabIndex = 15
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(576, 38)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(59, 16)
-        Me.Label9.TabIndex = 16
-        Me.Label9.Text = "Color de"
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(576, 54)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(77, 16)
-        Me.Label10.TabIndex = 17
-        Me.Label10.Text = "la Mascota:"
-        '
-        'TextBox9
-        '
-        Me.TextBox9.Location = New System.Drawing.Point(650, 50)
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(115, 20)
-        Me.TextBox9.TabIndex = 18
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(292, 38)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(122, 16)
-        Me.Label11.TabIndex = 19
-        Me.Label11.Text = "Correo Electronico:"
-        '
-        'TextBox10
-        '
-        Me.TextBox10.Location = New System.Drawing.Point(440, 38)
-        Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(116, 20)
-        Me.TextBox10.TabIndex = 20
-        '
-        'DataGridView1
-        '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Nombre_Cliente, Me.Apellido, Me.Direccion, Me.Telefono, Me.Correo_Electronico, Me.Nombre_Mascota, Me.Tipo_de_Mascota, Me.Edad_de_la_Mascota, Me.Color_de_la_Mascota, Me.Raza, Me.Foto_Mascota})
-        Me.DataGridView1.Location = New System.Drawing.Point(6, 198)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(748, 141)
-        Me.DataGridView1.TabIndex = 21
+        Me.Id_Cliente.HeaderText = "Id Cliente"
+        Me.Id_Cliente.Name = "Id_Cliente"
         '
         'Nombre_Cliente
         '
         Me.Nombre_Cliente.HeaderText = "Nombre Cliente"
         Me.Nombre_Cliente.Name = "Nombre_Cliente"
         '
-        'Apellido
+        'Apellido_paterno
         '
-        Me.Apellido.HeaderText = "Apellido"
-        Me.Apellido.Name = "Apellido"
+        Me.Apellido_paterno.HeaderText = "Apellido paterno"
+        Me.Apellido_paterno.Name = "Apellido_paterno"
+        '
+        'Apellido_materno
+        '
+        Me.Apellido_materno.HeaderText = "Apellido materno"
+        Me.Apellido_materno.Name = "Apellido_materno"
         '
         'Direccion
         '
@@ -497,590 +430,661 @@ Partial Class Form_ClientesYMascotas
         Me.Nombre_Mascota.HeaderText = "Nombre Mascota"
         Me.Nombre_Mascota.Name = "Nombre_Mascota"
         '
-        'Tipo_de_Mascota
+        'TtBo_Alta_CalleDueno
         '
-        Me.Tipo_de_Mascota.HeaderText = "Tipo de Mascota"
-        Me.Tipo_de_Mascota.Name = "Tipo_de_Mascota"
+        Me.TtBo_Alta_CalleDueno.Location = New System.Drawing.Point(151, 157)
+        Me.TtBo_Alta_CalleDueno.Name = "TtBo_Alta_CalleDueno"
+        Me.TtBo_Alta_CalleDueno.Size = New System.Drawing.Size(139, 22)
+        Me.TtBo_Alta_CalleDueno.TabIndex = 20
         '
-        'Edad_de_la_Mascota
+        'Lab_Alta_EmailDueno
         '
-        Me.Edad_de_la_Mascota.HeaderText = "Edad de la Mascota"
-        Me.Edad_de_la_Mascota.Name = "Edad_de_la_Mascota"
+        Me.Lab_Alta_EmailDueno.AutoSize = True
+        Me.Lab_Alta_EmailDueno.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lab_Alta_EmailDueno.Location = New System.Drawing.Point(307, 136)
+        Me.Lab_Alta_EmailDueno.Name = "Lab_Alta_EmailDueno"
+        Me.Lab_Alta_EmailDueno.Size = New System.Drawing.Size(122, 16)
+        Me.Lab_Alta_EmailDueno.TabIndex = 19
+        Me.Lab_Alta_EmailDueno.Text = "Correo Electronico:"
         '
-        'Color_de_la_Mascota
+        'Lab_Alta_TelefDueno
         '
-        Me.Color_de_la_Mascota.HeaderText = "Color de la Mascota"
-        Me.Color_de_la_Mascota.Name = "Color_de_la_Mascota"
+        Me.Lab_Alta_TelefDueno.AutoSize = True
+        Me.Lab_Alta_TelefDueno.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lab_Alta_TelefDueno.Location = New System.Drawing.Point(337, 111)
+        Me.Lab_Alta_TelefDueno.Name = "Lab_Alta_TelefDueno"
+        Me.Lab_Alta_TelefDueno.Size = New System.Drawing.Size(65, 16)
+        Me.Lab_Alta_TelefDueno.TabIndex = 6
+        Me.Lab_Alta_TelefDueno.Text = "Telefono:"
         '
-        'Raza
+        'TtBo_Alta_AmatDueno
         '
-        Me.Raza.HeaderText = "Raza"
-        Me.Raza.Name = "Raza"
+        Me.TtBo_Alta_AmatDueno.Location = New System.Drawing.Point(151, 120)
+        Me.TtBo_Alta_AmatDueno.Name = "TtBo_Alta_AmatDueno"
+        Me.TtBo_Alta_AmatDueno.Size = New System.Drawing.Size(139, 22)
+        Me.TtBo_Alta_AmatDueno.TabIndex = 5
         '
-        'Button1
+        'Lab_Alta_CalleDueno
         '
-        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Button1.Location = New System.Drawing.Point(295, 169)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 22
-        Me.Button1.Text = "Guardar"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.Lab_Alta_CalleDueno.AutoSize = True
+        Me.Lab_Alta_CalleDueno.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lab_Alta_CalleDueno.Location = New System.Drawing.Point(33, 158)
+        Me.Lab_Alta_CalleDueno.Name = "Lab_Alta_CalleDueno"
+        Me.Lab_Alta_CalleDueno.Size = New System.Drawing.Size(42, 16)
+        Me.Lab_Alta_CalleDueno.TabIndex = 4
+        Me.Lab_Alta_CalleDueno.Text = "Calle:"
         '
-        'Button2
+        'TtBo_Alta_ApatDueno
         '
-        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Button2.Location = New System.Drawing.Point(395, 169)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 23
-        Me.Button2.Text = "Limpiar"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.TtBo_Alta_ApatDueno.Location = New System.Drawing.Point(151, 85)
+        Me.TtBo_Alta_ApatDueno.Name = "TtBo_Alta_ApatDueno"
+        Me.TtBo_Alta_ApatDueno.Size = New System.Drawing.Size(139, 22)
+        Me.TtBo_Alta_ApatDueno.TabIndex = 3
+        '
+        'TtBo_Alta_NombDueno
+        '
+        Me.TtBo_Alta_NombDueno.Location = New System.Drawing.Point(151, 54)
+        Me.TtBo_Alta_NombDueno.Name = "TtBo_Alta_NombDueno"
+        Me.TtBo_Alta_NombDueno.Size = New System.Drawing.Size(139, 22)
+        Me.TtBo_Alta_NombDueno.TabIndex = 2
+        '
+        'Lab_Alta_ApatDueno
+        '
+        Me.Lab_Alta_ApatDueno.AutoSize = True
+        Me.Lab_Alta_ApatDueno.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lab_Alta_ApatDueno.Location = New System.Drawing.Point(22, 91)
+        Me.Lab_Alta_ApatDueno.Name = "Lab_Alta_ApatDueno"
+        Me.Lab_Alta_ApatDueno.Size = New System.Drawing.Size(110, 16)
+        Me.Lab_Alta_ApatDueno.TabIndex = 1
+        Me.Lab_Alta_ApatDueno.Text = "Apellido paterno:"
+        '
+        'Lab_Alta_NombDueno
+        '
+        Me.Lab_Alta_NombDueno.AutoSize = True
+        Me.Lab_Alta_NombDueno.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lab_Alta_NombDueno.Location = New System.Drawing.Point(22, 58)
+        Me.Lab_Alta_NombDueno.Name = "Lab_Alta_NombDueno"
+        Me.Lab_Alta_NombDueno.Size = New System.Drawing.Size(123, 16)
+        Me.Lab_Alta_NombDueno.TabIndex = 0
+        Me.Lab_Alta_NombDueno.Text = "Nombre del dueño:"
         '
         'Consulta_Clientes
         '
         Me.Consulta_Clientes.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Consulta_Clientes.Controls.Add(Me.DataGridView2)
-        Me.Consulta_Clientes.Controls.Add(Me.GroupBox1)
-        Me.Consulta_Clientes.Location = New System.Drawing.Point(4, 22)
+        Me.Consulta_Clientes.Controls.Add(Me.DGV_Cons_ListDueno)
+        Me.Consulta_Clientes.Controls.Add(Me.GoBo_Cons_DatosBusqClienteDueno)
+        Me.Consulta_Clientes.Location = New System.Drawing.Point(4, 25)
         Me.Consulta_Clientes.Name = "Consulta_Clientes"
-        Me.Consulta_Clientes.Size = New System.Drawing.Size(768, 356)
+        Me.Consulta_Clientes.Size = New System.Drawing.Size(768, 353)
         Me.Consulta_Clientes.TabIndex = 2
         Me.Consulta_Clientes.Text = "Consulta de Clientes"
         '
-        'GroupBox1
+        'DGV_Cons_ListDueno
         '
-        Me.GroupBox1.Controls.Add(Me.Button3)
-        Me.GroupBox1.Controls.Add(Me.TextBox11)
-        Me.GroupBox1.Controls.Add(Me.Label12)
-        Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(195, 41)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(335, 108)
-        Me.GroupBox1.TabIndex = 0
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Datos de Busqueda de Clientes Y Mascotas"
+        Me.DGV_Cons_ListDueno.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGV_Cons_ListDueno.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn11, Me.DataGridViewTextBoxColumn12, Me.DataGridViewTextBoxColumn13, Me.DataGridViewTextBoxColumn14, Me.DataGridViewTextBoxColumn15, Me.DataGridViewTextBoxColumn16, Me.DataGridViewTextBoxColumn17, Me.DataGridViewTextBoxColumn18})
+        Me.DGV_Cons_ListDueno.Location = New System.Drawing.Point(3, 178)
+        Me.DGV_Cons_ListDueno.Name = "DGV_Cons_ListDueno"
+        Me.DGV_Cons_ListDueno.Size = New System.Drawing.Size(748, 141)
+        Me.DGV_Cons_ListDueno.TabIndex = 22
         '
-        'Label12
+        'DataGridViewTextBoxColumn11
         '
-        Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(21, 39)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(62, 17)
-        Me.Label12.TabIndex = 0
-        Me.Label12.Text = "Nombre:"
+        Me.DataGridViewTextBoxColumn11.HeaderText = "Id Cliente"
+        Me.DataGridViewTextBoxColumn11.Name = "DataGridViewTextBoxColumn11"
         '
-        'TextBox11
+        'DataGridViewTextBoxColumn12
         '
-        Me.TextBox11.Location = New System.Drawing.Point(90, 39)
-        Me.TextBox11.Name = "TextBox11"
-        Me.TextBox11.Size = New System.Drawing.Size(130, 22)
-        Me.TextBox11.TabIndex = 1
+        Me.DataGridViewTextBoxColumn12.HeaderText = "Nombre Cliente"
+        Me.DataGridViewTextBoxColumn12.Name = "DataGridViewTextBoxColumn12"
         '
-        'Button3
+        'DataGridViewTextBoxColumn13
         '
-        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Button3.Location = New System.Drawing.Point(85, 67)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(152, 23)
-        Me.Button3.TabIndex = 2
-        Me.Button3.Text = "Buscar"
-        Me.Button3.UseVisualStyleBackColor = False
+        Me.DataGridViewTextBoxColumn13.HeaderText = "Apellido paterno"
+        Me.DataGridViewTextBoxColumn13.Name = "DataGridViewTextBoxColumn13"
         '
-        'DataGridView2
+        'DataGridViewTextBoxColumn14
         '
-        Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView2.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Nombre_cliente1, Me.Apellido1, Me.Direccion1, Me.Telefono1, Me.Correo, Me.NombreMascota, Me.TipoMascota, Me.EdadMascota, Me.ColordeMascota, Me.Raza1})
-        Me.DataGridView2.Location = New System.Drawing.Point(16, 155)
-        Me.DataGridView2.Name = "DataGridView2"
-        Me.DataGridView2.Size = New System.Drawing.Size(735, 150)
-        Me.DataGridView2.TabIndex = 1
+        Me.DataGridViewTextBoxColumn14.HeaderText = "Apellido materno"
+        Me.DataGridViewTextBoxColumn14.Name = "DataGridViewTextBoxColumn14"
         '
-        'Nombre_cliente1
+        'DataGridViewTextBoxColumn15
         '
-        Me.Nombre_cliente1.HeaderText = "Nombre Cliente"
-        Me.Nombre_cliente1.Name = "Nombre_cliente1"
+        Me.DataGridViewTextBoxColumn15.HeaderText = "Direccion"
+        Me.DataGridViewTextBoxColumn15.Name = "DataGridViewTextBoxColumn15"
         '
-        'Apellido1
+        'DataGridViewTextBoxColumn16
         '
-        Me.Apellido1.HeaderText = "Apellido"
-        Me.Apellido1.Name = "Apellido1"
+        Me.DataGridViewTextBoxColumn16.HeaderText = "Telefono"
+        Me.DataGridViewTextBoxColumn16.Name = "DataGridViewTextBoxColumn16"
         '
-        'Direccion1
+        'DataGridViewTextBoxColumn17
         '
-        Me.Direccion1.HeaderText = "Direccion"
-        Me.Direccion1.Name = "Direccion1"
+        Me.DataGridViewTextBoxColumn17.HeaderText = "Correo Electronico"
+        Me.DataGridViewTextBoxColumn17.Name = "DataGridViewTextBoxColumn17"
         '
-        'Telefono1
+        'DataGridViewTextBoxColumn18
         '
-        Me.Telefono1.HeaderText = "Telefono"
-        Me.Telefono1.Name = "Telefono1"
+        Me.DataGridViewTextBoxColumn18.HeaderText = "Nombre Mascota"
+        Me.DataGridViewTextBoxColumn18.Name = "DataGridViewTextBoxColumn18"
         '
-        'Correo
+        'GoBo_Cons_DatosBusqClienteDueno
         '
-        Me.Correo.HeaderText = "Correo Electronico"
-        Me.Correo.Name = "Correo"
+        Me.GoBo_Cons_DatosBusqClienteDueno.Controls.Add(Me.Btn_Const_BuscarTodoDueno)
+        Me.GoBo_Cons_DatosBusqClienteDueno.Controls.Add(Me.Btn_Cons_BuscarDueno)
+        Me.GoBo_Cons_DatosBusqClienteDueno.Controls.Add(Me.TtBo_Cons_NombDueno)
+        Me.GoBo_Cons_DatosBusqClienteDueno.Controls.Add(Me.Lab_Cons_NombDueno)
+        Me.GoBo_Cons_DatosBusqClienteDueno.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.GoBo_Cons_DatosBusqClienteDueno.Location = New System.Drawing.Point(195, 41)
+        Me.GoBo_Cons_DatosBusqClienteDueno.Name = "GoBo_Cons_DatosBusqClienteDueno"
+        Me.GoBo_Cons_DatosBusqClienteDueno.Size = New System.Drawing.Size(335, 108)
+        Me.GoBo_Cons_DatosBusqClienteDueno.TabIndex = 0
+        Me.GoBo_Cons_DatosBusqClienteDueno.TabStop = False
+        Me.GoBo_Cons_DatosBusqClienteDueno.Text = "Datos de Busqueda de Clientes "
         '
-        'NombreMascota
+        'Btn_Const_BuscarTodoDueno
         '
-        Me.NombreMascota.HeaderText = "Nombre Mascota"
-        Me.NombreMascota.Name = "NombreMascota"
+        Me.Btn_Const_BuscarTodoDueno.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Btn_Const_BuscarTodoDueno.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Btn_Const_BuscarTodoDueno.Location = New System.Drawing.Point(59, 67)
+        Me.Btn_Const_BuscarTodoDueno.Name = "Btn_Const_BuscarTodoDueno"
+        Me.Btn_Const_BuscarTodoDueno.Size = New System.Drawing.Size(132, 25)
+        Me.Btn_Const_BuscarTodoDueno.TabIndex = 3
+        Me.Btn_Const_BuscarTodoDueno.Text = "Buscar todo"
+        Me.Btn_Const_BuscarTodoDueno.UseVisualStyleBackColor = False
         '
-        'TipoMascota
+        'Btn_Cons_BuscarDueno
         '
-        Me.TipoMascota.HeaderText = "Tipo de Mascota"
-        Me.TipoMascota.Name = "TipoMascota"
+        Me.Btn_Cons_BuscarDueno.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Btn_Cons_BuscarDueno.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Btn_Cons_BuscarDueno.Location = New System.Drawing.Point(197, 67)
+        Me.Btn_Cons_BuscarDueno.Name = "Btn_Cons_BuscarDueno"
+        Me.Btn_Cons_BuscarDueno.Size = New System.Drawing.Size(132, 25)
+        Me.Btn_Cons_BuscarDueno.TabIndex = 2
+        Me.Btn_Cons_BuscarDueno.Text = "Buscar"
+        Me.Btn_Cons_BuscarDueno.UseVisualStyleBackColor = False
         '
-        'EdadMascota
+        'TtBo_Cons_NombDueno
         '
-        Me.EdadMascota.HeaderText = "Edad de la Mascota"
-        Me.EdadMascota.Name = "EdadMascota"
+        Me.TtBo_Cons_NombDueno.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.TtBo_Cons_NombDueno.Location = New System.Drawing.Point(157, 33)
+        Me.TtBo_Cons_NombDueno.Name = "TtBo_Cons_NombDueno"
+        Me.TtBo_Cons_NombDueno.Size = New System.Drawing.Size(157, 23)
+        Me.TtBo_Cons_NombDueno.TabIndex = 1
         '
-        'ColordeMascota
+        'Lab_Cons_NombDueno
         '
-        Me.ColordeMascota.HeaderText = "Color de la Mascota"
-        Me.ColordeMascota.Name = "ColordeMascota"
+        Me.Lab_Cons_NombDueno.AutoSize = True
+        Me.Lab_Cons_NombDueno.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lab_Cons_NombDueno.Location = New System.Drawing.Point(21, 39)
+        Me.Lab_Cons_NombDueno.Name = "Lab_Cons_NombDueno"
+        Me.Lab_Cons_NombDueno.Size = New System.Drawing.Size(130, 17)
+        Me.Lab_Cons_NombDueno.TabIndex = 0
+        Me.Lab_Cons_NombDueno.Text = "Nombre del cliente:"
         '
-        'Raza1
+        'Baja_Clientes
         '
-        Me.Raza1.HeaderText = "Raza"
-        Me.Raza1.Name = "Raza1"
+        Me.Baja_Clientes.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Baja_Clientes.Controls.Add(Me.DGV_Baja_ListDueno)
+        Me.Baja_Clientes.Controls.Add(Me.Button5)
+        Me.Baja_Clientes.Controls.Add(Me.GoBo_Baja_DatosBusqClienteDueno)
+        Me.Baja_Clientes.Location = New System.Drawing.Point(4, 25)
+        Me.Baja_Clientes.Name = "Baja_Clientes"
+        Me.Baja_Clientes.Padding = New System.Windows.Forms.Padding(3)
+        Me.Baja_Clientes.Size = New System.Drawing.Size(768, 353)
+        Me.Baja_Clientes.TabIndex = 1
+        Me.Baja_Clientes.Text = "Baja de clientes"
         '
-        'Label13
+        'DGV_Baja_ListDueno
         '
-        Me.Label13.AutoSize = True
-        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(4, 37)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(124, 16)
-        Me.Label13.TabIndex = 0
-        Me.Label13.Text = "Nombre del cliente:"
-        '
-        'TextBox12
-        '
-        Me.TextBox12.Location = New System.Drawing.Point(134, 35)
-        Me.TextBox12.Name = "TextBox12"
-        Me.TextBox12.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox12.TabIndex = 4
-        '
-        'GroupBox2
-        '
-        Me.GroupBox2.Controls.Add(Me.Button4)
-        Me.GroupBox2.Controls.Add(Me.TextBox12)
-        Me.GroupBox2.Controls.Add(Me.Label13)
-        Me.GroupBox2.Location = New System.Drawing.Point(207, 31)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(295, 114)
-        Me.GroupBox2.TabIndex = 5
-        Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "GroupBox2"
-        '
-        'Button4
-        '
-        Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.Location = New System.Drawing.Point(82, 79)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(113, 23)
-        Me.Button4.TabIndex = 5
-        Me.Button4.Text = "Buscar"
-        Me.Button4.UseVisualStyleBackColor = False
-        '
-        'DataGridView3
-        '
-        Me.DataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView3.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn9, Me.DataGridViewTextBoxColumn10})
-        Me.DataGridView3.Location = New System.Drawing.Point(6, 151)
-        Me.DataGridView3.Name = "DataGridView3"
-        Me.DataGridView3.Size = New System.Drawing.Size(748, 141)
-        Me.DataGridView3.TabIndex = 22
+        Me.DGV_Baja_ListDueno.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGV_Baja_ListDueno.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8})
+        Me.DGV_Baja_ListDueno.Location = New System.Drawing.Point(6, 151)
+        Me.DGV_Baja_ListDueno.Name = "DGV_Baja_ListDueno"
+        Me.DGV_Baja_ListDueno.Size = New System.Drawing.Size(748, 141)
+        Me.DGV_Baja_ListDueno.TabIndex = 24
         '
         'DataGridViewTextBoxColumn1
         '
-        Me.DataGridViewTextBoxColumn1.HeaderText = "Nombre Cliente"
+        Me.DataGridViewTextBoxColumn1.HeaderText = "Id Cliente"
         Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
         '
         'DataGridViewTextBoxColumn2
         '
-        Me.DataGridViewTextBoxColumn2.HeaderText = "Apellido"
+        Me.DataGridViewTextBoxColumn2.HeaderText = "Nombre Cliente"
         Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
         '
         'DataGridViewTextBoxColumn3
         '
-        Me.DataGridViewTextBoxColumn3.HeaderText = "Direccion"
+        Me.DataGridViewTextBoxColumn3.HeaderText = "Apellido paterno"
         Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
         '
         'DataGridViewTextBoxColumn4
         '
-        Me.DataGridViewTextBoxColumn4.HeaderText = "Telefono"
+        Me.DataGridViewTextBoxColumn4.HeaderText = "Apellido materno"
         Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
         '
         'DataGridViewTextBoxColumn5
         '
-        Me.DataGridViewTextBoxColumn5.HeaderText = "Correo Electronico"
+        Me.DataGridViewTextBoxColumn5.HeaderText = "Direccion"
         Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
         '
         'DataGridViewTextBoxColumn6
         '
-        Me.DataGridViewTextBoxColumn6.HeaderText = "Nombre Mascota"
+        Me.DataGridViewTextBoxColumn6.HeaderText = "Telefono"
         Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
         '
         'DataGridViewTextBoxColumn7
         '
-        Me.DataGridViewTextBoxColumn7.HeaderText = "Tipo de Mascota"
+        Me.DataGridViewTextBoxColumn7.HeaderText = "Correo Electronico"
         Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
         '
         'DataGridViewTextBoxColumn8
         '
-        Me.DataGridViewTextBoxColumn8.HeaderText = "Edad de la Mascota"
+        Me.DataGridViewTextBoxColumn8.HeaderText = "Nombre Mascota"
         Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
-        '
-        'DataGridViewTextBoxColumn9
-        '
-        Me.DataGridViewTextBoxColumn9.HeaderText = "Color de la Mascota"
-        Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
-        '
-        'DataGridViewTextBoxColumn10
-        '
-        Me.DataGridViewTextBoxColumn10.HeaderText = "Raza"
-        Me.DataGridViewTextBoxColumn10.Name = "DataGridViewTextBoxColumn10"
         '
         'Button5
         '
         Me.Button5.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.Location = New System.Drawing.Point(327, 309)
+        Me.Button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Button5.Location = New System.Drawing.Point(357, 309)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(100, 23)
+        Me.Button5.Size = New System.Drawing.Size(131, 25)
         Me.Button5.TabIndex = 23
         Me.Button5.Text = "Eliminar"
         Me.Button5.UseVisualStyleBackColor = False
         '
-        'TabPage1
+        'GoBo_Baja_DatosBusqClienteDueno
         '
-        Me.TabPage1.Controls.Add(Me.Button7)
-        Me.TabPage1.Controls.Add(Me.Button6)
-        Me.TabPage1.Controls.Add(Me.GroupBox4)
-        Me.TabPage1.Controls.Add(Me.GroupBox3)
-        Me.TabPage1.Location = New System.Drawing.Point(4, 22)
-        Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Size = New System.Drawing.Size(768, 356)
-        Me.TabPage1.TabIndex = 3
-        Me.TabPage1.Text = "Cambios"
-        Me.TabPage1.UseVisualStyleBackColor = True
+        Me.GoBo_Baja_DatosBusqClienteDueno.Controls.Add(Me.Btn_Baja_BuscarDueno)
+        Me.GoBo_Baja_DatosBusqClienteDueno.Controls.Add(Me.TtBo_Baja_NombDueno)
+        Me.GoBo_Baja_DatosBusqClienteDueno.Controls.Add(Me.Lab_Baja_NombDueno)
+        Me.GoBo_Baja_DatosBusqClienteDueno.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.GoBo_Baja_DatosBusqClienteDueno.Location = New System.Drawing.Point(207, 31)
+        Me.GoBo_Baja_DatosBusqClienteDueno.Name = "GoBo_Baja_DatosBusqClienteDueno"
+        Me.GoBo_Baja_DatosBusqClienteDueno.Size = New System.Drawing.Size(320, 114)
+        Me.GoBo_Baja_DatosBusqClienteDueno.TabIndex = 5
+        Me.GoBo_Baja_DatosBusqClienteDueno.TabStop = False
+        Me.GoBo_Baja_DatosBusqClienteDueno.Text = "Datos de busqueda del cliente"
         '
-        'GroupBox3
+        'Btn_Baja_BuscarDueno
         '
-        Me.GroupBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.GroupBox3.Controls.Add(Me.TextBox18)
-        Me.GroupBox3.Controls.Add(Me.TextBox17)
-        Me.GroupBox3.Controls.Add(Me.TextBox16)
-        Me.GroupBox3.Controls.Add(Me.TextBox15)
-        Me.GroupBox3.Controls.Add(Me.TextBox14)
-        Me.GroupBox3.Controls.Add(Me.Label18)
-        Me.GroupBox3.Controls.Add(Me.Label17)
-        Me.GroupBox3.Controls.Add(Me.Label16)
-        Me.GroupBox3.Controls.Add(Me.Label15)
-        Me.GroupBox3.Controls.Add(Me.Label14)
-        Me.GroupBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox3.Location = New System.Drawing.Point(3, 16)
-        Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(346, 194)
-        Me.GroupBox3.TabIndex = 0
-        Me.GroupBox3.TabStop = False
-        Me.GroupBox3.Text = "Datos Generales del Dueño"
+        Me.Btn_Baja_BuscarDueno.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Btn_Baja_BuscarDueno.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Btn_Baja_BuscarDueno.Location = New System.Drawing.Point(150, 63)
+        Me.Btn_Baja_BuscarDueno.Name = "Btn_Baja_BuscarDueno"
+        Me.Btn_Baja_BuscarDueno.Size = New System.Drawing.Size(131, 25)
+        Me.Btn_Baja_BuscarDueno.TabIndex = 5
+        Me.Btn_Baja_BuscarDueno.Text = "Buscar"
+        Me.Btn_Baja_BuscarDueno.UseVisualStyleBackColor = False
         '
-        'Label14
+        'TtBo_Baja_NombDueno
         '
-        Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(7, 36)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(126, 16)
-        Me.Label14.TabIndex = 0
-        Me.Label14.Text = "Nombre del Cliente:"
+        Me.TtBo_Baja_NombDueno.Location = New System.Drawing.Point(140, 34)
+        Me.TtBo_Baja_NombDueno.Name = "TtBo_Baja_NombDueno"
+        Me.TtBo_Baja_NombDueno.Size = New System.Drawing.Size(150, 23)
+        Me.TtBo_Baja_NombDueno.TabIndex = 4
         '
-        'Label15
+        'Lab_Baja_NombDueno
         '
-        Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(7, 67)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(61, 16)
-        Me.Label15.TabIndex = 1
-        Me.Label15.Text = "Apellido:"
+        Me.Lab_Baja_NombDueno.AutoSize = True
+        Me.Lab_Baja_NombDueno.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Baja_NombDueno.Location = New System.Drawing.Point(4, 37)
+        Me.Lab_Baja_NombDueno.Name = "Lab_Baja_NombDueno"
+        Me.Lab_Baja_NombDueno.Size = New System.Drawing.Size(130, 17)
+        Me.Lab_Baja_NombDueno.TabIndex = 0
+        Me.Lab_Baja_NombDueno.Text = "Nombre del cliente:"
         '
-        'Label16
+        'Cambio_Clientes
         '
-        Me.Label16.AutoSize = True
-        Me.Label16.Location = New System.Drawing.Point(7, 92)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(68, 16)
-        Me.Label16.TabIndex = 2
-        Me.Label16.Text = "Direccion:"
+        Me.Cambio_Clientes.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Cambio_Clientes.Controls.Add(Me.Btn_Camb_LimpiarDueno)
+        Me.Cambio_Clientes.Controls.Add(Me.Btn_Camb_ActualizarDueno)
+        Me.Cambio_Clientes.Controls.Add(Me.GoBo_Camb_DatosGenerMascoDueno)
+        Me.Cambio_Clientes.Controls.Add(Me.GoBo_Camb_DatosGenerDueno)
+        Me.Cambio_Clientes.Location = New System.Drawing.Point(4, 25)
+        Me.Cambio_Clientes.Name = "Cambio_Clientes"
+        Me.Cambio_Clientes.Size = New System.Drawing.Size(768, 353)
+        Me.Cambio_Clientes.TabIndex = 3
+        Me.Cambio_Clientes.Text = "Cambio de clientes"
         '
-        'Label17
+        'Btn_Camb_LimpiarDueno
         '
-        Me.Label17.AutoSize = True
-        Me.Label17.Location = New System.Drawing.Point(7, 124)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(65, 16)
-        Me.Label17.TabIndex = 3
-        Me.Label17.Text = "Telefono:"
+        Me.Btn_Camb_LimpiarDueno.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Btn_Camb_LimpiarDueno.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_Camb_LimpiarDueno.Location = New System.Drawing.Point(388, 303)
+        Me.Btn_Camb_LimpiarDueno.Name = "Btn_Camb_LimpiarDueno"
+        Me.Btn_Camb_LimpiarDueno.Size = New System.Drawing.Size(80, 25)
+        Me.Btn_Camb_LimpiarDueno.TabIndex = 4
+        Me.Btn_Camb_LimpiarDueno.Text = "Limpiar"
+        Me.Btn_Camb_LimpiarDueno.UseVisualStyleBackColor = False
         '
-        'Label18
+        'Btn_Camb_ActualizarDueno
         '
-        Me.Label18.AutoSize = True
-        Me.Label18.Location = New System.Drawing.Point(6, 153)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(122, 16)
-        Me.Label18.TabIndex = 4
-        Me.Label18.Text = "Correo Electronico:"
+        Me.Btn_Camb_ActualizarDueno.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Btn_Camb_ActualizarDueno.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Btn_Camb_ActualizarDueno.Location = New System.Drawing.Point(251, 303)
+        Me.Btn_Camb_ActualizarDueno.Name = "Btn_Camb_ActualizarDueno"
+        Me.Btn_Camb_ActualizarDueno.Size = New System.Drawing.Size(131, 25)
+        Me.Btn_Camb_ActualizarDueno.TabIndex = 3
+        Me.Btn_Camb_ActualizarDueno.Text = "Actualizar"
+        Me.Btn_Camb_ActualizarDueno.UseVisualStyleBackColor = False
         '
-        'Label19
+        'GoBo_Camb_DatosGenerMascoDueno
         '
-        Me.Label19.AutoSize = True
-        Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label19.Location = New System.Drawing.Point(18, 36)
-        Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(148, 16)
-        Me.Label19.TabIndex = 1
-        Me.Label19.Text = "Nombre de la Mascota:"
+        Me.GoBo_Camb_DatosGenerMascoDueno.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.GoBo_Camb_DatosGenerMascoDueno.Controls.Add(Me.Btn_Camb_CambiarImgMasDueno)
+        Me.GoBo_Camb_DatosGenerMascoDueno.Controls.Add(Me.PiBo_Camb_ImgMasDueno)
+        Me.GoBo_Camb_DatosGenerMascoDueno.Controls.Add(Me.Lab_Camb_ImgMasDueno)
+        Me.GoBo_Camb_DatosGenerMascoDueno.Controls.Add(Me.Lab_Camb_RazaMasDueno)
+        Me.GoBo_Camb_DatosGenerMascoDueno.Controls.Add(Me.TtBo_Camb_RazaMasDueno)
+        Me.GoBo_Camb_DatosGenerMascoDueno.Controls.Add(Me.TtBo_Camb_ColorMasDueno)
+        Me.GoBo_Camb_DatosGenerMascoDueno.Controls.Add(Me.Lab_Camb_ColorMasDueno)
+        Me.GoBo_Camb_DatosGenerMascoDueno.Controls.Add(Me.TtBo_Camb_EdadMasDueno)
+        Me.GoBo_Camb_DatosGenerMascoDueno.Controls.Add(Me.TtBo_Camb_TipoMasDueno)
+        Me.GoBo_Camb_DatosGenerMascoDueno.Controls.Add(Me.TtBo_Camb_NombMasDueno)
+        Me.GoBo_Camb_DatosGenerMascoDueno.Controls.Add(Me.Lab_Camb_EdadMasDueno)
+        Me.GoBo_Camb_DatosGenerMascoDueno.Controls.Add(Me.Lab_Camb_TipoMasDueno)
+        Me.GoBo_Camb_DatosGenerMascoDueno.Controls.Add(Me.Lab_Camb_NombMasDueno)
+        Me.GoBo_Camb_DatosGenerMascoDueno.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.GoBo_Camb_DatosGenerMascoDueno.Location = New System.Drawing.Point(372, 16)
+        Me.GoBo_Camb_DatosGenerMascoDueno.Name = "GoBo_Camb_DatosGenerMascoDueno"
+        Me.GoBo_Camb_DatosGenerMascoDueno.Size = New System.Drawing.Size(393, 281)
+        Me.GoBo_Camb_DatosGenerMascoDueno.TabIndex = 2
+        Me.GoBo_Camb_DatosGenerMascoDueno.TabStop = False
+        Me.GoBo_Camb_DatosGenerMascoDueno.Text = "Datos Generales de la Mascota"
         '
-        'GroupBox4
+        'Btn_Camb_CambiarImgMasDueno
         '
-        Me.GroupBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.GroupBox4.Controls.Add(Me.PictureBox1)
-        Me.GroupBox4.Controls.Add(Me.Label24)
-        Me.GroupBox4.Controls.Add(Me.Label23)
-        Me.GroupBox4.Controls.Add(Me.TextBox22)
-        Me.GroupBox4.Controls.Add(Me.TextBox21)
-        Me.GroupBox4.Controls.Add(Me.Label22)
-        Me.GroupBox4.Controls.Add(Me.TextBox20)
-        Me.GroupBox4.Controls.Add(Me.TextBox19)
-        Me.GroupBox4.Controls.Add(Me.TextBox13)
-        Me.GroupBox4.Controls.Add(Me.Label21)
-        Me.GroupBox4.Controls.Add(Me.Label20)
-        Me.GroupBox4.Controls.Add(Me.Label19)
-        Me.GroupBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox4.Location = New System.Drawing.Point(419, 16)
-        Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(346, 271)
-        Me.GroupBox4.TabIndex = 2
-        Me.GroupBox4.TabStop = False
-        Me.GroupBox4.Text = "Datos Generales de la Mascota"
+        Me.Btn_Camb_CambiarImgMasDueno.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Btn_Camb_CambiarImgMasDueno.Location = New System.Drawing.Point(190, 246)
+        Me.Btn_Camb_CambiarImgMasDueno.Name = "Btn_Camb_CambiarImgMasDueno"
+        Me.Btn_Camb_CambiarImgMasDueno.Size = New System.Drawing.Size(131, 25)
+        Me.Btn_Camb_CambiarImgMasDueno.TabIndex = 13
+        Me.Btn_Camb_CambiarImgMasDueno.Text = "Cambiar foto"
+        Me.Btn_Camb_CambiarImgMasDueno.UseVisualStyleBackColor = False
         '
-        'Label20
+        'PiBo_Camb_ImgMasDueno
         '
-        Me.Label20.AutoSize = True
-        Me.Label20.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label20.Location = New System.Drawing.Point(18, 70)
-        Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(113, 16)
-        Me.Label20.TabIndex = 2
-        Me.Label20.Text = "Tipo de Mascota:"
+        Me.PiBo_Camb_ImgMasDueno.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.PiBo_Camb_ImgMasDueno.BackgroundImage = CType(resources.GetObject("PiBo_Camb_ImgMasDueno.BackgroundImage"), System.Drawing.Image)
+        Me.PiBo_Camb_ImgMasDueno.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PiBo_Camb_ImgMasDueno.Location = New System.Drawing.Point(190, 170)
+        Me.PiBo_Camb_ImgMasDueno.Name = "PiBo_Camb_ImgMasDueno"
+        Me.PiBo_Camb_ImgMasDueno.Size = New System.Drawing.Size(144, 70)
+        Me.PiBo_Camb_ImgMasDueno.TabIndex = 12
+        Me.PiBo_Camb_ImgMasDueno.TabStop = False
         '
-        'Label21
+        'Lab_Camb_ImgMasDueno
         '
-        Me.Label21.AutoSize = True
-        Me.Label21.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label21.Location = New System.Drawing.Point(18, 98)
-        Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(132, 16)
-        Me.Label21.TabIndex = 3
-        Me.Label21.Text = "Edad de la Mascota:"
+        Me.Lab_Camb_ImgMasDueno.AutoSize = True
+        Me.Lab_Camb_ImgMasDueno.Location = New System.Drawing.Point(18, 192)
+        Me.Lab_Camb_ImgMasDueno.Name = "Lab_Camb_ImgMasDueno"
+        Me.Lab_Camb_ImgMasDueno.Size = New System.Drawing.Size(168, 17)
+        Me.Lab_Camb_ImgMasDueno.TabIndex = 11
+        Me.Lab_Camb_ImgMasDueno.Text = "Fotografia de la Mascota:"
         '
-        'TextBox13
+        'Lab_Camb_RazaMasDueno
         '
-        Me.TextBox13.Location = New System.Drawing.Point(173, 36)
-        Me.TextBox13.Name = "TextBox13"
-        Me.TextBox13.Size = New System.Drawing.Size(129, 22)
-        Me.TextBox13.TabIndex = 4
+        Me.Lab_Camb_RazaMasDueno.AutoSize = True
+        Me.Lab_Camb_RazaMasDueno.Location = New System.Drawing.Point(35, 140)
+        Me.Lab_Camb_RazaMasDueno.Name = "Lab_Camb_RazaMasDueno"
+        Me.Lab_Camb_RazaMasDueno.Size = New System.Drawing.Size(45, 17)
+        Me.Lab_Camb_RazaMasDueno.TabIndex = 10
+        Me.Lab_Camb_RazaMasDueno.Text = "Raza:"
         '
-        'TextBox14
+        'TtBo_Camb_RazaMasDueno
         '
-        Me.TextBox14.Location = New System.Drawing.Point(150, 36)
-        Me.TextBox14.Name = "TextBox14"
-        Me.TextBox14.Size = New System.Drawing.Size(130, 22)
-        Me.TextBox14.TabIndex = 5
+        Me.TtBo_Camb_RazaMasDueno.Location = New System.Drawing.Point(190, 137)
+        Me.TtBo_Camb_RazaMasDueno.Name = "TtBo_Camb_RazaMasDueno"
+        Me.TtBo_Camb_RazaMasDueno.Size = New System.Drawing.Size(144, 23)
+        Me.TtBo_Camb_RazaMasDueno.TabIndex = 9
         '
-        'TextBox15
+        'TtBo_Camb_ColorMasDueno
         '
-        Me.TextBox15.Location = New System.Drawing.Point(150, 64)
-        Me.TextBox15.Name = "TextBox15"
-        Me.TextBox15.Size = New System.Drawing.Size(130, 22)
-        Me.TextBox15.TabIndex = 6
+        Me.TtBo_Camb_ColorMasDueno.Location = New System.Drawing.Point(190, 108)
+        Me.TtBo_Camb_ColorMasDueno.Name = "TtBo_Camb_ColorMasDueno"
+        Me.TtBo_Camb_ColorMasDueno.Size = New System.Drawing.Size(144, 23)
+        Me.TtBo_Camb_ColorMasDueno.TabIndex = 8
         '
-        'TextBox16
+        'Lab_Camb_ColorMasDueno
         '
-        Me.TextBox16.Location = New System.Drawing.Point(150, 92)
-        Me.TextBox16.Name = "TextBox16"
-        Me.TextBox16.Size = New System.Drawing.Size(130, 22)
-        Me.TextBox16.TabIndex = 7
+        Me.Lab_Camb_ColorMasDueno.AutoSize = True
+        Me.Lab_Camb_ColorMasDueno.Location = New System.Drawing.Point(18, 111)
+        Me.Lab_Camb_ColorMasDueno.Name = "Lab_Camb_ColorMasDueno"
+        Me.Lab_Camb_ColorMasDueno.Size = New System.Drawing.Size(137, 17)
+        Me.Lab_Camb_ColorMasDueno.TabIndex = 7
+        Me.Lab_Camb_ColorMasDueno.Text = "Color de la Mascota:"
         '
-        'TextBox17
+        'TtBo_Camb_EdadMasDueno
         '
-        Me.TextBox17.Location = New System.Drawing.Point(150, 120)
-        Me.TextBox17.Name = "TextBox17"
-        Me.TextBox17.Size = New System.Drawing.Size(130, 22)
-        Me.TextBox17.TabIndex = 8
+        Me.TtBo_Camb_EdadMasDueno.Location = New System.Drawing.Point(190, 79)
+        Me.TtBo_Camb_EdadMasDueno.Name = "TtBo_Camb_EdadMasDueno"
+        Me.TtBo_Camb_EdadMasDueno.Size = New System.Drawing.Size(144, 23)
+        Me.TtBo_Camb_EdadMasDueno.TabIndex = 6
         '
-        'TextBox18
+        'TtBo_Camb_TipoMasDueno
         '
-        Me.TextBox18.Location = New System.Drawing.Point(150, 148)
-        Me.TextBox18.Name = "TextBox18"
-        Me.TextBox18.Size = New System.Drawing.Size(130, 22)
-        Me.TextBox18.TabIndex = 9
+        Me.TtBo_Camb_TipoMasDueno.Location = New System.Drawing.Point(190, 50)
+        Me.TtBo_Camb_TipoMasDueno.Name = "TtBo_Camb_TipoMasDueno"
+        Me.TtBo_Camb_TipoMasDueno.Size = New System.Drawing.Size(144, 23)
+        Me.TtBo_Camb_TipoMasDueno.TabIndex = 5
         '
-        'TextBox19
+        'TtBo_Camb_NombMasDueno
         '
-        Me.TextBox19.Location = New System.Drawing.Point(173, 64)
-        Me.TextBox19.Name = "TextBox19"
-        Me.TextBox19.Size = New System.Drawing.Size(129, 22)
-        Me.TextBox19.TabIndex = 5
+        Me.TtBo_Camb_NombMasDueno.Location = New System.Drawing.Point(190, 21)
+        Me.TtBo_Camb_NombMasDueno.Name = "TtBo_Camb_NombMasDueno"
+        Me.TtBo_Camb_NombMasDueno.Size = New System.Drawing.Size(144, 23)
+        Me.TtBo_Camb_NombMasDueno.TabIndex = 4
         '
-        'TextBox20
+        'Lab_Camb_EdadMasDueno
         '
-        Me.TextBox20.Location = New System.Drawing.Point(173, 98)
-        Me.TextBox20.Name = "TextBox20"
-        Me.TextBox20.Size = New System.Drawing.Size(129, 22)
-        Me.TextBox20.TabIndex = 6
+        Me.Lab_Camb_EdadMasDueno.AutoSize = True
+        Me.Lab_Camb_EdadMasDueno.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lab_Camb_EdadMasDueno.Location = New System.Drawing.Point(18, 82)
+        Me.Lab_Camb_EdadMasDueno.Name = "Lab_Camb_EdadMasDueno"
+        Me.Lab_Camb_EdadMasDueno.Size = New System.Drawing.Size(132, 16)
+        Me.Lab_Camb_EdadMasDueno.TabIndex = 3
+        Me.Lab_Camb_EdadMasDueno.Text = "Edad de la Mascota:"
         '
-        'Label22
+        'Lab_Camb_TipoMasDueno
         '
-        Me.Label22.AutoSize = True
-        Me.Label22.Location = New System.Drawing.Point(21, 134)
-        Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(131, 16)
-        Me.Label22.TabIndex = 7
-        Me.Label22.Text = "Color de la Mascota:"
+        Me.Lab_Camb_TipoMasDueno.AutoSize = True
+        Me.Lab_Camb_TipoMasDueno.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lab_Camb_TipoMasDueno.Location = New System.Drawing.Point(18, 53)
+        Me.Lab_Camb_TipoMasDueno.Name = "Lab_Camb_TipoMasDueno"
+        Me.Lab_Camb_TipoMasDueno.Size = New System.Drawing.Size(113, 16)
+        Me.Lab_Camb_TipoMasDueno.TabIndex = 2
+        Me.Lab_Camb_TipoMasDueno.Text = "Tipo de Mascota:"
         '
-        'TextBox21
+        'Lab_Camb_NombMasDueno
         '
-        Me.TextBox21.Location = New System.Drawing.Point(173, 134)
-        Me.TextBox21.Name = "TextBox21"
-        Me.TextBox21.Size = New System.Drawing.Size(129, 22)
-        Me.TextBox21.TabIndex = 8
+        Me.Lab_Camb_NombMasDueno.AutoSize = True
+        Me.Lab_Camb_NombMasDueno.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Camb_NombMasDueno.Location = New System.Drawing.Point(18, 24)
+        Me.Lab_Camb_NombMasDueno.Name = "Lab_Camb_NombMasDueno"
+        Me.Lab_Camb_NombMasDueno.Size = New System.Drawing.Size(154, 17)
+        Me.Lab_Camb_NombMasDueno.TabIndex = 1
+        Me.Lab_Camb_NombMasDueno.Text = "Nombre de la Mascota:"
         '
-        'TextBox22
+        'GoBo_Camb_DatosGenerDueno
         '
-        Me.TextBox22.Location = New System.Drawing.Point(173, 162)
-        Me.TextBox22.Name = "TextBox22"
-        Me.TextBox22.Size = New System.Drawing.Size(129, 22)
-        Me.TextBox22.TabIndex = 9
+        Me.GoBo_Camb_DatosGenerDueno.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.GoBo_Camb_DatosGenerDueno.Controls.Add(Me.TtBo_Camb_EmailDueno)
+        Me.GoBo_Camb_DatosGenerDueno.Controls.Add(Me.Lab_Camb_AmatDueno)
+        Me.GoBo_Camb_DatosGenerDueno.Controls.Add(Me.TtBo_Camb_IdDueno)
+        Me.GoBo_Camb_DatosGenerDueno.Controls.Add(Me.Lab_Camb_IdDueno)
+        Me.GoBo_Camb_DatosGenerDueno.Controls.Add(Me.TtBo_Camb_DireccDueno)
+        Me.GoBo_Camb_DatosGenerDueno.Controls.Add(Me.Lab_Camb_EmailDueno)
+        Me.GoBo_Camb_DatosGenerDueno.Controls.Add(Me.TtBo_Camb_TelefDueno)
+        Me.GoBo_Camb_DatosGenerDueno.Controls.Add(Me.Lab_Camb_TelefDueno)
+        Me.GoBo_Camb_DatosGenerDueno.Controls.Add(Me.TtBo_Camb_AmatDueno)
+        Me.GoBo_Camb_DatosGenerDueno.Controls.Add(Me.Lab_Camb_DireccDueno)
+        Me.GoBo_Camb_DatosGenerDueno.Controls.Add(Me.TtBo_Camb_ApatDueno)
+        Me.GoBo_Camb_DatosGenerDueno.Controls.Add(Me.TtBo_Camb_NombDueno)
+        Me.GoBo_Camb_DatosGenerDueno.Controls.Add(Me.Lab_Camb_ApatDueno)
+        Me.GoBo_Camb_DatosGenerDueno.Controls.Add(Me.Lab_Camb_NombDueno)
+        Me.GoBo_Camb_DatosGenerDueno.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.GoBo_Camb_DatosGenerDueno.Location = New System.Drawing.Point(3, 16)
+        Me.GoBo_Camb_DatosGenerDueno.Name = "GoBo_Camb_DatosGenerDueno"
+        Me.GoBo_Camb_DatosGenerDueno.Size = New System.Drawing.Size(349, 281)
+        Me.GoBo_Camb_DatosGenerDueno.TabIndex = 0
+        Me.GoBo_Camb_DatosGenerDueno.TabStop = False
+        Me.GoBo_Camb_DatosGenerDueno.Text = "Datos Generales del Dueño"
         '
-        'Label23
+        'TtBo_Camb_EmailDueno
         '
-        Me.Label23.AutoSize = True
-        Me.Label23.Location = New System.Drawing.Point(24, 170)
-        Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(43, 16)
-        Me.Label23.TabIndex = 10
-        Me.Label23.Text = "Raza:"
+        Me.TtBo_Camb_EmailDueno.Location = New System.Drawing.Point(138, 223)
+        Me.TtBo_Camb_EmailDueno.Name = "TtBo_Camb_EmailDueno"
+        Me.TtBo_Camb_EmailDueno.Size = New System.Drawing.Size(139, 23)
+        Me.TtBo_Camb_EmailDueno.TabIndex = 41
         '
-        'Label24
+        'Lab_Camb_AmatDueno
         '
-        Me.Label24.AutoSize = True
-        Me.Label24.Location = New System.Drawing.Point(24, 223)
-        Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(160, 16)
-        Me.Label24.TabIndex = 11
-        Me.Label24.Text = "Fotografia de la Mascota:"
+        Me.Lab_Camb_AmatDueno.AutoSize = True
+        Me.Lab_Camb_AmatDueno.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Camb_AmatDueno.Location = New System.Drawing.Point(12, 130)
+        Me.Lab_Camb_AmatDueno.Name = "Lab_Camb_AmatDueno"
+        Me.Lab_Camb_AmatDueno.Size = New System.Drawing.Size(118, 17)
+        Me.Lab_Camb_AmatDueno.TabIndex = 40
+        Me.Lab_Camb_AmatDueno.Text = "Apellido materno:"
         '
-        'PictureBox1
+        'TtBo_Camb_IdDueno
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(190, 205)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(100, 50)
-        Me.PictureBox1.TabIndex = 12
-        Me.PictureBox1.TabStop = False
+        Me.TtBo_Camb_IdDueno.Location = New System.Drawing.Point(138, 21)
+        Me.TtBo_Camb_IdDueno.Name = "TtBo_Camb_IdDueno"
+        Me.TtBo_Camb_IdDueno.Size = New System.Drawing.Size(139, 23)
+        Me.TtBo_Camb_IdDueno.TabIndex = 39
         '
-        'PictureBox2
+        'Lab_Camb_IdDueno
         '
-        Me.PictureBox2.Location = New System.Drawing.Point(662, 121)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(100, 50)
-        Me.PictureBox2.TabIndex = 24
-        Me.PictureBox2.TabStop = False
+        Me.Lab_Camb_IdDueno.AutoSize = True
+        Me.Lab_Camb_IdDueno.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Camb_IdDueno.Location = New System.Drawing.Point(12, 22)
+        Me.Lab_Camb_IdDueno.Name = "Lab_Camb_IdDueno"
+        Me.Lab_Camb_IdDueno.Size = New System.Drawing.Size(69, 17)
+        Me.Lab_Camb_IdDueno.TabIndex = 38
+        Me.Lab_Camb_IdDueno.Text = "Id Dueño:"
         '
-        'Label25
+        'TtBo_Camb_DireccDueno
         '
-        Me.Label25.AutoSize = True
-        Me.Label25.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label25.Location = New System.Drawing.Point(565, 121)
-        Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(91, 16)
-        Me.Label25.TabIndex = 25
-        Me.Label25.Text = "Fotografia de "
+        Me.TtBo_Camb_DireccDueno.Location = New System.Drawing.Point(138, 161)
+        Me.TtBo_Camb_DireccDueno.Name = "TtBo_Camb_DireccDueno"
+        Me.TtBo_Camb_DireccDueno.Size = New System.Drawing.Size(139, 23)
+        Me.TtBo_Camb_DireccDueno.TabIndex = 37
         '
-        'Label26
+        'Lab_Camb_EmailDueno
         '
-        Me.Label26.AutoSize = True
-        Me.Label26.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label26.Location = New System.Drawing.Point(568, 141)
-        Me.Label26.Name = "Label26"
-        Me.Label26.Size = New System.Drawing.Size(77, 16)
-        Me.Label26.TabIndex = 26
-        Me.Label26.Text = "la Mascota:"
+        Me.Lab_Camb_EmailDueno.AutoSize = True
+        Me.Lab_Camb_EmailDueno.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Camb_EmailDueno.Location = New System.Drawing.Point(12, 226)
+        Me.Lab_Camb_EmailDueno.Name = "Lab_Camb_EmailDueno"
+        Me.Lab_Camb_EmailDueno.Size = New System.Drawing.Size(129, 17)
+        Me.Lab_Camb_EmailDueno.TabIndex = 36
+        Me.Lab_Camb_EmailDueno.Text = "Correo Electronico:"
         '
-        'Foto_Mascota
+        'TtBo_Camb_TelefDueno
         '
-        Me.Foto_Mascota.HeaderText = "Foto Mascota"
-        Me.Foto_Mascota.Name = "Foto_Mascota"
+        Me.TtBo_Camb_TelefDueno.Location = New System.Drawing.Point(138, 192)
+        Me.TtBo_Camb_TelefDueno.Name = "TtBo_Camb_TelefDueno"
+        Me.TtBo_Camb_TelefDueno.Size = New System.Drawing.Size(139, 23)
+        Me.TtBo_Camb_TelefDueno.TabIndex = 35
         '
-        'Button6
+        'Lab_Camb_TelefDueno
         '
-        Me.Button6.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Button6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button6.Location = New System.Drawing.Point(81, 239)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(86, 32)
-        Me.Button6.TabIndex = 3
-        Me.Button6.Text = "Actualizar"
-        Me.Button6.UseVisualStyleBackColor = False
+        Me.Lab_Camb_TelefDueno.AutoSize = True
+        Me.Lab_Camb_TelefDueno.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Camb_TelefDueno.Location = New System.Drawing.Point(12, 195)
+        Me.Lab_Camb_TelefDueno.Name = "Lab_Camb_TelefDueno"
+        Me.Lab_Camb_TelefDueno.Size = New System.Drawing.Size(68, 17)
+        Me.Lab_Camb_TelefDueno.TabIndex = 34
+        Me.Lab_Camb_TelefDueno.Text = "Teléfono:"
         '
-        'Button7
+        'TtBo_Camb_AmatDueno
         '
-        Me.Button7.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Button7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button7.Location = New System.Drawing.Point(224, 239)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(96, 32)
-        Me.Button7.TabIndex = 4
-        Me.Button7.Text = "Limpiar"
-        Me.Button7.UseVisualStyleBackColor = False
+        Me.TtBo_Camb_AmatDueno.Location = New System.Drawing.Point(138, 127)
+        Me.TtBo_Camb_AmatDueno.Name = "TtBo_Camb_AmatDueno"
+        Me.TtBo_Camb_AmatDueno.Size = New System.Drawing.Size(139, 23)
+        Me.TtBo_Camb_AmatDueno.TabIndex = 33
+        '
+        'Lab_Camb_DireccDueno
+        '
+        Me.Lab_Camb_DireccDueno.AutoSize = True
+        Me.Lab_Camb_DireccDueno.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Camb_DireccDueno.Location = New System.Drawing.Point(13, 165)
+        Me.Lab_Camb_DireccDueno.Name = "Lab_Camb_DireccDueno"
+        Me.Lab_Camb_DireccDueno.Size = New System.Drawing.Size(71, 17)
+        Me.Lab_Camb_DireccDueno.TabIndex = 32
+        Me.Lab_Camb_DireccDueno.Text = "Dirección:"
+        '
+        'TtBo_Camb_ApatDueno
+        '
+        Me.TtBo_Camb_ApatDueno.Location = New System.Drawing.Point(138, 91)
+        Me.TtBo_Camb_ApatDueno.Name = "TtBo_Camb_ApatDueno"
+        Me.TtBo_Camb_ApatDueno.Size = New System.Drawing.Size(139, 23)
+        Me.TtBo_Camb_ApatDueno.TabIndex = 31
+        '
+        'TtBo_Camb_NombDueno
+        '
+        Me.TtBo_Camb_NombDueno.Location = New System.Drawing.Point(138, 52)
+        Me.TtBo_Camb_NombDueno.Name = "TtBo_Camb_NombDueno"
+        Me.TtBo_Camb_NombDueno.Size = New System.Drawing.Size(139, 23)
+        Me.TtBo_Camb_NombDueno.TabIndex = 30
+        '
+        'Lab_Camb_ApatDueno
+        '
+        Me.Lab_Camb_ApatDueno.AutoSize = True
+        Me.Lab_Camb_ApatDueno.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Camb_ApatDueno.Location = New System.Drawing.Point(12, 97)
+        Me.Lab_Camb_ApatDueno.Name = "Lab_Camb_ApatDueno"
+        Me.Lab_Camb_ApatDueno.Size = New System.Drawing.Size(115, 17)
+        Me.Lab_Camb_ApatDueno.TabIndex = 29
+        Me.Lab_Camb_ApatDueno.Text = "Apellido paterno:"
+        '
+        'Lab_Camb_NombDueno
+        '
+        Me.Lab_Camb_NombDueno.AutoSize = True
+        Me.Lab_Camb_NombDueno.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Camb_NombDueno.Location = New System.Drawing.Point(9, 56)
+        Me.Lab_Camb_NombDueno.Name = "Lab_Camb_NombDueno"
+        Me.Lab_Camb_NombDueno.Size = New System.Drawing.Size(129, 17)
+        Me.Lab_Camb_NombDueno.TabIndex = 28
+        Me.Lab_Camb_NombDueno.Text = "Nombre del dueño:"
         '
         'Form_ClientesYMascotas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = Global.Proyecto_Spa_Mascotas.My.Resources.Resources.depositphotos_81696382_stock_photo_teal_and_white_doggy_tile
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.TabControl1)
+        Me.Controls.Add(Me.Tab_Ctr_ClientesYMascotas)
         Me.Controls.Add(Me.Btn_atras)
         Me.Controls.Add(Me.MenuS_Principal)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form_ClientesYMascotas"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Clientes y Mascotas"
         Me.MenuS_Principal.ResumeLayout(False)
         Me.MenuS_Principal.PerformLayout()
-        Me.TabControl1.ResumeLayout(False)
+        Me.Tab_Ctr_ClientesYMascotas.ResumeLayout(False)
         Me.Alta_Clientes.ResumeLayout(False)
         Me.Alta_Clientes.PerformLayout()
-        Me.Baja_Clientes.ResumeLayout(False)
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DGV_Alta_ListaDueno, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Consulta_Clientes.ResumeLayout(False)
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
-        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox2.ResumeLayout(False)
-        Me.GroupBox2.PerformLayout()
-        CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.TabPage1.ResumeLayout(False)
-        Me.GroupBox3.ResumeLayout(False)
-        Me.GroupBox3.PerformLayout()
-        Me.GroupBox4.ResumeLayout(False)
-        Me.GroupBox4.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DGV_Cons_ListDueno, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GoBo_Cons_DatosBusqClienteDueno.ResumeLayout(False)
+        Me.GoBo_Cons_DatosBusqClienteDueno.PerformLayout()
+        Me.Baja_Clientes.ResumeLayout(False)
+        CType(Me.DGV_Baja_ListDueno, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GoBo_Baja_DatosBusqClienteDueno.ResumeLayout(False)
+        Me.GoBo_Baja_DatosBusqClienteDueno.PerformLayout()
+        Me.Cambio_Clientes.ResumeLayout(False)
+        Me.GoBo_Camb_DatosGenerMascoDueno.ResumeLayout(False)
+        Me.GoBo_Camb_DatosGenerMascoDueno.PerformLayout()
+        CType(Me.PiBo_Camb_ImgMasDueno, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GoBo_Camb_DatosGenerDueno.ResumeLayout(False)
+        Me.GoBo_Camb_DatosGenerDueno.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1096,65 +1100,71 @@ Partial Class Form_ClientesYMascotas
     Friend WithEvents EmpleadosToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents CategoriasToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CaducosToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents TabControl1 As TabControl
+    Friend WithEvents Tab_Ctr_ClientesYMascotas As TabControl
     Friend WithEvents Alta_Clientes As TabPage
-    Friend WithEvents TextBox7 As TextBox
-    Friend WithEvents TextBox6 As TextBox
-    Friend WithEvents Label7 As Label
-    Friend WithEvents Label6 As Label
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents Label5 As Label
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents Label4 As Label
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label1 As Label
+    Friend WithEvents Lab_Alta_TelefDueno As Label
+    Friend WithEvents TtBo_Alta_AmatDueno As TextBox
+    Friend WithEvents Lab_Alta_CalleDueno As Label
+    Friend WithEvents TtBo_Alta_ApatDueno As TextBox
+    Friend WithEvents TtBo_Alta_NombDueno As TextBox
+    Friend WithEvents Lab_Alta_ApatDueno As Label
+    Friend WithEvents Lab_Alta_NombDueno As Label
     Friend WithEvents Baja_Clientes As TabPage
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button1 As Button
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents Btn_Alta_LimpiarDueno As Button
+    Friend WithEvents Btn_Alta_GuardarDueno As Button
+    Friend WithEvents DGV_Alta_ListaDueno As DataGridView
+    Friend WithEvents TtBo_Alta_CalleDueno As TextBox
+    Friend WithEvents Lab_Alta_EmailDueno As Label
+    Friend WithEvents Consulta_Clientes As TabPage
+    Friend WithEvents GoBo_Cons_DatosBusqClienteDueno As GroupBox
+    Friend WithEvents TtBo_Cons_NombDueno As TextBox
+    Friend WithEvents Lab_Cons_NombDueno As Label
+    Friend WithEvents Btn_Cons_BuscarDueno As Button
+    Friend WithEvents TtBo_Baja_NombDueno As TextBox
+    Friend WithEvents Lab_Baja_NombDueno As Label
+    Friend WithEvents GoBo_Baja_DatosBusqClienteDueno As GroupBox
+    Friend WithEvents Btn_Baja_BuscarDueno As Button
+    Friend WithEvents Button5 As Button
+    Friend WithEvents Cambio_Clientes As TabPage
+    Friend WithEvents GoBo_Camb_DatosGenerDueno As GroupBox
+    Friend WithEvents GoBo_Camb_DatosGenerMascoDueno As GroupBox
+    Friend WithEvents Lab_Camb_RazaMasDueno As Label
+    Friend WithEvents TtBo_Camb_RazaMasDueno As TextBox
+    Friend WithEvents TtBo_Camb_ColorMasDueno As TextBox
+    Friend WithEvents Lab_Camb_ColorMasDueno As Label
+    Friend WithEvents TtBo_Camb_EdadMasDueno As TextBox
+    Friend WithEvents TtBo_Camb_TipoMasDueno As TextBox
+    Friend WithEvents TtBo_Camb_NombMasDueno As TextBox
+    Friend WithEvents Lab_Camb_EdadMasDueno As Label
+    Friend WithEvents Lab_Camb_TipoMasDueno As Label
+    Friend WithEvents Lab_Camb_NombMasDueno As Label
+    Friend WithEvents PiBo_Camb_ImgMasDueno As PictureBox
+    Friend WithEvents Lab_Camb_ImgMasDueno As Label
+    Friend WithEvents Btn_Camb_LimpiarDueno As Button
+    Friend WithEvents Btn_Camb_ActualizarDueno As Button
+    Friend WithEvents Btn_Alta_AgregarMascotaDueno As Button
+    Friend WithEvents TtBo_Alta_EmailDueno As TextBox
+    Friend WithEvents Lab_Alta_AmatDueno As Label
+    Friend WithEvents TtBo_Alta_IdDueno As TextBox
+    Friend WithEvents Lab_Alta_IdDueno As Label
+    Friend WithEvents Id_Cliente As DataGridViewTextBoxColumn
     Friend WithEvents Nombre_Cliente As DataGridViewTextBoxColumn
-    Friend WithEvents Apellido As DataGridViewTextBoxColumn
+    Friend WithEvents Apellido_paterno As DataGridViewTextBoxColumn
+    Friend WithEvents Apellido_materno As DataGridViewTextBoxColumn
     Friend WithEvents Direccion As DataGridViewTextBoxColumn
     Friend WithEvents Telefono As DataGridViewTextBoxColumn
     Friend WithEvents Correo_Electronico As DataGridViewTextBoxColumn
     Friend WithEvents Nombre_Mascota As DataGridViewTextBoxColumn
-    Friend WithEvents Tipo_de_Mascota As DataGridViewTextBoxColumn
-    Friend WithEvents Edad_de_la_Mascota As DataGridViewTextBoxColumn
-    Friend WithEvents Color_de_la_Mascota As DataGridViewTextBoxColumn
-    Friend WithEvents Raza As DataGridViewTextBoxColumn
-    Friend WithEvents TextBox10 As TextBox
-    Friend WithEvents Label11 As Label
-    Friend WithEvents TextBox9 As TextBox
-    Friend WithEvents Label10 As Label
-    Friend WithEvents Label9 As Label
-    Friend WithEvents TextBox8 As TextBox
-    Friend WithEvents Label8 As Label
-    Friend WithEvents Consulta_Clientes As TabPage
-    Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents TextBox11 As TextBox
-    Friend WithEvents Label12 As Label
-    Friend WithEvents Button3 As Button
-    Friend WithEvents DataGridView2 As DataGridView
-    Friend WithEvents Nombre_cliente1 As DataGridViewTextBoxColumn
-    Friend WithEvents Apellido1 As DataGridViewTextBoxColumn
-    Friend WithEvents Direccion1 As DataGridViewTextBoxColumn
-    Friend WithEvents Telefono1 As DataGridViewTextBoxColumn
-    Friend WithEvents Correo As DataGridViewTextBoxColumn
-    Friend WithEvents NombreMascota As DataGridViewTextBoxColumn
-    Friend WithEvents TipoMascota As DataGridViewTextBoxColumn
-    Friend WithEvents EdadMascota As DataGridViewTextBoxColumn
-    Friend WithEvents ColordeMascota As DataGridViewTextBoxColumn
-    Friend WithEvents Raza1 As DataGridViewTextBoxColumn
-    Friend WithEvents TextBox12 As TextBox
-    Friend WithEvents Label13 As Label
-    Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button5 As Button
-    Friend WithEvents DataGridView3 As DataGridView
+    Friend WithEvents DGV_Cons_ListDueno As DataGridView
+    Friend WithEvents DataGridViewTextBoxColumn11 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn12 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn13 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn14 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn15 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn16 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn17 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn18 As DataGridViewTextBoxColumn
+    Friend WithEvents DGV_Baja_ListDueno As DataGridView
     Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn3 As DataGridViewTextBoxColumn
@@ -1163,37 +1173,27 @@ Partial Class Form_ClientesYMascotas
     Friend WithEvents DataGridViewTextBoxColumn6 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn7 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn8 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn9 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn10 As DataGridViewTextBoxColumn
-    Friend WithEvents TabPage1 As TabPage
-    Friend WithEvents GroupBox3 As GroupBox
-    Friend WithEvents GroupBox4 As GroupBox
-    Friend WithEvents Label23 As Label
-    Friend WithEvents TextBox22 As TextBox
-    Friend WithEvents TextBox21 As TextBox
-    Friend WithEvents Label22 As Label
-    Friend WithEvents TextBox20 As TextBox
-    Friend WithEvents TextBox19 As TextBox
-    Friend WithEvents TextBox13 As TextBox
-    Friend WithEvents Label21 As Label
-    Friend WithEvents Label20 As Label
-    Friend WithEvents Label19 As Label
-    Friend WithEvents TextBox18 As TextBox
-    Friend WithEvents TextBox17 As TextBox
-    Friend WithEvents TextBox16 As TextBox
-    Friend WithEvents TextBox15 As TextBox
-    Friend WithEvents TextBox14 As TextBox
-    Friend WithEvents Label18 As Label
-    Friend WithEvents Label17 As Label
-    Friend WithEvents Label16 As Label
-    Friend WithEvents Label15 As Label
-    Friend WithEvents Label14 As Label
-    Friend WithEvents Label26 As Label
-    Friend WithEvents Label25 As Label
-    Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents Foto_Mascota As DataGridViewTextBoxColumn
-    Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Label24 As Label
-    Friend WithEvents Button7 As Button
-    Friend WithEvents Button6 As Button
+    Friend WithEvents Btn_Camb_CambiarImgMasDueno As Button
+    Friend WithEvents TtBo_Camb_EmailDueno As TextBox
+    Friend WithEvents Lab_Camb_AmatDueno As Label
+    Friend WithEvents TtBo_Camb_IdDueno As TextBox
+    Friend WithEvents Lab_Camb_IdDueno As Label
+    Friend WithEvents TtBo_Camb_DireccDueno As TextBox
+    Friend WithEvents Lab_Camb_EmailDueno As Label
+    Friend WithEvents TtBo_Camb_TelefDueno As TextBox
+    Friend WithEvents Lab_Camb_TelefDueno As Label
+    Friend WithEvents TtBo_Camb_AmatDueno As TextBox
+    Friend WithEvents Lab_Camb_DireccDueno As Label
+    Friend WithEvents TtBo_Camb_ApatDueno As TextBox
+    Friend WithEvents TtBo_Camb_NombDueno As TextBox
+    Friend WithEvents Lab_Camb_ApatDueno As Label
+    Friend WithEvents Lab_Camb_NombDueno As Label
+    Friend WithEvents TtBo_Alta_MunicipioDueno As TextBox
+    Friend WithEvents Lab_Alta_MunicipioDueno As Label
+    Friend WithEvents TtBo_Alta_CpDueno As TextBox
+    Friend WithEvents Lab_Alta_CpDueno As Label
+    Friend WithEvents TtBo_Alta_TelefDueno As TextBox
+    Friend WithEvents TtBo_Alta_NumeroDueno As TextBox
+    Friend WithEvents Lab_Alta_NumeroDueno As Label
+    Friend WithEvents Btn_Const_BuscarTodoDueno As Button
 End Class

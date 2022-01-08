@@ -33,8 +33,8 @@ Partial Class Form_Inventario
         Me.ComprasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EmpleadosToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ClientesYMascotasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.Btn_Mostrar_Inventario = New System.Windows.Forms.Button()
+        Me.DGV_ListaInventario = New System.Windows.Forms.DataGridView()
         Me.DGV_CodigoBarra_Producto = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DGV_Nombre_Producto = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DGV_Desc_Producto = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -42,8 +42,9 @@ Partial Class Form_Inventario
         Me.DGV_PrecioPub_Producto = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DGV_PrecioProv_Producto = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DGV_CantidadEx_Producto = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DGV_Ventas_Producto = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.MenuS_Principal.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DGV_ListaInventario, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Btn_atras
@@ -119,23 +120,25 @@ Partial Class Form_Inventario
         Me.ClientesYMascotasToolStripMenuItem.Size = New System.Drawing.Size(123, 20)
         Me.ClientesYMascotasToolStripMenuItem.Text = "Clientes y mascotas"
         '
-        'Button1
+        'Btn_Mostrar_Inventario
         '
-        Me.Button1.Location = New System.Drawing.Point(286, 90)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(120, 27)
-        Me.Button1.TabIndex = 5
-        Me.Button1.Text = "Mostrar productos"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Btn_Mostrar_Inventario.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Btn_Mostrar_Inventario.Location = New System.Drawing.Point(391, 90)
+        Me.Btn_Mostrar_Inventario.Name = "Btn_Mostrar_Inventario"
+        Me.Btn_Mostrar_Inventario.Size = New System.Drawing.Size(120, 27)
+        Me.Btn_Mostrar_Inventario.TabIndex = 5
+        Me.Btn_Mostrar_Inventario.Text = "Mostrar productos"
+        Me.Btn_Mostrar_Inventario.UseVisualStyleBackColor = False
         '
-        'DataGridView1
+        'DGV_ListaInventario
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DGV_CodigoBarra_Producto, Me.DGV_Nombre_Producto, Me.DGV_Desc_Producto, Me.DGV_Fcaducidad_Producto, Me.DGV_PrecioPub_Producto, Me.DGV_PrecioProv_Producto, Me.DGV_CantidadEx_Producto})
-        Me.DataGridView1.Location = New System.Drawing.Point(30, 133)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(741, 284)
-        Me.DataGridView1.TabIndex = 6
+        Me.DGV_ListaInventario.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.DGV_ListaInventario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGV_ListaInventario.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DGV_CodigoBarra_Producto, Me.DGV_Nombre_Producto, Me.DGV_Desc_Producto, Me.DGV_Fcaducidad_Producto, Me.DGV_PrecioPub_Producto, Me.DGV_PrecioProv_Producto, Me.DGV_CantidadEx_Producto, Me.DGV_Ventas_Producto})
+        Me.DGV_ListaInventario.Location = New System.Drawing.Point(12, 133)
+        Me.DGV_ListaInventario.Name = "DGV_ListaInventario"
+        Me.DGV_ListaInventario.Size = New System.Drawing.Size(788, 284)
+        Me.DGV_ListaInventario.TabIndex = 6
         '
         'DGV_CodigoBarra_Producto
         '
@@ -179,13 +182,20 @@ Partial Class Form_Inventario
         Me.DGV_CantidadEx_Producto.MaxInputLength = 3
         Me.DGV_CantidadEx_Producto.Name = "DGV_CantidadEx_Producto"
         '
+        'DGV_Ventas_Producto
+        '
+        Me.DGV_Ventas_Producto.HeaderText = "Productos vendidos"
+        Me.DGV_Ventas_Producto.MaxInputLength = 3
+        Me.DGV_Ventas_Producto.Name = "DGV_Ventas_Producto"
+        '
         'Form_Inventario
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = Global.Proyecto_Spa_Mascotas.My.Resources.Resources.depositphotos_81696382_stock_photo_teal_and_white_doggy_tile1
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.DataGridView1)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.DGV_ListaInventario)
+        Me.Controls.Add(Me.Btn_Mostrar_Inventario)
         Me.Controls.Add(Me.Btn_atras)
         Me.Controls.Add(Me.MenuS_Principal)
         Me.Name = "Form_Inventario"
@@ -193,7 +203,7 @@ Partial Class Form_Inventario
         Me.Text = "Inventario"
         Me.MenuS_Principal.ResumeLayout(False)
         Me.MenuS_Principal.PerformLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DGV_ListaInventario, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -210,8 +220,8 @@ Partial Class Form_Inventario
     Friend WithEvents ClientesYMascotasToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CategoriasToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CaducosToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents Button1 As Button
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents Btn_Mostrar_Inventario As Button
+    Friend WithEvents DGV_ListaInventario As DataGridView
     Friend WithEvents DGV_CodigoBarra_Producto As DataGridViewTextBoxColumn
     Friend WithEvents DGV_Nombre_Producto As DataGridViewTextBoxColumn
     Friend WithEvents DGV_Desc_Producto As DataGridViewTextBoxColumn
@@ -219,4 +229,5 @@ Partial Class Form_Inventario
     Friend WithEvents DGV_PrecioPub_Producto As DataGridViewTextBoxColumn
     Friend WithEvents DGV_PrecioProv_Producto As DataGridViewTextBoxColumn
     Friend WithEvents DGV_CantidadEx_Producto As DataGridViewTextBoxColumn
+    Friend WithEvents DGV_Ventas_Producto As DataGridViewTextBoxColumn
 End Class

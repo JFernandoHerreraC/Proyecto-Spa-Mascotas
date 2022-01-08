@@ -24,7 +24,7 @@
     End Sub
 
     Private Sub Btn_atras_Click(sender As Object, e As EventArgs) Handles Btn_atras.Click
-        Form_Ventas.Show()
+        '   Form_Menu.Show()
         Me.Hide()
     End Sub
     Private Sub EmpleadosToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles EmpleadosToolStripMenuItem1.Click

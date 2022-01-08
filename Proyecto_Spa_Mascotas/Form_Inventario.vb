@@ -25,7 +25,7 @@
     End Sub
 
     Private Sub Btn_atras_Click(sender As Object, e As EventArgs) Handles Btn_atras.Click
-        Form_Ventas.Show()
+        'Form_Menu.Show()
         Me.Hide()
     End Sub
 
@@ -39,7 +39,7 @@
         Me.Hide()
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Btn_Mostrar_Inventario.Click
         MsgBox("Lo sentimos, no hay productos disponibles aún", MsgBoxStyle.Critical)
     End Sub
 End Class

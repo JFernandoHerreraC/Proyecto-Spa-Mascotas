@@ -22,8 +22,11 @@ Partial Class Form_CorteCaja
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form_CorteCaja))
         Me.MenuS_Principal = New System.Windows.Forms.MenuStrip()
         Me.ProductosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CategoriasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CaducosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ServiciosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.InventarioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.VentasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -33,32 +36,32 @@ Partial Class Form_CorteCaja
         Me.ClientesYMascotasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Tab_Ctr_CorteCaja = New System.Windows.Forms.TabControl()
         Me.Alta_CorteCajaFinal = New System.Windows.Forms.TabPage()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.Label7 = New System.Windows.Forms.Label()
+        Me.GrBo_DatosCorteCaja = New System.Windows.Forms.GroupBox()
+        Me.TtBo_CCaja_NombCajero = New System.Windows.Forms.TextBox()
+        Me.Lab_CCaja_NombCajero = New System.Windows.Forms.Label()
+        Me.TtBo_CCaja_DineroJornadaInicial = New System.Windows.Forms.TextBox()
+        Me.Lab_CCaja_DineroJornadaInicial = New System.Windows.Forms.Label()
+        Me.Btn_CCaja_CorteDeCaja = New System.Windows.Forms.Button()
+        Me.Lab_CCaja_AlgunaSalidaCaja = New System.Windows.Forms.Label()
+        Me.TtBo_CCaja_SalidaCaja = New System.Windows.Forms.TextBox()
+        Me.GrBo_InformacionCorteCaja = New System.Windows.Forms.GroupBox()
+        Me.Lab_CCaja_HoraDerecha = New System.Windows.Forms.Label()
+        Me.Lab_CCaja_FechaDerecha = New System.Windows.Forms.Label()
+        Me.Lab_CCaja_InfHora = New System.Windows.Forms.Label()
+        Me.Lab_CCaja_InfFecha = New System.Windows.Forms.Label()
+        Me.TtBo_CCaja_InfTotal = New System.Windows.Forms.TextBox()
+        Me.Lab_CCaja_InfTotal = New System.Windows.Forms.Label()
         Me.Button3 = New System.Windows.Forms.Button()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.TtBo_CCaja_InfSubtotal = New System.Windows.Forms.TextBox()
+        Me.TtBo_CCaja_InfSalidaDinero = New System.Windows.Forms.TextBox()
+        Me.TtBo_CCaja_InfDineroInicial = New System.Windows.Forms.TextBox()
+        Me.Lab_CCaja_InfSubtotal = New System.Windows.Forms.Label()
+        Me.Lab_CCaja_InfSalidaDinero = New System.Windows.Forms.Label()
+        Me.Lab_CCaja_InfDimeroInicial = New System.Windows.Forms.Label()
+        Me.Lab_CCaja_Titulo = New System.Windows.Forms.Label()
         Me.Consulta_CorteCajaHist = New System.Windows.Forms.TabPage()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.Btn_HCCaja_Buscar = New System.Windows.Forms.Button()
+        Me.DGV_ListaCCajas = New System.Windows.Forms.DataGridView()
         Me.DGV_ID_CorCaja = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DGV_FECHA_CorCaja = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DGV_HORA_CorCaja = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -66,18 +69,17 @@ Partial Class Form_CorteCaja
         Me.DGV_SalCaja_CorCaja = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DGV_TOTAL_CorCaja = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DGV_NOMBCAJERO_CorCaja = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
-        Me.Label8 = New System.Windows.Forms.Label()
+        Me.DaTiPi_HCCaja_SeleccionFecha = New System.Windows.Forms.DateTimePicker()
+        Me.Lab_HCCaja_SeleccionFecha = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.CategoriasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CaducosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Btn_HCCaja_BuscarTodo = New System.Windows.Forms.Button()
         Me.MenuS_Principal.SuspendLayout()
         Me.Tab_Ctr_CorteCaja.SuspendLayout()
         Me.Alta_CorteCajaFinal.SuspendLayout()
-        Me.GroupBox2.SuspendLayout()
-        Me.GroupBox1.SuspendLayout()
+        Me.GrBo_DatosCorteCaja.SuspendLayout()
+        Me.GrBo_InformacionCorteCaja.SuspendLayout()
         Me.Consulta_CorteCajaHist.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DGV_ListaCCajas, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MenuS_Principal
@@ -95,6 +97,18 @@ Partial Class Form_CorteCaja
         Me.ProductosToolStripMenuItem.Name = "ProductosToolStripMenuItem"
         Me.ProductosToolStripMenuItem.Size = New System.Drawing.Size(73, 20)
         Me.ProductosToolStripMenuItem.Text = "Productos"
+        '
+        'CategoriasToolStripMenuItem
+        '
+        Me.CategoriasToolStripMenuItem.Name = "CategoriasToolStripMenuItem"
+        Me.CategoriasToolStripMenuItem.Size = New System.Drawing.Size(130, 22)
+        Me.CategoriasToolStripMenuItem.Text = "Categorias"
+        '
+        'CaducosToolStripMenuItem
+        '
+        Me.CaducosToolStripMenuItem.Name = "CaducosToolStripMenuItem"
+        Me.CaducosToolStripMenuItem.Size = New System.Drawing.Size(130, 22)
+        Me.CaducosToolStripMenuItem.Text = "Caducos"
         '
         'ServiciosToolStripMenuItem
         '
@@ -142,6 +156,7 @@ Partial Class Form_CorteCaja
         '
         Me.Tab_Ctr_CorteCaja.Controls.Add(Me.Alta_CorteCajaFinal)
         Me.Tab_Ctr_CorteCaja.Controls.Add(Me.Consulta_CorteCajaHist)
+        Me.Tab_Ctr_CorteCaja.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
         Me.Tab_Ctr_CorteCaja.Location = New System.Drawing.Point(12, 61)
         Me.Tab_Ctr_CorteCaja.Name = "Tab_Ctr_CorteCaja"
         Me.Tab_Ctr_CorteCaja.SelectedIndex = 0
@@ -150,282 +165,286 @@ Partial Class Form_CorteCaja
         '
         'Alta_CorteCajaFinal
         '
-        Me.Alta_CorteCajaFinal.Controls.Add(Me.GroupBox2)
-        Me.Alta_CorteCajaFinal.Controls.Add(Me.GroupBox1)
-        Me.Alta_CorteCajaFinal.Controls.Add(Me.Label1)
-        Me.Alta_CorteCajaFinal.Location = New System.Drawing.Point(4, 22)
+        Me.Alta_CorteCajaFinal.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Alta_CorteCajaFinal.Controls.Add(Me.GrBo_DatosCorteCaja)
+        Me.Alta_CorteCajaFinal.Controls.Add(Me.GrBo_InformacionCorteCaja)
+        Me.Alta_CorteCajaFinal.Controls.Add(Me.Lab_CCaja_Titulo)
+        Me.Alta_CorteCajaFinal.Location = New System.Drawing.Point(4, 25)
         Me.Alta_CorteCajaFinal.Name = "Alta_CorteCajaFinal"
         Me.Alta_CorteCajaFinal.Padding = New System.Windows.Forms.Padding(3)
-        Me.Alta_CorteCajaFinal.Size = New System.Drawing.Size(768, 351)
+        Me.Alta_CorteCajaFinal.Size = New System.Drawing.Size(768, 348)
         Me.Alta_CorteCajaFinal.TabIndex = 1
         Me.Alta_CorteCajaFinal.Text = "Carte de caja final"
-        Me.Alta_CorteCajaFinal.UseVisualStyleBackColor = True
         '
-        'GroupBox2
+        'GrBo_DatosCorteCaja
         '
-        Me.GroupBox2.Controls.Add(Me.TextBox7)
-        Me.GroupBox2.Controls.Add(Me.Label9)
-        Me.GroupBox2.Controls.Add(Me.TextBox1)
-        Me.GroupBox2.Controls.Add(Me.Label2)
-        Me.GroupBox2.Controls.Add(Me.Button2)
-        Me.GroupBox2.Controls.Add(Me.Label3)
-        Me.GroupBox2.Controls.Add(Me.TextBox2)
-        Me.GroupBox2.Location = New System.Drawing.Point(45, 36)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(667, 159)
-        Me.GroupBox2.TabIndex = 8
-        Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "Datos para el corte de caja"
+        Me.GrBo_DatosCorteCaja.Controls.Add(Me.TtBo_CCaja_NombCajero)
+        Me.GrBo_DatosCorteCaja.Controls.Add(Me.Lab_CCaja_NombCajero)
+        Me.GrBo_DatosCorteCaja.Controls.Add(Me.TtBo_CCaja_DineroJornadaInicial)
+        Me.GrBo_DatosCorteCaja.Controls.Add(Me.Lab_CCaja_DineroJornadaInicial)
+        Me.GrBo_DatosCorteCaja.Controls.Add(Me.Btn_CCaja_CorteDeCaja)
+        Me.GrBo_DatosCorteCaja.Controls.Add(Me.Lab_CCaja_AlgunaSalidaCaja)
+        Me.GrBo_DatosCorteCaja.Controls.Add(Me.TtBo_CCaja_SalidaCaja)
+        Me.GrBo_DatosCorteCaja.Location = New System.Drawing.Point(45, 36)
+        Me.GrBo_DatosCorteCaja.Name = "GrBo_DatosCorteCaja"
+        Me.GrBo_DatosCorteCaja.Size = New System.Drawing.Size(667, 159)
+        Me.GrBo_DatosCorteCaja.TabIndex = 8
+        Me.GrBo_DatosCorteCaja.TabStop = False
+        Me.GrBo_DatosCorteCaja.Text = "Datos para el corte de caja"
         '
-        'TextBox7
+        'TtBo_CCaja_NombCajero
         '
-        Me.TextBox7.Location = New System.Drawing.Point(258, 99)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(161, 20)
-        Me.TextBox7.TabIndex = 8
+        Me.TtBo_CCaja_NombCajero.Location = New System.Drawing.Point(258, 99)
+        Me.TtBo_CCaja_NombCajero.Name = "TtBo_CCaja_NombCajero"
+        Me.TtBo_CCaja_NombCajero.Size = New System.Drawing.Size(161, 23)
+        Me.TtBo_CCaja_NombCajero.TabIndex = 8
         '
-        'Label9
+        'Lab_CCaja_NombCajero
         '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(6, 99)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(120, 16)
-        Me.Label9.TabIndex = 7
-        Me.Label9.Text = "Nombre del cajero"
+        Me.Lab_CCaja_NombCajero.AutoSize = True
+        Me.Lab_CCaja_NombCajero.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lab_CCaja_NombCajero.Location = New System.Drawing.Point(6, 99)
+        Me.Lab_CCaja_NombCajero.Name = "Lab_CCaja_NombCajero"
+        Me.Lab_CCaja_NombCajero.Size = New System.Drawing.Size(120, 16)
+        Me.Lab_CCaja_NombCajero.TabIndex = 7
+        Me.Lab_CCaja_NombCajero.Text = "Nombre del cajero"
         '
-        'TextBox1
+        'TtBo_CCaja_DineroJornadaInicial
         '
-        Me.TextBox1.Location = New System.Drawing.Point(258, 41)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(161, 20)
-        Me.TextBox1.TabIndex = 3
-        Me.TextBox1.TabStop = False
+        Me.TtBo_CCaja_DineroJornadaInicial.Location = New System.Drawing.Point(258, 41)
+        Me.TtBo_CCaja_DineroJornadaInicial.Name = "TtBo_CCaja_DineroJornadaInicial"
+        Me.TtBo_CCaja_DineroJornadaInicial.Size = New System.Drawing.Size(161, 23)
+        Me.TtBo_CCaja_DineroJornadaInicial.TabIndex = 3
+        Me.TtBo_CCaja_DineroJornadaInicial.TabStop = False
         '
-        'Label2
+        'Lab_CCaja_DineroJornadaInicial
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(6, 42)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(246, 16)
-        Me.Label2.TabIndex = 2
-        Me.Label2.Text = "¿Con cuanto inicio su jornada de cobro?"
+        Me.Lab_CCaja_DineroJornadaInicial.AutoSize = True
+        Me.Lab_CCaja_DineroJornadaInicial.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lab_CCaja_DineroJornadaInicial.Location = New System.Drawing.Point(6, 42)
+        Me.Lab_CCaja_DineroJornadaInicial.Name = "Lab_CCaja_DineroJornadaInicial"
+        Me.Lab_CCaja_DineroJornadaInicial.Size = New System.Drawing.Size(246, 16)
+        Me.Lab_CCaja_DineroJornadaInicial.TabIndex = 2
+        Me.Lab_CCaja_DineroJornadaInicial.Text = "¿Con cuanto inicio su jornada de cobro?"
         '
-        'Button2
+        'Btn_CCaja_CorteDeCaja
         '
-        Me.Button2.Location = New System.Drawing.Point(258, 125)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(161, 23)
-        Me.Button2.TabIndex = 6
-        Me.Button2.Text = "Corte de caja"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Btn_CCaja_CorteDeCaja.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Btn_CCaja_CorteDeCaja.Location = New System.Drawing.Point(258, 125)
+        Me.Btn_CCaja_CorteDeCaja.Name = "Btn_CCaja_CorteDeCaja"
+        Me.Btn_CCaja_CorteDeCaja.Size = New System.Drawing.Size(161, 23)
+        Me.Btn_CCaja_CorteDeCaja.TabIndex = 6
+        Me.Btn_CCaja_CorteDeCaja.Text = "Corte de caja"
+        Me.Btn_CCaja_CorteDeCaja.UseVisualStyleBackColor = False
         '
-        'Label3
+        'Lab_CCaja_AlgunaSalidaCaja
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(6, 70)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(187, 16)
-        Me.Label3.TabIndex = 4
-        Me.Label3.Text = "¿Hubo alguna salida de caja?"
+        Me.Lab_CCaja_AlgunaSalidaCaja.AutoSize = True
+        Me.Lab_CCaja_AlgunaSalidaCaja.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lab_CCaja_AlgunaSalidaCaja.Location = New System.Drawing.Point(6, 70)
+        Me.Lab_CCaja_AlgunaSalidaCaja.Name = "Lab_CCaja_AlgunaSalidaCaja"
+        Me.Lab_CCaja_AlgunaSalidaCaja.Size = New System.Drawing.Size(187, 16)
+        Me.Lab_CCaja_AlgunaSalidaCaja.TabIndex = 4
+        Me.Lab_CCaja_AlgunaSalidaCaja.Text = "¿Hubo alguna salida de caja?"
         '
-        'TextBox2
+        'TtBo_CCaja_SalidaCaja
         '
-        Me.TextBox2.Location = New System.Drawing.Point(258, 69)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(161, 20)
-        Me.TextBox2.TabIndex = 5
-        Me.TextBox2.TabStop = False
+        Me.TtBo_CCaja_SalidaCaja.Location = New System.Drawing.Point(258, 69)
+        Me.TtBo_CCaja_SalidaCaja.Name = "TtBo_CCaja_SalidaCaja"
+        Me.TtBo_CCaja_SalidaCaja.Size = New System.Drawing.Size(161, 23)
+        Me.TtBo_CCaja_SalidaCaja.TabIndex = 5
+        Me.TtBo_CCaja_SalidaCaja.TabStop = False
         '
-        'GroupBox1
+        'GrBo_InformacionCorteCaja
         '
-        Me.GroupBox1.Controls.Add(Me.Label13)
-        Me.GroupBox1.Controls.Add(Me.Label12)
-        Me.GroupBox1.Controls.Add(Me.Label10)
-        Me.GroupBox1.Controls.Add(Me.Label11)
-        Me.GroupBox1.Controls.Add(Me.TextBox6)
-        Me.GroupBox1.Controls.Add(Me.Label7)
-        Me.GroupBox1.Controls.Add(Me.Button3)
-        Me.GroupBox1.Controls.Add(Me.TextBox5)
-        Me.GroupBox1.Controls.Add(Me.TextBox4)
-        Me.GroupBox1.Controls.Add(Me.TextBox3)
-        Me.GroupBox1.Controls.Add(Me.Label6)
-        Me.GroupBox1.Controls.Add(Me.Label5)
-        Me.GroupBox1.Controls.Add(Me.Label4)
-        Me.GroupBox1.Location = New System.Drawing.Point(45, 204)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(667, 144)
-        Me.GroupBox1.TabIndex = 7
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Información del corte caja"
+        Me.GrBo_InformacionCorteCaja.Controls.Add(Me.Lab_CCaja_HoraDerecha)
+        Me.GrBo_InformacionCorteCaja.Controls.Add(Me.Lab_CCaja_FechaDerecha)
+        Me.GrBo_InformacionCorteCaja.Controls.Add(Me.Lab_CCaja_InfHora)
+        Me.GrBo_InformacionCorteCaja.Controls.Add(Me.Lab_CCaja_InfFecha)
+        Me.GrBo_InformacionCorteCaja.Controls.Add(Me.TtBo_CCaja_InfTotal)
+        Me.GrBo_InformacionCorteCaja.Controls.Add(Me.Lab_CCaja_InfTotal)
+        Me.GrBo_InformacionCorteCaja.Controls.Add(Me.Button3)
+        Me.GrBo_InformacionCorteCaja.Controls.Add(Me.TtBo_CCaja_InfSubtotal)
+        Me.GrBo_InformacionCorteCaja.Controls.Add(Me.TtBo_CCaja_InfSalidaDinero)
+        Me.GrBo_InformacionCorteCaja.Controls.Add(Me.TtBo_CCaja_InfDineroInicial)
+        Me.GrBo_InformacionCorteCaja.Controls.Add(Me.Lab_CCaja_InfSubtotal)
+        Me.GrBo_InformacionCorteCaja.Controls.Add(Me.Lab_CCaja_InfSalidaDinero)
+        Me.GrBo_InformacionCorteCaja.Controls.Add(Me.Lab_CCaja_InfDimeroInicial)
+        Me.GrBo_InformacionCorteCaja.Location = New System.Drawing.Point(45, 204)
+        Me.GrBo_InformacionCorteCaja.Name = "GrBo_InformacionCorteCaja"
+        Me.GrBo_InformacionCorteCaja.Size = New System.Drawing.Size(667, 144)
+        Me.GrBo_InformacionCorteCaja.TabIndex = 7
+        Me.GrBo_InformacionCorteCaja.TabStop = False
+        Me.GrBo_InformacionCorteCaja.Text = "Información del corte caja"
         '
-        'Label13
+        'Lab_CCaja_HoraDerecha
         '
-        Me.Label13.AutoSize = True
-        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(112, 50)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(41, 16)
-        Me.Label13.TabIndex = 17
-        Me.Label13.Text = "Hora:"
+        Me.Lab_CCaja_HoraDerecha.AutoSize = True
+        Me.Lab_CCaja_HoraDerecha.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lab_CCaja_HoraDerecha.Location = New System.Drawing.Point(112, 50)
+        Me.Lab_CCaja_HoraDerecha.Name = "Lab_CCaja_HoraDerecha"
+        Me.Lab_CCaja_HoraDerecha.Size = New System.Drawing.Size(41, 16)
+        Me.Lab_CCaja_HoraDerecha.TabIndex = 17
+        Me.Lab_CCaja_HoraDerecha.Text = "Hora:"
         '
-        'Label12
+        'Lab_CCaja_FechaDerecha
         '
-        Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(112, 24)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(49, 16)
-        Me.Label12.TabIndex = 16
-        Me.Label12.Text = "Fecha:"
+        Me.Lab_CCaja_FechaDerecha.AutoSize = True
+        Me.Lab_CCaja_FechaDerecha.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lab_CCaja_FechaDerecha.Location = New System.Drawing.Point(112, 24)
+        Me.Lab_CCaja_FechaDerecha.Name = "Lab_CCaja_FechaDerecha"
+        Me.Lab_CCaja_FechaDerecha.Size = New System.Drawing.Size(49, 16)
+        Me.Lab_CCaja_FechaDerecha.TabIndex = 16
+        Me.Lab_CCaja_FechaDerecha.Text = "Fecha:"
         '
-        'Label10
+        'Lab_CCaja_InfHora
         '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(5, 50)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(41, 16)
-        Me.Label10.TabIndex = 15
-        Me.Label10.Text = "Hora:"
+        Me.Lab_CCaja_InfHora.AutoSize = True
+        Me.Lab_CCaja_InfHora.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lab_CCaja_InfHora.Location = New System.Drawing.Point(5, 50)
+        Me.Lab_CCaja_InfHora.Name = "Lab_CCaja_InfHora"
+        Me.Lab_CCaja_InfHora.Size = New System.Drawing.Size(41, 16)
+        Me.Lab_CCaja_InfHora.TabIndex = 15
+        Me.Lab_CCaja_InfHora.Text = "Hora:"
         '
-        'Label11
+        'Lab_CCaja_InfFecha
         '
-        Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(5, 21)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(49, 16)
-        Me.Label11.TabIndex = 14
-        Me.Label11.Text = "Fecha:"
+        Me.Lab_CCaja_InfFecha.AutoSize = True
+        Me.Lab_CCaja_InfFecha.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lab_CCaja_InfFecha.Location = New System.Drawing.Point(5, 21)
+        Me.Lab_CCaja_InfFecha.Name = "Lab_CCaja_InfFecha"
+        Me.Lab_CCaja_InfFecha.Size = New System.Drawing.Size(49, 16)
+        Me.Lab_CCaja_InfFecha.TabIndex = 14
+        Me.Lab_CCaja_InfFecha.Text = "Fecha:"
         '
-        'TextBox6
+        'TtBo_CCaja_InfTotal
         '
-        Me.TextBox6.Enabled = False
-        Me.TextBox6.Location = New System.Drawing.Point(389, 72)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(137, 20)
-        Me.TextBox6.TabIndex = 13
-        Me.TextBox6.TabStop = False
+        Me.TtBo_CCaja_InfTotal.Enabled = False
+        Me.TtBo_CCaja_InfTotal.Location = New System.Drawing.Point(389, 72)
+        Me.TtBo_CCaja_InfTotal.Name = "TtBo_CCaja_InfTotal"
+        Me.TtBo_CCaja_InfTotal.Size = New System.Drawing.Size(137, 23)
+        Me.TtBo_CCaja_InfTotal.TabIndex = 13
+        Me.TtBo_CCaja_InfTotal.TabStop = False
         '
-        'Label7
+        'Lab_CCaja_InfTotal
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(279, 76)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(42, 16)
-        Me.Label7.TabIndex = 12
-        Me.Label7.Text = "Total:"
+        Me.Lab_CCaja_InfTotal.AutoSize = True
+        Me.Lab_CCaja_InfTotal.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lab_CCaja_InfTotal.Location = New System.Drawing.Point(279, 76)
+        Me.Lab_CCaja_InfTotal.Name = "Lab_CCaja_InfTotal"
+        Me.Lab_CCaja_InfTotal.Size = New System.Drawing.Size(42, 16)
+        Me.Lab_CCaja_InfTotal.TabIndex = 12
+        Me.Lab_CCaja_InfTotal.Text = "Total:"
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(389, 98)
+        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Button3.Location = New System.Drawing.Point(377, 101)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(137, 23)
+        Me.Button3.Size = New System.Drawing.Size(158, 25)
         Me.Button3.TabIndex = 11
         Me.Button3.Text = "Guardar corte de caja"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.Button3.UseVisualStyleBackColor = False
         '
-        'TextBox5
+        'TtBo_CCaja_InfSubtotal
         '
-        Me.TextBox5.Enabled = False
-        Me.TextBox5.Location = New System.Drawing.Point(389, 46)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(137, 20)
-        Me.TextBox5.TabIndex = 10
-        Me.TextBox5.TabStop = False
+        Me.TtBo_CCaja_InfSubtotal.Enabled = False
+        Me.TtBo_CCaja_InfSubtotal.Location = New System.Drawing.Point(389, 46)
+        Me.TtBo_CCaja_InfSubtotal.Name = "TtBo_CCaja_InfSubtotal"
+        Me.TtBo_CCaja_InfSubtotal.Size = New System.Drawing.Size(137, 23)
+        Me.TtBo_CCaja_InfSubtotal.TabIndex = 10
+        Me.TtBo_CCaja_InfSubtotal.TabStop = False
         '
-        'TextBox4
+        'TtBo_CCaja_InfSalidaDinero
         '
-        Me.TextBox4.Enabled = False
-        Me.TextBox4.Location = New System.Drawing.Point(389, 20)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(137, 20)
-        Me.TextBox4.TabIndex = 9
-        Me.TextBox4.TabStop = False
+        Me.TtBo_CCaja_InfSalidaDinero.Enabled = False
+        Me.TtBo_CCaja_InfSalidaDinero.Location = New System.Drawing.Point(389, 20)
+        Me.TtBo_CCaja_InfSalidaDinero.Name = "TtBo_CCaja_InfSalidaDinero"
+        Me.TtBo_CCaja_InfSalidaDinero.Size = New System.Drawing.Size(137, 23)
+        Me.TtBo_CCaja_InfSalidaDinero.TabIndex = 9
+        Me.TtBo_CCaja_InfSalidaDinero.TabStop = False
         '
-        'TextBox3
+        'TtBo_CCaja_InfDineroInicial
         '
-        Me.TextBox3.Enabled = False
-        Me.TextBox3.Location = New System.Drawing.Point(115, 76)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(137, 20)
-        Me.TextBox3.TabIndex = 8
-        Me.TextBox3.TabStop = False
+        Me.TtBo_CCaja_InfDineroInicial.Enabled = False
+        Me.TtBo_CCaja_InfDineroInicial.Location = New System.Drawing.Point(115, 76)
+        Me.TtBo_CCaja_InfDineroInicial.Name = "TtBo_CCaja_InfDineroInicial"
+        Me.TtBo_CCaja_InfDineroInicial.Size = New System.Drawing.Size(137, 23)
+        Me.TtBo_CCaja_InfDineroInicial.TabIndex = 8
+        Me.TtBo_CCaja_InfDineroInicial.TabStop = False
         '
-        'Label6
+        'Lab_CCaja_InfSubtotal
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(279, 50)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(60, 16)
-        Me.Label6.TabIndex = 7
-        Me.Label6.Text = "Subtotal:"
+        Me.Lab_CCaja_InfSubtotal.AutoSize = True
+        Me.Lab_CCaja_InfSubtotal.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lab_CCaja_InfSubtotal.Location = New System.Drawing.Point(279, 50)
+        Me.Lab_CCaja_InfSubtotal.Name = "Lab_CCaja_InfSubtotal"
+        Me.Lab_CCaja_InfSubtotal.Size = New System.Drawing.Size(60, 16)
+        Me.Lab_CCaja_InfSubtotal.TabIndex = 7
+        Me.Lab_CCaja_InfSubtotal.Text = "Subtotal:"
         '
-        'Label5
+        'Lab_CCaja_InfSalidaDinero
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(279, 21)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(110, 16)
-        Me.Label5.TabIndex = 6
-        Me.Label5.Text = "Salida de dinero:"
+        Me.Lab_CCaja_InfSalidaDinero.AutoSize = True
+        Me.Lab_CCaja_InfSalidaDinero.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lab_CCaja_InfSalidaDinero.Location = New System.Drawing.Point(279, 21)
+        Me.Lab_CCaja_InfSalidaDinero.Name = "Lab_CCaja_InfSalidaDinero"
+        Me.Lab_CCaja_InfSalidaDinero.Size = New System.Drawing.Size(110, 16)
+        Me.Lab_CCaja_InfSalidaDinero.TabIndex = 6
+        Me.Lab_CCaja_InfSalidaDinero.Text = "Salida de dinero:"
         '
-        'Label4
+        'Lab_CCaja_InfDimeroInicial
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(5, 80)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(88, 16)
-        Me.Label4.TabIndex = 5
-        Me.Label4.Text = "Dinero inicial:"
+        Me.Lab_CCaja_InfDimeroInicial.AutoSize = True
+        Me.Lab_CCaja_InfDimeroInicial.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lab_CCaja_InfDimeroInicial.Location = New System.Drawing.Point(5, 80)
+        Me.Lab_CCaja_InfDimeroInicial.Name = "Lab_CCaja_InfDimeroInicial"
+        Me.Lab_CCaja_InfDimeroInicial.Size = New System.Drawing.Size(88, 16)
+        Me.Lab_CCaja_InfDimeroInicial.TabIndex = 5
+        Me.Lab_CCaja_InfDimeroInicial.Text = "Dinero inicial:"
         '
-        'Label1
+        'Lab_CCaja_Titulo
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(318, 16)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(88, 16)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Corte de caja"
+        Me.Lab_CCaja_Titulo.AutoSize = True
+        Me.Lab_CCaja_Titulo.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_CCaja_Titulo.Location = New System.Drawing.Point(318, 16)
+        Me.Lab_CCaja_Titulo.Name = "Lab_CCaja_Titulo"
+        Me.Lab_CCaja_Titulo.Size = New System.Drawing.Size(92, 17)
+        Me.Lab_CCaja_Titulo.TabIndex = 0
+        Me.Lab_CCaja_Titulo.Text = "Corte de caja"
         '
         'Consulta_CorteCajaHist
         '
-        Me.Consulta_CorteCajaHist.Controls.Add(Me.Button4)
-        Me.Consulta_CorteCajaHist.Controls.Add(Me.DataGridView1)
-        Me.Consulta_CorteCajaHist.Controls.Add(Me.DateTimePicker1)
-        Me.Consulta_CorteCajaHist.Controls.Add(Me.Label8)
-        Me.Consulta_CorteCajaHist.Location = New System.Drawing.Point(4, 22)
+        Me.Consulta_CorteCajaHist.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Consulta_CorteCajaHist.Controls.Add(Me.Btn_HCCaja_BuscarTodo)
+        Me.Consulta_CorteCajaHist.Controls.Add(Me.Btn_HCCaja_Buscar)
+        Me.Consulta_CorteCajaHist.Controls.Add(Me.DGV_ListaCCajas)
+        Me.Consulta_CorteCajaHist.Controls.Add(Me.DaTiPi_HCCaja_SeleccionFecha)
+        Me.Consulta_CorteCajaHist.Controls.Add(Me.Lab_HCCaja_SeleccionFecha)
+        Me.Consulta_CorteCajaHist.Location = New System.Drawing.Point(4, 25)
         Me.Consulta_CorteCajaHist.Name = "Consulta_CorteCajaHist"
-        Me.Consulta_CorteCajaHist.Size = New System.Drawing.Size(768, 351)
+        Me.Consulta_CorteCajaHist.Size = New System.Drawing.Size(768, 348)
         Me.Consulta_CorteCajaHist.TabIndex = 2
         Me.Consulta_CorteCajaHist.Text = "Historial de cortes de caja"
-        Me.Consulta_CorteCajaHist.UseVisualStyleBackColor = True
         '
-        'Button4
+        'Btn_HCCaja_Buscar
         '
-        Me.Button4.Location = New System.Drawing.Point(305, 77)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(166, 23)
-        Me.Button4.TabIndex = 3
-        Me.Button4.Text = "Buscar"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.Btn_HCCaja_Buscar.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Btn_HCCaja_Buscar.Location = New System.Drawing.Point(447, 73)
+        Me.Btn_HCCaja_Buscar.Name = "Btn_HCCaja_Buscar"
+        Me.Btn_HCCaja_Buscar.Size = New System.Drawing.Size(166, 25)
+        Me.Btn_HCCaja_Buscar.TabIndex = 3
+        Me.Btn_HCCaja_Buscar.Text = "Buscar"
+        Me.Btn_HCCaja_Buscar.UseVisualStyleBackColor = False
         '
-        'DataGridView1
+        'DGV_ListaCCajas
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DGV_ID_CorCaja, Me.DGV_FECHA_CorCaja, Me.DGV_HORA_CorCaja, Me.DGV_DnInic_CorCaja, Me.DGV_SalCaja_CorCaja, Me.DGV_TOTAL_CorCaja, Me.DGV_NOMBCAJERO_CorCaja})
-        Me.DataGridView1.Location = New System.Drawing.Point(14, 118)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(740, 150)
-        Me.DataGridView1.TabIndex = 2
+        Me.DGV_ListaCCajas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGV_ListaCCajas.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DGV_ID_CorCaja, Me.DGV_FECHA_CorCaja, Me.DGV_HORA_CorCaja, Me.DGV_DnInic_CorCaja, Me.DGV_SalCaja_CorCaja, Me.DGV_TOTAL_CorCaja, Me.DGV_NOMBCAJERO_CorCaja})
+        Me.DGV_ListaCCajas.Location = New System.Drawing.Point(14, 118)
+        Me.DGV_ListaCCajas.Name = "DGV_ListaCCajas"
+        Me.DGV_ListaCCajas.Size = New System.Drawing.Size(740, 208)
+        Me.DGV_ListaCCajas.TabIndex = 2
         '
         'DGV_ID_CorCaja
         '
@@ -468,22 +487,22 @@ Partial Class Form_CorteCaja
         Me.DGV_NOMBCAJERO_CorCaja.HeaderText = "NOMBRE DEL CAJERO"
         Me.DGV_NOMBCAJERO_CorCaja.Name = "DGV_NOMBCAJERO_CorCaja"
         '
-        'DateTimePicker1
+        'DaTiPi_HCCaja_SeleccionFecha
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(373, 44)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 20)
-        Me.DateTimePicker1.TabIndex = 1
+        Me.DaTiPi_HCCaja_SeleccionFecha.Location = New System.Drawing.Point(373, 44)
+        Me.DaTiPi_HCCaja_SeleccionFecha.Name = "DaTiPi_HCCaja_SeleccionFecha"
+        Me.DaTiPi_HCCaja_SeleccionFecha.Size = New System.Drawing.Size(200, 23)
+        Me.DaTiPi_HCCaja_SeleccionFecha.TabIndex = 1
         '
-        'Label8
+        'Lab_HCCaja_SeleccionFecha
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label8.Location = New System.Drawing.Point(123, 44)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(244, 17)
-        Me.Label8.TabIndex = 0
-        Me.Label8.Text = "Seleccione la fecha del corte de caja:"
+        Me.Lab_HCCaja_SeleccionFecha.AutoSize = True
+        Me.Lab_HCCaja_SeleccionFecha.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_HCCaja_SeleccionFecha.Location = New System.Drawing.Point(123, 44)
+        Me.Lab_HCCaja_SeleccionFecha.Name = "Lab_HCCaja_SeleccionFecha"
+        Me.Lab_HCCaja_SeleccionFecha.Size = New System.Drawing.Size(244, 17)
+        Me.Lab_HCCaja_SeleccionFecha.TabIndex = 0
+        Me.Lab_HCCaja_SeleccionFecha.Text = "Seleccione la fecha del corte de caja:"
         '
         'Button1
         '
@@ -494,41 +513,42 @@ Partial Class Form_CorteCaja
         Me.Button1.Text = "< Atras"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'CategoriasToolStripMenuItem
+        'Btn_HCCaja_BuscarTodo
         '
-        Me.CategoriasToolStripMenuItem.Name = "CategoriasToolStripMenuItem"
-        Me.CategoriasToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.CategoriasToolStripMenuItem.Text = "Categorias"
-        '
-        'CaducosToolStripMenuItem
-        '
-        Me.CaducosToolStripMenuItem.Name = "CaducosToolStripMenuItem"
-        Me.CaducosToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.CaducosToolStripMenuItem.Text = "Caducos"
+        Me.Btn_HCCaja_BuscarTodo.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Btn_HCCaja_BuscarTodo.Location = New System.Drawing.Point(275, 73)
+        Me.Btn_HCCaja_BuscarTodo.Name = "Btn_HCCaja_BuscarTodo"
+        Me.Btn_HCCaja_BuscarTodo.Size = New System.Drawing.Size(166, 25)
+        Me.Btn_HCCaja_BuscarTodo.TabIndex = 4
+        Me.Btn_HCCaja_BuscarTodo.Text = "Buscar todo"
+        Me.Btn_HCCaja_BuscarTodo.UseVisualStyleBackColor = False
         '
         'Form_CorteCaja
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = Global.Proyecto_Spa_Mascotas.My.Resources.Resources.depositphotos_81696382_stock_photo_teal_and_white_doggy_tile1
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Tab_Ctr_CorteCaja)
         Me.Controls.Add(Me.MenuS_Principal)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form_CorteCaja"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Corte de caja"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.MenuS_Principal.ResumeLayout(False)
         Me.MenuS_Principal.PerformLayout()
         Me.Tab_Ctr_CorteCaja.ResumeLayout(False)
         Me.Alta_CorteCajaFinal.ResumeLayout(False)
         Me.Alta_CorteCajaFinal.PerformLayout()
-        Me.GroupBox2.ResumeLayout(False)
-        Me.GroupBox2.PerformLayout()
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
+        Me.GrBo_DatosCorteCaja.ResumeLayout(False)
+        Me.GrBo_DatosCorteCaja.PerformLayout()
+        Me.GrBo_InformacionCorteCaja.ResumeLayout(False)
+        Me.GrBo_InformacionCorteCaja.PerformLayout()
         Me.Consulta_CorteCajaHist.ResumeLayout(False)
         Me.Consulta_CorteCajaHist.PerformLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DGV_ListaCCajas, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -547,33 +567,33 @@ Partial Class Form_CorteCaja
     Friend WithEvents Alta_CorteCajaFinal As TabPage
     Friend WithEvents Button1 As Button
     Friend WithEvents Consulta_CorteCajaHist As TabPage
-    Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents TextBox6 As TextBox
-    Friend WithEvents Label7 As Label
+    Friend WithEvents GrBo_InformacionCorteCaja As GroupBox
+    Friend WithEvents TtBo_CCaja_InfTotal As TextBox
+    Friend WithEvents Lab_CCaja_InfTotal As Label
     Friend WithEvents Button3 As Button
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents Label6 As Label
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Button2 As Button
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label1 As Label
-    Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents Button4 As Button
-    Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents DateTimePicker1 As DateTimePicker
-    Friend WithEvents Label8 As Label
-    Friend WithEvents TextBox7 As TextBox
-    Friend WithEvents Label9 As Label
-    Friend WithEvents Label13 As Label
-    Friend WithEvents Label12 As Label
-    Friend WithEvents Label10 As Label
-    Friend WithEvents Label11 As Label
+    Friend WithEvents TtBo_CCaja_InfSubtotal As TextBox
+    Friend WithEvents TtBo_CCaja_InfSalidaDinero As TextBox
+    Friend WithEvents TtBo_CCaja_InfDineroInicial As TextBox
+    Friend WithEvents Lab_CCaja_InfSubtotal As Label
+    Friend WithEvents Lab_CCaja_InfSalidaDinero As Label
+    Friend WithEvents Lab_CCaja_InfDimeroInicial As Label
+    Friend WithEvents Btn_CCaja_CorteDeCaja As Button
+    Friend WithEvents TtBo_CCaja_SalidaCaja As TextBox
+    Friend WithEvents Lab_CCaja_AlgunaSalidaCaja As Label
+    Friend WithEvents TtBo_CCaja_DineroJornadaInicial As TextBox
+    Friend WithEvents Lab_CCaja_DineroJornadaInicial As Label
+    Friend WithEvents Lab_CCaja_Titulo As Label
+    Friend WithEvents GrBo_DatosCorteCaja As GroupBox
+    Friend WithEvents Btn_HCCaja_Buscar As Button
+    Friend WithEvents DGV_ListaCCajas As DataGridView
+    Friend WithEvents DaTiPi_HCCaja_SeleccionFecha As DateTimePicker
+    Friend WithEvents Lab_HCCaja_SeleccionFecha As Label
+    Friend WithEvents TtBo_CCaja_NombCajero As TextBox
+    Friend WithEvents Lab_CCaja_NombCajero As Label
+    Friend WithEvents Lab_CCaja_HoraDerecha As Label
+    Friend WithEvents Lab_CCaja_FechaDerecha As Label
+    Friend WithEvents Lab_CCaja_InfHora As Label
+    Friend WithEvents Lab_CCaja_InfFecha As Label
     Friend WithEvents DGV_ID_CorCaja As DataGridViewTextBoxColumn
     Friend WithEvents DGV_FECHA_CorCaja As DataGridViewTextBoxColumn
     Friend WithEvents DGV_HORA_CorCaja As DataGridViewTextBoxColumn
@@ -583,4 +603,5 @@ Partial Class Form_CorteCaja
     Friend WithEvents DGV_NOMBCAJERO_CorCaja As DataGridViewTextBoxColumn
     Friend WithEvents CategoriasToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CaducosToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents Btn_HCCaja_BuscarTodo As Button
 End Class

@@ -35,44 +35,49 @@ Partial Class Form_Proveedores
         Me.ClientesYMascotasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Tab_Ctr_Proveedor = New System.Windows.Forms.TabControl()
         Me.Alta_Proveedores = New System.Windows.Forms.TabPage()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
-        Me.TextBox14 = New System.Windows.Forms.TextBox()
-        Me.TextBox13 = New System.Windows.Forms.TextBox()
-        Me.TextBox12 = New System.Windows.Forms.TextBox()
-        Me.TextBox11 = New System.Windows.Forms.TextBox()
-        Me.TextBox10 = New System.Windows.Forms.TextBox()
-        Me.TextBox9 = New System.Windows.Forms.TextBox()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
-        Me.Label17 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.Label16 = New System.Windows.Forms.Label()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.Label15 = New System.Windows.Forms.Label()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.TtBo_Alta_MpioProv = New System.Windows.Forms.TextBox()
+        Me.Lab_Alta_MpioProv = New System.Windows.Forms.Label()
+        Me.Btn_Alta_Limpiar = New System.Windows.Forms.Button()
+        Me.Btn_Alta_Guardar = New System.Windows.Forms.Button()
+        Me.CoBo_Alta_EstadoProv = New System.Windows.Forms.ComboBox()
+        Me.TtBo_Alta_TelefDosProv = New System.Windows.Forms.TextBox()
+        Me.TtBo_Alta_TelefUnoProv = New System.Windows.Forms.TextBox()
+        Me.TtBo_Alta_ColoniaProv = New System.Windows.Forms.TextBox()
+        Me.TtBo_Alta_CpProv = New System.Windows.Forms.TextBox()
+        Me.TtBo_Alta_NumInteriorProv = New System.Windows.Forms.TextBox()
+        Me.TtBo_Alta_NumExteriorProv = New System.Windows.Forms.TextBox()
+        Me.TtBo_Alta_DescripProv = New System.Windows.Forms.TextBox()
+        Me.Lab_Alta_DescripProv = New System.Windows.Forms.Label()
+        Me.TtBo_Alta_SecuenciaProv = New System.Windows.Forms.TextBox()
+        Me.Lab_Alta_SecuenciaProv = New System.Windows.Forms.Label()
+        Me.CoBo_Alta_MonedaProv = New System.Windows.Forms.ComboBox()
+        Me.TtBo_Alta_EmailProv = New System.Windows.Forms.TextBox()
+        Me.TtBo_Alta_RubroProv = New System.Windows.Forms.TextBox()
+        Me.TtBo_Alta_CuentaDepositoProv = New System.Windows.Forms.TextBox()
+        Me.Lab_Alta_CuentaDepositoProv = New System.Windows.Forms.Label()
+        Me.Lab_Alta_MonedaProv = New System.Windows.Forms.Label()
+        Me.CoBo_Alta_FormaPagoProv = New System.Windows.Forms.ComboBox()
+        Me.Lab_Alta_FormaPagoProv = New System.Windows.Forms.Label()
+        Me.Lab_Alta_RubroProv = New System.Windows.Forms.Label()
+        Me.Lab_Alta_EmailProv = New System.Windows.Forms.Label()
+        Me.Lab_Alta_TelefDosProv = New System.Windows.Forms.Label()
+        Me.Lab_Alta_TelefUnoProv = New System.Windows.Forms.Label()
+        Me.Lab_Alta_EstadoProv = New System.Windows.Forms.Label()
+        Me.Lab_Alta_ColoniaProv = New System.Windows.Forms.Label()
+        Me.Lab_Alta_CpProv = New System.Windows.Forms.Label()
+        Me.Lab_Alta_NumInteriorProv = New System.Windows.Forms.Label()
+        Me.Lab_Alta_NumExteriorProv = New System.Windows.Forms.Label()
+        Me.TtBo_Alta_CalleProv = New System.Windows.Forms.TextBox()
+        Me.Lab_Alta_CalleProv = New System.Windows.Forms.Label()
+        Me.TtBo_Alta_RfcProv = New System.Windows.Forms.TextBox()
+        Me.TtBo_Alta_NombProv = New System.Windows.Forms.TextBox()
+        Me.Lab_Alta_RfcProv = New System.Windows.Forms.Label()
+        Me.Lab_Alta_NombProv = New System.Windows.Forms.Label()
         Me.Consulta_Proveedores = New System.Windows.Forms.TabPage()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.Btn_Consulta_BuscarTodo = New System.Windows.Forms.Button()
+        Me.TtBo_Consulta_RfcProv = New System.Windows.Forms.TextBox()
+        Me.TtBo_Consulta_NombProv = New System.Windows.Forms.TextBox()
+        Me.DGV_ListaProv = New System.Windows.Forms.DataGridView()
         Me.DVG_ID_Prov = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DVG_NombORazonS_Prov = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DVG_Direcc_Prov = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -84,84 +89,85 @@ Partial Class Form_Proveedores
         Me.DVG_Moneda_Prov = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DVG_CuentaDep_Prov = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DVG_Descp_Prov = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Label18 = New System.Windows.Forms.Label()
-        Me.Label19 = New System.Windows.Forms.Label()
+        Me.Btn_Consulta_BuscarProv = New System.Windows.Forms.Button()
+        Me.Lab_Consulta_RfcProv = New System.Windows.Forms.Label()
+        Me.Lab_Consulta_NombProv = New System.Windows.Forms.Label()
         Me.Cambio_Proveedor = New System.Windows.Forms.TabPage()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.ComboBox4 = New System.Windows.Forms.ComboBox()
-        Me.TextBox17 = New System.Windows.Forms.TextBox()
-        Me.TextBox18 = New System.Windows.Forms.TextBox()
-        Me.TextBox19 = New System.Windows.Forms.TextBox()
-        Me.TextBox20 = New System.Windows.Forms.TextBox()
-        Me.TextBox21 = New System.Windows.Forms.TextBox()
-        Me.TextBox22 = New System.Windows.Forms.TextBox()
-        Me.TextBox23 = New System.Windows.Forms.TextBox()
-        Me.Label20 = New System.Windows.Forms.Label()
-        Me.TextBox24 = New System.Windows.Forms.TextBox()
-        Me.Label21 = New System.Windows.Forms.Label()
-        Me.ComboBox5 = New System.Windows.Forms.ComboBox()
-        Me.TextBox25 = New System.Windows.Forms.TextBox()
-        Me.TextBox26 = New System.Windows.Forms.TextBox()
-        Me.TextBox27 = New System.Windows.Forms.TextBox()
-        Me.Label22 = New System.Windows.Forms.Label()
-        Me.Label23 = New System.Windows.Forms.Label()
-        Me.ComboBox6 = New System.Windows.Forms.ComboBox()
-        Me.Label24 = New System.Windows.Forms.Label()
-        Me.Label25 = New System.Windows.Forms.Label()
-        Me.Label26 = New System.Windows.Forms.Label()
-        Me.Label27 = New System.Windows.Forms.Label()
-        Me.Label28 = New System.Windows.Forms.Label()
-        Me.Label29 = New System.Windows.Forms.Label()
-        Me.Label30 = New System.Windows.Forms.Label()
-        Me.Label31 = New System.Windows.Forms.Label()
-        Me.Label32 = New System.Windows.Forms.Label()
-        Me.Label33 = New System.Windows.Forms.Label()
-        Me.TextBox28 = New System.Windows.Forms.TextBox()
-        Me.Label34 = New System.Windows.Forms.Label()
-        Me.TextBox29 = New System.Windows.Forms.TextBox()
-        Me.TextBox30 = New System.Windows.Forms.TextBox()
-        Me.Label35 = New System.Windows.Forms.Label()
-        Me.Label36 = New System.Windows.Forms.Label()
+        Me.TtBo_Cambios_mpioProv = New System.Windows.Forms.TextBox()
+        Me.Lab_Cambios_MpioProv = New System.Windows.Forms.Label()
+        Me.Btn_Cambios_Limpiar = New System.Windows.Forms.Button()
+        Me.Btn_Cambios_Buscar = New System.Windows.Forms.Button()
+        Me.CoBo_Cambios_EstadoProv = New System.Windows.Forms.ComboBox()
+        Me.TtBo_Cambios_TelefDosProv = New System.Windows.Forms.TextBox()
+        Me.TtBo_Cambios_TelefUnoProv = New System.Windows.Forms.TextBox()
+        Me.TtBo_Cambios_ColoniaProv = New System.Windows.Forms.TextBox()
+        Me.TtBo_Cambios_CpProv = New System.Windows.Forms.TextBox()
+        Me.TtBo_Cambios_NumInteriorProv = New System.Windows.Forms.TextBox()
+        Me.TtBo_Cambios_NumExteriorProv = New System.Windows.Forms.TextBox()
+        Me.TtBo_Cambios_DescripProv = New System.Windows.Forms.TextBox()
+        Me.Lab_Cambios_DescripProv = New System.Windows.Forms.Label()
+        Me.TtBo_Cambios_SecuenciaProv = New System.Windows.Forms.TextBox()
+        Me.Lab_Cambios_SecuenciaProv = New System.Windows.Forms.Label()
+        Me.CoBo_Cambios_MonedaProv = New System.Windows.Forms.ComboBox()
+        Me.TtBo_Cambios_EmailProv = New System.Windows.Forms.TextBox()
+        Me.TtBo_Cambios_RubroProv = New System.Windows.Forms.TextBox()
+        Me.TtBo_Cambios_CuentaDepositoProv = New System.Windows.Forms.TextBox()
+        Me.Lab_Cambios_CuentaDepositoProv = New System.Windows.Forms.Label()
+        Me.Lab_Cambios_MonedaProv = New System.Windows.Forms.Label()
+        Me.CoBo_Cambios_FormaPagoProv = New System.Windows.Forms.ComboBox()
+        Me.Lab_Cambios_FormaPagoProv = New System.Windows.Forms.Label()
+        Me.Lab_Cambios_RubroProv = New System.Windows.Forms.Label()
+        Me.Lab_Cambios_EmailProv = New System.Windows.Forms.Label()
+        Me.Lab_Cambios_TelefDosProv = New System.Windows.Forms.Label()
+        Me.Lab_Cambios_TelefUnoProv = New System.Windows.Forms.Label()
+        Me.Lab_Cambios_EstadoProv = New System.Windows.Forms.Label()
+        Me.Lab_Cambios_ColoniaProv = New System.Windows.Forms.Label()
+        Me.Lab_Cambios_CpProv = New System.Windows.Forms.Label()
+        Me.Lab_Cambios_NumInteriorProv = New System.Windows.Forms.Label()
+        Me.Lab_Cambios_NumExteriorProv = New System.Windows.Forms.Label()
+        Me.TtBo_Cambios_CalleProv = New System.Windows.Forms.TextBox()
+        Me.Lab_Cambios_CalleProv = New System.Windows.Forms.Label()
+        Me.TtBo_Cambios_RfcProv = New System.Windows.Forms.TextBox()
+        Me.TtBo_Cambios_NombProv = New System.Windows.Forms.TextBox()
+        Me.Lab_Cambios_RfcProv = New System.Windows.Forms.Label()
+        Me.Lab_Cambios_NombProv = New System.Windows.Forms.Label()
         Me.Baja_Proveedores = New System.Windows.Forms.TabPage()
-        Me.Button7 = New System.Windows.Forms.Button()
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.TextBox35 = New System.Windows.Forms.TextBox()
-        Me.TextBox36 = New System.Windows.Forms.TextBox()
-        Me.TextBox37 = New System.Windows.Forms.TextBox()
-        Me.TextBox38 = New System.Windows.Forms.TextBox()
-        Me.Label39 = New System.Windows.Forms.Label()
-        Me.Label42 = New System.Windows.Forms.Label()
-        Me.Label43 = New System.Windows.Forms.Label()
-        Me.Label44 = New System.Windows.Forms.Label()
-        Me.TextBox39 = New System.Windows.Forms.TextBox()
-        Me.Label45 = New System.Windows.Forms.Label()
-        Me.TextBox40 = New System.Windows.Forms.TextBox()
-        Me.TextBox41 = New System.Windows.Forms.TextBox()
-        Me.Label46 = New System.Windows.Forms.Label()
-        Me.Label47 = New System.Windows.Forms.Label()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.TextBox31 = New System.Windows.Forms.TextBox()
-        Me.TextBox32 = New System.Windows.Forms.TextBox()
-        Me.Label37 = New System.Windows.Forms.Label()
-        Me.Label38 = New System.Windows.Forms.Label()
-        Me.TextBox15 = New System.Windows.Forms.TextBox()
-        Me.TextBox16 = New System.Windows.Forms.TextBox()
+        Me.Btn_Baja_Limpiar = New System.Windows.Forms.Button()
+        Me.Btn_Baja_Eliminar = New System.Windows.Forms.Button()
+        Me.TtBo_PreBaja_ColoniaProv = New System.Windows.Forms.TextBox()
+        Me.TtBo_PreBaja_CpProv = New System.Windows.Forms.TextBox()
+        Me.TtBo_PreBaja_NumbExterior = New System.Windows.Forms.TextBox()
+        Me.TtBo_PreBaja_RubroProv = New System.Windows.Forms.TextBox()
+        Me.Lab_PreBaja_RubroProv = New System.Windows.Forms.Label()
+        Me.Lab_PreBaja_ColoniaProv = New System.Windows.Forms.Label()
+        Me.Lab_PreBaja_CpProv = New System.Windows.Forms.Label()
+        Me.Lab_PreBaja_NumExteriorProv = New System.Windows.Forms.Label()
+        Me.TtBo_PreBaja_CalleProv = New System.Windows.Forms.TextBox()
+        Me.Lab_PreBaja_CalleProv = New System.Windows.Forms.Label()
+        Me.TtBo_PreBaja_RfcProv = New System.Windows.Forms.TextBox()
+        Me.TtBo_PreBaja_NombProv = New System.Windows.Forms.TextBox()
+        Me.Lab_PreBaja_RfcProv = New System.Windows.Forms.Label()
+        Me.Lab_PreBaja_NombProv = New System.Windows.Forms.Label()
+        Me.Btn_Baja_Buscar = New System.Windows.Forms.Button()
+        Me.TtBo_Baja_RfcProv = New System.Windows.Forms.TextBox()
+        Me.TtBo_Baja_NombProv = New System.Windows.Forms.TextBox()
+        Me.Lab_Baja_RfcProv = New System.Windows.Forms.Label()
+        Me.Lab_Baja_NombProv = New System.Windows.Forms.Label()
         Me.MenuS_Principal.SuspendLayout()
         Me.Tab_Ctr_Proveedor.SuspendLayout()
         Me.Alta_Proveedores.SuspendLayout()
         Me.Consulta_Proveedores.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DGV_ListaProv, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Cambio_Proveedor.SuspendLayout()
         Me.Baja_Proveedores.SuspendLayout()
         Me.SuspendLayout()
         '
         'Btn_atras
         '
-        Me.Btn_atras.Location = New System.Drawing.Point(12, 27)
+        Me.Btn_atras.Location = New System.Drawing.Point(16, 33)
+        Me.Btn_atras.Margin = New System.Windows.Forms.Padding(4)
         Me.Btn_atras.Name = "Btn_atras"
-        Me.Btn_atras.Size = New System.Drawing.Size(75, 23)
+        Me.Btn_atras.Size = New System.Drawing.Size(100, 28)
         Me.Btn_atras.TabIndex = 4
         Me.Btn_atras.Text = "< Atras"
         Me.Btn_atras.UseVisualStyleBackColor = True
@@ -171,7 +177,8 @@ Partial Class Form_Proveedores
         Me.MenuS_Principal.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ProductosToolStripMenuItem, Me.ServiciosToolStripMenuItem1, Me.InventarioToolStripMenuItem, Me.VentasToolStripMenuItem, Me.ComprasToolStripMenuItem, Me.EmpleadosToolStripMenuItem1, Me.ClientesYMascotasToolStripMenuItem})
         Me.MenuS_Principal.Location = New System.Drawing.Point(0, 0)
         Me.MenuS_Principal.Name = "MenuS_Principal"
-        Me.MenuS_Principal.Size = New System.Drawing.Size(800, 24)
+        Me.MenuS_Principal.Padding = New System.Windows.Forms.Padding(8, 2, 0, 2)
+        Me.MenuS_Principal.Size = New System.Drawing.Size(1067, 24)
         Me.MenuS_Principal.TabIndex = 3
         Me.MenuS_Principal.Text = "MenuStrip1"
         '
@@ -236,395 +243,493 @@ Partial Class Form_Proveedores
         Me.Tab_Ctr_Proveedor.Controls.Add(Me.Consulta_Proveedores)
         Me.Tab_Ctr_Proveedor.Controls.Add(Me.Cambio_Proveedor)
         Me.Tab_Ctr_Proveedor.Controls.Add(Me.Baja_Proveedores)
-        Me.Tab_Ctr_Proveedor.Location = New System.Drawing.Point(12, 56)
+        Me.Tab_Ctr_Proveedor.Location = New System.Drawing.Point(16, 69)
+        Me.Tab_Ctr_Proveedor.Margin = New System.Windows.Forms.Padding(4)
         Me.Tab_Ctr_Proveedor.Name = "Tab_Ctr_Proveedor"
         Me.Tab_Ctr_Proveedor.SelectedIndex = 0
-        Me.Tab_Ctr_Proveedor.Size = New System.Drawing.Size(776, 382)
+        Me.Tab_Ctr_Proveedor.Size = New System.Drawing.Size(1035, 470)
         Me.Tab_Ctr_Proveedor.TabIndex = 5
         '
         'Alta_Proveedores
         '
-        Me.Alta_Proveedores.Controls.Add(Me.Button3)
-        Me.Alta_Proveedores.Controls.Add(Me.Button2)
-        Me.Alta_Proveedores.Controls.Add(Me.ComboBox3)
-        Me.Alta_Proveedores.Controls.Add(Me.TextBox14)
-        Me.Alta_Proveedores.Controls.Add(Me.TextBox13)
-        Me.Alta_Proveedores.Controls.Add(Me.TextBox12)
-        Me.Alta_Proveedores.Controls.Add(Me.TextBox11)
-        Me.Alta_Proveedores.Controls.Add(Me.TextBox10)
-        Me.Alta_Proveedores.Controls.Add(Me.TextBox9)
-        Me.Alta_Proveedores.Controls.Add(Me.TextBox8)
-        Me.Alta_Proveedores.Controls.Add(Me.Label17)
-        Me.Alta_Proveedores.Controls.Add(Me.TextBox4)
-        Me.Alta_Proveedores.Controls.Add(Me.Label16)
-        Me.Alta_Proveedores.Controls.Add(Me.ComboBox2)
-        Me.Alta_Proveedores.Controls.Add(Me.TextBox7)
-        Me.Alta_Proveedores.Controls.Add(Me.TextBox6)
-        Me.Alta_Proveedores.Controls.Add(Me.TextBox5)
-        Me.Alta_Proveedores.Controls.Add(Me.Label15)
-        Me.Alta_Proveedores.Controls.Add(Me.Label14)
-        Me.Alta_Proveedores.Controls.Add(Me.ComboBox1)
-        Me.Alta_Proveedores.Controls.Add(Me.Label13)
-        Me.Alta_Proveedores.Controls.Add(Me.Label12)
-        Me.Alta_Proveedores.Controls.Add(Me.Label11)
-        Me.Alta_Proveedores.Controls.Add(Me.Label10)
-        Me.Alta_Proveedores.Controls.Add(Me.Label9)
-        Me.Alta_Proveedores.Controls.Add(Me.Label8)
-        Me.Alta_Proveedores.Controls.Add(Me.Label7)
-        Me.Alta_Proveedores.Controls.Add(Me.Label6)
-        Me.Alta_Proveedores.Controls.Add(Me.Label5)
-        Me.Alta_Proveedores.Controls.Add(Me.Label4)
-        Me.Alta_Proveedores.Controls.Add(Me.TextBox3)
-        Me.Alta_Proveedores.Controls.Add(Me.Label3)
-        Me.Alta_Proveedores.Controls.Add(Me.TextBox2)
-        Me.Alta_Proveedores.Controls.Add(Me.TextBox1)
-        Me.Alta_Proveedores.Controls.Add(Me.Label2)
-        Me.Alta_Proveedores.Controls.Add(Me.Label1)
-        Me.Alta_Proveedores.Location = New System.Drawing.Point(4, 22)
+        Me.Alta_Proveedores.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Alta_Proveedores.Controls.Add(Me.TtBo_Alta_MpioProv)
+        Me.Alta_Proveedores.Controls.Add(Me.Lab_Alta_MpioProv)
+        Me.Alta_Proveedores.Controls.Add(Me.Btn_Alta_Limpiar)
+        Me.Alta_Proveedores.Controls.Add(Me.Btn_Alta_Guardar)
+        Me.Alta_Proveedores.Controls.Add(Me.CoBo_Alta_EstadoProv)
+        Me.Alta_Proveedores.Controls.Add(Me.TtBo_Alta_TelefDosProv)
+        Me.Alta_Proveedores.Controls.Add(Me.TtBo_Alta_TelefUnoProv)
+        Me.Alta_Proveedores.Controls.Add(Me.TtBo_Alta_ColoniaProv)
+        Me.Alta_Proveedores.Controls.Add(Me.TtBo_Alta_CpProv)
+        Me.Alta_Proveedores.Controls.Add(Me.TtBo_Alta_NumInteriorProv)
+        Me.Alta_Proveedores.Controls.Add(Me.TtBo_Alta_NumExteriorProv)
+        Me.Alta_Proveedores.Controls.Add(Me.TtBo_Alta_DescripProv)
+        Me.Alta_Proveedores.Controls.Add(Me.Lab_Alta_DescripProv)
+        Me.Alta_Proveedores.Controls.Add(Me.TtBo_Alta_SecuenciaProv)
+        Me.Alta_Proveedores.Controls.Add(Me.Lab_Alta_SecuenciaProv)
+        Me.Alta_Proveedores.Controls.Add(Me.CoBo_Alta_MonedaProv)
+        Me.Alta_Proveedores.Controls.Add(Me.TtBo_Alta_EmailProv)
+        Me.Alta_Proveedores.Controls.Add(Me.TtBo_Alta_RubroProv)
+        Me.Alta_Proveedores.Controls.Add(Me.TtBo_Alta_CuentaDepositoProv)
+        Me.Alta_Proveedores.Controls.Add(Me.Lab_Alta_CuentaDepositoProv)
+        Me.Alta_Proveedores.Controls.Add(Me.Lab_Alta_MonedaProv)
+        Me.Alta_Proveedores.Controls.Add(Me.CoBo_Alta_FormaPagoProv)
+        Me.Alta_Proveedores.Controls.Add(Me.Lab_Alta_FormaPagoProv)
+        Me.Alta_Proveedores.Controls.Add(Me.Lab_Alta_RubroProv)
+        Me.Alta_Proveedores.Controls.Add(Me.Lab_Alta_EmailProv)
+        Me.Alta_Proveedores.Controls.Add(Me.Lab_Alta_TelefDosProv)
+        Me.Alta_Proveedores.Controls.Add(Me.Lab_Alta_TelefUnoProv)
+        Me.Alta_Proveedores.Controls.Add(Me.Lab_Alta_EstadoProv)
+        Me.Alta_Proveedores.Controls.Add(Me.Lab_Alta_ColoniaProv)
+        Me.Alta_Proveedores.Controls.Add(Me.Lab_Alta_CpProv)
+        Me.Alta_Proveedores.Controls.Add(Me.Lab_Alta_NumInteriorProv)
+        Me.Alta_Proveedores.Controls.Add(Me.Lab_Alta_NumExteriorProv)
+        Me.Alta_Proveedores.Controls.Add(Me.TtBo_Alta_CalleProv)
+        Me.Alta_Proveedores.Controls.Add(Me.Lab_Alta_CalleProv)
+        Me.Alta_Proveedores.Controls.Add(Me.TtBo_Alta_RfcProv)
+        Me.Alta_Proveedores.Controls.Add(Me.TtBo_Alta_NombProv)
+        Me.Alta_Proveedores.Controls.Add(Me.Lab_Alta_RfcProv)
+        Me.Alta_Proveedores.Controls.Add(Me.Lab_Alta_NombProv)
+        Me.Alta_Proveedores.Location = New System.Drawing.Point(4, 25)
+        Me.Alta_Proveedores.Margin = New System.Windows.Forms.Padding(4)
         Me.Alta_Proveedores.Name = "Alta_Proveedores"
-        Me.Alta_Proveedores.Padding = New System.Windows.Forms.Padding(3)
-        Me.Alta_Proveedores.Size = New System.Drawing.Size(768, 356)
+        Me.Alta_Proveedores.Padding = New System.Windows.Forms.Padding(4)
+        Me.Alta_Proveedores.Size = New System.Drawing.Size(1027, 441)
         Me.Alta_Proveedores.TabIndex = 0
         Me.Alta_Proveedores.Text = "Alta de proveedor"
-        Me.Alta_Proveedores.UseVisualStyleBackColor = True
         '
-        'Button3
-        '
-        Me.Button3.Location = New System.Drawing.Point(670, 305)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(79, 23)
-        Me.Button3.TabIndex = 72
-        Me.Button3.Text = "Limpiar"
-        Me.Button3.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(540, 305)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(124, 23)
-        Me.Button2.TabIndex = 71
-        Me.Button2.Text = "Guardar"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'ComboBox3
-        '
-        Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Location = New System.Drawing.Point(190, 247)
-        Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(164, 21)
-        Me.ComboBox3.TabIndex = 70
-        '
-        'TextBox14
-        '
-        Me.TextBox14.Location = New System.Drawing.Point(190, 305)
-        Me.TextBox14.Name = "TextBox14"
-        Me.TextBox14.Size = New System.Drawing.Size(164, 20)
-        Me.TextBox14.TabIndex = 69
-        '
-        'TextBox13
-        '
-        Me.TextBox13.Location = New System.Drawing.Point(190, 275)
-        Me.TextBox13.Name = "TextBox13"
-        Me.TextBox13.Size = New System.Drawing.Size(164, 20)
-        Me.TextBox13.TabIndex = 68
-        '
-        'TextBox12
-        '
-        Me.TextBox12.Location = New System.Drawing.Point(190, 214)
-        Me.TextBox12.Name = "TextBox12"
-        Me.TextBox12.Size = New System.Drawing.Size(164, 20)
-        Me.TextBox12.TabIndex = 67
-        '
-        'TextBox11
-        '
-        Me.TextBox11.Location = New System.Drawing.Point(190, 184)
-        Me.TextBox11.Name = "TextBox11"
-        Me.TextBox11.Size = New System.Drawing.Size(164, 20)
-        Me.TextBox11.TabIndex = 66
-        '
-        'TextBox10
-        '
-        Me.TextBox10.Location = New System.Drawing.Point(190, 156)
-        Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(164, 20)
-        Me.TextBox10.TabIndex = 65
-        '
-        'TextBox9
-        '
-        Me.TextBox9.Location = New System.Drawing.Point(190, 125)
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(164, 20)
-        Me.TextBox9.TabIndex = 64
-        '
-        'TextBox8
-        '
-        Me.TextBox8.Location = New System.Drawing.Point(540, 229)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(181, 20)
-        Me.TextBox8.TabIndex = 63
-        '
-        'Label17
-        '
-        Me.Label17.AutoSize = True
-        Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label17.Location = New System.Drawing.Point(388, 232)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(86, 17)
-        Me.Label17.TabIndex = 62
-        Me.Label17.Text = "Descripción:"
-        '
-        'TextBox4
-        '
-        Me.TextBox4.Location = New System.Drawing.Point(540, 123)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(181, 20)
-        Me.TextBox4.TabIndex = 61
-        '
-        'Label16
-        '
-        Me.Label16.AutoSize = True
-        Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label16.Location = New System.Drawing.Point(388, 126)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(78, 17)
-        Me.Label16.TabIndex = 60
-        Me.Label16.Text = "Secuencia:"
-        '
-        'ComboBox2
-        '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Items.AddRange(New Object() {"Peso Mexicano", "Dolares Americanos", "Euros", "Yuanes "})
-        Me.ComboBox2.Location = New System.Drawing.Point(540, 157)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(181, 21)
-        Me.ComboBox2.TabIndex = 59
-        '
-        'TextBox7
-        '
-        Me.TextBox7.Location = New System.Drawing.Point(540, 29)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(181, 20)
-        Me.TextBox7.TabIndex = 58
-        '
-        'TextBox6
-        '
-        Me.TextBox6.Location = New System.Drawing.Point(540, 53)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(181, 20)
-        Me.TextBox6.TabIndex = 57
-        '
-        'TextBox5
-        '
-        Me.TextBox5.Location = New System.Drawing.Point(540, 195)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(181, 20)
-        Me.TextBox5.TabIndex = 56
-        '
-        'Label15
-        '
-        Me.Label15.AutoSize = True
-        Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label15.Location = New System.Drawing.Point(388, 196)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(135, 17)
-        Me.Label15.TabIndex = 55
-        Me.Label15.Text = "Cuenta de deposito:"
-        '
-        'Label14
-        '
-        Me.Label14.AutoSize = True
-        Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label14.Location = New System.Drawing.Point(388, 161)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(63, 17)
-        Me.Label14.TabIndex = 54
-        Me.Label14.Text = "Moneda:"
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Pagó de una sola exibición", "Depositó baconcario"})
-        Me.ComboBox1.Location = New System.Drawing.Point(540, 88)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(181, 21)
-        Me.ComboBox1.TabIndex = 53
-        '
-        'Label13
-        '
-        Me.Label13.AutoSize = True
-        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label13.Location = New System.Drawing.Point(388, 92)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(108, 17)
-        Me.Label13.TabIndex = 52
-        Me.Label13.Text = "Forma de pago:"
-        '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label12.Location = New System.Drawing.Point(388, 56)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(83, 17)
-        Me.Label12.TabIndex = 51
-        Me.Label12.Text = "Rubro/ giro:"
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label11.Location = New System.Drawing.Point(388, 29)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(46, 17)
-        Me.Label11.TabIndex = 50
-        Me.Label11.Text = "Email:"
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label10.Location = New System.Drawing.Point(20, 306)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(80, 17)
-        Me.Label10.TabIndex = 49
-        Me.Label10.Text = "Teléfono 2:"
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label9.Location = New System.Drawing.Point(20, 276)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(80, 17)
-        Me.Label9.TabIndex = 48
-        Me.Label9.Text = "Teléfono 1:"
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label8.Location = New System.Drawing.Point(20, 247)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(56, 17)
-        Me.Label8.TabIndex = 47
-        Me.Label8.Text = "Estado:"
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label7.Location = New System.Drawing.Point(20, 215)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(142, 17)
-        Me.Label7.TabIndex = 46
-        Me.Label7.Text = "Colonia / Delegación:"
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label6.Location = New System.Drawing.Point(20, 187)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(30, 17)
-        Me.Label6.TabIndex = 45
-        Me.Label6.Text = "CP:"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label5.Location = New System.Drawing.Point(20, 157)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(110, 17)
-        Me.Label5.TabIndex = 44
-        Me.Label5.Text = "Número interior:"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label4.Location = New System.Drawing.Point(20, 126)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(113, 17)
-        Me.Label4.TabIndex = 43
-        Me.Label4.Text = "Número exterior:"
-        '
-        'TextBox3
-        '
-        Me.TextBox3.Location = New System.Drawing.Point(190, 89)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(164, 20)
-        Me.TextBox3.TabIndex = 42
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label3.Location = New System.Drawing.Point(20, 92)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(43, 17)
-        Me.Label3.TabIndex = 41
-        Me.Label3.Text = "Calle:"
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(190, 56)
-        Me.TextBox2.MaxLength = 20
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(164, 20)
-        Me.TextBox2.TabIndex = 40
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(190, 29)
-        Me.TextBox1.MaxLength = 100
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(164, 20)
-        Me.TextBox1.TabIndex = 39
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label2.Location = New System.Drawing.Point(20, 56)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(39, 17)
-        Me.Label2.TabIndex = 38
-        Me.Label2.Text = "RFC:"
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label1.Location = New System.Drawing.Point(20, 29)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(154, 17)
-        Me.Label1.TabIndex = 37
-        Me.Label1.Text = "Nombre o razón social:"
+        'TtBo_Alta_MpioProv
+        '
+        Me.TtBo_Alta_MpioProv.Location = New System.Drawing.Point(253, 302)
+        Me.TtBo_Alta_MpioProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_Alta_MpioProv.Name = "TtBo_Alta_MpioProv"
+        Me.TtBo_Alta_MpioProv.Size = New System.Drawing.Size(217, 23)
+        Me.TtBo_Alta_MpioProv.TabIndex = 74
+        '
+        'Lab_Alta_MpioProv
+        '
+        Me.Lab_Alta_MpioProv.AutoSize = True
+        Me.Lab_Alta_MpioProv.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Alta_MpioProv.Location = New System.Drawing.Point(27, 304)
+        Me.Lab_Alta_MpioProv.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Lab_Alta_MpioProv.Name = "Lab_Alta_MpioProv"
+        Me.Lab_Alta_MpioProv.Size = New System.Drawing.Size(71, 17)
+        Me.Lab_Alta_MpioProv.TabIndex = 73
+        Me.Lab_Alta_MpioProv.Text = "Municipio:"
+        '
+        'Btn_Alta_Limpiar
+        '
+        Me.Btn_Alta_Limpiar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Btn_Alta_Limpiar.Location = New System.Drawing.Point(720, 332)
+        Me.Btn_Alta_Limpiar.Margin = New System.Windows.Forms.Padding(4)
+        Me.Btn_Alta_Limpiar.Name = "Btn_Alta_Limpiar"
+        Me.Btn_Alta_Limpiar.Size = New System.Drawing.Size(92, 31)
+        Me.Btn_Alta_Limpiar.TabIndex = 72
+        Me.Btn_Alta_Limpiar.Text = "Limpiar"
+        Me.Btn_Alta_Limpiar.UseVisualStyleBackColor = False
+        '
+        'Btn_Alta_Guardar
+        '
+        Me.Btn_Alta_Guardar.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Btn_Alta_Guardar.Location = New System.Drawing.Point(820, 332)
+        Me.Btn_Alta_Guardar.Margin = New System.Windows.Forms.Padding(4)
+        Me.Btn_Alta_Guardar.Name = "Btn_Alta_Guardar"
+        Me.Btn_Alta_Guardar.Size = New System.Drawing.Size(141, 31)
+        Me.Btn_Alta_Guardar.TabIndex = 71
+        Me.Btn_Alta_Guardar.Text = "Guardar"
+        Me.Btn_Alta_Guardar.UseVisualStyleBackColor = False
+        '
+        'CoBo_Alta_EstadoProv
+        '
+        Me.CoBo_Alta_EstadoProv.FormattingEnabled = True
+        Me.CoBo_Alta_EstadoProv.Items.AddRange(New Object() {"Aguascalientes", "Baja California", "Baja California Sur", "Campeche", "Chiapas", "Chihuahua", "Ciudad de México", "Coahuila", "Colima", "Durango", "Estado de México", "Guanajuato", "Guerrero", "Hidalgo", "Jalisco", "Michoacán", "Morelos", "Nayarit", "Nuevo León", "Oaxaca", "Puebla", "Querétaro", "Quintana Roo", "San Luis Potosí", "Sinaloa", "Sonora", "Tabasco", "Tamaulipas", "Tlaxcala", "Veracruz", "Yucatán", "Zacatecas"})
+        Me.CoBo_Alta_EstadoProv.Location = New System.Drawing.Point(253, 336)
+        Me.CoBo_Alta_EstadoProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.CoBo_Alta_EstadoProv.Name = "CoBo_Alta_EstadoProv"
+        Me.CoBo_Alta_EstadoProv.Size = New System.Drawing.Size(217, 24)
+        Me.CoBo_Alta_EstadoProv.TabIndex = 70
+        '
+        'TtBo_Alta_TelefDosProv
+        '
+        Me.TtBo_Alta_TelefDosProv.Location = New System.Drawing.Point(253, 410)
+        Me.TtBo_Alta_TelefDosProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_Alta_TelefDosProv.Name = "TtBo_Alta_TelefDosProv"
+        Me.TtBo_Alta_TelefDosProv.Size = New System.Drawing.Size(217, 23)
+        Me.TtBo_Alta_TelefDosProv.TabIndex = 69
+        '
+        'TtBo_Alta_TelefUnoProv
+        '
+        Me.TtBo_Alta_TelefUnoProv.Location = New System.Drawing.Point(253, 372)
+        Me.TtBo_Alta_TelefUnoProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_Alta_TelefUnoProv.Name = "TtBo_Alta_TelefUnoProv"
+        Me.TtBo_Alta_TelefUnoProv.Size = New System.Drawing.Size(217, 23)
+        Me.TtBo_Alta_TelefUnoProv.TabIndex = 68
+        '
+        'TtBo_Alta_ColoniaProv
+        '
+        Me.TtBo_Alta_ColoniaProv.Location = New System.Drawing.Point(253, 263)
+        Me.TtBo_Alta_ColoniaProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_Alta_ColoniaProv.Name = "TtBo_Alta_ColoniaProv"
+        Me.TtBo_Alta_ColoniaProv.Size = New System.Drawing.Size(217, 23)
+        Me.TtBo_Alta_ColoniaProv.TabIndex = 67
+        '
+        'TtBo_Alta_CpProv
+        '
+        Me.TtBo_Alta_CpProv.Location = New System.Drawing.Point(253, 226)
+        Me.TtBo_Alta_CpProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_Alta_CpProv.Name = "TtBo_Alta_CpProv"
+        Me.TtBo_Alta_CpProv.Size = New System.Drawing.Size(217, 23)
+        Me.TtBo_Alta_CpProv.TabIndex = 66
+        '
+        'TtBo_Alta_NumInteriorProv
+        '
+        Me.TtBo_Alta_NumInteriorProv.Location = New System.Drawing.Point(253, 192)
+        Me.TtBo_Alta_NumInteriorProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_Alta_NumInteriorProv.Name = "TtBo_Alta_NumInteriorProv"
+        Me.TtBo_Alta_NumInteriorProv.Size = New System.Drawing.Size(217, 23)
+        Me.TtBo_Alta_NumInteriorProv.TabIndex = 65
+        '
+        'TtBo_Alta_NumExteriorProv
+        '
+        Me.TtBo_Alta_NumExteriorProv.Location = New System.Drawing.Point(253, 154)
+        Me.TtBo_Alta_NumExteriorProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_Alta_NumExteriorProv.Name = "TtBo_Alta_NumExteriorProv"
+        Me.TtBo_Alta_NumExteriorProv.Size = New System.Drawing.Size(217, 23)
+        Me.TtBo_Alta_NumExteriorProv.TabIndex = 64
+        '
+        'TtBo_Alta_DescripProv
+        '
+        Me.TtBo_Alta_DescripProv.Location = New System.Drawing.Point(720, 282)
+        Me.TtBo_Alta_DescripProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_Alta_DescripProv.Name = "TtBo_Alta_DescripProv"
+        Me.TtBo_Alta_DescripProv.Size = New System.Drawing.Size(240, 23)
+        Me.TtBo_Alta_DescripProv.TabIndex = 63
+        '
+        'Lab_Alta_DescripProv
+        '
+        Me.Lab_Alta_DescripProv.AutoSize = True
+        Me.Lab_Alta_DescripProv.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Alta_DescripProv.Location = New System.Drawing.Point(517, 286)
+        Me.Lab_Alta_DescripProv.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Lab_Alta_DescripProv.Name = "Lab_Alta_DescripProv"
+        Me.Lab_Alta_DescripProv.Size = New System.Drawing.Size(86, 17)
+        Me.Lab_Alta_DescripProv.TabIndex = 62
+        Me.Lab_Alta_DescripProv.Text = "Descripción:"
+        '
+        'TtBo_Alta_SecuenciaProv
+        '
+        Me.TtBo_Alta_SecuenciaProv.Location = New System.Drawing.Point(720, 151)
+        Me.TtBo_Alta_SecuenciaProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_Alta_SecuenciaProv.MaxLength = 2
+        Me.TtBo_Alta_SecuenciaProv.Name = "TtBo_Alta_SecuenciaProv"
+        Me.TtBo_Alta_SecuenciaProv.Size = New System.Drawing.Size(240, 23)
+        Me.TtBo_Alta_SecuenciaProv.TabIndex = 61
+        '
+        'Lab_Alta_SecuenciaProv
+        '
+        Me.Lab_Alta_SecuenciaProv.AutoSize = True
+        Me.Lab_Alta_SecuenciaProv.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Alta_SecuenciaProv.Location = New System.Drawing.Point(517, 155)
+        Me.Lab_Alta_SecuenciaProv.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Lab_Alta_SecuenciaProv.Name = "Lab_Alta_SecuenciaProv"
+        Me.Lab_Alta_SecuenciaProv.Size = New System.Drawing.Size(78, 17)
+        Me.Lab_Alta_SecuenciaProv.TabIndex = 60
+        Me.Lab_Alta_SecuenciaProv.Text = "Secuencia:"
+        '
+        'CoBo_Alta_MonedaProv
+        '
+        Me.CoBo_Alta_MonedaProv.FormattingEnabled = True
+        Me.CoBo_Alta_MonedaProv.Items.AddRange(New Object() {"Peso Mexicano", "Dolares Americanos", "Euros", "Yuanes "})
+        Me.CoBo_Alta_MonedaProv.Location = New System.Drawing.Point(720, 193)
+        Me.CoBo_Alta_MonedaProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.CoBo_Alta_MonedaProv.Name = "CoBo_Alta_MonedaProv"
+        Me.CoBo_Alta_MonedaProv.Size = New System.Drawing.Size(240, 24)
+        Me.CoBo_Alta_MonedaProv.TabIndex = 59
+        '
+        'TtBo_Alta_EmailProv
+        '
+        Me.TtBo_Alta_EmailProv.Location = New System.Drawing.Point(720, 36)
+        Me.TtBo_Alta_EmailProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_Alta_EmailProv.Name = "TtBo_Alta_EmailProv"
+        Me.TtBo_Alta_EmailProv.Size = New System.Drawing.Size(240, 23)
+        Me.TtBo_Alta_EmailProv.TabIndex = 58
+        '
+        'TtBo_Alta_RubroProv
+        '
+        Me.TtBo_Alta_RubroProv.Location = New System.Drawing.Point(720, 65)
+        Me.TtBo_Alta_RubroProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_Alta_RubroProv.Name = "TtBo_Alta_RubroProv"
+        Me.TtBo_Alta_RubroProv.Size = New System.Drawing.Size(240, 23)
+        Me.TtBo_Alta_RubroProv.TabIndex = 57
+        '
+        'TtBo_Alta_CuentaDepositoProv
+        '
+        Me.TtBo_Alta_CuentaDepositoProv.Location = New System.Drawing.Point(720, 240)
+        Me.TtBo_Alta_CuentaDepositoProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_Alta_CuentaDepositoProv.MaxLength = 18
+        Me.TtBo_Alta_CuentaDepositoProv.Name = "TtBo_Alta_CuentaDepositoProv"
+        Me.TtBo_Alta_CuentaDepositoProv.Size = New System.Drawing.Size(240, 23)
+        Me.TtBo_Alta_CuentaDepositoProv.TabIndex = 56
+        '
+        'Lab_Alta_CuentaDepositoProv
+        '
+        Me.Lab_Alta_CuentaDepositoProv.AutoSize = True
+        Me.Lab_Alta_CuentaDepositoProv.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Alta_CuentaDepositoProv.Location = New System.Drawing.Point(517, 241)
+        Me.Lab_Alta_CuentaDepositoProv.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Lab_Alta_CuentaDepositoProv.Name = "Lab_Alta_CuentaDepositoProv"
+        Me.Lab_Alta_CuentaDepositoProv.Size = New System.Drawing.Size(135, 17)
+        Me.Lab_Alta_CuentaDepositoProv.TabIndex = 55
+        Me.Lab_Alta_CuentaDepositoProv.Text = "Cuenta de deposito:"
+        '
+        'Lab_Alta_MonedaProv
+        '
+        Me.Lab_Alta_MonedaProv.AutoSize = True
+        Me.Lab_Alta_MonedaProv.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Alta_MonedaProv.Location = New System.Drawing.Point(517, 198)
+        Me.Lab_Alta_MonedaProv.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Lab_Alta_MonedaProv.Name = "Lab_Alta_MonedaProv"
+        Me.Lab_Alta_MonedaProv.Size = New System.Drawing.Size(63, 17)
+        Me.Lab_Alta_MonedaProv.TabIndex = 54
+        Me.Lab_Alta_MonedaProv.Text = "Moneda:"
+        '
+        'CoBo_Alta_FormaPagoProv
+        '
+        Me.CoBo_Alta_FormaPagoProv.FormattingEnabled = True
+        Me.CoBo_Alta_FormaPagoProv.Items.AddRange(New Object() {"Pagó de una sola exibición", "Depositó baconcario"})
+        Me.CoBo_Alta_FormaPagoProv.Location = New System.Drawing.Point(720, 108)
+        Me.CoBo_Alta_FormaPagoProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.CoBo_Alta_FormaPagoProv.Name = "CoBo_Alta_FormaPagoProv"
+        Me.CoBo_Alta_FormaPagoProv.Size = New System.Drawing.Size(240, 24)
+        Me.CoBo_Alta_FormaPagoProv.TabIndex = 53
+        '
+        'Lab_Alta_FormaPagoProv
+        '
+        Me.Lab_Alta_FormaPagoProv.AutoSize = True
+        Me.Lab_Alta_FormaPagoProv.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Alta_FormaPagoProv.Location = New System.Drawing.Point(517, 113)
+        Me.Lab_Alta_FormaPagoProv.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Lab_Alta_FormaPagoProv.Name = "Lab_Alta_FormaPagoProv"
+        Me.Lab_Alta_FormaPagoProv.Size = New System.Drawing.Size(108, 17)
+        Me.Lab_Alta_FormaPagoProv.TabIndex = 52
+        Me.Lab_Alta_FormaPagoProv.Text = "Forma de pago:"
+        '
+        'Lab_Alta_RubroProv
+        '
+        Me.Lab_Alta_RubroProv.AutoSize = True
+        Me.Lab_Alta_RubroProv.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Alta_RubroProv.Location = New System.Drawing.Point(517, 69)
+        Me.Lab_Alta_RubroProv.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Lab_Alta_RubroProv.Name = "Lab_Alta_RubroProv"
+        Me.Lab_Alta_RubroProv.Size = New System.Drawing.Size(83, 17)
+        Me.Lab_Alta_RubroProv.TabIndex = 51
+        Me.Lab_Alta_RubroProv.Text = "Rubro/ giro:"
+        '
+        'Lab_Alta_EmailProv
+        '
+        Me.Lab_Alta_EmailProv.AutoSize = True
+        Me.Lab_Alta_EmailProv.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Alta_EmailProv.Location = New System.Drawing.Point(517, 36)
+        Me.Lab_Alta_EmailProv.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Lab_Alta_EmailProv.Name = "Lab_Alta_EmailProv"
+        Me.Lab_Alta_EmailProv.Size = New System.Drawing.Size(46, 17)
+        Me.Lab_Alta_EmailProv.TabIndex = 50
+        Me.Lab_Alta_EmailProv.Text = "Email:"
+        '
+        'Lab_Alta_TelefDosProv
+        '
+        Me.Lab_Alta_TelefDosProv.AutoSize = True
+        Me.Lab_Alta_TelefDosProv.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Alta_TelefDosProv.Location = New System.Drawing.Point(27, 410)
+        Me.Lab_Alta_TelefDosProv.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Lab_Alta_TelefDosProv.Name = "Lab_Alta_TelefDosProv"
+        Me.Lab_Alta_TelefDosProv.Size = New System.Drawing.Size(80, 17)
+        Me.Lab_Alta_TelefDosProv.TabIndex = 49
+        Me.Lab_Alta_TelefDosProv.Text = "Teléfono 2:"
+        '
+        'Lab_Alta_TelefUnoProv
+        '
+        Me.Lab_Alta_TelefUnoProv.AutoSize = True
+        Me.Lab_Alta_TelefUnoProv.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Alta_TelefUnoProv.Location = New System.Drawing.Point(27, 369)
+        Me.Lab_Alta_TelefUnoProv.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Lab_Alta_TelefUnoProv.Name = "Lab_Alta_TelefUnoProv"
+        Me.Lab_Alta_TelefUnoProv.Size = New System.Drawing.Size(80, 17)
+        Me.Lab_Alta_TelefUnoProv.TabIndex = 48
+        Me.Lab_Alta_TelefUnoProv.Text = "Teléfono 1:"
+        '
+        'Lab_Alta_EstadoProv
+        '
+        Me.Lab_Alta_EstadoProv.AutoSize = True
+        Me.Lab_Alta_EstadoProv.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Alta_EstadoProv.Location = New System.Drawing.Point(27, 339)
+        Me.Lab_Alta_EstadoProv.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Lab_Alta_EstadoProv.Name = "Lab_Alta_EstadoProv"
+        Me.Lab_Alta_EstadoProv.Size = New System.Drawing.Size(56, 17)
+        Me.Lab_Alta_EstadoProv.TabIndex = 47
+        Me.Lab_Alta_EstadoProv.Text = "Estado:"
+        '
+        'Lab_Alta_ColoniaProv
+        '
+        Me.Lab_Alta_ColoniaProv.AutoSize = True
+        Me.Lab_Alta_ColoniaProv.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Alta_ColoniaProv.Location = New System.Drawing.Point(27, 265)
+        Me.Lab_Alta_ColoniaProv.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Lab_Alta_ColoniaProv.Name = "Lab_Alta_ColoniaProv"
+        Me.Lab_Alta_ColoniaProv.Size = New System.Drawing.Size(142, 17)
+        Me.Lab_Alta_ColoniaProv.TabIndex = 46
+        Me.Lab_Alta_ColoniaProv.Text = "Colonia / Delegación:"
+        '
+        'Lab_Alta_CpProv
+        '
+        Me.Lab_Alta_CpProv.AutoSize = True
+        Me.Lab_Alta_CpProv.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Alta_CpProv.Location = New System.Drawing.Point(27, 230)
+        Me.Lab_Alta_CpProv.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Lab_Alta_CpProv.Name = "Lab_Alta_CpProv"
+        Me.Lab_Alta_CpProv.Size = New System.Drawing.Size(30, 17)
+        Me.Lab_Alta_CpProv.TabIndex = 45
+        Me.Lab_Alta_CpProv.Text = "CP:"
+        '
+        'Lab_Alta_NumInteriorProv
+        '
+        Me.Lab_Alta_NumInteriorProv.AutoSize = True
+        Me.Lab_Alta_NumInteriorProv.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Alta_NumInteriorProv.Location = New System.Drawing.Point(27, 193)
+        Me.Lab_Alta_NumInteriorProv.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Lab_Alta_NumInteriorProv.Name = "Lab_Alta_NumInteriorProv"
+        Me.Lab_Alta_NumInteriorProv.Size = New System.Drawing.Size(110, 17)
+        Me.Lab_Alta_NumInteriorProv.TabIndex = 44
+        Me.Lab_Alta_NumInteriorProv.Text = "Número interior:"
+        '
+        'Lab_Alta_NumExteriorProv
+        '
+        Me.Lab_Alta_NumExteriorProv.AutoSize = True
+        Me.Lab_Alta_NumExteriorProv.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Alta_NumExteriorProv.Location = New System.Drawing.Point(27, 155)
+        Me.Lab_Alta_NumExteriorProv.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Lab_Alta_NumExteriorProv.Name = "Lab_Alta_NumExteriorProv"
+        Me.Lab_Alta_NumExteriorProv.Size = New System.Drawing.Size(113, 17)
+        Me.Lab_Alta_NumExteriorProv.TabIndex = 43
+        Me.Lab_Alta_NumExteriorProv.Text = "Número exterior:"
+        '
+        'TtBo_Alta_CalleProv
+        '
+        Me.TtBo_Alta_CalleProv.Location = New System.Drawing.Point(253, 110)
+        Me.TtBo_Alta_CalleProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_Alta_CalleProv.Name = "TtBo_Alta_CalleProv"
+        Me.TtBo_Alta_CalleProv.Size = New System.Drawing.Size(217, 23)
+        Me.TtBo_Alta_CalleProv.TabIndex = 42
+        '
+        'Lab_Alta_CalleProv
+        '
+        Me.Lab_Alta_CalleProv.AutoSize = True
+        Me.Lab_Alta_CalleProv.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Alta_CalleProv.Location = New System.Drawing.Point(27, 113)
+        Me.Lab_Alta_CalleProv.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Lab_Alta_CalleProv.Name = "Lab_Alta_CalleProv"
+        Me.Lab_Alta_CalleProv.Size = New System.Drawing.Size(43, 17)
+        Me.Lab_Alta_CalleProv.TabIndex = 41
+        Me.Lab_Alta_CalleProv.Text = "Calle:"
+        '
+        'TtBo_Alta_RfcProv
+        '
+        Me.TtBo_Alta_RfcProv.Location = New System.Drawing.Point(253, 69)
+        Me.TtBo_Alta_RfcProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_Alta_RfcProv.MaxLength = 20
+        Me.TtBo_Alta_RfcProv.Name = "TtBo_Alta_RfcProv"
+        Me.TtBo_Alta_RfcProv.Size = New System.Drawing.Size(217, 23)
+        Me.TtBo_Alta_RfcProv.TabIndex = 40
+        '
+        'TtBo_Alta_NombProv
+        '
+        Me.TtBo_Alta_NombProv.Location = New System.Drawing.Point(253, 36)
+        Me.TtBo_Alta_NombProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_Alta_NombProv.MaxLength = 100
+        Me.TtBo_Alta_NombProv.Name = "TtBo_Alta_NombProv"
+        Me.TtBo_Alta_NombProv.Size = New System.Drawing.Size(217, 23)
+        Me.TtBo_Alta_NombProv.TabIndex = 39
+        '
+        'Lab_Alta_RfcProv
+        '
+        Me.Lab_Alta_RfcProv.AutoSize = True
+        Me.Lab_Alta_RfcProv.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Alta_RfcProv.Location = New System.Drawing.Point(27, 69)
+        Me.Lab_Alta_RfcProv.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Lab_Alta_RfcProv.Name = "Lab_Alta_RfcProv"
+        Me.Lab_Alta_RfcProv.Size = New System.Drawing.Size(39, 17)
+        Me.Lab_Alta_RfcProv.TabIndex = 38
+        Me.Lab_Alta_RfcProv.Text = "RFC:"
+        '
+        'Lab_Alta_NombProv
+        '
+        Me.Lab_Alta_NombProv.AutoSize = True
+        Me.Lab_Alta_NombProv.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Alta_NombProv.Location = New System.Drawing.Point(27, 36)
+        Me.Lab_Alta_NombProv.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Lab_Alta_NombProv.Name = "Lab_Alta_NombProv"
+        Me.Lab_Alta_NombProv.Size = New System.Drawing.Size(154, 17)
+        Me.Lab_Alta_NombProv.TabIndex = 37
+        Me.Lab_Alta_NombProv.Text = "Nombre o razón social:"
         '
         'Consulta_Proveedores
         '
-        Me.Consulta_Proveedores.Controls.Add(Me.TextBox16)
-        Me.Consulta_Proveedores.Controls.Add(Me.TextBox15)
-        Me.Consulta_Proveedores.Controls.Add(Me.DataGridView1)
-        Me.Consulta_Proveedores.Controls.Add(Me.Button1)
-        Me.Consulta_Proveedores.Controls.Add(Me.Label18)
-        Me.Consulta_Proveedores.Controls.Add(Me.Label19)
-        Me.Consulta_Proveedores.Location = New System.Drawing.Point(4, 22)
+        Me.Consulta_Proveedores.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Consulta_Proveedores.Controls.Add(Me.Btn_Consulta_BuscarTodo)
+        Me.Consulta_Proveedores.Controls.Add(Me.TtBo_Consulta_RfcProv)
+        Me.Consulta_Proveedores.Controls.Add(Me.TtBo_Consulta_NombProv)
+        Me.Consulta_Proveedores.Controls.Add(Me.DGV_ListaProv)
+        Me.Consulta_Proveedores.Controls.Add(Me.Btn_Consulta_BuscarProv)
+        Me.Consulta_Proveedores.Controls.Add(Me.Lab_Consulta_RfcProv)
+        Me.Consulta_Proveedores.Controls.Add(Me.Lab_Consulta_NombProv)
+        Me.Consulta_Proveedores.Location = New System.Drawing.Point(4, 25)
+        Me.Consulta_Proveedores.Margin = New System.Windows.Forms.Padding(4)
         Me.Consulta_Proveedores.Name = "Consulta_Proveedores"
-        Me.Consulta_Proveedores.Size = New System.Drawing.Size(768, 356)
+        Me.Consulta_Proveedores.Size = New System.Drawing.Size(1027, 441)
         Me.Consulta_Proveedores.TabIndex = 2
         Me.Consulta_Proveedores.Text = "Consulta de proveedores"
-        Me.Consulta_Proveedores.UseVisualStyleBackColor = True
         '
-        'DataGridView1
+        'Btn_Consulta_BuscarTodo
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DVG_ID_Prov, Me.DVG_NombORazonS_Prov, Me.DVG_Direcc_Prov, Me.DVG_Telefono_Prov, Me.DVG_Email_Prov, Me.DVG_RubroOGiro_Prov, Me.DVG_FormaP_Prov, Me.DVG_Secuencia_Prov, Me.DVG_Moneda_Prov, Me.DVG_CuentaDep_Prov, Me.DVG_Descp_Prov})
-        Me.DataGridView1.Location = New System.Drawing.Point(9, 120)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(762, 150)
-        Me.DataGridView1.TabIndex = 13
+        Me.Btn_Consulta_BuscarTodo.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Btn_Consulta_BuscarTodo.Location = New System.Drawing.Point(461, 75)
+        Me.Btn_Consulta_BuscarTodo.Margin = New System.Windows.Forms.Padding(4)
+        Me.Btn_Consulta_BuscarTodo.Name = "Btn_Consulta_BuscarTodo"
+        Me.Btn_Consulta_BuscarTodo.Size = New System.Drawing.Size(179, 31)
+        Me.Btn_Consulta_BuscarTodo.TabIndex = 3
+        Me.Btn_Consulta_BuscarTodo.Text = "Buscar todo"
+        Me.Btn_Consulta_BuscarTodo.UseVisualStyleBackColor = False
+        '
+        'TtBo_Consulta_RfcProv
+        '
+        Me.TtBo_Consulta_RfcProv.Location = New System.Drawing.Point(527, 43)
+        Me.TtBo_Consulta_RfcProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_Consulta_RfcProv.MaxLength = 20
+        Me.TtBo_Consulta_RfcProv.Name = "TtBo_Consulta_RfcProv"
+        Me.TtBo_Consulta_RfcProv.Size = New System.Drawing.Size(215, 23)
+        Me.TtBo_Consulta_RfcProv.TabIndex = 2
+        '
+        'TtBo_Consulta_NombProv
+        '
+        Me.TtBo_Consulta_NombProv.Location = New System.Drawing.Point(527, 11)
+        Me.TtBo_Consulta_NombProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_Consulta_NombProv.MaxLength = 100
+        Me.TtBo_Consulta_NombProv.Name = "TtBo_Consulta_NombProv"
+        Me.TtBo_Consulta_NombProv.Size = New System.Drawing.Size(215, 23)
+        Me.TtBo_Consulta_NombProv.TabIndex = 1
+        '
+        'DGV_ListaProv
+        '
+        Me.DGV_ListaProv.BackgroundColor = System.Drawing.Color.WhiteSmoke
+        Me.DGV_ListaProv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGV_ListaProv.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DVG_ID_Prov, Me.DVG_NombORazonS_Prov, Me.DVG_Direcc_Prov, Me.DVG_Telefono_Prov, Me.DVG_Email_Prov, Me.DVG_RubroOGiro_Prov, Me.DVG_FormaP_Prov, Me.DVG_Secuencia_Prov, Me.DVG_Moneda_Prov, Me.DVG_CuentaDep_Prov, Me.DVG_Descp_Prov})
+        Me.DGV_ListaProv.GridColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.DGV_ListaProv.Location = New System.Drawing.Point(12, 148)
+        Me.DGV_ListaProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.DGV_ListaProv.Name = "DGV_ListaProv"
+        Me.DGV_ListaProv.Size = New System.Drawing.Size(1016, 185)
+        Me.DGV_ListaProv.TabIndex = 13
         '
         'DVG_ID_Prov
         '
@@ -694,633 +799,709 @@ Partial Class Form_Proveedores
         Me.DVG_Descp_Prov.MaxInputLength = 120
         Me.DVG_Descp_Prov.Name = "DVG_Descp_Prov"
         '
-        'Button1
+        'Btn_Consulta_BuscarProv
         '
-        Me.Button1.Location = New System.Drawing.Point(302, 62)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(134, 23)
-        Me.Button1.TabIndex = 12
-        Me.Button1.Text = "Buscar"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Btn_Consulta_BuscarProv.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Btn_Consulta_BuscarProv.Location = New System.Drawing.Point(643, 75)
+        Me.Btn_Consulta_BuscarProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.Btn_Consulta_BuscarProv.Name = "Btn_Consulta_BuscarProv"
+        Me.Btn_Consulta_BuscarProv.Size = New System.Drawing.Size(179, 31)
+        Me.Btn_Consulta_BuscarProv.TabIndex = 2
+        Me.Btn_Consulta_BuscarProv.Text = "Buscar"
+        Me.Btn_Consulta_BuscarProv.UseVisualStyleBackColor = False
         '
-        'Label18
+        'Lab_Consulta_RfcProv
         '
-        Me.Label18.AutoSize = True
-        Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label18.Location = New System.Drawing.Point(234, 36)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(39, 17)
-        Me.Label18.TabIndex = 11
-        Me.Label18.Text = "RFC:"
+        Me.Lab_Consulta_RfcProv.AutoSize = True
+        Me.Lab_Consulta_RfcProv.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Consulta_RfcProv.Location = New System.Drawing.Point(312, 44)
+        Me.Lab_Consulta_RfcProv.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Lab_Consulta_RfcProv.Name = "Lab_Consulta_RfcProv"
+        Me.Lab_Consulta_RfcProv.Size = New System.Drawing.Size(39, 17)
+        Me.Lab_Consulta_RfcProv.TabIndex = 11
+        Me.Lab_Consulta_RfcProv.Text = "RFC:"
         '
-        'Label19
+        'Lab_Consulta_NombProv
         '
-        Me.Label19.AutoSize = True
-        Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label19.Location = New System.Drawing.Point(234, 9)
-        Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(154, 17)
-        Me.Label19.TabIndex = 10
-        Me.Label19.Text = "Nombre o razón social:"
+        Me.Lab_Consulta_NombProv.AutoSize = True
+        Me.Lab_Consulta_NombProv.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Consulta_NombProv.Location = New System.Drawing.Point(312, 11)
+        Me.Lab_Consulta_NombProv.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Lab_Consulta_NombProv.Name = "Lab_Consulta_NombProv"
+        Me.Lab_Consulta_NombProv.Size = New System.Drawing.Size(154, 17)
+        Me.Lab_Consulta_NombProv.TabIndex = 10
+        Me.Lab_Consulta_NombProv.Text = "Nombre o razón social:"
         '
         'Cambio_Proveedor
         '
-        Me.Cambio_Proveedor.Controls.Add(Me.Button4)
-        Me.Cambio_Proveedor.Controls.Add(Me.Button5)
-        Me.Cambio_Proveedor.Controls.Add(Me.ComboBox4)
-        Me.Cambio_Proveedor.Controls.Add(Me.TextBox17)
-        Me.Cambio_Proveedor.Controls.Add(Me.TextBox18)
-        Me.Cambio_Proveedor.Controls.Add(Me.TextBox19)
-        Me.Cambio_Proveedor.Controls.Add(Me.TextBox20)
-        Me.Cambio_Proveedor.Controls.Add(Me.TextBox21)
-        Me.Cambio_Proveedor.Controls.Add(Me.TextBox22)
-        Me.Cambio_Proveedor.Controls.Add(Me.TextBox23)
-        Me.Cambio_Proveedor.Controls.Add(Me.Label20)
-        Me.Cambio_Proveedor.Controls.Add(Me.TextBox24)
-        Me.Cambio_Proveedor.Controls.Add(Me.Label21)
-        Me.Cambio_Proveedor.Controls.Add(Me.ComboBox5)
-        Me.Cambio_Proveedor.Controls.Add(Me.TextBox25)
-        Me.Cambio_Proveedor.Controls.Add(Me.TextBox26)
-        Me.Cambio_Proveedor.Controls.Add(Me.TextBox27)
-        Me.Cambio_Proveedor.Controls.Add(Me.Label22)
-        Me.Cambio_Proveedor.Controls.Add(Me.Label23)
-        Me.Cambio_Proveedor.Controls.Add(Me.ComboBox6)
-        Me.Cambio_Proveedor.Controls.Add(Me.Label24)
-        Me.Cambio_Proveedor.Controls.Add(Me.Label25)
-        Me.Cambio_Proveedor.Controls.Add(Me.Label26)
-        Me.Cambio_Proveedor.Controls.Add(Me.Label27)
-        Me.Cambio_Proveedor.Controls.Add(Me.Label28)
-        Me.Cambio_Proveedor.Controls.Add(Me.Label29)
-        Me.Cambio_Proveedor.Controls.Add(Me.Label30)
-        Me.Cambio_Proveedor.Controls.Add(Me.Label31)
-        Me.Cambio_Proveedor.Controls.Add(Me.Label32)
-        Me.Cambio_Proveedor.Controls.Add(Me.Label33)
-        Me.Cambio_Proveedor.Controls.Add(Me.TextBox28)
-        Me.Cambio_Proveedor.Controls.Add(Me.Label34)
-        Me.Cambio_Proveedor.Controls.Add(Me.TextBox29)
-        Me.Cambio_Proveedor.Controls.Add(Me.TextBox30)
-        Me.Cambio_Proveedor.Controls.Add(Me.Label35)
-        Me.Cambio_Proveedor.Controls.Add(Me.Label36)
-        Me.Cambio_Proveedor.Location = New System.Drawing.Point(4, 22)
+        Me.Cambio_Proveedor.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Cambio_Proveedor.Controls.Add(Me.TtBo_Cambios_mpioProv)
+        Me.Cambio_Proveedor.Controls.Add(Me.Lab_Cambios_MpioProv)
+        Me.Cambio_Proveedor.Controls.Add(Me.Btn_Cambios_Limpiar)
+        Me.Cambio_Proveedor.Controls.Add(Me.Btn_Cambios_Buscar)
+        Me.Cambio_Proveedor.Controls.Add(Me.CoBo_Cambios_EstadoProv)
+        Me.Cambio_Proveedor.Controls.Add(Me.TtBo_Cambios_TelefDosProv)
+        Me.Cambio_Proveedor.Controls.Add(Me.TtBo_Cambios_TelefUnoProv)
+        Me.Cambio_Proveedor.Controls.Add(Me.TtBo_Cambios_ColoniaProv)
+        Me.Cambio_Proveedor.Controls.Add(Me.TtBo_Cambios_CpProv)
+        Me.Cambio_Proveedor.Controls.Add(Me.TtBo_Cambios_NumInteriorProv)
+        Me.Cambio_Proveedor.Controls.Add(Me.TtBo_Cambios_NumExteriorProv)
+        Me.Cambio_Proveedor.Controls.Add(Me.TtBo_Cambios_DescripProv)
+        Me.Cambio_Proveedor.Controls.Add(Me.Lab_Cambios_DescripProv)
+        Me.Cambio_Proveedor.Controls.Add(Me.TtBo_Cambios_SecuenciaProv)
+        Me.Cambio_Proveedor.Controls.Add(Me.Lab_Cambios_SecuenciaProv)
+        Me.Cambio_Proveedor.Controls.Add(Me.CoBo_Cambios_MonedaProv)
+        Me.Cambio_Proveedor.Controls.Add(Me.TtBo_Cambios_EmailProv)
+        Me.Cambio_Proveedor.Controls.Add(Me.TtBo_Cambios_RubroProv)
+        Me.Cambio_Proveedor.Controls.Add(Me.TtBo_Cambios_CuentaDepositoProv)
+        Me.Cambio_Proveedor.Controls.Add(Me.Lab_Cambios_CuentaDepositoProv)
+        Me.Cambio_Proveedor.Controls.Add(Me.Lab_Cambios_MonedaProv)
+        Me.Cambio_Proveedor.Controls.Add(Me.CoBo_Cambios_FormaPagoProv)
+        Me.Cambio_Proveedor.Controls.Add(Me.Lab_Cambios_FormaPagoProv)
+        Me.Cambio_Proveedor.Controls.Add(Me.Lab_Cambios_RubroProv)
+        Me.Cambio_Proveedor.Controls.Add(Me.Lab_Cambios_EmailProv)
+        Me.Cambio_Proveedor.Controls.Add(Me.Lab_Cambios_TelefDosProv)
+        Me.Cambio_Proveedor.Controls.Add(Me.Lab_Cambios_TelefUnoProv)
+        Me.Cambio_Proveedor.Controls.Add(Me.Lab_Cambios_EstadoProv)
+        Me.Cambio_Proveedor.Controls.Add(Me.Lab_Cambios_ColoniaProv)
+        Me.Cambio_Proveedor.Controls.Add(Me.Lab_Cambios_CpProv)
+        Me.Cambio_Proveedor.Controls.Add(Me.Lab_Cambios_NumInteriorProv)
+        Me.Cambio_Proveedor.Controls.Add(Me.Lab_Cambios_NumExteriorProv)
+        Me.Cambio_Proveedor.Controls.Add(Me.TtBo_Cambios_CalleProv)
+        Me.Cambio_Proveedor.Controls.Add(Me.Lab_Cambios_CalleProv)
+        Me.Cambio_Proveedor.Controls.Add(Me.TtBo_Cambios_RfcProv)
+        Me.Cambio_Proveedor.Controls.Add(Me.TtBo_Cambios_NombProv)
+        Me.Cambio_Proveedor.Controls.Add(Me.Lab_Cambios_RfcProv)
+        Me.Cambio_Proveedor.Controls.Add(Me.Lab_Cambios_NombProv)
+        Me.Cambio_Proveedor.Location = New System.Drawing.Point(4, 25)
+        Me.Cambio_Proveedor.Margin = New System.Windows.Forms.Padding(4)
         Me.Cambio_Proveedor.Name = "Cambio_Proveedor"
-        Me.Cambio_Proveedor.Size = New System.Drawing.Size(768, 356)
+        Me.Cambio_Proveedor.Size = New System.Drawing.Size(1027, 441)
         Me.Cambio_Proveedor.TabIndex = 3
         Me.Cambio_Proveedor.Text = "Cambios en el proveedor"
-        Me.Cambio_Proveedor.UseVisualStyleBackColor = True
         '
-        'Button4
-        '
-        Me.Button4.Location = New System.Drawing.Point(670, 305)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(79, 23)
-        Me.Button4.TabIndex = 108
-        Me.Button4.Text = "Limpiar"
-        Me.Button4.UseVisualStyleBackColor = True
-        '
-        'Button5
-        '
-        Me.Button5.Location = New System.Drawing.Point(540, 305)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(124, 23)
-        Me.Button5.TabIndex = 107
-        Me.Button5.Text = "Buscar"
-        Me.Button5.UseVisualStyleBackColor = True
-        '
-        'ComboBox4
-        '
-        Me.ComboBox4.FormattingEnabled = True
-        Me.ComboBox4.Location = New System.Drawing.Point(190, 247)
-        Me.ComboBox4.Name = "ComboBox4"
-        Me.ComboBox4.Size = New System.Drawing.Size(164, 21)
-        Me.ComboBox4.TabIndex = 106
-        '
-        'TextBox17
-        '
-        Me.TextBox17.Location = New System.Drawing.Point(190, 305)
-        Me.TextBox17.Name = "TextBox17"
-        Me.TextBox17.Size = New System.Drawing.Size(164, 20)
-        Me.TextBox17.TabIndex = 105
-        '
-        'TextBox18
-        '
-        Me.TextBox18.Location = New System.Drawing.Point(190, 275)
-        Me.TextBox18.Name = "TextBox18"
-        Me.TextBox18.Size = New System.Drawing.Size(164, 20)
-        Me.TextBox18.TabIndex = 104
-        '
-        'TextBox19
-        '
-        Me.TextBox19.Location = New System.Drawing.Point(190, 214)
-        Me.TextBox19.Name = "TextBox19"
-        Me.TextBox19.Size = New System.Drawing.Size(164, 20)
-        Me.TextBox19.TabIndex = 103
-        '
-        'TextBox20
-        '
-        Me.TextBox20.Location = New System.Drawing.Point(190, 184)
-        Me.TextBox20.Name = "TextBox20"
-        Me.TextBox20.Size = New System.Drawing.Size(164, 20)
-        Me.TextBox20.TabIndex = 102
-        '
-        'TextBox21
-        '
-        Me.TextBox21.Location = New System.Drawing.Point(190, 156)
-        Me.TextBox21.Name = "TextBox21"
-        Me.TextBox21.Size = New System.Drawing.Size(164, 20)
-        Me.TextBox21.TabIndex = 101
-        '
-        'TextBox22
-        '
-        Me.TextBox22.Location = New System.Drawing.Point(190, 125)
-        Me.TextBox22.Name = "TextBox22"
-        Me.TextBox22.Size = New System.Drawing.Size(164, 20)
-        Me.TextBox22.TabIndex = 100
-        '
-        'TextBox23
-        '
-        Me.TextBox23.Location = New System.Drawing.Point(540, 229)
-        Me.TextBox23.Name = "TextBox23"
-        Me.TextBox23.Size = New System.Drawing.Size(181, 20)
-        Me.TextBox23.TabIndex = 99
-        '
-        'Label20
-        '
-        Me.Label20.AutoSize = True
-        Me.Label20.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label20.Location = New System.Drawing.Point(388, 232)
-        Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(86, 17)
-        Me.Label20.TabIndex = 98
-        Me.Label20.Text = "Descripción:"
-        '
-        'TextBox24
-        '
-        Me.TextBox24.Location = New System.Drawing.Point(540, 123)
-        Me.TextBox24.Name = "TextBox24"
-        Me.TextBox24.Size = New System.Drawing.Size(181, 20)
-        Me.TextBox24.TabIndex = 97
-        '
-        'Label21
-        '
-        Me.Label21.AutoSize = True
-        Me.Label21.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label21.Location = New System.Drawing.Point(388, 126)
-        Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(78, 17)
-        Me.Label21.TabIndex = 96
-        Me.Label21.Text = "Secuencia:"
-        '
-        'ComboBox5
-        '
-        Me.ComboBox5.FormattingEnabled = True
-        Me.ComboBox5.Items.AddRange(New Object() {"Peso Mexicano", "Dolares Americanos", "Euros", "Yuanes "})
-        Me.ComboBox5.Location = New System.Drawing.Point(540, 157)
-        Me.ComboBox5.Name = "ComboBox5"
-        Me.ComboBox5.Size = New System.Drawing.Size(181, 21)
-        Me.ComboBox5.TabIndex = 95
-        '
-        'TextBox25
-        '
-        Me.TextBox25.Location = New System.Drawing.Point(540, 29)
-        Me.TextBox25.Name = "TextBox25"
-        Me.TextBox25.Size = New System.Drawing.Size(181, 20)
-        Me.TextBox25.TabIndex = 94
-        '
-        'TextBox26
-        '
-        Me.TextBox26.Location = New System.Drawing.Point(540, 53)
-        Me.TextBox26.Name = "TextBox26"
-        Me.TextBox26.Size = New System.Drawing.Size(181, 20)
-        Me.TextBox26.TabIndex = 93
-        '
-        'TextBox27
-        '
-        Me.TextBox27.Location = New System.Drawing.Point(540, 195)
-        Me.TextBox27.Name = "TextBox27"
-        Me.TextBox27.Size = New System.Drawing.Size(181, 20)
-        Me.TextBox27.TabIndex = 92
-        '
-        'Label22
-        '
-        Me.Label22.AutoSize = True
-        Me.Label22.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label22.Location = New System.Drawing.Point(388, 196)
-        Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(135, 17)
-        Me.Label22.TabIndex = 91
-        Me.Label22.Text = "Cuenta de deposito:"
-        '
-        'Label23
-        '
-        Me.Label23.AutoSize = True
-        Me.Label23.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label23.Location = New System.Drawing.Point(388, 161)
-        Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(63, 17)
-        Me.Label23.TabIndex = 90
-        Me.Label23.Text = "Moneda:"
-        '
-        'ComboBox6
-        '
-        Me.ComboBox6.FormattingEnabled = True
-        Me.ComboBox6.Items.AddRange(New Object() {"Pagó de una sola exibición", "Depositó baconcario"})
-        Me.ComboBox6.Location = New System.Drawing.Point(540, 88)
-        Me.ComboBox6.Name = "ComboBox6"
-        Me.ComboBox6.Size = New System.Drawing.Size(181, 21)
-        Me.ComboBox6.TabIndex = 89
-        '
-        'Label24
-        '
-        Me.Label24.AutoSize = True
-        Me.Label24.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label24.Location = New System.Drawing.Point(388, 92)
-        Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(108, 17)
-        Me.Label24.TabIndex = 88
-        Me.Label24.Text = "Forma de pago:"
-        '
-        'Label25
-        '
-        Me.Label25.AutoSize = True
-        Me.Label25.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label25.Location = New System.Drawing.Point(388, 56)
-        Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(83, 17)
-        Me.Label25.TabIndex = 87
-        Me.Label25.Text = "Rubro/ giro:"
-        '
-        'Label26
-        '
-        Me.Label26.AutoSize = True
-        Me.Label26.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label26.Location = New System.Drawing.Point(388, 29)
-        Me.Label26.Name = "Label26"
-        Me.Label26.Size = New System.Drawing.Size(46, 17)
-        Me.Label26.TabIndex = 86
-        Me.Label26.Text = "Email:"
-        '
-        'Label27
-        '
-        Me.Label27.AutoSize = True
-        Me.Label27.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label27.Location = New System.Drawing.Point(20, 306)
-        Me.Label27.Name = "Label27"
-        Me.Label27.Size = New System.Drawing.Size(80, 17)
-        Me.Label27.TabIndex = 85
-        Me.Label27.Text = "Teléfono 2:"
-        '
-        'Label28
-        '
-        Me.Label28.AutoSize = True
-        Me.Label28.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label28.Location = New System.Drawing.Point(20, 276)
-        Me.Label28.Name = "Label28"
-        Me.Label28.Size = New System.Drawing.Size(80, 17)
-        Me.Label28.TabIndex = 84
-        Me.Label28.Text = "Teléfono 1:"
-        '
-        'Label29
-        '
-        Me.Label29.AutoSize = True
-        Me.Label29.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label29.Location = New System.Drawing.Point(20, 247)
-        Me.Label29.Name = "Label29"
-        Me.Label29.Size = New System.Drawing.Size(56, 17)
-        Me.Label29.TabIndex = 83
-        Me.Label29.Text = "Estado:"
-        '
-        'Label30
-        '
-        Me.Label30.AutoSize = True
-        Me.Label30.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label30.Location = New System.Drawing.Point(20, 215)
-        Me.Label30.Name = "Label30"
-        Me.Label30.Size = New System.Drawing.Size(142, 17)
-        Me.Label30.TabIndex = 82
-        Me.Label30.Text = "Colonia / Delegación:"
-        '
-        'Label31
-        '
-        Me.Label31.AutoSize = True
-        Me.Label31.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label31.Location = New System.Drawing.Point(20, 187)
-        Me.Label31.Name = "Label31"
-        Me.Label31.Size = New System.Drawing.Size(30, 17)
-        Me.Label31.TabIndex = 81
-        Me.Label31.Text = "CP:"
-        '
-        'Label32
-        '
-        Me.Label32.AutoSize = True
-        Me.Label32.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label32.Location = New System.Drawing.Point(20, 157)
-        Me.Label32.Name = "Label32"
-        Me.Label32.Size = New System.Drawing.Size(110, 17)
-        Me.Label32.TabIndex = 80
-        Me.Label32.Text = "Número interior:"
-        '
-        'Label33
-        '
-        Me.Label33.AutoSize = True
-        Me.Label33.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label33.Location = New System.Drawing.Point(20, 126)
-        Me.Label33.Name = "Label33"
-        Me.Label33.Size = New System.Drawing.Size(113, 17)
-        Me.Label33.TabIndex = 79
-        Me.Label33.Text = "Número exterior:"
-        '
-        'TextBox28
-        '
-        Me.TextBox28.Enabled = False
-        Me.TextBox28.Location = New System.Drawing.Point(190, 89)
-        Me.TextBox28.Name = "TextBox28"
-        Me.TextBox28.Size = New System.Drawing.Size(164, 20)
-        Me.TextBox28.TabIndex = 78
-        '
-        'Label34
-        '
-        Me.Label34.AutoSize = True
-        Me.Label34.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label34.Location = New System.Drawing.Point(20, 92)
-        Me.Label34.Name = "Label34"
-        Me.Label34.Size = New System.Drawing.Size(43, 17)
-        Me.Label34.TabIndex = 77
-        Me.Label34.Text = "Calle:"
-        '
-        'TextBox29
-        '
-        Me.TextBox29.Location = New System.Drawing.Point(190, 56)
-        Me.TextBox29.Name = "TextBox29"
-        Me.TextBox29.Size = New System.Drawing.Size(164, 20)
-        Me.TextBox29.TabIndex = 76
-        '
-        'TextBox30
-        '
-        Me.TextBox30.Location = New System.Drawing.Point(190, 29)
-        Me.TextBox30.Name = "TextBox30"
-        Me.TextBox30.Size = New System.Drawing.Size(164, 20)
-        Me.TextBox30.TabIndex = 75
-        '
-        'Label35
-        '
-        Me.Label35.AutoSize = True
-        Me.Label35.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label35.Location = New System.Drawing.Point(20, 56)
-        Me.Label35.Name = "Label35"
-        Me.Label35.Size = New System.Drawing.Size(39, 17)
-        Me.Label35.TabIndex = 74
-        Me.Label35.Text = "RFC:"
-        '
-        'Label36
-        '
-        Me.Label36.AutoSize = True
-        Me.Label36.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label36.Location = New System.Drawing.Point(20, 29)
-        Me.Label36.Name = "Label36"
-        Me.Label36.Size = New System.Drawing.Size(154, 17)
-        Me.Label36.TabIndex = 73
-        Me.Label36.Text = "Nombre o razón social:"
+        'TtBo_Cambios_mpioProv
+        '
+        Me.TtBo_Cambios_mpioProv.Location = New System.Drawing.Point(253, 294)
+        Me.TtBo_Cambios_mpioProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_Cambios_mpioProv.Name = "TtBo_Cambios_mpioProv"
+        Me.TtBo_Cambios_mpioProv.Size = New System.Drawing.Size(217, 23)
+        Me.TtBo_Cambios_mpioProv.TabIndex = 110
+        '
+        'Lab_Cambios_MpioProv
+        '
+        Me.Lab_Cambios_MpioProv.AutoSize = True
+        Me.Lab_Cambios_MpioProv.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Cambios_MpioProv.Location = New System.Drawing.Point(27, 296)
+        Me.Lab_Cambios_MpioProv.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Lab_Cambios_MpioProv.Name = "Lab_Cambios_MpioProv"
+        Me.Lab_Cambios_MpioProv.Size = New System.Drawing.Size(71, 17)
+        Me.Lab_Cambios_MpioProv.TabIndex = 109
+        Me.Lab_Cambios_MpioProv.Text = "Municipio:"
+        '
+        'Btn_Cambios_Limpiar
+        '
+        Me.Btn_Cambios_Limpiar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Btn_Cambios_Limpiar.Location = New System.Drawing.Point(720, 332)
+        Me.Btn_Cambios_Limpiar.Margin = New System.Windows.Forms.Padding(4)
+        Me.Btn_Cambios_Limpiar.Name = "Btn_Cambios_Limpiar"
+        Me.Btn_Cambios_Limpiar.Size = New System.Drawing.Size(91, 31)
+        Me.Btn_Cambios_Limpiar.TabIndex = 108
+        Me.Btn_Cambios_Limpiar.Text = "Limpiar"
+        Me.Btn_Cambios_Limpiar.UseVisualStyleBackColor = False
+        '
+        'Btn_Cambios_Buscar
+        '
+        Me.Btn_Cambios_Buscar.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Btn_Cambios_Buscar.Location = New System.Drawing.Point(819, 332)
+        Me.Btn_Cambios_Buscar.Margin = New System.Windows.Forms.Padding(4)
+        Me.Btn_Cambios_Buscar.Name = "Btn_Cambios_Buscar"
+        Me.Btn_Cambios_Buscar.Size = New System.Drawing.Size(141, 31)
+        Me.Btn_Cambios_Buscar.TabIndex = 107
+        Me.Btn_Cambios_Buscar.Text = "Buscar"
+        Me.Btn_Cambios_Buscar.UseVisualStyleBackColor = False
+        '
+        'CoBo_Cambios_EstadoProv
+        '
+        Me.CoBo_Cambios_EstadoProv.FormattingEnabled = True
+        Me.CoBo_Cambios_EstadoProv.Items.AddRange(New Object() {"Aguascalientes", "Baja California", "Baja California Sur", "Campeche", "Chiapas", "Chihuahua", "Ciudad de México", "Coahuila", "Colima", "Durango", "Estado de México", "Guanajuato", "Guerrero", "Hidalgo", "Jalisco", "Michoacán", "Morelos", "Nayarit", "Nuevo León", "Oaxaca", "Puebla", "Querétaro", "Quintana Roo", "San Luis Potosí", "Sinaloa", "Sonora", "Tabasco", "Tamaulipas", "Tlaxcala", "Veracruz", "Yucatán", "Zacatecas"})
+        Me.CoBo_Cambios_EstadoProv.Location = New System.Drawing.Point(253, 332)
+        Me.CoBo_Cambios_EstadoProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.CoBo_Cambios_EstadoProv.Name = "CoBo_Cambios_EstadoProv"
+        Me.CoBo_Cambios_EstadoProv.Size = New System.Drawing.Size(217, 24)
+        Me.CoBo_Cambios_EstadoProv.TabIndex = 106
+        '
+        'TtBo_Cambios_TelefDosProv
+        '
+        Me.TtBo_Cambios_TelefDosProv.Location = New System.Drawing.Point(253, 403)
+        Me.TtBo_Cambios_TelefDosProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_Cambios_TelefDosProv.Name = "TtBo_Cambios_TelefDosProv"
+        Me.TtBo_Cambios_TelefDosProv.Size = New System.Drawing.Size(217, 23)
+        Me.TtBo_Cambios_TelefDosProv.TabIndex = 105
+        '
+        'TtBo_Cambios_TelefUnoProv
+        '
+        Me.TtBo_Cambios_TelefUnoProv.Location = New System.Drawing.Point(253, 366)
+        Me.TtBo_Cambios_TelefUnoProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_Cambios_TelefUnoProv.Name = "TtBo_Cambios_TelefUnoProv"
+        Me.TtBo_Cambios_TelefUnoProv.Size = New System.Drawing.Size(217, 23)
+        Me.TtBo_Cambios_TelefUnoProv.TabIndex = 104
+        '
+        'TtBo_Cambios_ColoniaProv
+        '
+        Me.TtBo_Cambios_ColoniaProv.Location = New System.Drawing.Point(253, 263)
+        Me.TtBo_Cambios_ColoniaProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_Cambios_ColoniaProv.Name = "TtBo_Cambios_ColoniaProv"
+        Me.TtBo_Cambios_ColoniaProv.Size = New System.Drawing.Size(217, 23)
+        Me.TtBo_Cambios_ColoniaProv.TabIndex = 103
+        '
+        'TtBo_Cambios_CpProv
+        '
+        Me.TtBo_Cambios_CpProv.Location = New System.Drawing.Point(253, 226)
+        Me.TtBo_Cambios_CpProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_Cambios_CpProv.Name = "TtBo_Cambios_CpProv"
+        Me.TtBo_Cambios_CpProv.Size = New System.Drawing.Size(217, 23)
+        Me.TtBo_Cambios_CpProv.TabIndex = 102
+        '
+        'TtBo_Cambios_NumInteriorProv
+        '
+        Me.TtBo_Cambios_NumInteriorProv.Location = New System.Drawing.Point(253, 192)
+        Me.TtBo_Cambios_NumInteriorProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_Cambios_NumInteriorProv.Name = "TtBo_Cambios_NumInteriorProv"
+        Me.TtBo_Cambios_NumInteriorProv.Size = New System.Drawing.Size(217, 23)
+        Me.TtBo_Cambios_NumInteriorProv.TabIndex = 101
+        '
+        'TtBo_Cambios_NumExteriorProv
+        '
+        Me.TtBo_Cambios_NumExteriorProv.Location = New System.Drawing.Point(253, 154)
+        Me.TtBo_Cambios_NumExteriorProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_Cambios_NumExteriorProv.Name = "TtBo_Cambios_NumExteriorProv"
+        Me.TtBo_Cambios_NumExteriorProv.Size = New System.Drawing.Size(217, 23)
+        Me.TtBo_Cambios_NumExteriorProv.TabIndex = 100
+        '
+        'TtBo_Cambios_DescripProv
+        '
+        Me.TtBo_Cambios_DescripProv.Location = New System.Drawing.Point(720, 282)
+        Me.TtBo_Cambios_DescripProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_Cambios_DescripProv.Name = "TtBo_Cambios_DescripProv"
+        Me.TtBo_Cambios_DescripProv.Size = New System.Drawing.Size(240, 23)
+        Me.TtBo_Cambios_DescripProv.TabIndex = 99
+        '
+        'Lab_Cambios_DescripProv
+        '
+        Me.Lab_Cambios_DescripProv.AutoSize = True
+        Me.Lab_Cambios_DescripProv.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Cambios_DescripProv.Location = New System.Drawing.Point(517, 286)
+        Me.Lab_Cambios_DescripProv.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Lab_Cambios_DescripProv.Name = "Lab_Cambios_DescripProv"
+        Me.Lab_Cambios_DescripProv.Size = New System.Drawing.Size(86, 17)
+        Me.Lab_Cambios_DescripProv.TabIndex = 98
+        Me.Lab_Cambios_DescripProv.Text = "Descripción:"
+        '
+        'TtBo_Cambios_SecuenciaProv
+        '
+        Me.TtBo_Cambios_SecuenciaProv.Location = New System.Drawing.Point(720, 151)
+        Me.TtBo_Cambios_SecuenciaProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_Cambios_SecuenciaProv.Name = "TtBo_Cambios_SecuenciaProv"
+        Me.TtBo_Cambios_SecuenciaProv.Size = New System.Drawing.Size(240, 23)
+        Me.TtBo_Cambios_SecuenciaProv.TabIndex = 97
+        '
+        'Lab_Cambios_SecuenciaProv
+        '
+        Me.Lab_Cambios_SecuenciaProv.AutoSize = True
+        Me.Lab_Cambios_SecuenciaProv.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Cambios_SecuenciaProv.Location = New System.Drawing.Point(517, 155)
+        Me.Lab_Cambios_SecuenciaProv.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Lab_Cambios_SecuenciaProv.Name = "Lab_Cambios_SecuenciaProv"
+        Me.Lab_Cambios_SecuenciaProv.Size = New System.Drawing.Size(78, 17)
+        Me.Lab_Cambios_SecuenciaProv.TabIndex = 96
+        Me.Lab_Cambios_SecuenciaProv.Text = "Secuencia:"
+        '
+        'CoBo_Cambios_MonedaProv
+        '
+        Me.CoBo_Cambios_MonedaProv.FormattingEnabled = True
+        Me.CoBo_Cambios_MonedaProv.Items.AddRange(New Object() {"Peso Mexicano", "Dolares Americanos", "Euros", "Yuanes "})
+        Me.CoBo_Cambios_MonedaProv.Location = New System.Drawing.Point(720, 193)
+        Me.CoBo_Cambios_MonedaProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.CoBo_Cambios_MonedaProv.Name = "CoBo_Cambios_MonedaProv"
+        Me.CoBo_Cambios_MonedaProv.Size = New System.Drawing.Size(240, 24)
+        Me.CoBo_Cambios_MonedaProv.TabIndex = 95
+        '
+        'TtBo_Cambios_EmailProv
+        '
+        Me.TtBo_Cambios_EmailProv.Location = New System.Drawing.Point(720, 36)
+        Me.TtBo_Cambios_EmailProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_Cambios_EmailProv.Name = "TtBo_Cambios_EmailProv"
+        Me.TtBo_Cambios_EmailProv.Size = New System.Drawing.Size(240, 23)
+        Me.TtBo_Cambios_EmailProv.TabIndex = 94
+        '
+        'TtBo_Cambios_RubroProv
+        '
+        Me.TtBo_Cambios_RubroProv.Location = New System.Drawing.Point(720, 65)
+        Me.TtBo_Cambios_RubroProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_Cambios_RubroProv.Name = "TtBo_Cambios_RubroProv"
+        Me.TtBo_Cambios_RubroProv.Size = New System.Drawing.Size(240, 23)
+        Me.TtBo_Cambios_RubroProv.TabIndex = 93
+        '
+        'TtBo_Cambios_CuentaDepositoProv
+        '
+        Me.TtBo_Cambios_CuentaDepositoProv.Location = New System.Drawing.Point(720, 240)
+        Me.TtBo_Cambios_CuentaDepositoProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_Cambios_CuentaDepositoProv.Name = "TtBo_Cambios_CuentaDepositoProv"
+        Me.TtBo_Cambios_CuentaDepositoProv.Size = New System.Drawing.Size(240, 23)
+        Me.TtBo_Cambios_CuentaDepositoProv.TabIndex = 92
+        '
+        'Lab_Cambios_CuentaDepositoProv
+        '
+        Me.Lab_Cambios_CuentaDepositoProv.AutoSize = True
+        Me.Lab_Cambios_CuentaDepositoProv.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Cambios_CuentaDepositoProv.Location = New System.Drawing.Point(517, 241)
+        Me.Lab_Cambios_CuentaDepositoProv.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Lab_Cambios_CuentaDepositoProv.Name = "Lab_Cambios_CuentaDepositoProv"
+        Me.Lab_Cambios_CuentaDepositoProv.Size = New System.Drawing.Size(135, 17)
+        Me.Lab_Cambios_CuentaDepositoProv.TabIndex = 91
+        Me.Lab_Cambios_CuentaDepositoProv.Text = "Cuenta de deposito:"
+        '
+        'Lab_Cambios_MonedaProv
+        '
+        Me.Lab_Cambios_MonedaProv.AutoSize = True
+        Me.Lab_Cambios_MonedaProv.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Cambios_MonedaProv.Location = New System.Drawing.Point(517, 198)
+        Me.Lab_Cambios_MonedaProv.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Lab_Cambios_MonedaProv.Name = "Lab_Cambios_MonedaProv"
+        Me.Lab_Cambios_MonedaProv.Size = New System.Drawing.Size(63, 17)
+        Me.Lab_Cambios_MonedaProv.TabIndex = 90
+        Me.Lab_Cambios_MonedaProv.Text = "Moneda:"
+        '
+        'CoBo_Cambios_FormaPagoProv
+        '
+        Me.CoBo_Cambios_FormaPagoProv.FormattingEnabled = True
+        Me.CoBo_Cambios_FormaPagoProv.Items.AddRange(New Object() {"Pagó de una sola exibición", "Depositó baconcario"})
+        Me.CoBo_Cambios_FormaPagoProv.Location = New System.Drawing.Point(720, 108)
+        Me.CoBo_Cambios_FormaPagoProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.CoBo_Cambios_FormaPagoProv.Name = "CoBo_Cambios_FormaPagoProv"
+        Me.CoBo_Cambios_FormaPagoProv.Size = New System.Drawing.Size(240, 24)
+        Me.CoBo_Cambios_FormaPagoProv.TabIndex = 89
+        '
+        'Lab_Cambios_FormaPagoProv
+        '
+        Me.Lab_Cambios_FormaPagoProv.AutoSize = True
+        Me.Lab_Cambios_FormaPagoProv.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Cambios_FormaPagoProv.Location = New System.Drawing.Point(517, 113)
+        Me.Lab_Cambios_FormaPagoProv.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Lab_Cambios_FormaPagoProv.Name = "Lab_Cambios_FormaPagoProv"
+        Me.Lab_Cambios_FormaPagoProv.Size = New System.Drawing.Size(108, 17)
+        Me.Lab_Cambios_FormaPagoProv.TabIndex = 88
+        Me.Lab_Cambios_FormaPagoProv.Text = "Forma de pago:"
+        '
+        'Lab_Cambios_RubroProv
+        '
+        Me.Lab_Cambios_RubroProv.AutoSize = True
+        Me.Lab_Cambios_RubroProv.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Cambios_RubroProv.Location = New System.Drawing.Point(517, 69)
+        Me.Lab_Cambios_RubroProv.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Lab_Cambios_RubroProv.Name = "Lab_Cambios_RubroProv"
+        Me.Lab_Cambios_RubroProv.Size = New System.Drawing.Size(83, 17)
+        Me.Lab_Cambios_RubroProv.TabIndex = 87
+        Me.Lab_Cambios_RubroProv.Text = "Rubro/ giro:"
+        '
+        'Lab_Cambios_EmailProv
+        '
+        Me.Lab_Cambios_EmailProv.AutoSize = True
+        Me.Lab_Cambios_EmailProv.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Cambios_EmailProv.Location = New System.Drawing.Point(517, 36)
+        Me.Lab_Cambios_EmailProv.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Lab_Cambios_EmailProv.Name = "Lab_Cambios_EmailProv"
+        Me.Lab_Cambios_EmailProv.Size = New System.Drawing.Size(46, 17)
+        Me.Lab_Cambios_EmailProv.TabIndex = 86
+        Me.Lab_Cambios_EmailProv.Text = "Email:"
+        '
+        'Lab_Cambios_TelefDosProv
+        '
+        Me.Lab_Cambios_TelefDosProv.AutoSize = True
+        Me.Lab_Cambios_TelefDosProv.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Cambios_TelefDosProv.Location = New System.Drawing.Point(27, 405)
+        Me.Lab_Cambios_TelefDosProv.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Lab_Cambios_TelefDosProv.Name = "Lab_Cambios_TelefDosProv"
+        Me.Lab_Cambios_TelefDosProv.Size = New System.Drawing.Size(80, 17)
+        Me.Lab_Cambios_TelefDosProv.TabIndex = 85
+        Me.Lab_Cambios_TelefDosProv.Text = "Teléfono 2:"
+        '
+        'Lab_Cambios_TelefUnoProv
+        '
+        Me.Lab_Cambios_TelefUnoProv.AutoSize = True
+        Me.Lab_Cambios_TelefUnoProv.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Cambios_TelefUnoProv.Location = New System.Drawing.Point(27, 368)
+        Me.Lab_Cambios_TelefUnoProv.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Lab_Cambios_TelefUnoProv.Name = "Lab_Cambios_TelefUnoProv"
+        Me.Lab_Cambios_TelefUnoProv.Size = New System.Drawing.Size(80, 17)
+        Me.Lab_Cambios_TelefUnoProv.TabIndex = 84
+        Me.Lab_Cambios_TelefUnoProv.Text = "Teléfono 1:"
+        '
+        'Lab_Cambios_EstadoProv
+        '
+        Me.Lab_Cambios_EstadoProv.AutoSize = True
+        Me.Lab_Cambios_EstadoProv.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Cambios_EstadoProv.Location = New System.Drawing.Point(27, 332)
+        Me.Lab_Cambios_EstadoProv.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Lab_Cambios_EstadoProv.Name = "Lab_Cambios_EstadoProv"
+        Me.Lab_Cambios_EstadoProv.Size = New System.Drawing.Size(56, 17)
+        Me.Lab_Cambios_EstadoProv.TabIndex = 83
+        Me.Lab_Cambios_EstadoProv.Text = "Estado:"
+        '
+        'Lab_Cambios_ColoniaProv
+        '
+        Me.Lab_Cambios_ColoniaProv.AutoSize = True
+        Me.Lab_Cambios_ColoniaProv.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Cambios_ColoniaProv.Location = New System.Drawing.Point(27, 265)
+        Me.Lab_Cambios_ColoniaProv.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Lab_Cambios_ColoniaProv.Name = "Lab_Cambios_ColoniaProv"
+        Me.Lab_Cambios_ColoniaProv.Size = New System.Drawing.Size(142, 17)
+        Me.Lab_Cambios_ColoniaProv.TabIndex = 82
+        Me.Lab_Cambios_ColoniaProv.Text = "Colonia / Delegación:"
+        '
+        'Lab_Cambios_CpProv
+        '
+        Me.Lab_Cambios_CpProv.AutoSize = True
+        Me.Lab_Cambios_CpProv.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Cambios_CpProv.Location = New System.Drawing.Point(27, 230)
+        Me.Lab_Cambios_CpProv.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Lab_Cambios_CpProv.Name = "Lab_Cambios_CpProv"
+        Me.Lab_Cambios_CpProv.Size = New System.Drawing.Size(30, 17)
+        Me.Lab_Cambios_CpProv.TabIndex = 81
+        Me.Lab_Cambios_CpProv.Text = "CP:"
+        '
+        'Lab_Cambios_NumInteriorProv
+        '
+        Me.Lab_Cambios_NumInteriorProv.AutoSize = True
+        Me.Lab_Cambios_NumInteriorProv.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Cambios_NumInteriorProv.Location = New System.Drawing.Point(27, 193)
+        Me.Lab_Cambios_NumInteriorProv.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Lab_Cambios_NumInteriorProv.Name = "Lab_Cambios_NumInteriorProv"
+        Me.Lab_Cambios_NumInteriorProv.Size = New System.Drawing.Size(110, 17)
+        Me.Lab_Cambios_NumInteriorProv.TabIndex = 80
+        Me.Lab_Cambios_NumInteriorProv.Text = "Número interior:"
+        '
+        'Lab_Cambios_NumExteriorProv
+        '
+        Me.Lab_Cambios_NumExteriorProv.AutoSize = True
+        Me.Lab_Cambios_NumExteriorProv.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Cambios_NumExteriorProv.Location = New System.Drawing.Point(27, 155)
+        Me.Lab_Cambios_NumExteriorProv.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Lab_Cambios_NumExteriorProv.Name = "Lab_Cambios_NumExteriorProv"
+        Me.Lab_Cambios_NumExteriorProv.Size = New System.Drawing.Size(113, 17)
+        Me.Lab_Cambios_NumExteriorProv.TabIndex = 79
+        Me.Lab_Cambios_NumExteriorProv.Text = "Número exterior:"
+        '
+        'TtBo_Cambios_CalleProv
+        '
+        Me.TtBo_Cambios_CalleProv.Enabled = False
+        Me.TtBo_Cambios_CalleProv.Location = New System.Drawing.Point(253, 110)
+        Me.TtBo_Cambios_CalleProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_Cambios_CalleProv.Name = "TtBo_Cambios_CalleProv"
+        Me.TtBo_Cambios_CalleProv.Size = New System.Drawing.Size(217, 23)
+        Me.TtBo_Cambios_CalleProv.TabIndex = 78
+        '
+        'Lab_Cambios_CalleProv
+        '
+        Me.Lab_Cambios_CalleProv.AutoSize = True
+        Me.Lab_Cambios_CalleProv.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Cambios_CalleProv.Location = New System.Drawing.Point(27, 113)
+        Me.Lab_Cambios_CalleProv.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Lab_Cambios_CalleProv.Name = "Lab_Cambios_CalleProv"
+        Me.Lab_Cambios_CalleProv.Size = New System.Drawing.Size(43, 17)
+        Me.Lab_Cambios_CalleProv.TabIndex = 77
+        Me.Lab_Cambios_CalleProv.Text = "Calle:"
+        '
+        'TtBo_Cambios_RfcProv
+        '
+        Me.TtBo_Cambios_RfcProv.Location = New System.Drawing.Point(253, 69)
+        Me.TtBo_Cambios_RfcProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_Cambios_RfcProv.Name = "TtBo_Cambios_RfcProv"
+        Me.TtBo_Cambios_RfcProv.Size = New System.Drawing.Size(217, 23)
+        Me.TtBo_Cambios_RfcProv.TabIndex = 76
+        '
+        'TtBo_Cambios_NombProv
+        '
+        Me.TtBo_Cambios_NombProv.Location = New System.Drawing.Point(253, 36)
+        Me.TtBo_Cambios_NombProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_Cambios_NombProv.Name = "TtBo_Cambios_NombProv"
+        Me.TtBo_Cambios_NombProv.Size = New System.Drawing.Size(217, 23)
+        Me.TtBo_Cambios_NombProv.TabIndex = 75
+        '
+        'Lab_Cambios_RfcProv
+        '
+        Me.Lab_Cambios_RfcProv.AutoSize = True
+        Me.Lab_Cambios_RfcProv.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Cambios_RfcProv.Location = New System.Drawing.Point(25, 69)
+        Me.Lab_Cambios_RfcProv.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Lab_Cambios_RfcProv.Name = "Lab_Cambios_RfcProv"
+        Me.Lab_Cambios_RfcProv.Size = New System.Drawing.Size(39, 17)
+        Me.Lab_Cambios_RfcProv.TabIndex = 74
+        Me.Lab_Cambios_RfcProv.Text = "RFC:"
+        '
+        'Lab_Cambios_NombProv
+        '
+        Me.Lab_Cambios_NombProv.AutoSize = True
+        Me.Lab_Cambios_NombProv.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Cambios_NombProv.Location = New System.Drawing.Point(27, 36)
+        Me.Lab_Cambios_NombProv.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Lab_Cambios_NombProv.Name = "Lab_Cambios_NombProv"
+        Me.Lab_Cambios_NombProv.Size = New System.Drawing.Size(154, 17)
+        Me.Lab_Cambios_NombProv.TabIndex = 73
+        Me.Lab_Cambios_NombProv.Text = "Nombre o razón social:"
         '
         'Baja_Proveedores
         '
-        Me.Baja_Proveedores.Controls.Add(Me.Button7)
-        Me.Baja_Proveedores.Controls.Add(Me.Button8)
-        Me.Baja_Proveedores.Controls.Add(Me.TextBox35)
-        Me.Baja_Proveedores.Controls.Add(Me.TextBox36)
-        Me.Baja_Proveedores.Controls.Add(Me.TextBox37)
-        Me.Baja_Proveedores.Controls.Add(Me.TextBox38)
-        Me.Baja_Proveedores.Controls.Add(Me.Label39)
-        Me.Baja_Proveedores.Controls.Add(Me.Label42)
-        Me.Baja_Proveedores.Controls.Add(Me.Label43)
-        Me.Baja_Proveedores.Controls.Add(Me.Label44)
-        Me.Baja_Proveedores.Controls.Add(Me.TextBox39)
-        Me.Baja_Proveedores.Controls.Add(Me.Label45)
-        Me.Baja_Proveedores.Controls.Add(Me.TextBox40)
-        Me.Baja_Proveedores.Controls.Add(Me.TextBox41)
-        Me.Baja_Proveedores.Controls.Add(Me.Label46)
-        Me.Baja_Proveedores.Controls.Add(Me.Label47)
-        Me.Baja_Proveedores.Controls.Add(Me.Button6)
-        Me.Baja_Proveedores.Controls.Add(Me.TextBox31)
-        Me.Baja_Proveedores.Controls.Add(Me.TextBox32)
-        Me.Baja_Proveedores.Controls.Add(Me.Label37)
-        Me.Baja_Proveedores.Controls.Add(Me.Label38)
-        Me.Baja_Proveedores.Location = New System.Drawing.Point(4, 22)
+        Me.Baja_Proveedores.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Baja_Proveedores.Controls.Add(Me.Btn_Baja_Limpiar)
+        Me.Baja_Proveedores.Controls.Add(Me.Btn_Baja_Eliminar)
+        Me.Baja_Proveedores.Controls.Add(Me.TtBo_PreBaja_ColoniaProv)
+        Me.Baja_Proveedores.Controls.Add(Me.TtBo_PreBaja_CpProv)
+        Me.Baja_Proveedores.Controls.Add(Me.TtBo_PreBaja_NumbExterior)
+        Me.Baja_Proveedores.Controls.Add(Me.TtBo_PreBaja_RubroProv)
+        Me.Baja_Proveedores.Controls.Add(Me.Lab_PreBaja_RubroProv)
+        Me.Baja_Proveedores.Controls.Add(Me.Lab_PreBaja_ColoniaProv)
+        Me.Baja_Proveedores.Controls.Add(Me.Lab_PreBaja_CpProv)
+        Me.Baja_Proveedores.Controls.Add(Me.Lab_PreBaja_NumExteriorProv)
+        Me.Baja_Proveedores.Controls.Add(Me.TtBo_PreBaja_CalleProv)
+        Me.Baja_Proveedores.Controls.Add(Me.Lab_PreBaja_CalleProv)
+        Me.Baja_Proveedores.Controls.Add(Me.TtBo_PreBaja_RfcProv)
+        Me.Baja_Proveedores.Controls.Add(Me.TtBo_PreBaja_NombProv)
+        Me.Baja_Proveedores.Controls.Add(Me.Lab_PreBaja_RfcProv)
+        Me.Baja_Proveedores.Controls.Add(Me.Lab_PreBaja_NombProv)
+        Me.Baja_Proveedores.Controls.Add(Me.Btn_Baja_Buscar)
+        Me.Baja_Proveedores.Controls.Add(Me.TtBo_Baja_RfcProv)
+        Me.Baja_Proveedores.Controls.Add(Me.TtBo_Baja_NombProv)
+        Me.Baja_Proveedores.Controls.Add(Me.Lab_Baja_RfcProv)
+        Me.Baja_Proveedores.Controls.Add(Me.Lab_Baja_NombProv)
+        Me.Baja_Proveedores.Location = New System.Drawing.Point(4, 25)
+        Me.Baja_Proveedores.Margin = New System.Windows.Forms.Padding(4)
         Me.Baja_Proveedores.Name = "Baja_Proveedores"
-        Me.Baja_Proveedores.Padding = New System.Windows.Forms.Padding(3)
-        Me.Baja_Proveedores.Size = New System.Drawing.Size(768, 356)
+        Me.Baja_Proveedores.Padding = New System.Windows.Forms.Padding(4)
+        Me.Baja_Proveedores.Size = New System.Drawing.Size(1027, 441)
         Me.Baja_Proveedores.TabIndex = 1
         Me.Baja_Proveedores.Text = "Baja de proveedor"
-        Me.Baja_Proveedores.UseVisualStyleBackColor = True
         '
-        'Button7
+        'Btn_Baja_Limpiar
         '
-        Me.Button7.Location = New System.Drawing.Point(652, 214)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(79, 23)
-        Me.Button7.TabIndex = 110
-        Me.Button7.Text = "Limpiar"
-        Me.Button7.UseVisualStyleBackColor = True
+        Me.Btn_Baja_Limpiar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Btn_Baja_Limpiar.Location = New System.Drawing.Point(732, 249)
+        Me.Btn_Baja_Limpiar.Margin = New System.Windows.Forms.Padding(4)
+        Me.Btn_Baja_Limpiar.Name = "Btn_Baja_Limpiar"
+        Me.Btn_Baja_Limpiar.Size = New System.Drawing.Size(92, 31)
+        Me.Btn_Baja_Limpiar.TabIndex = 110
+        Me.Btn_Baja_Limpiar.Text = "Limpiar"
+        Me.Btn_Baja_Limpiar.UseVisualStyleBackColor = False
         '
-        'Button8
+        'Btn_Baja_Eliminar
         '
-        Me.Button8.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Button8.Location = New System.Drawing.Point(522, 214)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(124, 23)
-        Me.Button8.TabIndex = 109
-        Me.Button8.Text = "Eliminar"
-        Me.Button8.UseVisualStyleBackColor = False
+        Me.Btn_Baja_Eliminar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Btn_Baja_Eliminar.Location = New System.Drawing.Point(832, 249)
+        Me.Btn_Baja_Eliminar.Margin = New System.Windows.Forms.Padding(4)
+        Me.Btn_Baja_Eliminar.Name = "Btn_Baja_Eliminar"
+        Me.Btn_Baja_Eliminar.Size = New System.Drawing.Size(119, 31)
+        Me.Btn_Baja_Eliminar.TabIndex = 109
+        Me.Btn_Baja_Eliminar.Text = "Eliminar"
+        Me.Btn_Baja_Eliminar.UseVisualStyleBackColor = False
         '
-        'TextBox35
+        'TtBo_PreBaja_ColoniaProv
         '
-        Me.TextBox35.Location = New System.Drawing.Point(549, 150)
-        Me.TextBox35.Name = "TextBox35"
-        Me.TextBox35.Size = New System.Drawing.Size(164, 20)
-        Me.TextBox35.TabIndex = 108
+        Me.TtBo_PreBaja_ColoniaProv.Location = New System.Drawing.Point(732, 185)
+        Me.TtBo_PreBaja_ColoniaProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_PreBaja_ColoniaProv.Name = "TtBo_PreBaja_ColoniaProv"
+        Me.TtBo_PreBaja_ColoniaProv.Size = New System.Drawing.Size(217, 23)
+        Me.TtBo_PreBaja_ColoniaProv.TabIndex = 108
         '
-        'TextBox36
+        'TtBo_PreBaja_CpProv
         '
-        Me.TextBox36.Location = New System.Drawing.Point(549, 120)
-        Me.TextBox36.Name = "TextBox36"
-        Me.TextBox36.Size = New System.Drawing.Size(164, 20)
-        Me.TextBox36.TabIndex = 107
+        Me.TtBo_PreBaja_CpProv.Location = New System.Drawing.Point(732, 148)
+        Me.TtBo_PreBaja_CpProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_PreBaja_CpProv.Name = "TtBo_PreBaja_CpProv"
+        Me.TtBo_PreBaja_CpProv.Size = New System.Drawing.Size(217, 23)
+        Me.TtBo_PreBaja_CpProv.TabIndex = 107
         '
-        'TextBox37
+        'TtBo_PreBaja_NumbExterior
         '
-        Me.TextBox37.Location = New System.Drawing.Point(205, 217)
-        Me.TextBox37.Name = "TextBox37"
-        Me.TextBox37.Size = New System.Drawing.Size(164, 20)
-        Me.TextBox37.TabIndex = 106
+        Me.TtBo_PreBaja_NumbExterior.Location = New System.Drawing.Point(273, 267)
+        Me.TtBo_PreBaja_NumbExterior.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_PreBaja_NumbExterior.Name = "TtBo_PreBaja_NumbExterior"
+        Me.TtBo_PreBaja_NumbExterior.Size = New System.Drawing.Size(217, 23)
+        Me.TtBo_PreBaja_NumbExterior.TabIndex = 106
         '
-        'TextBox38
+        'TtBo_PreBaja_RubroProv
         '
-        Me.TextBox38.Location = New System.Drawing.Point(549, 176)
-        Me.TextBox38.Name = "TextBox38"
-        Me.TextBox38.Size = New System.Drawing.Size(164, 20)
-        Me.TextBox38.TabIndex = 105
+        Me.TtBo_PreBaja_RubroProv.Location = New System.Drawing.Point(732, 217)
+        Me.TtBo_PreBaja_RubroProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_PreBaja_RubroProv.Name = "TtBo_PreBaja_RubroProv"
+        Me.TtBo_PreBaja_RubroProv.Size = New System.Drawing.Size(217, 23)
+        Me.TtBo_PreBaja_RubroProv.TabIndex = 105
         '
-        'Label39
+        'Lab_PreBaja_RubroProv
         '
-        Me.Label39.AutoSize = True
-        Me.Label39.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label39.Location = New System.Drawing.Point(379, 179)
-        Me.Label39.Name = "Label39"
-        Me.Label39.Size = New System.Drawing.Size(83, 17)
-        Me.Label39.TabIndex = 104
-        Me.Label39.Text = "Rubro/ giro:"
+        Me.Lab_PreBaja_RubroProv.AutoSize = True
+        Me.Lab_PreBaja_RubroProv.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_PreBaja_RubroProv.Location = New System.Drawing.Point(505, 220)
+        Me.Lab_PreBaja_RubroProv.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Lab_PreBaja_RubroProv.Name = "Lab_PreBaja_RubroProv"
+        Me.Lab_PreBaja_RubroProv.Size = New System.Drawing.Size(83, 17)
+        Me.Lab_PreBaja_RubroProv.TabIndex = 104
+        Me.Lab_PreBaja_RubroProv.Text = "Rubro/ giro:"
         '
-        'Label42
+        'Lab_PreBaja_ColoniaProv
         '
-        Me.Label42.AutoSize = True
-        Me.Label42.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label42.Location = New System.Drawing.Point(379, 151)
-        Me.Label42.Name = "Label42"
-        Me.Label42.Size = New System.Drawing.Size(142, 17)
-        Me.Label42.TabIndex = 103
-        Me.Label42.Text = "Colonia / Delegación:"
+        Me.Lab_PreBaja_ColoniaProv.AutoSize = True
+        Me.Lab_PreBaja_ColoniaProv.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_PreBaja_ColoniaProv.Location = New System.Drawing.Point(505, 186)
+        Me.Lab_PreBaja_ColoniaProv.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Lab_PreBaja_ColoniaProv.Name = "Lab_PreBaja_ColoniaProv"
+        Me.Lab_PreBaja_ColoniaProv.Size = New System.Drawing.Size(142, 17)
+        Me.Lab_PreBaja_ColoniaProv.TabIndex = 103
+        Me.Lab_PreBaja_ColoniaProv.Text = "Colonia / Delegación:"
         '
-        'Label43
+        'Lab_PreBaja_CpProv
         '
-        Me.Label43.AutoSize = True
-        Me.Label43.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label43.Location = New System.Drawing.Point(379, 123)
-        Me.Label43.Name = "Label43"
-        Me.Label43.Size = New System.Drawing.Size(30, 17)
-        Me.Label43.TabIndex = 102
-        Me.Label43.Text = "CP:"
+        Me.Lab_PreBaja_CpProv.AutoSize = True
+        Me.Lab_PreBaja_CpProv.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_PreBaja_CpProv.Location = New System.Drawing.Point(505, 151)
+        Me.Lab_PreBaja_CpProv.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Lab_PreBaja_CpProv.Name = "Lab_PreBaja_CpProv"
+        Me.Lab_PreBaja_CpProv.Size = New System.Drawing.Size(30, 17)
+        Me.Lab_PreBaja_CpProv.TabIndex = 102
+        Me.Lab_PreBaja_CpProv.Text = "CP:"
         '
-        'Label44
+        'Lab_PreBaja_NumExteriorProv
         '
-        Me.Label44.AutoSize = True
-        Me.Label44.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label44.Location = New System.Drawing.Point(35, 218)
-        Me.Label44.Name = "Label44"
-        Me.Label44.Size = New System.Drawing.Size(113, 17)
-        Me.Label44.TabIndex = 101
-        Me.Label44.Text = "Número exterior:"
+        Me.Lab_PreBaja_NumExteriorProv.AutoSize = True
+        Me.Lab_PreBaja_NumExteriorProv.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_PreBaja_NumExteriorProv.Location = New System.Drawing.Point(47, 268)
+        Me.Lab_PreBaja_NumExteriorProv.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Lab_PreBaja_NumExteriorProv.Name = "Lab_PreBaja_NumExteriorProv"
+        Me.Lab_PreBaja_NumExteriorProv.Size = New System.Drawing.Size(113, 17)
+        Me.Lab_PreBaja_NumExteriorProv.TabIndex = 101
+        Me.Lab_PreBaja_NumExteriorProv.Text = "Número exterior:"
         '
-        'TextBox39
+        'TtBo_PreBaja_CalleProv
         '
-        Me.TextBox39.Enabled = False
-        Me.TextBox39.Location = New System.Drawing.Point(205, 181)
-        Me.TextBox39.Name = "TextBox39"
-        Me.TextBox39.Size = New System.Drawing.Size(164, 20)
-        Me.TextBox39.TabIndex = 100
+        Me.TtBo_PreBaja_CalleProv.Enabled = False
+        Me.TtBo_PreBaja_CalleProv.Location = New System.Drawing.Point(273, 223)
+        Me.TtBo_PreBaja_CalleProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_PreBaja_CalleProv.Name = "TtBo_PreBaja_CalleProv"
+        Me.TtBo_PreBaja_CalleProv.Size = New System.Drawing.Size(217, 23)
+        Me.TtBo_PreBaja_CalleProv.TabIndex = 100
         '
-        'Label45
+        'Lab_PreBaja_CalleProv
         '
-        Me.Label45.AutoSize = True
-        Me.Label45.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label45.Location = New System.Drawing.Point(35, 184)
-        Me.Label45.Name = "Label45"
-        Me.Label45.Size = New System.Drawing.Size(43, 17)
-        Me.Label45.TabIndex = 99
-        Me.Label45.Text = "Calle:"
+        Me.Lab_PreBaja_CalleProv.AutoSize = True
+        Me.Lab_PreBaja_CalleProv.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_PreBaja_CalleProv.Location = New System.Drawing.Point(47, 226)
+        Me.Lab_PreBaja_CalleProv.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Lab_PreBaja_CalleProv.Name = "Lab_PreBaja_CalleProv"
+        Me.Lab_PreBaja_CalleProv.Size = New System.Drawing.Size(43, 17)
+        Me.Lab_PreBaja_CalleProv.TabIndex = 99
+        Me.Lab_PreBaja_CalleProv.Text = "Calle:"
         '
-        'TextBox40
+        'TtBo_PreBaja_RfcProv
         '
-        Me.TextBox40.Location = New System.Drawing.Point(205, 148)
-        Me.TextBox40.Name = "TextBox40"
-        Me.TextBox40.Size = New System.Drawing.Size(164, 20)
-        Me.TextBox40.TabIndex = 98
+        Me.TtBo_PreBaja_RfcProv.Location = New System.Drawing.Point(273, 182)
+        Me.TtBo_PreBaja_RfcProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_PreBaja_RfcProv.Name = "TtBo_PreBaja_RfcProv"
+        Me.TtBo_PreBaja_RfcProv.Size = New System.Drawing.Size(217, 23)
+        Me.TtBo_PreBaja_RfcProv.TabIndex = 98
         '
-        'TextBox41
+        'TtBo_PreBaja_NombProv
         '
-        Me.TextBox41.Location = New System.Drawing.Point(205, 121)
-        Me.TextBox41.Name = "TextBox41"
-        Me.TextBox41.Size = New System.Drawing.Size(164, 20)
-        Me.TextBox41.TabIndex = 97
+        Me.TtBo_PreBaja_NombProv.Location = New System.Drawing.Point(273, 149)
+        Me.TtBo_PreBaja_NombProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_PreBaja_NombProv.Name = "TtBo_PreBaja_NombProv"
+        Me.TtBo_PreBaja_NombProv.Size = New System.Drawing.Size(217, 23)
+        Me.TtBo_PreBaja_NombProv.TabIndex = 97
         '
-        'Label46
+        'Lab_PreBaja_RfcProv
         '
-        Me.Label46.AutoSize = True
-        Me.Label46.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label46.Location = New System.Drawing.Point(35, 148)
-        Me.Label46.Name = "Label46"
-        Me.Label46.Size = New System.Drawing.Size(39, 17)
-        Me.Label46.TabIndex = 96
-        Me.Label46.Text = "RFC:"
+        Me.Lab_PreBaja_RfcProv.AutoSize = True
+        Me.Lab_PreBaja_RfcProv.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_PreBaja_RfcProv.Location = New System.Drawing.Point(47, 182)
+        Me.Lab_PreBaja_RfcProv.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Lab_PreBaja_RfcProv.Name = "Lab_PreBaja_RfcProv"
+        Me.Lab_PreBaja_RfcProv.Size = New System.Drawing.Size(39, 17)
+        Me.Lab_PreBaja_RfcProv.TabIndex = 96
+        Me.Lab_PreBaja_RfcProv.Text = "RFC:"
         '
-        'Label47
+        'Lab_PreBaja_NombProv
         '
-        Me.Label47.AutoSize = True
-        Me.Label47.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label47.Location = New System.Drawing.Point(35, 121)
-        Me.Label47.Name = "Label47"
-        Me.Label47.Size = New System.Drawing.Size(154, 17)
-        Me.Label47.TabIndex = 95
-        Me.Label47.Text = "Nombre o razón social:"
+        Me.Lab_PreBaja_NombProv.AutoSize = True
+        Me.Lab_PreBaja_NombProv.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_PreBaja_NombProv.Location = New System.Drawing.Point(47, 149)
+        Me.Lab_PreBaja_NombProv.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Lab_PreBaja_NombProv.Name = "Lab_PreBaja_NombProv"
+        Me.Lab_PreBaja_NombProv.Size = New System.Drawing.Size(154, 17)
+        Me.Lab_PreBaja_NombProv.TabIndex = 95
+        Me.Lab_PreBaja_NombProv.Text = "Nombre o razón social:"
         '
-        'Button6
+        'Btn_Baja_Buscar
         '
-        Me.Button6.Location = New System.Drawing.Point(289, 77)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(134, 23)
-        Me.Button6.TabIndex = 94
-        Me.Button6.Text = "Buscar"
-        Me.Button6.UseVisualStyleBackColor = True
+        Me.Btn_Baja_Buscar.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Btn_Baja_Buscar.Location = New System.Drawing.Point(548, 95)
+        Me.Btn_Baja_Buscar.Margin = New System.Windows.Forms.Padding(4)
+        Me.Btn_Baja_Buscar.Name = "Btn_Baja_Buscar"
+        Me.Btn_Baja_Buscar.Size = New System.Drawing.Size(179, 31)
+        Me.Btn_Baja_Buscar.TabIndex = 94
+        Me.Btn_Baja_Buscar.Text = "Buscar"
+        Me.Btn_Baja_Buscar.UseVisualStyleBackColor = False
         '
-        'TextBox31
+        'TtBo_Baja_RfcProv
         '
-        Me.TextBox31.Location = New System.Drawing.Point(401, 51)
-        Me.TextBox31.Name = "TextBox31"
-        Me.TextBox31.Size = New System.Drawing.Size(164, 20)
-        Me.TextBox31.TabIndex = 93
+        Me.TtBo_Baja_RfcProv.Location = New System.Drawing.Point(535, 63)
+        Me.TtBo_Baja_RfcProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_Baja_RfcProv.Name = "TtBo_Baja_RfcProv"
+        Me.TtBo_Baja_RfcProv.Size = New System.Drawing.Size(217, 23)
+        Me.TtBo_Baja_RfcProv.TabIndex = 93
         '
-        'TextBox32
+        'TtBo_Baja_NombProv
         '
-        Me.TextBox32.Location = New System.Drawing.Point(401, 24)
-        Me.TextBox32.Name = "TextBox32"
-        Me.TextBox32.Size = New System.Drawing.Size(164, 20)
-        Me.TextBox32.TabIndex = 92
+        Me.TtBo_Baja_NombProv.Location = New System.Drawing.Point(535, 30)
+        Me.TtBo_Baja_NombProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_Baja_NombProv.Name = "TtBo_Baja_NombProv"
+        Me.TtBo_Baja_NombProv.Size = New System.Drawing.Size(217, 23)
+        Me.TtBo_Baja_NombProv.TabIndex = 92
         '
-        'Label37
+        'Lab_Baja_RfcProv
         '
-        Me.Label37.AutoSize = True
-        Me.Label37.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label37.Location = New System.Drawing.Point(231, 51)
-        Me.Label37.Name = "Label37"
-        Me.Label37.Size = New System.Drawing.Size(39, 17)
-        Me.Label37.TabIndex = 91
-        Me.Label37.Text = "RFC:"
+        Me.Lab_Baja_RfcProv.AutoSize = True
+        Me.Lab_Baja_RfcProv.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Baja_RfcProv.Location = New System.Drawing.Point(308, 63)
+        Me.Lab_Baja_RfcProv.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Lab_Baja_RfcProv.Name = "Lab_Baja_RfcProv"
+        Me.Lab_Baja_RfcProv.Size = New System.Drawing.Size(39, 17)
+        Me.Lab_Baja_RfcProv.TabIndex = 91
+        Me.Lab_Baja_RfcProv.Text = "RFC:"
         '
-        'Label38
+        'Lab_Baja_NombProv
         '
-        Me.Label38.AutoSize = True
-        Me.Label38.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label38.Location = New System.Drawing.Point(231, 24)
-        Me.Label38.Name = "Label38"
-        Me.Label38.Size = New System.Drawing.Size(154, 17)
-        Me.Label38.TabIndex = 90
-        Me.Label38.Text = "Nombre o razón social:"
-        '
-        'TextBox15
-        '
-        Me.TextBox15.Location = New System.Drawing.Point(395, 9)
-        Me.TextBox15.MaxLength = 100
-        Me.TextBox15.Name = "TextBox15"
-        Me.TextBox15.Size = New System.Drawing.Size(162, 20)
-        Me.TextBox15.TabIndex = 14
-        '
-        'TextBox16
-        '
-        Me.TextBox16.Location = New System.Drawing.Point(395, 35)
-        Me.TextBox16.MaxLength = 20
-        Me.TextBox16.Name = "TextBox16"
-        Me.TextBox16.Size = New System.Drawing.Size(162, 20)
-        Me.TextBox16.TabIndex = 15
+        Me.Lab_Baja_NombProv.AutoSize = True
+        Me.Lab_Baja_NombProv.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Baja_NombProv.Location = New System.Drawing.Point(308, 30)
+        Me.Lab_Baja_NombProv.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Lab_Baja_NombProv.Name = "Lab_Baja_NombProv"
+        Me.Lab_Baja_NombProv.Size = New System.Drawing.Size(154, 17)
+        Me.Lab_Baja_NombProv.TabIndex = 90
+        Me.Lab_Baja_NombProv.Text = "Nombre o razón social:"
         '
         'Form_Proveedores
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.BackgroundImage = Global.Proyecto_Spa_Mascotas.My.Resources.Resources.depositphotos_81696382_stock_photo_teal_and_white_doggy_tile
+        Me.ClientSize = New System.Drawing.Size(1067, 554)
         Me.Controls.Add(Me.Tab_Ctr_Proveedor)
         Me.Controls.Add(Me.Btn_atras)
         Me.Controls.Add(Me.MenuS_Principal)
+        Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Form_Proveedores"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Proveedores"
+        Me.Text = "ñ"
         Me.MenuS_Principal.ResumeLayout(False)
         Me.MenuS_Principal.PerformLayout()
         Me.Tab_Ctr_Proveedor.ResumeLayout(False)
@@ -1328,7 +1509,7 @@ Partial Class Form_Proveedores
         Me.Alta_Proveedores.PerformLayout()
         Me.Consulta_Proveedores.ResumeLayout(False)
         Me.Consulta_Proveedores.PerformLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DGV_ListaProv, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Cambio_Proveedor.ResumeLayout(False)
         Me.Cambio_Proveedor.PerformLayout()
         Me.Baja_Proveedores.ResumeLayout(False)
@@ -1354,43 +1535,43 @@ Partial Class Form_Proveedores
     Friend WithEvents Baja_Proveedores As TabPage
     Friend WithEvents CategoriasToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CaducosToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents ComboBox3 As ComboBox
-    Friend WithEvents TextBox14 As TextBox
-    Friend WithEvents TextBox13 As TextBox
-    Friend WithEvents TextBox12 As TextBox
-    Friend WithEvents TextBox11 As TextBox
-    Friend WithEvents TextBox10 As TextBox
-    Friend WithEvents TextBox9 As TextBox
-    Friend WithEvents TextBox8 As TextBox
-    Friend WithEvents Label17 As Label
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents Label16 As Label
-    Friend WithEvents ComboBox2 As ComboBox
-    Friend WithEvents TextBox7 As TextBox
-    Friend WithEvents TextBox6 As TextBox
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents Label15 As Label
-    Friend WithEvents Label14 As Label
-    Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents Label13 As Label
-    Friend WithEvents Label12 As Label
-    Friend WithEvents Label11 As Label
-    Friend WithEvents Label10 As Label
-    Friend WithEvents Label9 As Label
-    Friend WithEvents Label8 As Label
-    Friend WithEvents Label7 As Label
-    Friend WithEvents Label6 As Label
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label1 As Label
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents Btn_Alta_Limpiar As Button
+    Friend WithEvents Btn_Alta_Guardar As Button
+    Friend WithEvents CoBo_Alta_EstadoProv As ComboBox
+    Friend WithEvents TtBo_Alta_TelefDosProv As TextBox
+    Friend WithEvents TtBo_Alta_TelefUnoProv As TextBox
+    Friend WithEvents TtBo_Alta_ColoniaProv As TextBox
+    Friend WithEvents TtBo_Alta_CpProv As TextBox
+    Friend WithEvents TtBo_Alta_NumInteriorProv As TextBox
+    Friend WithEvents TtBo_Alta_NumExteriorProv As TextBox
+    Friend WithEvents TtBo_Alta_DescripProv As TextBox
+    Friend WithEvents Lab_Alta_DescripProv As Label
+    Friend WithEvents TtBo_Alta_SecuenciaProv As TextBox
+    Friend WithEvents Lab_Alta_SecuenciaProv As Label
+    Friend WithEvents CoBo_Alta_MonedaProv As ComboBox
+    Friend WithEvents TtBo_Alta_EmailProv As TextBox
+    Friend WithEvents TtBo_Alta_RubroProv As TextBox
+    Friend WithEvents TtBo_Alta_CuentaDepositoProv As TextBox
+    Friend WithEvents Lab_Alta_CuentaDepositoProv As Label
+    Friend WithEvents Lab_Alta_MonedaProv As Label
+    Friend WithEvents CoBo_Alta_FormaPagoProv As ComboBox
+    Friend WithEvents Lab_Alta_FormaPagoProv As Label
+    Friend WithEvents Lab_Alta_RubroProv As Label
+    Friend WithEvents Lab_Alta_EmailProv As Label
+    Friend WithEvents Lab_Alta_TelefDosProv As Label
+    Friend WithEvents Lab_Alta_TelefUnoProv As Label
+    Friend WithEvents Lab_Alta_EstadoProv As Label
+    Friend WithEvents Lab_Alta_ColoniaProv As Label
+    Friend WithEvents Lab_Alta_CpProv As Label
+    Friend WithEvents Lab_Alta_NumInteriorProv As Label
+    Friend WithEvents Lab_Alta_NumExteriorProv As Label
+    Friend WithEvents TtBo_Alta_CalleProv As TextBox
+    Friend WithEvents Lab_Alta_CalleProv As Label
+    Friend WithEvents TtBo_Alta_RfcProv As TextBox
+    Friend WithEvents TtBo_Alta_NombProv As TextBox
+    Friend WithEvents Lab_Alta_RfcProv As Label
+    Friend WithEvents Lab_Alta_NombProv As Label
+    Friend WithEvents DGV_ListaProv As DataGridView
     Friend WithEvents DVG_ID_Prov As DataGridViewTextBoxColumn
     Friend WithEvents DVG_NombORazonS_Prov As DataGridViewTextBoxColumn
     Friend WithEvents DVG_Direcc_Prov As DataGridViewTextBoxColumn
@@ -1402,66 +1583,71 @@ Partial Class Form_Proveedores
     Friend WithEvents DVG_Moneda_Prov As DataGridViewTextBoxColumn
     Friend WithEvents DVG_CuentaDep_Prov As DataGridViewTextBoxColumn
     Friend WithEvents DVG_Descp_Prov As DataGridViewTextBoxColumn
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Label18 As Label
-    Friend WithEvents Label19 As Label
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button5 As Button
-    Friend WithEvents ComboBox4 As ComboBox
-    Friend WithEvents TextBox17 As TextBox
-    Friend WithEvents TextBox18 As TextBox
-    Friend WithEvents TextBox19 As TextBox
-    Friend WithEvents TextBox20 As TextBox
-    Friend WithEvents TextBox21 As TextBox
-    Friend WithEvents TextBox22 As TextBox
-    Friend WithEvents TextBox23 As TextBox
-    Friend WithEvents Label20 As Label
-    Friend WithEvents TextBox24 As TextBox
-    Friend WithEvents Label21 As Label
-    Friend WithEvents ComboBox5 As ComboBox
-    Friend WithEvents TextBox25 As TextBox
-    Friend WithEvents TextBox26 As TextBox
-    Friend WithEvents TextBox27 As TextBox
-    Friend WithEvents Label22 As Label
-    Friend WithEvents Label23 As Label
-    Friend WithEvents ComboBox6 As ComboBox
-    Friend WithEvents Label24 As Label
-    Friend WithEvents Label25 As Label
-    Friend WithEvents Label26 As Label
-    Friend WithEvents Label27 As Label
-    Friend WithEvents Label28 As Label
-    Friend WithEvents Label29 As Label
-    Friend WithEvents Label30 As Label
-    Friend WithEvents Label31 As Label
-    Friend WithEvents Label32 As Label
-    Friend WithEvents Label33 As Label
-    Friend WithEvents TextBox28 As TextBox
-    Friend WithEvents Label34 As Label
-    Friend WithEvents TextBox29 As TextBox
-    Friend WithEvents TextBox30 As TextBox
-    Friend WithEvents Label35 As Label
-    Friend WithEvents Label36 As Label
-    Friend WithEvents Button7 As Button
-    Friend WithEvents Button8 As Button
-    Friend WithEvents TextBox35 As TextBox
-    Friend WithEvents TextBox36 As TextBox
-    Friend WithEvents TextBox37 As TextBox
-    Friend WithEvents TextBox38 As TextBox
-    Friend WithEvents Label39 As Label
-    Friend WithEvents Label42 As Label
-    Friend WithEvents Label43 As Label
-    Friend WithEvents Label44 As Label
-    Friend WithEvents TextBox39 As TextBox
-    Friend WithEvents Label45 As Label
-    Friend WithEvents TextBox40 As TextBox
-    Friend WithEvents TextBox41 As TextBox
-    Friend WithEvents Label46 As Label
-    Friend WithEvents Label47 As Label
-    Friend WithEvents Button6 As Button
-    Friend WithEvents TextBox31 As TextBox
-    Friend WithEvents TextBox32 As TextBox
-    Friend WithEvents Label37 As Label
-    Friend WithEvents Label38 As Label
-    Friend WithEvents TextBox16 As TextBox
-    Friend WithEvents TextBox15 As TextBox
+    Friend WithEvents Btn_Consulta_BuscarProv As Button
+    Friend WithEvents Lab_Consulta_RfcProv As Label
+    Friend WithEvents Lab_Consulta_NombProv As Label
+    Friend WithEvents Btn_Cambios_Limpiar As Button
+    Friend WithEvents Btn_Cambios_Buscar As Button
+    Friend WithEvents CoBo_Cambios_EstadoProv As ComboBox
+    Friend WithEvents TtBo_Cambios_TelefDosProv As TextBox
+    Friend WithEvents TtBo_Cambios_TelefUnoProv As TextBox
+    Friend WithEvents TtBo_Cambios_ColoniaProv As TextBox
+    Friend WithEvents TtBo_Cambios_CpProv As TextBox
+    Friend WithEvents TtBo_Cambios_NumInteriorProv As TextBox
+    Friend WithEvents TtBo_Cambios_NumExteriorProv As TextBox
+    Friend WithEvents TtBo_Cambios_DescripProv As TextBox
+    Friend WithEvents Lab_Cambios_DescripProv As Label
+    Friend WithEvents TtBo_Cambios_SecuenciaProv As TextBox
+    Friend WithEvents Lab_Cambios_SecuenciaProv As Label
+    Friend WithEvents CoBo_Cambios_MonedaProv As ComboBox
+    Friend WithEvents TtBo_Cambios_EmailProv As TextBox
+    Friend WithEvents TtBo_Cambios_RubroProv As TextBox
+    Friend WithEvents TtBo_Cambios_CuentaDepositoProv As TextBox
+    Friend WithEvents Lab_Cambios_CuentaDepositoProv As Label
+    Friend WithEvents Lab_Cambios_MonedaProv As Label
+    Friend WithEvents CoBo_Cambios_FormaPagoProv As ComboBox
+    Friend WithEvents Lab_Cambios_FormaPagoProv As Label
+    Friend WithEvents Lab_Cambios_RubroProv As Label
+    Friend WithEvents Lab_Cambios_EmailProv As Label
+    Friend WithEvents Lab_Cambios_TelefDosProv As Label
+    Friend WithEvents Lab_Cambios_TelefUnoProv As Label
+    Friend WithEvents Lab_Cambios_EstadoProv As Label
+    Friend WithEvents Lab_Cambios_ColoniaProv As Label
+    Friend WithEvents Lab_Cambios_CpProv As Label
+    Friend WithEvents Lab_Cambios_NumInteriorProv As Label
+    Friend WithEvents Lab_Cambios_NumExteriorProv As Label
+    Friend WithEvents TtBo_Cambios_CalleProv As TextBox
+    Friend WithEvents Lab_Cambios_CalleProv As Label
+    Friend WithEvents TtBo_Cambios_RfcProv As TextBox
+    Friend WithEvents TtBo_Cambios_NombProv As TextBox
+    Friend WithEvents Lab_Cambios_RfcProv As Label
+    Friend WithEvents Lab_Cambios_NombProv As Label
+    Friend WithEvents Btn_Baja_Limpiar As Button
+    Friend WithEvents Btn_Baja_Eliminar As Button
+    Friend WithEvents TtBo_PreBaja_ColoniaProv As TextBox
+    Friend WithEvents TtBo_PreBaja_CpProv As TextBox
+    Friend WithEvents TtBo_PreBaja_NumbExterior As TextBox
+    Friend WithEvents TtBo_PreBaja_RubroProv As TextBox
+    Friend WithEvents Lab_PreBaja_RubroProv As Label
+    Friend WithEvents Lab_PreBaja_ColoniaProv As Label
+    Friend WithEvents Lab_PreBaja_CpProv As Label
+    Friend WithEvents Lab_PreBaja_NumExteriorProv As Label
+    Friend WithEvents TtBo_PreBaja_CalleProv As TextBox
+    Friend WithEvents Lab_PreBaja_CalleProv As Label
+    Friend WithEvents TtBo_PreBaja_RfcProv As TextBox
+    Friend WithEvents TtBo_PreBaja_NombProv As TextBox
+    Friend WithEvents Lab_PreBaja_RfcProv As Label
+    Friend WithEvents Lab_PreBaja_NombProv As Label
+    Friend WithEvents Btn_Baja_Buscar As Button
+    Friend WithEvents TtBo_Baja_RfcProv As TextBox
+    Friend WithEvents TtBo_Baja_NombProv As TextBox
+    Friend WithEvents Lab_Baja_RfcProv As Label
+    Friend WithEvents Lab_Baja_NombProv As Label
+    Friend WithEvents TtBo_Consulta_RfcProv As TextBox
+    Friend WithEvents TtBo_Consulta_NombProv As TextBox
+    Friend WithEvents Btn_Consulta_BuscarTodo As Button
+    Friend WithEvents TtBo_Alta_MpioProv As TextBox
+    Friend WithEvents Lab_Alta_MpioProv As Label
+    Friend WithEvents TtBo_Cambios_mpioProv As TextBox
+    Friend WithEvents Lab_Cambios_MpioProv As Label
 End Class

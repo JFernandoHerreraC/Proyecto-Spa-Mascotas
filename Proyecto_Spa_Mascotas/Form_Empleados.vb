@@ -30,7 +30,7 @@
     End Sub
 
     Private Sub Btn_atras_Click(sender As Object, e As EventArgs) Handles Btn_atras.Click
-        Form_Ventas.Show()
+        'Form_Menu.Show()
         Me.Hide()
     End Sub
 
@@ -38,7 +38,7 @@
         Form_ClientesYMascotas.Show()
         Me.Hide()
     End Sub
-    Private Sub TextBox11_KeyPress(sender As Object, e As System.Windows.Forms.KeyPressEventArgs) Handles TextBox11.KeyPress
+    Private Sub TextBox11_KeyPress(sender As Object, e As System.Windows.Forms.KeyPressEventArgs) Handles TtBo_Alta_CpEmp.KeyPress
         If Char.IsDigit(e.KeyChar) Then
             e.Handled = False
         ElseIf Char.IsControl(e.KeyChar) Then
@@ -48,7 +48,7 @@
         End If
     End Sub
 
-    Private Sub TextBox4_KeyPress(sender As Object, e As System.Windows.Forms.KeyPressEventArgs) Handles TextBox4.KeyPress
+    Private Sub TextBox4_KeyPress(sender As Object, e As System.Windows.Forms.KeyPressEventArgs) Handles TtBo_Alta_TelefMoviEmp.KeyPress
         If Char.IsDigit(e.KeyChar) Then
             e.Handled = False
         ElseIf Char.IsControl(e.KeyChar) Then
@@ -57,7 +57,7 @@
             e.Handled = True
         End If
     End Sub
-    Private Sub TextBox5_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox5.KeyPress
+    Private Sub TextBox5_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TtBo_Alta_TelefFijoEmp.KeyPress
         If Char.IsDigit(e.KeyChar) Then
             e.Handled = False
         ElseIf Char.IsControl(e.KeyChar) Then
@@ -67,69 +67,69 @@
         End If
     End Sub
 
-    Private Sub ComboBox3_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox3.SelectedIndexChanged
-        ComboBox4.Items.Clear()
-        ComboBox5.Items.Clear()
-        ComboBox6.Items.Clear()
-        ComboBox7.Items.Clear()
-        If ComboBox3.SelectedIndex = 0 Then
+    Private Sub ComboBox3_SelectedIndexChanged(sender As Object, e As EventArgs) Handles CoBo_Alta_TurnoEmp.SelectedIndexChanged
+        CoBo_Alta_HrEntEmp.Items.Clear()
+        CoBo_Alta_MeridianaEntEmp.Items.Clear()
+        CoBo_Alta_HrSalEmp.Items.Clear()
+        CoBo_Alta_MeridianaSalEmp.Items.Clear()
+        If CoBo_Alta_TurnoEmp.SelectedIndex = 0 Then
             For i = 6 To 18
                 Dim Jornada As String = i.ToString() + ":00"
-                ComboBox4.Items.Add(Jornada)
-                ComboBox6.Items.Add(Jornada)
+                CoBo_Alta_HrEntEmp.Items.Add(Jornada)
+                CoBo_Alta_HrSalEmp.Items.Add(Jornada)
             Next
-            If ComboBox4.SelectedIndex < 5 Then
-                ComboBox5.Items.Add("A.M")
+            If CoBo_Alta_HrEntEmp.SelectedIndex < 5 Then
+                CoBo_Alta_MeridianaEntEmp.Items.Add("A.M")
             Else
-                ComboBox5.Items.Add("P.M")
+                CoBo_Alta_MeridianaEntEmp.Items.Add("P.M")
             End If
-            If ComboBox6.SelectedIndex > 5 Then
-                ComboBox7.Items.Add("A.M")
+            If CoBo_Alta_HrSalEmp.SelectedIndex > 5 Then
+                CoBo_Alta_MeridianaSalEmp.Items.Add("A.M")
             Else
-                ComboBox7.Items.Add("P.M")
+                CoBo_Alta_MeridianaSalEmp.Items.Add("P.M")
             End If
         Else
             For i = 18 To 24
                 Dim Jornada As String = i.ToString() + ":00"
-                ComboBox4.Items.Add(Jornada)
-                ComboBox6.Items.Add(Jornada)
+                CoBo_Alta_HrEntEmp.Items.Add(Jornada)
+                CoBo_Alta_HrSalEmp.Items.Add(Jornada)
             Next
             For i = 1 To 6
                 Dim Jornada As String = i.ToString() + ":00"
-                ComboBox4.Items.Add(Jornada)
-                ComboBox6.Items.Add(Jornada)
+                CoBo_Alta_HrEntEmp.Items.Add(Jornada)
+                CoBo_Alta_HrSalEmp.Items.Add(Jornada)
             Next
-            If ComboBox4.SelectedIndex < 5 Then
-                ComboBox5.Items.Add("P.M")
+            If CoBo_Alta_HrEntEmp.SelectedIndex < 5 Then
+                CoBo_Alta_MeridianaEntEmp.Items.Add("P.M")
             Else
-                ComboBox5.Items.Add("A.M")
+                CoBo_Alta_MeridianaEntEmp.Items.Add("A.M")
             End If
-            If ComboBox6.SelectedIndex > 5 Then
-                ComboBox7.Items.Add("P.M")
+            If CoBo_Alta_HrSalEmp.SelectedIndex > 5 Then
+                CoBo_Alta_MeridianaSalEmp.Items.Add("P.M")
             Else
-                ComboBox7.Items.Add("A.M")
+                CoBo_Alta_MeridianaSalEmp.Items.Add("A.M")
             End If
         End If
     End Sub
 
-    Private Sub RadioButton4_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton4.CheckedChanged
-        If RadioButton4.Checked Then
-            TextBox13.Enabled = True
+    Private Sub RadioButton4_CheckedChanged(sender As Object, e As EventArgs) Handles RaBo_Alta_NaclidadExtjEmp.CheckedChanged
+        If RaBo_Alta_NaclidadExtjEmp.Checked Then
+            TtBo_Alta_NaclidadOrigEmp.Enabled = True
         Else
-            TextBox13.Enabled = False
+            TtBo_Alta_NaclidadOrigEmp.Enabled = False
         End If
     End Sub
 
     Private Sub Form_Empleados_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        DateTimePicker1.MinDate = "01/01/1920"
-        DateTimePicker1.MaxDate = Date.Now().ToShortDateString()
+        DaTiPi_Alta_FechNacEmp.MinDate = "01/01/1920"
+        DaTiPi_Alta_FechNacEmp.MaxDate = Date.Now().ToShortDateString()
     End Sub
 
-    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Btn_Camb_Buscar.Click
         Dim Buscar As Boolean = False
-        If TextBox34.TextLength >= 1 And TextBox32.TextLength > 2 And TextBox33.TextLength > 2 Then
+        If TtBo_Camb_NombEmp.TextLength >= 1 And TtBo_Camb_AmatEmp.TextLength > 2 And TtBo_Camb_ApatEmp.TextLength > 2 Then
             Buscar = True
-        ElseIf TextBox22.TextLength >= 18 Then
+        ElseIf TtBo_Camb_CurpEmp.TextLength >= 18 Then
             Buscar = True
         End If
         If Buscar Then
@@ -140,16 +140,16 @@
         End If
     End Sub
     'Consulta de empleados'
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        If TextBox18.TextLength >= 1 And TextBox17.TextLength > 2 And TextBox16.TextLength > 2 Or TextBox19.TextLength >= 18 Then
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Btn_Cons_Consultar.Click
+        If TtBo_Cons_NombEmp.TextLength >= 1 And TtBo_Cons_ApatEmp.TextLength > 2 And TtBo_Cons_AmatEmp.TextLength > 2 Or TtBo_Cons_CurpEmp.TextLength >= 18 Then
             'Aqui va la funcion de buscar
         Else
             MsgBox("Lo sentimos no se cumple con los criterios de busqueda, intentelo de nuevo", MsgBoxStyle.Critical)
         End If
     End Sub
     'Eliminar
-    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
-        If TextBox38.TextLength >= 1 And TextBox37.TextLength > 2 And TextBox36.TextLength > 2 Or TextBox35.TextLength >= 18 Then
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Btn_Baja_Buscar.Click
+        If TtBo_Baja_NombEmp.TextLength >= 1 And TtBo_Baja_ApatEmp.TextLength > 2 And TtBo_Baja_AmatEmp.TextLength > 2 Or TtBo_Baja_CurpEmp.TextLength >= 18 Then
             'Aqui va la funcion de buscar
         Else
             MsgBox("Lo sentimos no se cumple con los criterios de busqueda, intentelo de nuevo", MsgBoxStyle.Critical)

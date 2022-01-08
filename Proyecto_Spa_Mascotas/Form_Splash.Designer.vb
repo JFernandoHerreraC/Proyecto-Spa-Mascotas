@@ -36,7 +36,7 @@ Partial Class Form_splash
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(583, 358)
+        Me.ClientSize = New System.Drawing.Size(508, 375)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Form_splash"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

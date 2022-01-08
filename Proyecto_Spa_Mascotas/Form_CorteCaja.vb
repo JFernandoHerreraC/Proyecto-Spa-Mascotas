@@ -40,7 +40,12 @@
     End Sub
 
     Private Sub Form_CorteCaja_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Label12.Text = Date.Now().ToShortDateString()
-        Label13.Text = TimeString()
+        Lab_CCaja_FechaDerecha.Text = Date.Now().ToShortDateString()
+        Lab_CCaja_HoraDerecha.Text = TimeString()
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        'Form_Menu.Show()
+        Me.Hide()
     End Sub
 End Class

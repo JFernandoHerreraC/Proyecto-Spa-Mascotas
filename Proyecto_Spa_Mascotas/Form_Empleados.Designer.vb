@@ -22,6 +22,7 @@ Partial Class Form_Empleados
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form_Empleados))
         Me.Btn_atras = New System.Windows.Forms.Button()
         Me.MenuS_Principal = New System.Windows.Forms.MenuStrip()
         Me.ProductosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -35,60 +36,61 @@ Partial Class Form_Empleados
         Me.ClientesYMascotasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Tab_Ctr_Empleados = New System.Windows.Forms.TabControl()
         Me.Alta_Empleado = New System.Windows.Forms.TabPage()
-        Me.MaskedTextBox1 = New System.Windows.Forms.MaskedTextBox()
-        Me.Label53 = New System.Windows.Forms.Label()
-        Me.ComboBox6 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox7 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox5 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox4 = New System.Windows.Forms.ComboBox()
-        Me.Label52 = New System.Windows.Forms.Label()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
-        Me.Label51 = New System.Windows.Forms.Label()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.TextBox15 = New System.Windows.Forms.TextBox()
-        Me.Label20 = New System.Windows.Forms.Label()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Label19 = New System.Windows.Forms.Label()
-        Me.TextBox14 = New System.Windows.Forms.TextBox()
-        Me.Label18 = New System.Windows.Forms.Label()
-        Me.TextBox13 = New System.Windows.Forms.TextBox()
-        Me.Label17 = New System.Windows.Forms.Label()
-        Me.RadioButton4 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton3 = New System.Windows.Forms.RadioButton()
-        Me.Label16 = New System.Windows.Forms.Label()
-        Me.TextBox12 = New System.Windows.Forms.TextBox()
-        Me.Label15 = New System.Windows.Forms.Label()
-        Me.TextBox11 = New System.Windows.Forms.TextBox()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.TextBox10 = New System.Windows.Forms.TextBox()
-        Me.TextBox9 = New System.Windows.Forms.TextBox()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Lab_Alta_HrSalEmp = New System.Windows.Forms.Label()
+        Me.Mas_Alta_SueldoEmp = New System.Windows.Forms.MaskedTextBox()
+        Me.Lab_Alta_SueldoEmp = New System.Windows.Forms.Label()
+        Me.CoBo_Alta_HrSalEmp = New System.Windows.Forms.ComboBox()
+        Me.CoBo_Alta_MeridianaSalEmp = New System.Windows.Forms.ComboBox()
+        Me.CoBo_Alta_MeridianaEntEmp = New System.Windows.Forms.ComboBox()
+        Me.CoBo_Alta_HrEntEmp = New System.Windows.Forms.ComboBox()
+        Me.Lab_Alta_HrEntEmp = New System.Windows.Forms.Label()
+        Me.CoBo_Alta_TurnoEmp = New System.Windows.Forms.ComboBox()
+        Me.Lab_Alta_TurnoEmp = New System.Windows.Forms.Label()
+        Me.TtBo_Alta_CalleEmp = New System.Windows.Forms.TextBox()
+        Me.Lab_Alta_CalleEmp = New System.Windows.Forms.Label()
+        Me.TtBo_Alta_PuestoTrabEmp = New System.Windows.Forms.TextBox()
+        Me.Lab_Alta_PuestoTrabEmp = New System.Windows.Forms.Label()
+        Me.Btn_Alta_LimpiarEmp = New System.Windows.Forms.Button()
+        Me.Btn_Alta_GuardaEmp = New System.Windows.Forms.Button()
+        Me.Lab_Alta_CurpNota = New System.Windows.Forms.Label()
+        Me.TtBo_Alta_CurpEmp = New System.Windows.Forms.TextBox()
+        Me.Lab_Alta_CurpEmp = New System.Windows.Forms.Label()
+        Me.TtBo_Alta_NaclidadOrigEmp = New System.Windows.Forms.TextBox()
+        Me.Lab_Alta_NaclidadOrigEmp = New System.Windows.Forms.Label()
+        Me.RaBo_Alta_NaclidadExtjEmp = New System.Windows.Forms.RadioButton()
+        Me.RaBo_Alta_NaclidadMexEmp = New System.Windows.Forms.RadioButton()
+        Me.Lab_Alta_NaclidadEmp = New System.Windows.Forms.Label()
+        Me.TtBo_Alta_EmailEmp = New System.Windows.Forms.TextBox()
+        Me.Lab_Alta_EmailEmp = New System.Windows.Forms.Label()
+        Me.TtBo_Alta_CpEmp = New System.Windows.Forms.TextBox()
+        Me.Lab_Alta_CpEmp = New System.Windows.Forms.Label()
+        Me.CoBo_Alta_EstadoEmp = New System.Windows.Forms.ComboBox()
+        Me.TtBo_Alta_MunicipioEmp = New System.Windows.Forms.TextBox()
+        Me.TtBo_Alta_ColoniaEmp = New System.Windows.Forms.TextBox()
+        Me.TtBo_Alta_NumExtEmp = New System.Windows.Forms.TextBox()
+        Me.TtBo_Alta_NumIntEmp = New System.Windows.Forms.TextBox()
+        Me.Lab_Alta_EstadoEmp = New System.Windows.Forms.Label()
+        Me.Lab_Alta_MunicipioEmp = New System.Windows.Forms.Label()
+        Me.Lab_Alta_ColoniaEmp = New System.Windows.Forms.Label()
+        Me.Lab_Alta_NumExtEmp = New System.Windows.Forms.Label()
+        Me.Lab_Alta_NumIntEmp = New System.Windows.Forms.Label()
+        Me.TtBo_Alta_TelefFijoEmp = New System.Windows.Forms.TextBox()
+        Me.Lab_Alta_TelefFijoEmp = New System.Windows.Forms.Label()
+        Me.TtBo_Alta_TelefMoviEmp = New System.Windows.Forms.TextBox()
+        Me.Lab_Alta_TelefMovEmp = New System.Windows.Forms.Label()
+        Me.RaBo_Alta_SMasculinoEmp = New System.Windows.Forms.RadioButton()
+        Me.RaBo_Alta_SFemeninoEmp = New System.Windows.Forms.RadioButton()
+        Me.Lab_Alta_SexoEmp = New System.Windows.Forms.Label()
+        Me.DaTiPi_Alta_FechNacEmp = New System.Windows.Forms.DateTimePicker()
+        Me.Lab_Alta_FechaNacEmp = New System.Windows.Forms.Label()
+        Me.TtBo_Alta_AmatEmp = New System.Windows.Forms.TextBox()
+        Me.TtBo_Alta_ApatEmp = New System.Windows.Forms.TextBox()
+        Me.Lab_Alta_AmatEmp = New System.Windows.Forms.Label()
+        Me.Lab_Alta_ApatEmp = New System.Windows.Forms.Label()
+        Me.TtBo_Alta_NombEmp = New System.Windows.Forms.TextBox()
+        Me.Lab_Alta_NombEmp = New System.Windows.Forms.Label()
         Me.Consulta_Empleado = New System.Windows.Forms.TabPage()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.DGV_ListaEmp = New System.Windows.Forms.DataGridView()
         Me.DGV_ID = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DGV_NombraComp = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DGV_FNac = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -96,63 +98,63 @@ Partial Class Form_Empleados
         Me.DGV_CurpORne = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DGV_Cargo = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DGV_Domio = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Label24 = New System.Windows.Forms.Label()
-        Me.TextBox19 = New System.Windows.Forms.TextBox()
-        Me.Label25 = New System.Windows.Forms.Label()
-        Me.TextBox16 = New System.Windows.Forms.TextBox()
-        Me.TextBox17 = New System.Windows.Forms.TextBox()
-        Me.Label21 = New System.Windows.Forms.Label()
-        Me.Label22 = New System.Windows.Forms.Label()
-        Me.TextBox18 = New System.Windows.Forms.TextBox()
-        Me.Label23 = New System.Windows.Forms.Label()
+        Me.Btn_Cons_Consultar = New System.Windows.Forms.Button()
+        Me.Lab_Cons_CurpNota = New System.Windows.Forms.Label()
+        Me.TtBo_Cons_CurpEmp = New System.Windows.Forms.TextBox()
+        Me.Lab_Cons_CurpbEmp = New System.Windows.Forms.Label()
+        Me.TtBo_Cons_AmatEmp = New System.Windows.Forms.TextBox()
+        Me.TtBo_Cons_ApatEmp = New System.Windows.Forms.TextBox()
+        Me.Lab_Cons_AmatEmp = New System.Windows.Forms.Label()
+        Me.Lab_Cons_ApatEmp = New System.Windows.Forms.Label()
+        Me.TtBo_Cons_NombEmp = New System.Windows.Forms.TextBox()
+        Me.Lab_Cons_NombEmp = New System.Windows.Forms.Label()
         Me.Cambio_Empleado = New System.Windows.Forms.TabPage()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.TextBox20 = New System.Windows.Forms.TextBox()
-        Me.Label26 = New System.Windows.Forms.Label()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.TextBox21 = New System.Windows.Forms.TextBox()
-        Me.Label27 = New System.Windows.Forms.Label()
-        Me.Label28 = New System.Windows.Forms.Label()
-        Me.TextBox22 = New System.Windows.Forms.TextBox()
-        Me.Label29 = New System.Windows.Forms.Label()
-        Me.TextBox23 = New System.Windows.Forms.TextBox()
-        Me.Label30 = New System.Windows.Forms.Label()
-        Me.RadioButton5 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton6 = New System.Windows.Forms.RadioButton()
-        Me.Label31 = New System.Windows.Forms.Label()
-        Me.TextBox24 = New System.Windows.Forms.TextBox()
-        Me.Label32 = New System.Windows.Forms.Label()
-        Me.TextBox25 = New System.Windows.Forms.TextBox()
-        Me.Label33 = New System.Windows.Forms.Label()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.TextBox26 = New System.Windows.Forms.TextBox()
-        Me.TextBox27 = New System.Windows.Forms.TextBox()
-        Me.TextBox28 = New System.Windows.Forms.TextBox()
-        Me.TextBox29 = New System.Windows.Forms.TextBox()
-        Me.Label34 = New System.Windows.Forms.Label()
-        Me.Label35 = New System.Windows.Forms.Label()
-        Me.Label36 = New System.Windows.Forms.Label()
-        Me.Label37 = New System.Windows.Forms.Label()
-        Me.Label38 = New System.Windows.Forms.Label()
-        Me.TextBox30 = New System.Windows.Forms.TextBox()
-        Me.Label39 = New System.Windows.Forms.Label()
-        Me.TextBox31 = New System.Windows.Forms.TextBox()
-        Me.Label40 = New System.Windows.Forms.Label()
-        Me.RadioButton7 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton8 = New System.Windows.Forms.RadioButton()
-        Me.Label41 = New System.Windows.Forms.Label()
-        Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
-        Me.Label42 = New System.Windows.Forms.Label()
-        Me.TextBox32 = New System.Windows.Forms.TextBox()
-        Me.TextBox33 = New System.Windows.Forms.TextBox()
-        Me.Label43 = New System.Windows.Forms.Label()
-        Me.Label44 = New System.Windows.Forms.Label()
-        Me.TextBox34 = New System.Windows.Forms.TextBox()
-        Me.Label45 = New System.Windows.Forms.Label()
+        Me.Btn_Camb_Buscar = New System.Windows.Forms.Button()
+        Me.TtBo_Camb_PuestoTrabEmp = New System.Windows.Forms.TextBox()
+        Me.Lab_Camb_PuestoTrabEmp = New System.Windows.Forms.Label()
+        Me.Btn_Camb_Limpiar = New System.Windows.Forms.Button()
+        Me.Btn_Camb_Guardar = New System.Windows.Forms.Button()
+        Me.TtBo_Camb_CalleEmp = New System.Windows.Forms.TextBox()
+        Me.Lab_Camb_CalleEmp = New System.Windows.Forms.Label()
+        Me.Lab_Camb_CurpNota = New System.Windows.Forms.Label()
+        Me.TtBo_Camb_CurpEmp = New System.Windows.Forms.TextBox()
+        Me.Lab_Camb_CurpEmp = New System.Windows.Forms.Label()
+        Me.TtBo_Camb_NaclidadOrigEmp = New System.Windows.Forms.TextBox()
+        Me.Lab_Camb_NaclidadOrigEmp = New System.Windows.Forms.Label()
+        Me.RaBo_Camb_NaclidadExtjEmp = New System.Windows.Forms.RadioButton()
+        Me.RaBo_Camb_NaclidadMexEmp = New System.Windows.Forms.RadioButton()
+        Me.Lab_Camb_NaclidadEmp = New System.Windows.Forms.Label()
+        Me.TtBo_Camb_EmailEmp = New System.Windows.Forms.TextBox()
+        Me.Lab_Camb_EmailEmp = New System.Windows.Forms.Label()
+        Me.TtBo_Camb_CpEmp = New System.Windows.Forms.TextBox()
+        Me.Lab_Camb_CpEmp = New System.Windows.Forms.Label()
+        Me.CoBo_Camb_EstadoEmp = New System.Windows.Forms.ComboBox()
+        Me.TtBo_Camb_MunicipioEmp = New System.Windows.Forms.TextBox()
+        Me.TtBo_Camb_ColoniaEmp = New System.Windows.Forms.TextBox()
+        Me.TtBo_Camb_NumExtEmp = New System.Windows.Forms.TextBox()
+        Me.TtBo_Camb_NumIntEmp = New System.Windows.Forms.TextBox()
+        Me.Lab_Camb_EstadoEmp = New System.Windows.Forms.Label()
+        Me.Lab_Camb_MunicipioEmp = New System.Windows.Forms.Label()
+        Me.Lab_Camb_ColoniaEmp = New System.Windows.Forms.Label()
+        Me.Lab_Camb_NumExtEmp = New System.Windows.Forms.Label()
+        Me.Lab_Camb_NumIntEmp = New System.Windows.Forms.Label()
+        Me.TtBo_Camb_TelefFijoEmp = New System.Windows.Forms.TextBox()
+        Me.Lab_Camb_TelefFijoEmp = New System.Windows.Forms.Label()
+        Me.TtBo_Camb_TelefMovilEmp = New System.Windows.Forms.TextBox()
+        Me.Lab_Camb_TelefMovilEmp = New System.Windows.Forms.Label()
+        Me.RaBo_Camb_SMasculinoEmp = New System.Windows.Forms.RadioButton()
+        Me.RaBo_Camb_SFemeninoEmp = New System.Windows.Forms.RadioButton()
+        Me.Lab_Camb_SexoEmp = New System.Windows.Forms.Label()
+        Me.DaTiPi_Camb_FechNacEmp = New System.Windows.Forms.DateTimePicker()
+        Me.Lab_Camb_FechNacEmp = New System.Windows.Forms.Label()
+        Me.TtBo_Camb_AmatEmp = New System.Windows.Forms.TextBox()
+        Me.TtBo_Camb_ApatEmp = New System.Windows.Forms.TextBox()
+        Me.Lab_Camb_AmatEmp = New System.Windows.Forms.Label()
+        Me.Lab_Camb_ApatEmp = New System.Windows.Forms.Label()
+        Me.TtBo_Camb_NombEmp = New System.Windows.Forms.TextBox()
+        Me.Lab_Camb_NombEmp = New System.Windows.Forms.Label()
         Me.Baja_Empleado = New System.Windows.Forms.TabPage()
-        Me.DataGridView2 = New System.Windows.Forms.DataGridView()
+        Me.DGV_Baja_ListaEmp = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -160,25 +162,35 @@ Partial Class Form_Empleados
         Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
-        Me.Label46 = New System.Windows.Forms.Label()
-        Me.TextBox35 = New System.Windows.Forms.TextBox()
-        Me.Label47 = New System.Windows.Forms.Label()
-        Me.TextBox36 = New System.Windows.Forms.TextBox()
-        Me.TextBox37 = New System.Windows.Forms.TextBox()
-        Me.Label48 = New System.Windows.Forms.Label()
-        Me.Label49 = New System.Windows.Forms.Label()
-        Me.TextBox38 = New System.Windows.Forms.TextBox()
-        Me.Label50 = New System.Windows.Forms.Label()
+        Me.Btn_Baja_Eliminar = New System.Windows.Forms.Button()
+        Me.Btn_Baja_Buscar = New System.Windows.Forms.Button()
+        Me.Lab_Baja_CurpNota = New System.Windows.Forms.Label()
+        Me.TtBo_Baja_CurpEmp = New System.Windows.Forms.TextBox()
+        Me.Lab_Baja_CurpEmp = New System.Windows.Forms.Label()
+        Me.TtBo_Baja_AmatEmp = New System.Windows.Forms.TextBox()
+        Me.TtBo_Baja_ApatEmp = New System.Windows.Forms.TextBox()
+        Me.Lab_Baja_AmatEmp = New System.Windows.Forms.Label()
+        Me.Lab_Baja_ApatEmp = New System.Windows.Forms.Label()
+        Me.TtBo_Baja_NombEmp = New System.Windows.Forms.TextBox()
+        Me.Lab_Baja_NombEmp = New System.Windows.Forms.Label()
+        Me.Lab_Camb_HrSalEmp = New System.Windows.Forms.Label()
+        Me.MaskedTextBox1 = New System.Windows.Forms.MaskedTextBox()
+        Me.Lab_Camb_SueldoEmp = New System.Windows.Forms.Label()
+        Me.CoBo_Camb_HrSalEmp = New System.Windows.Forms.ComboBox()
+        Me.CoBo_Camb_MeridianoSalEmp = New System.Windows.Forms.ComboBox()
+        Me.CoBo_Camb_MeridianoEntEmp = New System.Windows.Forms.ComboBox()
+        Me.CoBo_Camb_HrEntEmp = New System.Windows.Forms.ComboBox()
+        Me.Lab_Camb_HrEntEmp = New System.Windows.Forms.Label()
+        Me.CoBo_Camb_TurnoEmp = New System.Windows.Forms.ComboBox()
+        Me.Lab_Camb_TurnoEmp = New System.Windows.Forms.Label()
         Me.MenuS_Principal.SuspendLayout()
         Me.Tab_Ctr_Empleados.SuspendLayout()
         Me.Alta_Empleado.SuspendLayout()
         Me.Consulta_Empleado.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DGV_ListaEmp, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Cambio_Empleado.SuspendLayout()
         Me.Baja_Empleado.SuspendLayout()
-        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DGV_Baja_ListaEmp, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Btn_atras
@@ -260,588 +272,606 @@ Partial Class Form_Empleados
         Me.Tab_Ctr_Empleados.Controls.Add(Me.Consulta_Empleado)
         Me.Tab_Ctr_Empleados.Controls.Add(Me.Cambio_Empleado)
         Me.Tab_Ctr_Empleados.Controls.Add(Me.Baja_Empleado)
-        Me.Tab_Ctr_Empleados.Location = New System.Drawing.Point(12, 56)
+        Me.Tab_Ctr_Empleados.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Tab_Ctr_Empleados.Location = New System.Drawing.Point(12, 50)
         Me.Tab_Ctr_Empleados.Name = "Tab_Ctr_Empleados"
         Me.Tab_Ctr_Empleados.SelectedIndex = 0
-        Me.Tab_Ctr_Empleados.Size = New System.Drawing.Size(776, 400)
+        Me.Tab_Ctr_Empleados.Size = New System.Drawing.Size(776, 446)
         Me.Tab_Ctr_Empleados.TabIndex = 0
         '
         'Alta_Empleado
         '
-        Me.Alta_Empleado.Controls.Add(Me.MaskedTextBox1)
-        Me.Alta_Empleado.Controls.Add(Me.Label53)
-        Me.Alta_Empleado.Controls.Add(Me.ComboBox6)
-        Me.Alta_Empleado.Controls.Add(Me.ComboBox7)
-        Me.Alta_Empleado.Controls.Add(Me.ComboBox5)
-        Me.Alta_Empleado.Controls.Add(Me.ComboBox4)
-        Me.Alta_Empleado.Controls.Add(Me.Label52)
-        Me.Alta_Empleado.Controls.Add(Me.ComboBox3)
-        Me.Alta_Empleado.Controls.Add(Me.Label51)
-        Me.Alta_Empleado.Controls.Add(Me.TextBox6)
-        Me.Alta_Empleado.Controls.Add(Me.Label8)
-        Me.Alta_Empleado.Controls.Add(Me.TextBox15)
-        Me.Alta_Empleado.Controls.Add(Me.Label20)
-        Me.Alta_Empleado.Controls.Add(Me.Button2)
-        Me.Alta_Empleado.Controls.Add(Me.Button1)
-        Me.Alta_Empleado.Controls.Add(Me.Label19)
-        Me.Alta_Empleado.Controls.Add(Me.TextBox14)
-        Me.Alta_Empleado.Controls.Add(Me.Label18)
-        Me.Alta_Empleado.Controls.Add(Me.TextBox13)
-        Me.Alta_Empleado.Controls.Add(Me.Label17)
-        Me.Alta_Empleado.Controls.Add(Me.RadioButton4)
-        Me.Alta_Empleado.Controls.Add(Me.RadioButton3)
-        Me.Alta_Empleado.Controls.Add(Me.Label16)
-        Me.Alta_Empleado.Controls.Add(Me.TextBox12)
-        Me.Alta_Empleado.Controls.Add(Me.Label15)
-        Me.Alta_Empleado.Controls.Add(Me.TextBox11)
-        Me.Alta_Empleado.Controls.Add(Me.Label14)
-        Me.Alta_Empleado.Controls.Add(Me.ComboBox1)
-        Me.Alta_Empleado.Controls.Add(Me.TextBox10)
-        Me.Alta_Empleado.Controls.Add(Me.TextBox9)
-        Me.Alta_Empleado.Controls.Add(Me.TextBox8)
-        Me.Alta_Empleado.Controls.Add(Me.TextBox7)
-        Me.Alta_Empleado.Controls.Add(Me.Label13)
-        Me.Alta_Empleado.Controls.Add(Me.Label12)
-        Me.Alta_Empleado.Controls.Add(Me.Label11)
-        Me.Alta_Empleado.Controls.Add(Me.Label10)
-        Me.Alta_Empleado.Controls.Add(Me.Label9)
-        Me.Alta_Empleado.Controls.Add(Me.TextBox5)
-        Me.Alta_Empleado.Controls.Add(Me.Label7)
-        Me.Alta_Empleado.Controls.Add(Me.TextBox4)
-        Me.Alta_Empleado.Controls.Add(Me.Label6)
-        Me.Alta_Empleado.Controls.Add(Me.RadioButton2)
-        Me.Alta_Empleado.Controls.Add(Me.RadioButton1)
-        Me.Alta_Empleado.Controls.Add(Me.Label5)
-        Me.Alta_Empleado.Controls.Add(Me.DateTimePicker1)
-        Me.Alta_Empleado.Controls.Add(Me.Label4)
-        Me.Alta_Empleado.Controls.Add(Me.TextBox3)
-        Me.Alta_Empleado.Controls.Add(Me.TextBox2)
-        Me.Alta_Empleado.Controls.Add(Me.Label3)
-        Me.Alta_Empleado.Controls.Add(Me.Label2)
-        Me.Alta_Empleado.Controls.Add(Me.TextBox1)
-        Me.Alta_Empleado.Controls.Add(Me.Label1)
-        Me.Alta_Empleado.Location = New System.Drawing.Point(4, 22)
+        Me.Alta_Empleado.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Alta_Empleado.Controls.Add(Me.Lab_Alta_HrSalEmp)
+        Me.Alta_Empleado.Controls.Add(Me.Mas_Alta_SueldoEmp)
+        Me.Alta_Empleado.Controls.Add(Me.Lab_Alta_SueldoEmp)
+        Me.Alta_Empleado.Controls.Add(Me.CoBo_Alta_HrSalEmp)
+        Me.Alta_Empleado.Controls.Add(Me.CoBo_Alta_MeridianaSalEmp)
+        Me.Alta_Empleado.Controls.Add(Me.CoBo_Alta_MeridianaEntEmp)
+        Me.Alta_Empleado.Controls.Add(Me.CoBo_Alta_HrEntEmp)
+        Me.Alta_Empleado.Controls.Add(Me.Lab_Alta_HrEntEmp)
+        Me.Alta_Empleado.Controls.Add(Me.CoBo_Alta_TurnoEmp)
+        Me.Alta_Empleado.Controls.Add(Me.Lab_Alta_TurnoEmp)
+        Me.Alta_Empleado.Controls.Add(Me.TtBo_Alta_CalleEmp)
+        Me.Alta_Empleado.Controls.Add(Me.Lab_Alta_CalleEmp)
+        Me.Alta_Empleado.Controls.Add(Me.TtBo_Alta_PuestoTrabEmp)
+        Me.Alta_Empleado.Controls.Add(Me.Lab_Alta_PuestoTrabEmp)
+        Me.Alta_Empleado.Controls.Add(Me.Btn_Alta_LimpiarEmp)
+        Me.Alta_Empleado.Controls.Add(Me.Btn_Alta_GuardaEmp)
+        Me.Alta_Empleado.Controls.Add(Me.Lab_Alta_CurpNota)
+        Me.Alta_Empleado.Controls.Add(Me.TtBo_Alta_CurpEmp)
+        Me.Alta_Empleado.Controls.Add(Me.Lab_Alta_CurpEmp)
+        Me.Alta_Empleado.Controls.Add(Me.TtBo_Alta_NaclidadOrigEmp)
+        Me.Alta_Empleado.Controls.Add(Me.Lab_Alta_NaclidadOrigEmp)
+        Me.Alta_Empleado.Controls.Add(Me.RaBo_Alta_NaclidadExtjEmp)
+        Me.Alta_Empleado.Controls.Add(Me.RaBo_Alta_NaclidadMexEmp)
+        Me.Alta_Empleado.Controls.Add(Me.Lab_Alta_NaclidadEmp)
+        Me.Alta_Empleado.Controls.Add(Me.TtBo_Alta_EmailEmp)
+        Me.Alta_Empleado.Controls.Add(Me.Lab_Alta_EmailEmp)
+        Me.Alta_Empleado.Controls.Add(Me.TtBo_Alta_CpEmp)
+        Me.Alta_Empleado.Controls.Add(Me.Lab_Alta_CpEmp)
+        Me.Alta_Empleado.Controls.Add(Me.CoBo_Alta_EstadoEmp)
+        Me.Alta_Empleado.Controls.Add(Me.TtBo_Alta_MunicipioEmp)
+        Me.Alta_Empleado.Controls.Add(Me.TtBo_Alta_ColoniaEmp)
+        Me.Alta_Empleado.Controls.Add(Me.TtBo_Alta_NumExtEmp)
+        Me.Alta_Empleado.Controls.Add(Me.TtBo_Alta_NumIntEmp)
+        Me.Alta_Empleado.Controls.Add(Me.Lab_Alta_EstadoEmp)
+        Me.Alta_Empleado.Controls.Add(Me.Lab_Alta_MunicipioEmp)
+        Me.Alta_Empleado.Controls.Add(Me.Lab_Alta_ColoniaEmp)
+        Me.Alta_Empleado.Controls.Add(Me.Lab_Alta_NumExtEmp)
+        Me.Alta_Empleado.Controls.Add(Me.Lab_Alta_NumIntEmp)
+        Me.Alta_Empleado.Controls.Add(Me.TtBo_Alta_TelefFijoEmp)
+        Me.Alta_Empleado.Controls.Add(Me.Lab_Alta_TelefFijoEmp)
+        Me.Alta_Empleado.Controls.Add(Me.TtBo_Alta_TelefMoviEmp)
+        Me.Alta_Empleado.Controls.Add(Me.Lab_Alta_TelefMovEmp)
+        Me.Alta_Empleado.Controls.Add(Me.RaBo_Alta_SMasculinoEmp)
+        Me.Alta_Empleado.Controls.Add(Me.RaBo_Alta_SFemeninoEmp)
+        Me.Alta_Empleado.Controls.Add(Me.Lab_Alta_SexoEmp)
+        Me.Alta_Empleado.Controls.Add(Me.DaTiPi_Alta_FechNacEmp)
+        Me.Alta_Empleado.Controls.Add(Me.Lab_Alta_FechaNacEmp)
+        Me.Alta_Empleado.Controls.Add(Me.TtBo_Alta_AmatEmp)
+        Me.Alta_Empleado.Controls.Add(Me.TtBo_Alta_ApatEmp)
+        Me.Alta_Empleado.Controls.Add(Me.Lab_Alta_AmatEmp)
+        Me.Alta_Empleado.Controls.Add(Me.Lab_Alta_ApatEmp)
+        Me.Alta_Empleado.Controls.Add(Me.TtBo_Alta_NombEmp)
+        Me.Alta_Empleado.Controls.Add(Me.Lab_Alta_NombEmp)
+        Me.Alta_Empleado.Location = New System.Drawing.Point(4, 25)
         Me.Alta_Empleado.Name = "Alta_Empleado"
         Me.Alta_Empleado.Padding = New System.Windows.Forms.Padding(3)
-        Me.Alta_Empleado.Size = New System.Drawing.Size(768, 374)
+        Me.Alta_Empleado.Size = New System.Drawing.Size(768, 377)
         Me.Alta_Empleado.TabIndex = 0
         Me.Alta_Empleado.Text = "Alta de empleado"
-        Me.Alta_Empleado.UseVisualStyleBackColor = True
-        '
-        'MaskedTextBox1
-        '
-        Me.MaskedTextBox1.Location = New System.Drawing.Point(497, 24)
-        Me.MaskedTextBox1.Mask = "99999.99"
-        Me.MaskedTextBox1.Name = "MaskedTextBox1"
-        Me.MaskedTextBox1.Size = New System.Drawing.Size(209, 20)
-        Me.MaskedTextBox1.TabIndex = 17
-        Me.MaskedTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'Label53
-        '
-        Me.Label53.AutoSize = True
-        Me.Label53.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label53.Location = New System.Drawing.Point(386, 24)
-        Me.Label53.Name = "Label53"
-        Me.Label53.Size = New System.Drawing.Size(56, 17)
-        Me.Label53.TabIndex = 55
-        Me.Label53.Text = "Sueldo:"
-        '
-        'ComboBox6
-        '
-        Me.ComboBox6.FormattingEnabled = True
-        Me.ComboBox6.Location = New System.Drawing.Point(277, 350)
-        Me.ComboBox6.Name = "ComboBox6"
-        Me.ComboBox6.Size = New System.Drawing.Size(44, 21)
-        Me.ComboBox6.TabIndex = 15
-        '
-        'ComboBox7
-        '
-        Me.ComboBox7.FormattingEnabled = True
-        Me.ComboBox7.Location = New System.Drawing.Point(327, 350)
-        Me.ComboBox7.Name = "ComboBox7"
-        Me.ComboBox7.Size = New System.Drawing.Size(60, 21)
-        Me.ComboBox7.TabIndex = 16
-        '
-        'ComboBox5
-        '
-        Me.ComboBox5.FormattingEnabled = True
-        Me.ComboBox5.Location = New System.Drawing.Point(208, 350)
-        Me.ComboBox5.Name = "ComboBox5"
-        Me.ComboBox5.Size = New System.Drawing.Size(60, 21)
-        Me.ComboBox5.TabIndex = 14
-        '
-        'ComboBox4
-        '
-        Me.ComboBox4.FormattingEnabled = True
-        Me.ComboBox4.Location = New System.Drawing.Point(158, 349)
-        Me.ComboBox4.Name = "ComboBox4"
-        Me.ComboBox4.Size = New System.Drawing.Size(44, 21)
-        Me.ComboBox4.TabIndex = 13
-        '
-        'Label52
-        '
-        Me.Label52.AutoSize = True
-        Me.Label52.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label52.Location = New System.Drawing.Point(17, 349)
-        Me.Label52.Name = "Label52"
-        Me.Label52.Size = New System.Drawing.Size(127, 17)
-        Me.Label52.TabIndex = 49
-        Me.Label52.Text = "Horario de trabajo:"
-        '
-        'ComboBox3
-        '
-        Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Items.AddRange(New Object() {"Diurno", "Nocturno"})
-        Me.ComboBox3.Location = New System.Drawing.Point(158, 325)
-        Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(209, 21)
-        Me.ComboBox3.TabIndex = 12
-        '
-        'Label51
-        '
-        Me.Label51.AutoSize = True
-        Me.Label51.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label51.Location = New System.Drawing.Point(17, 325)
-        Me.Label51.Name = "Label51"
-        Me.Label51.Size = New System.Drawing.Size(50, 17)
-        Me.Label51.TabIndex = 47
-        Me.Label51.Text = "Turno:"
-        '
-        'TextBox6
-        '
-        Me.TextBox6.Location = New System.Drawing.Point(497, 57)
-        Me.TextBox6.MaxLength = 40
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(209, 20)
-        Me.TextBox6.TabIndex = 18
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label8.Location = New System.Drawing.Point(386, 58)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(43, 17)
-        Me.Label8.TabIndex = 45
-        Me.Label8.Text = "Calle:"
-        '
-        'TextBox15
-        '
-        Me.TextBox15.Location = New System.Drawing.Point(158, 295)
-        Me.TextBox15.Name = "TextBox15"
-        Me.TextBox15.Size = New System.Drawing.Size(209, 20)
-        Me.TextBox15.TabIndex = 11
-        '
-        'Label20
-        '
-        Me.Label20.AutoSize = True
-        Me.Label20.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label20.Location = New System.Drawing.Point(17, 299)
-        Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(124, 17)
-        Me.Label20.TabIndex = 43
-        Me.Label20.Text = "Puesto de trabajo:"
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(637, 346)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(69, 23)
-        Me.Button2.TabIndex = 29
-        Me.Button2.Text = "Limpiar"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(497, 346)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(124, 23)
-        Me.Button1.TabIndex = 28
-        Me.Button1.Text = "Guardar"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Label19
-        '
-        Me.Label19.AutoSize = True
-        Me.Label19.Location = New System.Drawing.Point(18, 274)
-        Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(200, 13)
-        Me.Label19.TabIndex = 38
-        Me.Label19.Text = "* RNE: Registro Nacional de Extranjeros."
-        '
-        'TextBox14
-        '
-        Me.TextBox14.Location = New System.Drawing.Point(140, 251)
-        Me.TextBox14.MaxLength = 18
-        Me.TextBox14.Name = "TextBox14"
-        Me.TextBox14.Size = New System.Drawing.Size(227, 20)
-        Me.TextBox14.TabIndex = 10
-        '
-        'Label18
-        '
-        Me.Label18.AutoSize = True
-        Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label18.Location = New System.Drawing.Point(17, 251)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(91, 17)
-        Me.Label18.TabIndex = 36
-        Me.Label18.Text = "CURP o RNE"
-        '
-        'TextBox13
-        '
-        Me.TextBox13.Enabled = False
-        Me.TextBox13.Location = New System.Drawing.Point(182, 221)
-        Me.TextBox13.MaxLength = 40
-        Me.TextBox13.Name = "TextBox13"
-        Me.TextBox13.Size = New System.Drawing.Size(185, 20)
-        Me.TextBox13.TabIndex = 9
-        '
-        'Label17
-        '
-        Me.Label17.AutoSize = True
-        Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label17.Location = New System.Drawing.Point(17, 221)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(158, 17)
-        Me.Label17.TabIndex = 34
-        Me.Label17.Text = "Nacionalidad de origen:"
-        '
-        'RadioButton4
-        '
-        Me.RadioButton4.AutoSize = True
-        Me.RadioButton4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.RadioButton4.Location = New System.Drawing.Point(264, 189)
-        Me.RadioButton4.Name = "RadioButton4"
-        Me.RadioButton4.Size = New System.Drawing.Size(102, 21)
-        Me.RadioButton4.TabIndex = 8
-        Me.RadioButton4.TabStop = True
-        Me.RadioButton4.Text = "Extranjera/o"
-        Me.RadioButton4.UseVisualStyleBackColor = True
-        '
-        'RadioButton3
-        '
-        Me.RadioButton3.AutoSize = True
-        Me.RadioButton3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.RadioButton3.Location = New System.Drawing.Point(140, 189)
-        Me.RadioButton3.Name = "RadioButton3"
-        Me.RadioButton3.Size = New System.Drawing.Size(97, 21)
-        Me.RadioButton3.TabIndex = 7
-        Me.RadioButton3.TabStop = True
-        Me.RadioButton3.Text = "Mexicana/o"
-        Me.RadioButton3.UseVisualStyleBackColor = True
-        '
-        'Label16
-        '
-        Me.Label16.AutoSize = True
-        Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label16.Location = New System.Drawing.Point(17, 191)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(94, 17)
-        Me.Label16.TabIndex = 31
-        Me.Label16.Text = "Nacionalidad:"
-        '
-        'TextBox12
-        '
-        Me.TextBox12.Location = New System.Drawing.Point(520, 317)
-        Me.TextBox12.MaxLength = 45
-        Me.TextBox12.Name = "TextBox12"
-        Me.TextBox12.Size = New System.Drawing.Size(186, 20)
-        Me.TextBox12.TabIndex = 27
-        '
-        'Label15
-        '
-        Me.Label15.AutoSize = True
-        Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label15.Location = New System.Drawing.Point(386, 318)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(128, 17)
-        Me.Label15.TabIndex = 29
-        Me.Label15.Text = "Correo electrónico:"
-        '
-        'TextBox11
-        '
-        Me.TextBox11.Location = New System.Drawing.Point(497, 204)
-        Me.TextBox11.MaxLength = 5
-        Me.TextBox11.Name = "TextBox11"
-        Me.TextBox11.Size = New System.Drawing.Size(209, 20)
-        Me.TextBox11.TabIndex = 23
-        '
-        'Label14
-        '
-        Me.Label14.AutoSize = True
-        Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label14.Location = New System.Drawing.Point(386, 204)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(98, 17)
-        Me.Label14.TabIndex = 27
-        Me.Label14.Text = "Código postal:"
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Aguascalientes", "Baja California", "Baja California Sur", "Campeche", "Chiapas", "Chihuahua", "Ciudad de México", "Coahuila", "Colima", "Durango", "Estado de México", "Guanajuato", "Guerrero", "Hidalgo", "Jalisco", "Michoacán", "Morelos", "Nayarit", "Nuevo León", "Oaxaca", "Puebla", "Querétaro", "Quintana Roo", "San Luis Potosí", "Sinaloa", "Sonora", "Tabasco", "Tamaulipas", "Tlaxcala", "Veracruz", "Yucatán", "Zacatecas"})
-        Me.ComboBox1.Location = New System.Drawing.Point(497, 233)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(209, 21)
-        Me.ComboBox1.TabIndex = 24
-        Me.ComboBox1.Text = "Seleccione un estado"
-        '
-        'TextBox10
-        '
-        Me.TextBox10.Location = New System.Drawing.Point(547, 174)
-        Me.TextBox10.MaxLength = 40
-        Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(159, 20)
-        Me.TextBox10.TabIndex = 22
-        '
-        'TextBox9
-        '
-        Me.TextBox9.Location = New System.Drawing.Point(497, 148)
-        Me.TextBox9.MaxLength = 40
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(209, 20)
-        Me.TextBox9.TabIndex = 21
-        '
-        'TextBox8
-        '
-        Me.TextBox8.Location = New System.Drawing.Point(497, 114)
-        Me.TextBox8.MaxLength = 5
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(209, 20)
-        Me.TextBox8.TabIndex = 20
-        '
-        'TextBox7
-        '
-        Me.TextBox7.Location = New System.Drawing.Point(497, 83)
-        Me.TextBox7.MaxLength = 3
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(209, 20)
-        Me.TextBox7.TabIndex = 19
-        '
-        'Label13
-        '
-        Me.Label13.AutoSize = True
-        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label13.Location = New System.Drawing.Point(386, 237)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(56, 17)
-        Me.Label13.TabIndex = 20
-        Me.Label13.Text = "Estado:"
-        '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label12.Location = New System.Drawing.Point(386, 174)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(154, 17)
-        Me.Label12.TabIndex = 19
-        Me.Label12.Text = "Municipio / Delegación:"
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label11.Location = New System.Drawing.Point(386, 148)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(59, 17)
-        Me.Label11.TabIndex = 18
-        Me.Label11.Text = "Colonia:"
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label10.Location = New System.Drawing.Point(386, 115)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(113, 17)
-        Me.Label10.TabIndex = 17
-        Me.Label10.Text = "Número exterior:"
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label9.Location = New System.Drawing.Point(386, 83)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(110, 17)
-        Me.Label9.TabIndex = 16
-        Me.Label9.Text = "Número interior:"
-        '
-        'TextBox5
-        '
-        Me.TextBox5.Location = New System.Drawing.Point(497, 286)
-        Me.TextBox5.MaxLength = 10
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(209, 20)
-        Me.TextBox5.TabIndex = 26
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label7.Location = New System.Drawing.Point(386, 286)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(90, 17)
-        Me.Label7.TabIndex = 13
-        Me.Label7.Text = "Teléfono fijo:"
-        '
-        'TextBox4
-        '
-        Me.TextBox4.Location = New System.Drawing.Point(497, 260)
-        Me.TextBox4.MaxLength = 10
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(209, 20)
-        Me.TextBox4.TabIndex = 25
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label6.Location = New System.Drawing.Point(386, 263)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(114, 17)
-        Me.Label6.TabIndex = 11
-        Me.Label6.Text = "Teléfono celular:"
-        '
-        'RadioButton2
-        '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.RadioButton2.Location = New System.Drawing.Point(277, 162)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(89, 21)
-        Me.RadioButton2.TabIndex = 6
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "Masculino"
-        Me.RadioButton2.UseVisualStyleBackColor = True
-        '
-        'RadioButton1
-        '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.RadioButton1.Location = New System.Drawing.Point(140, 162)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(88, 21)
-        Me.RadioButton1.TabIndex = 5
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "Femenino"
-        Me.RadioButton1.UseVisualStyleBackColor = True
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label5.Location = New System.Drawing.Point(17, 162)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(43, 17)
-        Me.Label5.TabIndex = 8
-        Me.Label5.Text = "Sexo:"
-        '
-        'DateTimePicker1
-        '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(167, 127)
-        Me.DateTimePicker1.MaxDate = New Date(2021, 12, 31, 0, 0, 0, 0)
-        Me.DateTimePicker1.MinDate = New Date(1920, 1, 1, 0, 0, 0, 0)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 20)
-        Me.DateTimePicker1.TabIndex = 4
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label4.Location = New System.Drawing.Point(17, 127)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(143, 17)
-        Me.Label4.TabIndex = 6
-        Me.Label4.Text = "Fecha de nacimiento:"
-        '
-        'TextBox3
-        '
-        Me.TextBox3.Location = New System.Drawing.Point(140, 94)
-        Me.TextBox3.MaxLength = 40
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(227, 20)
-        Me.TextBox3.TabIndex = 3
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(140, 62)
-        Me.TextBox2.MaxLength = 40
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(227, 20)
-        Me.TextBox2.TabIndex = 2
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label3.Location = New System.Drawing.Point(17, 94)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(118, 17)
-        Me.Label3.TabIndex = 3
-        Me.Label3.Text = "Apellido materno:"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label2.Location = New System.Drawing.Point(17, 62)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(115, 17)
-        Me.Label2.TabIndex = 2
-        Me.Label2.Text = "Apellido paterno:"
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(140, 24)
-        Me.TextBox1.MaxLength = 40
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(227, 20)
-        Me.TextBox1.TabIndex = 1
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label1.Location = New System.Drawing.Point(17, 24)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(73, 17)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Nombre/s:"
+        '
+        'Lab_Alta_HrSalEmp
+        '
+        Me.Lab_Alta_HrSalEmp.AutoSize = True
+        Me.Lab_Alta_HrSalEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lab_Alta_HrSalEmp.Location = New System.Drawing.Point(20, 345)
+        Me.Lab_Alta_HrSalEmp.Name = "Lab_Alta_HrSalEmp"
+        Me.Lab_Alta_HrSalEmp.Size = New System.Drawing.Size(115, 16)
+        Me.Lab_Alta_HrSalEmp.TabIndex = 56
+        Me.Lab_Alta_HrSalEmp.Text = "Horario de salida:"
+        '
+        'Mas_Alta_SueldoEmp
+        '
+        Me.Mas_Alta_SueldoEmp.Location = New System.Drawing.Point(497, 24)
+        Me.Mas_Alta_SueldoEmp.Mask = "99999.99"
+        Me.Mas_Alta_SueldoEmp.Name = "Mas_Alta_SueldoEmp"
+        Me.Mas_Alta_SueldoEmp.Size = New System.Drawing.Size(209, 23)
+        Me.Mas_Alta_SueldoEmp.TabIndex = 17
+        Me.Mas_Alta_SueldoEmp.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Lab_Alta_SueldoEmp
+        '
+        Me.Lab_Alta_SueldoEmp.AutoSize = True
+        Me.Lab_Alta_SueldoEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Alta_SueldoEmp.Location = New System.Drawing.Point(386, 24)
+        Me.Lab_Alta_SueldoEmp.Name = "Lab_Alta_SueldoEmp"
+        Me.Lab_Alta_SueldoEmp.Size = New System.Drawing.Size(56, 17)
+        Me.Lab_Alta_SueldoEmp.TabIndex = 55
+        Me.Lab_Alta_SueldoEmp.Text = "Sueldo:"
+        '
+        'CoBo_Alta_HrSalEmp
+        '
+        Me.CoBo_Alta_HrSalEmp.FormattingEnabled = True
+        Me.CoBo_Alta_HrSalEmp.Items.AddRange(New Object() {"6:00", "7:00", "8:00", "9:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00", "18:00", "19:00", "20:00", "21:00", "22:00", "23:00", "00:00"})
+        Me.CoBo_Alta_HrSalEmp.Location = New System.Drawing.Point(167, 346)
+        Me.CoBo_Alta_HrSalEmp.Name = "CoBo_Alta_HrSalEmp"
+        Me.CoBo_Alta_HrSalEmp.Size = New System.Drawing.Size(61, 24)
+        Me.CoBo_Alta_HrSalEmp.TabIndex = 15
+        '
+        'CoBo_Alta_MeridianaSalEmp
+        '
+        Me.CoBo_Alta_MeridianaSalEmp.FormattingEnabled = True
+        Me.CoBo_Alta_MeridianaSalEmp.Items.AddRange(New Object() {"Am", "Pm"})
+        Me.CoBo_Alta_MeridianaSalEmp.Location = New System.Drawing.Point(265, 345)
+        Me.CoBo_Alta_MeridianaSalEmp.Name = "CoBo_Alta_MeridianaSalEmp"
+        Me.CoBo_Alta_MeridianaSalEmp.Size = New System.Drawing.Size(60, 24)
+        Me.CoBo_Alta_MeridianaSalEmp.TabIndex = 16
+        '
+        'CoBo_Alta_MeridianaEntEmp
+        '
+        Me.CoBo_Alta_MeridianaEntEmp.FormattingEnabled = True
+        Me.CoBo_Alta_MeridianaEntEmp.Items.AddRange(New Object() {"Am", "Pm"})
+        Me.CoBo_Alta_MeridianaEntEmp.Location = New System.Drawing.Point(265, 318)
+        Me.CoBo_Alta_MeridianaEntEmp.Name = "CoBo_Alta_MeridianaEntEmp"
+        Me.CoBo_Alta_MeridianaEntEmp.Size = New System.Drawing.Size(60, 24)
+        Me.CoBo_Alta_MeridianaEntEmp.TabIndex = 14
+        '
+        'CoBo_Alta_HrEntEmp
+        '
+        Me.CoBo_Alta_HrEntEmp.FormattingEnabled = True
+        Me.CoBo_Alta_HrEntEmp.Items.AddRange(New Object() {"6:00", "7:00", "8:00", "9:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00", "18:00", "19:00", "20:00", "21:00", "22:00", "23:00", "00:00"})
+        Me.CoBo_Alta_HrEntEmp.Location = New System.Drawing.Point(167, 317)
+        Me.CoBo_Alta_HrEntEmp.Name = "CoBo_Alta_HrEntEmp"
+        Me.CoBo_Alta_HrEntEmp.Size = New System.Drawing.Size(61, 24)
+        Me.CoBo_Alta_HrEntEmp.TabIndex = 13
+        '
+        'Lab_Alta_HrEntEmp
+        '
+        Me.Lab_Alta_HrEntEmp.AutoSize = True
+        Me.Lab_Alta_HrEntEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Alta_HrEntEmp.Location = New System.Drawing.Point(17, 317)
+        Me.Lab_Alta_HrEntEmp.Name = "Lab_Alta_HrEntEmp"
+        Me.Lab_Alta_HrEntEmp.Size = New System.Drawing.Size(132, 17)
+        Me.Lab_Alta_HrEntEmp.TabIndex = 49
+        Me.Lab_Alta_HrEntEmp.Text = "Horario de entrada:"
+        '
+        'CoBo_Alta_TurnoEmp
+        '
+        Me.CoBo_Alta_TurnoEmp.FormattingEnabled = True
+        Me.CoBo_Alta_TurnoEmp.Items.AddRange(New Object() {"Diurno", "Nocturno"})
+        Me.CoBo_Alta_TurnoEmp.Location = New System.Drawing.Point(157, 289)
+        Me.CoBo_Alta_TurnoEmp.Name = "CoBo_Alta_TurnoEmp"
+        Me.CoBo_Alta_TurnoEmp.Size = New System.Drawing.Size(209, 24)
+        Me.CoBo_Alta_TurnoEmp.TabIndex = 12
+        '
+        'Lab_Alta_TurnoEmp
+        '
+        Me.Lab_Alta_TurnoEmp.AutoSize = True
+        Me.Lab_Alta_TurnoEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Alta_TurnoEmp.Location = New System.Drawing.Point(21, 289)
+        Me.Lab_Alta_TurnoEmp.Name = "Lab_Alta_TurnoEmp"
+        Me.Lab_Alta_TurnoEmp.Size = New System.Drawing.Size(50, 17)
+        Me.Lab_Alta_TurnoEmp.TabIndex = 47
+        Me.Lab_Alta_TurnoEmp.Text = "Turno:"
+        '
+        'TtBo_Alta_CalleEmp
+        '
+        Me.TtBo_Alta_CalleEmp.Location = New System.Drawing.Point(497, 57)
+        Me.TtBo_Alta_CalleEmp.MaxLength = 40
+        Me.TtBo_Alta_CalleEmp.Name = "TtBo_Alta_CalleEmp"
+        Me.TtBo_Alta_CalleEmp.Size = New System.Drawing.Size(209, 23)
+        Me.TtBo_Alta_CalleEmp.TabIndex = 18
+        '
+        'Lab_Alta_CalleEmp
+        '
+        Me.Lab_Alta_CalleEmp.AutoSize = True
+        Me.Lab_Alta_CalleEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Alta_CalleEmp.Location = New System.Drawing.Point(386, 58)
+        Me.Lab_Alta_CalleEmp.Name = "Lab_Alta_CalleEmp"
+        Me.Lab_Alta_CalleEmp.Size = New System.Drawing.Size(43, 17)
+        Me.Lab_Alta_CalleEmp.TabIndex = 45
+        Me.Lab_Alta_CalleEmp.Text = "Calle:"
+        '
+        'TtBo_Alta_PuestoTrabEmp
+        '
+        Me.TtBo_Alta_PuestoTrabEmp.Location = New System.Drawing.Point(157, 260)
+        Me.TtBo_Alta_PuestoTrabEmp.Name = "TtBo_Alta_PuestoTrabEmp"
+        Me.TtBo_Alta_PuestoTrabEmp.Size = New System.Drawing.Size(209, 23)
+        Me.TtBo_Alta_PuestoTrabEmp.TabIndex = 11
+        '
+        'Lab_Alta_PuestoTrabEmp
+        '
+        Me.Lab_Alta_PuestoTrabEmp.AutoSize = True
+        Me.Lab_Alta_PuestoTrabEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Alta_PuestoTrabEmp.Location = New System.Drawing.Point(17, 263)
+        Me.Lab_Alta_PuestoTrabEmp.Name = "Lab_Alta_PuestoTrabEmp"
+        Me.Lab_Alta_PuestoTrabEmp.Size = New System.Drawing.Size(124, 17)
+        Me.Lab_Alta_PuestoTrabEmp.TabIndex = 43
+        Me.Lab_Alta_PuestoTrabEmp.Text = "Puesto de trabajo:"
+        '
+        'Btn_Alta_LimpiarEmp
+        '
+        Me.Btn_Alta_LimpiarEmp.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Btn_Alta_LimpiarEmp.Location = New System.Drawing.Point(637, 346)
+        Me.Btn_Alta_LimpiarEmp.Name = "Btn_Alta_LimpiarEmp"
+        Me.Btn_Alta_LimpiarEmp.Size = New System.Drawing.Size(69, 23)
+        Me.Btn_Alta_LimpiarEmp.TabIndex = 29
+        Me.Btn_Alta_LimpiarEmp.Text = "Limpiar"
+        Me.Btn_Alta_LimpiarEmp.UseVisualStyleBackColor = False
+        '
+        'Btn_Alta_GuardaEmp
+        '
+        Me.Btn_Alta_GuardaEmp.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Btn_Alta_GuardaEmp.Location = New System.Drawing.Point(497, 346)
+        Me.Btn_Alta_GuardaEmp.Name = "Btn_Alta_GuardaEmp"
+        Me.Btn_Alta_GuardaEmp.Size = New System.Drawing.Size(124, 23)
+        Me.Btn_Alta_GuardaEmp.TabIndex = 28
+        Me.Btn_Alta_GuardaEmp.Text = "Guardar"
+        Me.Btn_Alta_GuardaEmp.UseVisualStyleBackColor = False
+        '
+        'Lab_Alta_CurpNota
+        '
+        Me.Lab_Alta_CurpNota.AutoSize = True
+        Me.Lab_Alta_CurpNota.Location = New System.Drawing.Point(18, 241)
+        Me.Lab_Alta_CurpNota.Name = "Lab_Alta_CurpNota"
+        Me.Lab_Alta_CurpNota.Size = New System.Drawing.Size(265, 17)
+        Me.Lab_Alta_CurpNota.TabIndex = 38
+        Me.Lab_Alta_CurpNota.Text = "* RNE: Registro Nacional de Extranjeros."
+        '
+        'TtBo_Alta_CurpEmp
+        '
+        Me.TtBo_Alta_CurpEmp.Location = New System.Drawing.Point(140, 218)
+        Me.TtBo_Alta_CurpEmp.MaxLength = 18
+        Me.TtBo_Alta_CurpEmp.Name = "TtBo_Alta_CurpEmp"
+        Me.TtBo_Alta_CurpEmp.Size = New System.Drawing.Size(227, 23)
+        Me.TtBo_Alta_CurpEmp.TabIndex = 10
+        '
+        'Lab_Alta_CurpEmp
+        '
+        Me.Lab_Alta_CurpEmp.AutoSize = True
+        Me.Lab_Alta_CurpEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Alta_CurpEmp.Location = New System.Drawing.Point(17, 218)
+        Me.Lab_Alta_CurpEmp.Name = "Lab_Alta_CurpEmp"
+        Me.Lab_Alta_CurpEmp.Size = New System.Drawing.Size(91, 17)
+        Me.Lab_Alta_CurpEmp.TabIndex = 36
+        Me.Lab_Alta_CurpEmp.Text = "CURP o RNE"
+        '
+        'TtBo_Alta_NaclidadOrigEmp
+        '
+        Me.TtBo_Alta_NaclidadOrigEmp.Enabled = False
+        Me.TtBo_Alta_NaclidadOrigEmp.Location = New System.Drawing.Point(182, 188)
+        Me.TtBo_Alta_NaclidadOrigEmp.MaxLength = 40
+        Me.TtBo_Alta_NaclidadOrigEmp.Name = "TtBo_Alta_NaclidadOrigEmp"
+        Me.TtBo_Alta_NaclidadOrigEmp.Size = New System.Drawing.Size(185, 23)
+        Me.TtBo_Alta_NaclidadOrigEmp.TabIndex = 9
+        '
+        'Lab_Alta_NaclidadOrigEmp
+        '
+        Me.Lab_Alta_NaclidadOrigEmp.AutoSize = True
+        Me.Lab_Alta_NaclidadOrigEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Alta_NaclidadOrigEmp.Location = New System.Drawing.Point(17, 189)
+        Me.Lab_Alta_NaclidadOrigEmp.Name = "Lab_Alta_NaclidadOrigEmp"
+        Me.Lab_Alta_NaclidadOrigEmp.Size = New System.Drawing.Size(158, 17)
+        Me.Lab_Alta_NaclidadOrigEmp.TabIndex = 34
+        Me.Lab_Alta_NaclidadOrigEmp.Text = "Nacionalidad de origen:"
+        '
+        'RaBo_Alta_NaclidadExtjEmp
+        '
+        Me.RaBo_Alta_NaclidadExtjEmp.AutoSize = True
+        Me.RaBo_Alta_NaclidadExtjEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.RaBo_Alta_NaclidadExtjEmp.Location = New System.Drawing.Point(265, 159)
+        Me.RaBo_Alta_NaclidadExtjEmp.Name = "RaBo_Alta_NaclidadExtjEmp"
+        Me.RaBo_Alta_NaclidadExtjEmp.Size = New System.Drawing.Size(102, 21)
+        Me.RaBo_Alta_NaclidadExtjEmp.TabIndex = 8
+        Me.RaBo_Alta_NaclidadExtjEmp.TabStop = True
+        Me.RaBo_Alta_NaclidadExtjEmp.Text = "Extranjera/o"
+        Me.RaBo_Alta_NaclidadExtjEmp.UseVisualStyleBackColor = True
+        '
+        'RaBo_Alta_NaclidadMexEmp
+        '
+        Me.RaBo_Alta_NaclidadMexEmp.AutoSize = True
+        Me.RaBo_Alta_NaclidadMexEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.RaBo_Alta_NaclidadMexEmp.Location = New System.Drawing.Point(149, 161)
+        Me.RaBo_Alta_NaclidadMexEmp.Name = "RaBo_Alta_NaclidadMexEmp"
+        Me.RaBo_Alta_NaclidadMexEmp.Size = New System.Drawing.Size(97, 21)
+        Me.RaBo_Alta_NaclidadMexEmp.TabIndex = 7
+        Me.RaBo_Alta_NaclidadMexEmp.TabStop = True
+        Me.RaBo_Alta_NaclidadMexEmp.Text = "Mexicana/o"
+        Me.RaBo_Alta_NaclidadMexEmp.UseVisualStyleBackColor = True
+        '
+        'Lab_Alta_NaclidadEmp
+        '
+        Me.Lab_Alta_NaclidadEmp.AutoSize = True
+        Me.Lab_Alta_NaclidadEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Alta_NaclidadEmp.Location = New System.Drawing.Point(18, 161)
+        Me.Lab_Alta_NaclidadEmp.Name = "Lab_Alta_NaclidadEmp"
+        Me.Lab_Alta_NaclidadEmp.Size = New System.Drawing.Size(94, 17)
+        Me.Lab_Alta_NaclidadEmp.TabIndex = 31
+        Me.Lab_Alta_NaclidadEmp.Text = "Nacionalidad:"
+        '
+        'TtBo_Alta_EmailEmp
+        '
+        Me.TtBo_Alta_EmailEmp.Location = New System.Drawing.Point(520, 317)
+        Me.TtBo_Alta_EmailEmp.MaxLength = 45
+        Me.TtBo_Alta_EmailEmp.Name = "TtBo_Alta_EmailEmp"
+        Me.TtBo_Alta_EmailEmp.Size = New System.Drawing.Size(186, 23)
+        Me.TtBo_Alta_EmailEmp.TabIndex = 27
+        '
+        'Lab_Alta_EmailEmp
+        '
+        Me.Lab_Alta_EmailEmp.AutoSize = True
+        Me.Lab_Alta_EmailEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Alta_EmailEmp.Location = New System.Drawing.Point(386, 318)
+        Me.Lab_Alta_EmailEmp.Name = "Lab_Alta_EmailEmp"
+        Me.Lab_Alta_EmailEmp.Size = New System.Drawing.Size(128, 17)
+        Me.Lab_Alta_EmailEmp.TabIndex = 29
+        Me.Lab_Alta_EmailEmp.Text = "Correo electrónico:"
+        '
+        'TtBo_Alta_CpEmp
+        '
+        Me.TtBo_Alta_CpEmp.Location = New System.Drawing.Point(497, 204)
+        Me.TtBo_Alta_CpEmp.MaxLength = 5
+        Me.TtBo_Alta_CpEmp.Name = "TtBo_Alta_CpEmp"
+        Me.TtBo_Alta_CpEmp.Size = New System.Drawing.Size(209, 23)
+        Me.TtBo_Alta_CpEmp.TabIndex = 23
+        '
+        'Lab_Alta_CpEmp
+        '
+        Me.Lab_Alta_CpEmp.AutoSize = True
+        Me.Lab_Alta_CpEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Alta_CpEmp.Location = New System.Drawing.Point(386, 204)
+        Me.Lab_Alta_CpEmp.Name = "Lab_Alta_CpEmp"
+        Me.Lab_Alta_CpEmp.Size = New System.Drawing.Size(98, 17)
+        Me.Lab_Alta_CpEmp.TabIndex = 27
+        Me.Lab_Alta_CpEmp.Text = "Código postal:"
+        '
+        'CoBo_Alta_EstadoEmp
+        '
+        Me.CoBo_Alta_EstadoEmp.FormattingEnabled = True
+        Me.CoBo_Alta_EstadoEmp.Items.AddRange(New Object() {"Aguascalientes", "Baja California", "Baja California Sur", "Campeche", "Chiapas", "Chihuahua", "Ciudad de México", "Coahuila", "Colima", "Durango", "Estado de México", "Guanajuato", "Guerrero", "Hidalgo", "Jalisco", "Michoacán", "Morelos", "Nayarit", "Nuevo León", "Oaxaca", "Puebla", "Querétaro", "Quintana Roo", "San Luis Potosí", "Sinaloa", "Sonora", "Tabasco", "Tamaulipas", "Tlaxcala", "Veracruz", "Yucatán", "Zacatecas"})
+        Me.CoBo_Alta_EstadoEmp.Location = New System.Drawing.Point(497, 233)
+        Me.CoBo_Alta_EstadoEmp.Name = "CoBo_Alta_EstadoEmp"
+        Me.CoBo_Alta_EstadoEmp.Size = New System.Drawing.Size(209, 24)
+        Me.CoBo_Alta_EstadoEmp.TabIndex = 24
+        Me.CoBo_Alta_EstadoEmp.Text = "Seleccione un estado"
+        '
+        'TtBo_Alta_MunicipioEmp
+        '
+        Me.TtBo_Alta_MunicipioEmp.Location = New System.Drawing.Point(547, 174)
+        Me.TtBo_Alta_MunicipioEmp.MaxLength = 40
+        Me.TtBo_Alta_MunicipioEmp.Name = "TtBo_Alta_MunicipioEmp"
+        Me.TtBo_Alta_MunicipioEmp.Size = New System.Drawing.Size(159, 23)
+        Me.TtBo_Alta_MunicipioEmp.TabIndex = 22
+        '
+        'TtBo_Alta_ColoniaEmp
+        '
+        Me.TtBo_Alta_ColoniaEmp.Location = New System.Drawing.Point(497, 148)
+        Me.TtBo_Alta_ColoniaEmp.MaxLength = 40
+        Me.TtBo_Alta_ColoniaEmp.Name = "TtBo_Alta_ColoniaEmp"
+        Me.TtBo_Alta_ColoniaEmp.Size = New System.Drawing.Size(209, 23)
+        Me.TtBo_Alta_ColoniaEmp.TabIndex = 21
+        '
+        'TtBo_Alta_NumExtEmp
+        '
+        Me.TtBo_Alta_NumExtEmp.Location = New System.Drawing.Point(497, 114)
+        Me.TtBo_Alta_NumExtEmp.MaxLength = 5
+        Me.TtBo_Alta_NumExtEmp.Name = "TtBo_Alta_NumExtEmp"
+        Me.TtBo_Alta_NumExtEmp.Size = New System.Drawing.Size(209, 23)
+        Me.TtBo_Alta_NumExtEmp.TabIndex = 20
+        '
+        'TtBo_Alta_NumIntEmp
+        '
+        Me.TtBo_Alta_NumIntEmp.Location = New System.Drawing.Point(497, 83)
+        Me.TtBo_Alta_NumIntEmp.MaxLength = 3
+        Me.TtBo_Alta_NumIntEmp.Name = "TtBo_Alta_NumIntEmp"
+        Me.TtBo_Alta_NumIntEmp.Size = New System.Drawing.Size(209, 23)
+        Me.TtBo_Alta_NumIntEmp.TabIndex = 19
+        '
+        'Lab_Alta_EstadoEmp
+        '
+        Me.Lab_Alta_EstadoEmp.AutoSize = True
+        Me.Lab_Alta_EstadoEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Alta_EstadoEmp.Location = New System.Drawing.Point(386, 237)
+        Me.Lab_Alta_EstadoEmp.Name = "Lab_Alta_EstadoEmp"
+        Me.Lab_Alta_EstadoEmp.Size = New System.Drawing.Size(56, 17)
+        Me.Lab_Alta_EstadoEmp.TabIndex = 20
+        Me.Lab_Alta_EstadoEmp.Text = "Estado:"
+        '
+        'Lab_Alta_MunicipioEmp
+        '
+        Me.Lab_Alta_MunicipioEmp.AutoSize = True
+        Me.Lab_Alta_MunicipioEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Alta_MunicipioEmp.Location = New System.Drawing.Point(386, 174)
+        Me.Lab_Alta_MunicipioEmp.Name = "Lab_Alta_MunicipioEmp"
+        Me.Lab_Alta_MunicipioEmp.Size = New System.Drawing.Size(154, 17)
+        Me.Lab_Alta_MunicipioEmp.TabIndex = 19
+        Me.Lab_Alta_MunicipioEmp.Text = "Municipio / Delegación:"
+        '
+        'Lab_Alta_ColoniaEmp
+        '
+        Me.Lab_Alta_ColoniaEmp.AutoSize = True
+        Me.Lab_Alta_ColoniaEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Alta_ColoniaEmp.Location = New System.Drawing.Point(386, 148)
+        Me.Lab_Alta_ColoniaEmp.Name = "Lab_Alta_ColoniaEmp"
+        Me.Lab_Alta_ColoniaEmp.Size = New System.Drawing.Size(59, 17)
+        Me.Lab_Alta_ColoniaEmp.TabIndex = 18
+        Me.Lab_Alta_ColoniaEmp.Text = "Colonia:"
+        '
+        'Lab_Alta_NumExtEmp
+        '
+        Me.Lab_Alta_NumExtEmp.AutoSize = True
+        Me.Lab_Alta_NumExtEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Alta_NumExtEmp.Location = New System.Drawing.Point(386, 115)
+        Me.Lab_Alta_NumExtEmp.Name = "Lab_Alta_NumExtEmp"
+        Me.Lab_Alta_NumExtEmp.Size = New System.Drawing.Size(113, 17)
+        Me.Lab_Alta_NumExtEmp.TabIndex = 17
+        Me.Lab_Alta_NumExtEmp.Text = "Número exterior:"
+        '
+        'Lab_Alta_NumIntEmp
+        '
+        Me.Lab_Alta_NumIntEmp.AutoSize = True
+        Me.Lab_Alta_NumIntEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Alta_NumIntEmp.Location = New System.Drawing.Point(386, 83)
+        Me.Lab_Alta_NumIntEmp.Name = "Lab_Alta_NumIntEmp"
+        Me.Lab_Alta_NumIntEmp.Size = New System.Drawing.Size(110, 17)
+        Me.Lab_Alta_NumIntEmp.TabIndex = 16
+        Me.Lab_Alta_NumIntEmp.Text = "Número interior:"
+        '
+        'TtBo_Alta_TelefFijoEmp
+        '
+        Me.TtBo_Alta_TelefFijoEmp.Location = New System.Drawing.Point(497, 286)
+        Me.TtBo_Alta_TelefFijoEmp.MaxLength = 10
+        Me.TtBo_Alta_TelefFijoEmp.Name = "TtBo_Alta_TelefFijoEmp"
+        Me.TtBo_Alta_TelefFijoEmp.Size = New System.Drawing.Size(209, 23)
+        Me.TtBo_Alta_TelefFijoEmp.TabIndex = 26
+        '
+        'Lab_Alta_TelefFijoEmp
+        '
+        Me.Lab_Alta_TelefFijoEmp.AutoSize = True
+        Me.Lab_Alta_TelefFijoEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Alta_TelefFijoEmp.Location = New System.Drawing.Point(386, 286)
+        Me.Lab_Alta_TelefFijoEmp.Name = "Lab_Alta_TelefFijoEmp"
+        Me.Lab_Alta_TelefFijoEmp.Size = New System.Drawing.Size(90, 17)
+        Me.Lab_Alta_TelefFijoEmp.TabIndex = 13
+        Me.Lab_Alta_TelefFijoEmp.Text = "Teléfono fijo:"
+        '
+        'TtBo_Alta_TelefMoviEmp
+        '
+        Me.TtBo_Alta_TelefMoviEmp.Location = New System.Drawing.Point(497, 260)
+        Me.TtBo_Alta_TelefMoviEmp.MaxLength = 10
+        Me.TtBo_Alta_TelefMoviEmp.Name = "TtBo_Alta_TelefMoviEmp"
+        Me.TtBo_Alta_TelefMoviEmp.Size = New System.Drawing.Size(209, 23)
+        Me.TtBo_Alta_TelefMoviEmp.TabIndex = 25
+        '
+        'Lab_Alta_TelefMovEmp
+        '
+        Me.Lab_Alta_TelefMovEmp.AutoSize = True
+        Me.Lab_Alta_TelefMovEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Alta_TelefMovEmp.Location = New System.Drawing.Point(386, 263)
+        Me.Lab_Alta_TelefMovEmp.Name = "Lab_Alta_TelefMovEmp"
+        Me.Lab_Alta_TelefMovEmp.Size = New System.Drawing.Size(114, 17)
+        Me.Lab_Alta_TelefMovEmp.TabIndex = 11
+        Me.Lab_Alta_TelefMovEmp.Text = "Teléfono celular:"
+        '
+        'RaBo_Alta_SMasculinoEmp
+        '
+        Me.RaBo_Alta_SMasculinoEmp.AutoSize = True
+        Me.RaBo_Alta_SMasculinoEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.RaBo_Alta_SMasculinoEmp.Location = New System.Drawing.Point(277, 124)
+        Me.RaBo_Alta_SMasculinoEmp.Name = "RaBo_Alta_SMasculinoEmp"
+        Me.RaBo_Alta_SMasculinoEmp.Size = New System.Drawing.Size(89, 21)
+        Me.RaBo_Alta_SMasculinoEmp.TabIndex = 6
+        Me.RaBo_Alta_SMasculinoEmp.TabStop = True
+        Me.RaBo_Alta_SMasculinoEmp.Text = "Masculino"
+        Me.RaBo_Alta_SMasculinoEmp.UseVisualStyleBackColor = True
+        '
+        'RaBo_Alta_SFemeninoEmp
+        '
+        Me.RaBo_Alta_SFemeninoEmp.AutoSize = True
+        Me.RaBo_Alta_SFemeninoEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.RaBo_Alta_SFemeninoEmp.Location = New System.Drawing.Point(149, 128)
+        Me.RaBo_Alta_SFemeninoEmp.Name = "RaBo_Alta_SFemeninoEmp"
+        Me.RaBo_Alta_SFemeninoEmp.Size = New System.Drawing.Size(88, 21)
+        Me.RaBo_Alta_SFemeninoEmp.TabIndex = 5
+        Me.RaBo_Alta_SFemeninoEmp.TabStop = True
+        Me.RaBo_Alta_SFemeninoEmp.Text = "Femenino"
+        Me.RaBo_Alta_SFemeninoEmp.UseVisualStyleBackColor = True
+        '
+        'Lab_Alta_SexoEmp
+        '
+        Me.Lab_Alta_SexoEmp.AutoSize = True
+        Me.Lab_Alta_SexoEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Alta_SexoEmp.Location = New System.Drawing.Point(18, 130)
+        Me.Lab_Alta_SexoEmp.Name = "Lab_Alta_SexoEmp"
+        Me.Lab_Alta_SexoEmp.Size = New System.Drawing.Size(43, 17)
+        Me.Lab_Alta_SexoEmp.TabIndex = 8
+        Me.Lab_Alta_SexoEmp.Text = "Sexo:"
+        '
+        'DaTiPi_Alta_FechNacEmp
+        '
+        Me.DaTiPi_Alta_FechNacEmp.Location = New System.Drawing.Point(167, 98)
+        Me.DaTiPi_Alta_FechNacEmp.MaxDate = New Date(2021, 12, 31, 0, 0, 0, 0)
+        Me.DaTiPi_Alta_FechNacEmp.MinDate = New Date(1920, 1, 1, 0, 0, 0, 0)
+        Me.DaTiPi_Alta_FechNacEmp.Name = "DaTiPi_Alta_FechNacEmp"
+        Me.DaTiPi_Alta_FechNacEmp.Size = New System.Drawing.Size(200, 23)
+        Me.DaTiPi_Alta_FechNacEmp.TabIndex = 4
+        '
+        'Lab_Alta_FechaNacEmp
+        '
+        Me.Lab_Alta_FechaNacEmp.AutoSize = True
+        Me.Lab_Alta_FechaNacEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Alta_FechaNacEmp.Location = New System.Drawing.Point(17, 102)
+        Me.Lab_Alta_FechaNacEmp.Name = "Lab_Alta_FechaNacEmp"
+        Me.Lab_Alta_FechaNacEmp.Size = New System.Drawing.Size(143, 17)
+        Me.Lab_Alta_FechaNacEmp.TabIndex = 6
+        Me.Lab_Alta_FechaNacEmp.Text = "Fecha de nacimiento:"
+        '
+        'TtBo_Alta_AmatEmp
+        '
+        Me.TtBo_Alta_AmatEmp.Location = New System.Drawing.Point(140, 68)
+        Me.TtBo_Alta_AmatEmp.MaxLength = 40
+        Me.TtBo_Alta_AmatEmp.Name = "TtBo_Alta_AmatEmp"
+        Me.TtBo_Alta_AmatEmp.Size = New System.Drawing.Size(227, 23)
+        Me.TtBo_Alta_AmatEmp.TabIndex = 3
+        '
+        'TtBo_Alta_ApatEmp
+        '
+        Me.TtBo_Alta_ApatEmp.Location = New System.Drawing.Point(140, 36)
+        Me.TtBo_Alta_ApatEmp.MaxLength = 40
+        Me.TtBo_Alta_ApatEmp.Name = "TtBo_Alta_ApatEmp"
+        Me.TtBo_Alta_ApatEmp.Size = New System.Drawing.Size(227, 23)
+        Me.TtBo_Alta_ApatEmp.TabIndex = 2
+        '
+        'Lab_Alta_AmatEmp
+        '
+        Me.Lab_Alta_AmatEmp.AutoSize = True
+        Me.Lab_Alta_AmatEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Alta_AmatEmp.Location = New System.Drawing.Point(17, 71)
+        Me.Lab_Alta_AmatEmp.Name = "Lab_Alta_AmatEmp"
+        Me.Lab_Alta_AmatEmp.Size = New System.Drawing.Size(118, 17)
+        Me.Lab_Alta_AmatEmp.TabIndex = 3
+        Me.Lab_Alta_AmatEmp.Text = "Apellido materno:"
+        '
+        'Lab_Alta_ApatEmp
+        '
+        Me.Lab_Alta_ApatEmp.AutoSize = True
+        Me.Lab_Alta_ApatEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Alta_ApatEmp.Location = New System.Drawing.Point(17, 36)
+        Me.Lab_Alta_ApatEmp.Name = "Lab_Alta_ApatEmp"
+        Me.Lab_Alta_ApatEmp.Size = New System.Drawing.Size(115, 17)
+        Me.Lab_Alta_ApatEmp.TabIndex = 2
+        Me.Lab_Alta_ApatEmp.Text = "Apellido paterno:"
+        '
+        'TtBo_Alta_NombEmp
+        '
+        Me.TtBo_Alta_NombEmp.Location = New System.Drawing.Point(140, 6)
+        Me.TtBo_Alta_NombEmp.MaxLength = 40
+        Me.TtBo_Alta_NombEmp.Name = "TtBo_Alta_NombEmp"
+        Me.TtBo_Alta_NombEmp.Size = New System.Drawing.Size(227, 23)
+        Me.TtBo_Alta_NombEmp.TabIndex = 1
+        '
+        'Lab_Alta_NombEmp
+        '
+        Me.Lab_Alta_NombEmp.AutoSize = True
+        Me.Lab_Alta_NombEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Alta_NombEmp.Location = New System.Drawing.Point(17, 3)
+        Me.Lab_Alta_NombEmp.Name = "Lab_Alta_NombEmp"
+        Me.Lab_Alta_NombEmp.Size = New System.Drawing.Size(73, 17)
+        Me.Lab_Alta_NombEmp.TabIndex = 0
+        Me.Lab_Alta_NombEmp.Text = "Nombre/s:"
         '
         'Consulta_Empleado
         '
-        Me.Consulta_Empleado.Controls.Add(Me.DataGridView1)
-        Me.Consulta_Empleado.Controls.Add(Me.Button3)
-        Me.Consulta_Empleado.Controls.Add(Me.Label24)
-        Me.Consulta_Empleado.Controls.Add(Me.TextBox19)
-        Me.Consulta_Empleado.Controls.Add(Me.Label25)
-        Me.Consulta_Empleado.Controls.Add(Me.TextBox16)
-        Me.Consulta_Empleado.Controls.Add(Me.TextBox17)
-        Me.Consulta_Empleado.Controls.Add(Me.Label21)
-        Me.Consulta_Empleado.Controls.Add(Me.Label22)
-        Me.Consulta_Empleado.Controls.Add(Me.TextBox18)
-        Me.Consulta_Empleado.Controls.Add(Me.Label23)
-        Me.Consulta_Empleado.Location = New System.Drawing.Point(4, 22)
+        Me.Consulta_Empleado.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Consulta_Empleado.Controls.Add(Me.DGV_ListaEmp)
+        Me.Consulta_Empleado.Controls.Add(Me.Btn_Cons_Consultar)
+        Me.Consulta_Empleado.Controls.Add(Me.Lab_Cons_CurpNota)
+        Me.Consulta_Empleado.Controls.Add(Me.TtBo_Cons_CurpEmp)
+        Me.Consulta_Empleado.Controls.Add(Me.Lab_Cons_CurpbEmp)
+        Me.Consulta_Empleado.Controls.Add(Me.TtBo_Cons_AmatEmp)
+        Me.Consulta_Empleado.Controls.Add(Me.TtBo_Cons_ApatEmp)
+        Me.Consulta_Empleado.Controls.Add(Me.Lab_Cons_AmatEmp)
+        Me.Consulta_Empleado.Controls.Add(Me.Lab_Cons_ApatEmp)
+        Me.Consulta_Empleado.Controls.Add(Me.TtBo_Cons_NombEmp)
+        Me.Consulta_Empleado.Controls.Add(Me.Lab_Cons_NombEmp)
+        Me.Consulta_Empleado.Location = New System.Drawing.Point(4, 25)
         Me.Consulta_Empleado.Name = "Consulta_Empleado"
-        Me.Consulta_Empleado.Size = New System.Drawing.Size(768, 374)
+        Me.Consulta_Empleado.Size = New System.Drawing.Size(768, 377)
         Me.Consulta_Empleado.TabIndex = 3
         Me.Consulta_Empleado.Text = "Consulta de empleado"
-        Me.Consulta_Empleado.UseVisualStyleBackColor = True
         '
-        'DataGridView1
+        'DGV_ListaEmp
         '
-        Me.DataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DGV_ID, Me.DGV_NombraComp, Me.DGV_FNac, Me.DGV_Sexo, Me.DGV_CurpORne, Me.DGV_Cargo, Me.DGV_Domio})
-        Me.DataGridView1.GridColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.DataGridView1.Location = New System.Drawing.Point(14, 212)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(739, 141)
-        Me.DataGridView1.TabIndex = 0
+        Me.DGV_ListaEmp.BackgroundColor = System.Drawing.Color.LightGray
+        Me.DGV_ListaEmp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGV_ListaEmp.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DGV_ID, Me.DGV_NombraComp, Me.DGV_FNac, Me.DGV_Sexo, Me.DGV_CurpORne, Me.DGV_Cargo, Me.DGV_Domio})
+        Me.DGV_ListaEmp.GridColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.DGV_ListaEmp.Location = New System.Drawing.Point(14, 212)
+        Me.DGV_ListaEmp.Name = "DGV_ListaEmp"
+        Me.DGV_ListaEmp.Size = New System.Drawing.Size(739, 141)
+        Me.DGV_ListaEmp.TabIndex = 0
         '
         'DGV_ID
         '
@@ -885,593 +915,609 @@ Partial Class Form_Empleados
         Me.DGV_Domio.MaxInputLength = 250
         Me.DGV_Domio.Name = "DGV_Domio"
         '
-        'Button3
+        'Btn_Cons_Consultar
         '
-        Me.Button3.Location = New System.Drawing.Point(148, 162)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(227, 23)
-        Me.Button3.TabIndex = 5
-        Me.Button3.Text = "Consultar"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.Btn_Cons_Consultar.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Btn_Cons_Consultar.Location = New System.Drawing.Point(385, 157)
+        Me.Btn_Cons_Consultar.Name = "Btn_Cons_Consultar"
+        Me.Btn_Cons_Consultar.Size = New System.Drawing.Size(227, 23)
+        Me.Btn_Cons_Consultar.TabIndex = 5
+        Me.Btn_Cons_Consultar.Text = "Consultar"
+        Me.Btn_Cons_Consultar.UseVisualStyleBackColor = False
         '
-        'Label24
+        'Lab_Cons_CurpNota
         '
-        Me.Label24.AutoSize = True
-        Me.Label24.Location = New System.Drawing.Point(26, 145)
-        Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(200, 13)
-        Me.Label24.TabIndex = 41
-        Me.Label24.Text = "* RNE: Registro Nacional de Extranjeros."
+        Me.Lab_Cons_CurpNota.AutoSize = True
+        Me.Lab_Cons_CurpNota.Location = New System.Drawing.Point(263, 140)
+        Me.Lab_Cons_CurpNota.Name = "Lab_Cons_CurpNota"
+        Me.Lab_Cons_CurpNota.Size = New System.Drawing.Size(265, 17)
+        Me.Lab_Cons_CurpNota.TabIndex = 41
+        Me.Lab_Cons_CurpNota.Text = "* RNE: Registro Nacional de Extranjeros."
         '
-        'TextBox19
+        'TtBo_Cons_CurpEmp
         '
-        Me.TextBox19.Location = New System.Drawing.Point(148, 122)
-        Me.TextBox19.MaxLength = 18
-        Me.TextBox19.Name = "TextBox19"
-        Me.TextBox19.Size = New System.Drawing.Size(227, 20)
-        Me.TextBox19.TabIndex = 4
+        Me.TtBo_Cons_CurpEmp.Location = New System.Drawing.Point(385, 117)
+        Me.TtBo_Cons_CurpEmp.MaxLength = 18
+        Me.TtBo_Cons_CurpEmp.Name = "TtBo_Cons_CurpEmp"
+        Me.TtBo_Cons_CurpEmp.Size = New System.Drawing.Size(227, 23)
+        Me.TtBo_Cons_CurpEmp.TabIndex = 4
         '
-        'Label25
+        'Lab_Cons_CurpbEmp
         '
-        Me.Label25.AutoSize = True
-        Me.Label25.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label25.Location = New System.Drawing.Point(25, 122)
-        Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(91, 17)
-        Me.Label25.TabIndex = 39
-        Me.Label25.Text = "CURP o RNE"
+        Me.Lab_Cons_CurpbEmp.AutoSize = True
+        Me.Lab_Cons_CurpbEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Cons_CurpbEmp.Location = New System.Drawing.Point(262, 117)
+        Me.Lab_Cons_CurpbEmp.Name = "Lab_Cons_CurpbEmp"
+        Me.Lab_Cons_CurpbEmp.Size = New System.Drawing.Size(91, 17)
+        Me.Lab_Cons_CurpbEmp.TabIndex = 39
+        Me.Lab_Cons_CurpbEmp.Text = "CURP o RNE"
         '
-        'TextBox16
+        'TtBo_Cons_AmatEmp
         '
-        Me.TextBox16.Location = New System.Drawing.Point(148, 91)
-        Me.TextBox16.Name = "TextBox16"
-        Me.TextBox16.Size = New System.Drawing.Size(227, 20)
-        Me.TextBox16.TabIndex = 3
+        Me.TtBo_Cons_AmatEmp.Location = New System.Drawing.Point(385, 86)
+        Me.TtBo_Cons_AmatEmp.Name = "TtBo_Cons_AmatEmp"
+        Me.TtBo_Cons_AmatEmp.Size = New System.Drawing.Size(227, 23)
+        Me.TtBo_Cons_AmatEmp.TabIndex = 3
         '
-        'TextBox17
+        'TtBo_Cons_ApatEmp
         '
-        Me.TextBox17.Location = New System.Drawing.Point(148, 59)
-        Me.TextBox17.Name = "TextBox17"
-        Me.TextBox17.Size = New System.Drawing.Size(227, 20)
-        Me.TextBox17.TabIndex = 2
+        Me.TtBo_Cons_ApatEmp.Location = New System.Drawing.Point(385, 54)
+        Me.TtBo_Cons_ApatEmp.Name = "TtBo_Cons_ApatEmp"
+        Me.TtBo_Cons_ApatEmp.Size = New System.Drawing.Size(227, 23)
+        Me.TtBo_Cons_ApatEmp.TabIndex = 2
         '
-        'Label21
+        'Lab_Cons_AmatEmp
         '
-        Me.Label21.AutoSize = True
-        Me.Label21.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label21.Location = New System.Drawing.Point(25, 91)
-        Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(118, 17)
-        Me.Label21.TabIndex = 9
-        Me.Label21.Text = "Apellido materno:"
+        Me.Lab_Cons_AmatEmp.AutoSize = True
+        Me.Lab_Cons_AmatEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Cons_AmatEmp.Location = New System.Drawing.Point(262, 86)
+        Me.Lab_Cons_AmatEmp.Name = "Lab_Cons_AmatEmp"
+        Me.Lab_Cons_AmatEmp.Size = New System.Drawing.Size(118, 17)
+        Me.Lab_Cons_AmatEmp.TabIndex = 9
+        Me.Lab_Cons_AmatEmp.Text = "Apellido materno:"
         '
-        'Label22
+        'Lab_Cons_ApatEmp
         '
-        Me.Label22.AutoSize = True
-        Me.Label22.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label22.Location = New System.Drawing.Point(25, 59)
-        Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(115, 17)
-        Me.Label22.TabIndex = 8
-        Me.Label22.Text = "Apellido paterno:"
+        Me.Lab_Cons_ApatEmp.AutoSize = True
+        Me.Lab_Cons_ApatEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Cons_ApatEmp.Location = New System.Drawing.Point(262, 54)
+        Me.Lab_Cons_ApatEmp.Name = "Lab_Cons_ApatEmp"
+        Me.Lab_Cons_ApatEmp.Size = New System.Drawing.Size(115, 17)
+        Me.Lab_Cons_ApatEmp.TabIndex = 8
+        Me.Lab_Cons_ApatEmp.Text = "Apellido paterno:"
         '
-        'TextBox18
+        'TtBo_Cons_NombEmp
         '
-        Me.TextBox18.Location = New System.Drawing.Point(148, 21)
-        Me.TextBox18.Name = "TextBox18"
-        Me.TextBox18.Size = New System.Drawing.Size(227, 20)
-        Me.TextBox18.TabIndex = 1
+        Me.TtBo_Cons_NombEmp.Location = New System.Drawing.Point(385, 16)
+        Me.TtBo_Cons_NombEmp.Name = "TtBo_Cons_NombEmp"
+        Me.TtBo_Cons_NombEmp.Size = New System.Drawing.Size(227, 23)
+        Me.TtBo_Cons_NombEmp.TabIndex = 1
         '
-        'Label23
+        'Lab_Cons_NombEmp
         '
-        Me.Label23.AutoSize = True
-        Me.Label23.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label23.Location = New System.Drawing.Point(25, 21)
-        Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(73, 17)
-        Me.Label23.TabIndex = 6
-        Me.Label23.Text = "Nombre/s:"
+        Me.Lab_Cons_NombEmp.AutoSize = True
+        Me.Lab_Cons_NombEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Cons_NombEmp.Location = New System.Drawing.Point(262, 16)
+        Me.Lab_Cons_NombEmp.Name = "Lab_Cons_NombEmp"
+        Me.Lab_Cons_NombEmp.Size = New System.Drawing.Size(73, 17)
+        Me.Lab_Cons_NombEmp.TabIndex = 6
+        Me.Lab_Cons_NombEmp.Text = "Nombre/s:"
         '
         'Cambio_Empleado
         '
-        Me.Cambio_Empleado.Controls.Add(Me.Button6)
-        Me.Cambio_Empleado.Controls.Add(Me.TextBox20)
-        Me.Cambio_Empleado.Controls.Add(Me.Label26)
-        Me.Cambio_Empleado.Controls.Add(Me.Button4)
-        Me.Cambio_Empleado.Controls.Add(Me.Button5)
-        Me.Cambio_Empleado.Controls.Add(Me.TextBox21)
-        Me.Cambio_Empleado.Controls.Add(Me.Label27)
-        Me.Cambio_Empleado.Controls.Add(Me.Label28)
-        Me.Cambio_Empleado.Controls.Add(Me.TextBox22)
-        Me.Cambio_Empleado.Controls.Add(Me.Label29)
-        Me.Cambio_Empleado.Controls.Add(Me.TextBox23)
-        Me.Cambio_Empleado.Controls.Add(Me.Label30)
-        Me.Cambio_Empleado.Controls.Add(Me.RadioButton5)
-        Me.Cambio_Empleado.Controls.Add(Me.RadioButton6)
-        Me.Cambio_Empleado.Controls.Add(Me.Label31)
-        Me.Cambio_Empleado.Controls.Add(Me.TextBox24)
-        Me.Cambio_Empleado.Controls.Add(Me.Label32)
-        Me.Cambio_Empleado.Controls.Add(Me.TextBox25)
-        Me.Cambio_Empleado.Controls.Add(Me.Label33)
-        Me.Cambio_Empleado.Controls.Add(Me.ComboBox2)
-        Me.Cambio_Empleado.Controls.Add(Me.TextBox26)
-        Me.Cambio_Empleado.Controls.Add(Me.TextBox27)
-        Me.Cambio_Empleado.Controls.Add(Me.TextBox28)
-        Me.Cambio_Empleado.Controls.Add(Me.TextBox29)
-        Me.Cambio_Empleado.Controls.Add(Me.Label34)
-        Me.Cambio_Empleado.Controls.Add(Me.Label35)
-        Me.Cambio_Empleado.Controls.Add(Me.Label36)
-        Me.Cambio_Empleado.Controls.Add(Me.Label37)
-        Me.Cambio_Empleado.Controls.Add(Me.Label38)
-        Me.Cambio_Empleado.Controls.Add(Me.TextBox30)
-        Me.Cambio_Empleado.Controls.Add(Me.Label39)
-        Me.Cambio_Empleado.Controls.Add(Me.TextBox31)
-        Me.Cambio_Empleado.Controls.Add(Me.Label40)
-        Me.Cambio_Empleado.Controls.Add(Me.RadioButton7)
-        Me.Cambio_Empleado.Controls.Add(Me.RadioButton8)
-        Me.Cambio_Empleado.Controls.Add(Me.Label41)
-        Me.Cambio_Empleado.Controls.Add(Me.DateTimePicker2)
-        Me.Cambio_Empleado.Controls.Add(Me.Label42)
-        Me.Cambio_Empleado.Controls.Add(Me.TextBox32)
-        Me.Cambio_Empleado.Controls.Add(Me.TextBox33)
-        Me.Cambio_Empleado.Controls.Add(Me.Label43)
-        Me.Cambio_Empleado.Controls.Add(Me.Label44)
-        Me.Cambio_Empleado.Controls.Add(Me.TextBox34)
-        Me.Cambio_Empleado.Controls.Add(Me.Label45)
-        Me.Cambio_Empleado.Location = New System.Drawing.Point(4, 22)
+        Me.Cambio_Empleado.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Cambio_Empleado.Controls.Add(Me.Lab_Camb_HrSalEmp)
+        Me.Cambio_Empleado.Controls.Add(Me.MaskedTextBox1)
+        Me.Cambio_Empleado.Controls.Add(Me.Lab_Camb_SueldoEmp)
+        Me.Cambio_Empleado.Controls.Add(Me.CoBo_Camb_HrSalEmp)
+        Me.Cambio_Empleado.Controls.Add(Me.CoBo_Camb_MeridianoSalEmp)
+        Me.Cambio_Empleado.Controls.Add(Me.CoBo_Camb_MeridianoEntEmp)
+        Me.Cambio_Empleado.Controls.Add(Me.CoBo_Camb_HrEntEmp)
+        Me.Cambio_Empleado.Controls.Add(Me.Lab_Camb_HrEntEmp)
+        Me.Cambio_Empleado.Controls.Add(Me.CoBo_Camb_TurnoEmp)
+        Me.Cambio_Empleado.Controls.Add(Me.Lab_Camb_TurnoEmp)
+        Me.Cambio_Empleado.Controls.Add(Me.Btn_Camb_Buscar)
+        Me.Cambio_Empleado.Controls.Add(Me.TtBo_Camb_PuestoTrabEmp)
+        Me.Cambio_Empleado.Controls.Add(Me.Lab_Camb_PuestoTrabEmp)
+        Me.Cambio_Empleado.Controls.Add(Me.Btn_Camb_Limpiar)
+        Me.Cambio_Empleado.Controls.Add(Me.Btn_Camb_Guardar)
+        Me.Cambio_Empleado.Controls.Add(Me.TtBo_Camb_CalleEmp)
+        Me.Cambio_Empleado.Controls.Add(Me.Lab_Camb_CalleEmp)
+        Me.Cambio_Empleado.Controls.Add(Me.Lab_Camb_CurpNota)
+        Me.Cambio_Empleado.Controls.Add(Me.TtBo_Camb_CurpEmp)
+        Me.Cambio_Empleado.Controls.Add(Me.Lab_Camb_CurpEmp)
+        Me.Cambio_Empleado.Controls.Add(Me.TtBo_Camb_NaclidadOrigEmp)
+        Me.Cambio_Empleado.Controls.Add(Me.Lab_Camb_NaclidadOrigEmp)
+        Me.Cambio_Empleado.Controls.Add(Me.RaBo_Camb_NaclidadExtjEmp)
+        Me.Cambio_Empleado.Controls.Add(Me.RaBo_Camb_NaclidadMexEmp)
+        Me.Cambio_Empleado.Controls.Add(Me.Lab_Camb_NaclidadEmp)
+        Me.Cambio_Empleado.Controls.Add(Me.TtBo_Camb_EmailEmp)
+        Me.Cambio_Empleado.Controls.Add(Me.Lab_Camb_EmailEmp)
+        Me.Cambio_Empleado.Controls.Add(Me.TtBo_Camb_CpEmp)
+        Me.Cambio_Empleado.Controls.Add(Me.Lab_Camb_CpEmp)
+        Me.Cambio_Empleado.Controls.Add(Me.CoBo_Camb_EstadoEmp)
+        Me.Cambio_Empleado.Controls.Add(Me.TtBo_Camb_MunicipioEmp)
+        Me.Cambio_Empleado.Controls.Add(Me.TtBo_Camb_ColoniaEmp)
+        Me.Cambio_Empleado.Controls.Add(Me.TtBo_Camb_NumExtEmp)
+        Me.Cambio_Empleado.Controls.Add(Me.TtBo_Camb_NumIntEmp)
+        Me.Cambio_Empleado.Controls.Add(Me.Lab_Camb_EstadoEmp)
+        Me.Cambio_Empleado.Controls.Add(Me.Lab_Camb_MunicipioEmp)
+        Me.Cambio_Empleado.Controls.Add(Me.Lab_Camb_ColoniaEmp)
+        Me.Cambio_Empleado.Controls.Add(Me.Lab_Camb_NumExtEmp)
+        Me.Cambio_Empleado.Controls.Add(Me.Lab_Camb_NumIntEmp)
+        Me.Cambio_Empleado.Controls.Add(Me.TtBo_Camb_TelefFijoEmp)
+        Me.Cambio_Empleado.Controls.Add(Me.Lab_Camb_TelefFijoEmp)
+        Me.Cambio_Empleado.Controls.Add(Me.TtBo_Camb_TelefMovilEmp)
+        Me.Cambio_Empleado.Controls.Add(Me.Lab_Camb_TelefMovilEmp)
+        Me.Cambio_Empleado.Controls.Add(Me.RaBo_Camb_SMasculinoEmp)
+        Me.Cambio_Empleado.Controls.Add(Me.RaBo_Camb_SFemeninoEmp)
+        Me.Cambio_Empleado.Controls.Add(Me.Lab_Camb_SexoEmp)
+        Me.Cambio_Empleado.Controls.Add(Me.DaTiPi_Camb_FechNacEmp)
+        Me.Cambio_Empleado.Controls.Add(Me.Lab_Camb_FechNacEmp)
+        Me.Cambio_Empleado.Controls.Add(Me.TtBo_Camb_AmatEmp)
+        Me.Cambio_Empleado.Controls.Add(Me.TtBo_Camb_ApatEmp)
+        Me.Cambio_Empleado.Controls.Add(Me.Lab_Camb_AmatEmp)
+        Me.Cambio_Empleado.Controls.Add(Me.Lab_Camb_ApatEmp)
+        Me.Cambio_Empleado.Controls.Add(Me.TtBo_Camb_NombEmp)
+        Me.Cambio_Empleado.Controls.Add(Me.Lab_Camb_NombEmp)
+        Me.Cambio_Empleado.Location = New System.Drawing.Point(4, 25)
         Me.Cambio_Empleado.Name = "Cambio_Empleado"
-        Me.Cambio_Empleado.Size = New System.Drawing.Size(768, 374)
+        Me.Cambio_Empleado.Size = New System.Drawing.Size(768, 417)
         Me.Cambio_Empleado.TabIndex = 2
         Me.Cambio_Empleado.Text = "Cambios en el empleado"
-        Me.Cambio_Empleado.UseVisualStyleBackColor = True
-        '
-        'Button6
-        '
-        Me.Button6.Location = New System.Drawing.Point(543, 289)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(186, 23)
-        Me.Button6.TabIndex = 21
-        Me.Button6.Text = "Buscar"
-        Me.Button6.UseVisualStyleBackColor = True
-        '
-        'TextBox20
-        '
-        Me.TextBox20.Enabled = False
-        Me.TextBox20.Location = New System.Drawing.Point(180, 289)
-        Me.TextBox20.Name = "TextBox20"
-        Me.TextBox20.Size = New System.Drawing.Size(209, 20)
-        Me.TextBox20.TabIndex = 11
-        '
-        'Label26
-        '
-        Me.Label26.AutoSize = True
-        Me.Label26.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label26.Location = New System.Drawing.Point(39, 293)
-        Me.Label26.Name = "Label26"
-        Me.Label26.Size = New System.Drawing.Size(124, 17)
-        Me.Label26.TabIndex = 86
-        Me.Label26.Text = "Puesto de trabajo:"
-        '
-        'Button4
-        '
-        Me.Button4.Enabled = False
-        Me.Button4.Location = New System.Drawing.Point(638, 318)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(91, 23)
-        Me.Button4.TabIndex = 23
-        Me.Button4.Text = "Limpiar"
-        Me.Button4.UseVisualStyleBackColor = True
-        '
-        'Button5
-        '
-        Me.Button5.Enabled = False
-        Me.Button5.Location = New System.Drawing.Point(543, 318)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(91, 23)
-        Me.Button5.TabIndex = 22
-        Me.Button5.Text = "Guardar"
-        Me.Button5.UseVisualStyleBackColor = True
-        '
-        'TextBox21
-        '
-        Me.TextBox21.Enabled = False
-        Me.TextBox21.Location = New System.Drawing.Point(162, 318)
-        Me.TextBox21.Name = "TextBox21"
-        Me.TextBox21.Size = New System.Drawing.Size(227, 20)
-        Me.TextBox21.TabIndex = 12
-        '
-        'Label27
-        '
-        Me.Label27.AutoSize = True
-        Me.Label27.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label27.Location = New System.Drawing.Point(39, 316)
-        Me.Label27.Name = "Label27"
-        Me.Label27.Size = New System.Drawing.Size(43, 17)
-        Me.Label27.TabIndex = 82
-        Me.Label27.Text = "Calle:"
-        '
-        'Label28
-        '
-        Me.Label28.AutoSize = True
-        Me.Label28.Location = New System.Drawing.Point(40, 268)
-        Me.Label28.Name = "Label28"
-        Me.Label28.Size = New System.Drawing.Size(200, 13)
-        Me.Label28.TabIndex = 81
-        Me.Label28.Text = "* RNE: Registro Nacional de Extranjeros."
-        '
-        'TextBox22
-        '
-        Me.TextBox22.Location = New System.Drawing.Point(162, 245)
-        Me.TextBox22.MaxLength = 18
-        Me.TextBox22.Name = "TextBox22"
-        Me.TextBox22.Size = New System.Drawing.Size(227, 20)
-        Me.TextBox22.TabIndex = 10
-        '
-        'Label29
-        '
-        Me.Label29.AutoSize = True
-        Me.Label29.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label29.Location = New System.Drawing.Point(39, 245)
-        Me.Label29.Name = "Label29"
-        Me.Label29.Size = New System.Drawing.Size(83, 17)
-        Me.Label29.TabIndex = 79
-        Me.Label29.Text = "Curp o RNE"
-        '
-        'TextBox23
-        '
-        Me.TextBox23.Enabled = False
-        Me.TextBox23.Location = New System.Drawing.Point(204, 215)
-        Me.TextBox23.Name = "TextBox23"
-        Me.TextBox23.Size = New System.Drawing.Size(185, 20)
-        Me.TextBox23.TabIndex = 9
-        '
-        'Label30
-        '
-        Me.Label30.AutoSize = True
-        Me.Label30.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label30.Location = New System.Drawing.Point(39, 215)
-        Me.Label30.Name = "Label30"
-        Me.Label30.Size = New System.Drawing.Size(158, 17)
-        Me.Label30.TabIndex = 77
-        Me.Label30.Text = "Nacionalidad de origen:"
-        '
-        'RadioButton5
-        '
-        Me.RadioButton5.AutoSize = True
-        Me.RadioButton5.Enabled = False
-        Me.RadioButton5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.RadioButton5.Location = New System.Drawing.Point(286, 185)
-        Me.RadioButton5.Name = "RadioButton5"
-        Me.RadioButton5.Size = New System.Drawing.Size(102, 21)
-        Me.RadioButton5.TabIndex = 8
-        Me.RadioButton5.TabStop = True
-        Me.RadioButton5.Text = "Extranjera/o"
-        Me.RadioButton5.UseVisualStyleBackColor = True
-        '
-        'RadioButton6
-        '
-        Me.RadioButton6.AutoSize = True
-        Me.RadioButton6.Enabled = False
-        Me.RadioButton6.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.RadioButton6.Location = New System.Drawing.Point(162, 185)
-        Me.RadioButton6.Name = "RadioButton6"
-        Me.RadioButton6.Size = New System.Drawing.Size(97, 21)
-        Me.RadioButton6.TabIndex = 7
-        Me.RadioButton6.TabStop = True
-        Me.RadioButton6.Text = "Mexicana/o"
-        Me.RadioButton6.UseVisualStyleBackColor = True
-        '
-        'Label31
-        '
-        Me.Label31.AutoSize = True
-        Me.Label31.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label31.Location = New System.Drawing.Point(39, 187)
-        Me.Label31.Name = "Label31"
-        Me.Label31.Size = New System.Drawing.Size(94, 17)
-        Me.Label31.TabIndex = 74
-        Me.Label31.Text = "Nacionalidad:"
-        '
-        'TextBox24
-        '
-        Me.TextBox24.Enabled = False
-        Me.TextBox24.Location = New System.Drawing.Point(543, 252)
-        Me.TextBox24.Name = "TextBox24"
-        Me.TextBox24.Size = New System.Drawing.Size(186, 20)
-        Me.TextBox24.TabIndex = 20
-        '
-        'Label32
-        '
-        Me.Label32.AutoSize = True
-        Me.Label32.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label32.Location = New System.Drawing.Point(409, 253)
-        Me.Label32.Name = "Label32"
-        Me.Label32.Size = New System.Drawing.Size(128, 17)
-        Me.Label32.TabIndex = 72
-        Me.Label32.Text = "Correo electrónico:"
-        '
-        'TextBox25
-        '
-        Me.TextBox25.Enabled = False
-        Me.TextBox25.Location = New System.Drawing.Point(520, 139)
-        Me.TextBox25.Name = "TextBox25"
-        Me.TextBox25.Size = New System.Drawing.Size(209, 20)
-        Me.TextBox25.TabIndex = 17
-        '
-        'Label33
-        '
-        Me.Label33.AutoSize = True
-        Me.Label33.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label33.Location = New System.Drawing.Point(409, 139)
-        Me.Label33.Name = "Label33"
-        Me.Label33.Size = New System.Drawing.Size(98, 17)
-        Me.Label33.TabIndex = 70
-        Me.Label33.Text = "Código postal:"
-        '
-        'ComboBox2
-        '
-        Me.ComboBox2.Enabled = False
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(520, 168)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(209, 21)
-        Me.ComboBox2.TabIndex = 18
-        Me.ComboBox2.Text = "Seleccione un estado"
-        '
-        'TextBox26
-        '
-        Me.TextBox26.Enabled = False
-        Me.TextBox26.Location = New System.Drawing.Point(570, 109)
-        Me.TextBox26.Name = "TextBox26"
-        Me.TextBox26.Size = New System.Drawing.Size(159, 20)
-        Me.TextBox26.TabIndex = 16
-        '
-        'TextBox27
-        '
-        Me.TextBox27.Enabled = False
-        Me.TextBox27.Location = New System.Drawing.Point(520, 83)
-        Me.TextBox27.Name = "TextBox27"
-        Me.TextBox27.Size = New System.Drawing.Size(209, 20)
-        Me.TextBox27.TabIndex = 15
-        '
-        'TextBox28
-        '
-        Me.TextBox28.Enabled = False
-        Me.TextBox28.Location = New System.Drawing.Point(520, 49)
-        Me.TextBox28.Name = "TextBox28"
-        Me.TextBox28.Size = New System.Drawing.Size(209, 20)
-        Me.TextBox28.TabIndex = 14
-        '
-        'TextBox29
-        '
-        Me.TextBox29.Enabled = False
-        Me.TextBox29.Location = New System.Drawing.Point(520, 18)
-        Me.TextBox29.Name = "TextBox29"
-        Me.TextBox29.Size = New System.Drawing.Size(209, 20)
-        Me.TextBox29.TabIndex = 13
-        '
-        'Label34
-        '
-        Me.Label34.AutoSize = True
-        Me.Label34.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label34.Location = New System.Drawing.Point(409, 172)
-        Me.Label34.Name = "Label34"
-        Me.Label34.Size = New System.Drawing.Size(56, 17)
-        Me.Label34.TabIndex = 64
-        Me.Label34.Text = "Estado:"
-        '
-        'Label35
-        '
-        Me.Label35.AutoSize = True
-        Me.Label35.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label35.Location = New System.Drawing.Point(409, 109)
-        Me.Label35.Name = "Label35"
-        Me.Label35.Size = New System.Drawing.Size(154, 17)
-        Me.Label35.TabIndex = 63
-        Me.Label35.Text = "Municipio / Delegación:"
-        '
-        'Label36
-        '
-        Me.Label36.AutoSize = True
-        Me.Label36.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label36.Location = New System.Drawing.Point(409, 83)
-        Me.Label36.Name = "Label36"
-        Me.Label36.Size = New System.Drawing.Size(59, 17)
-        Me.Label36.TabIndex = 62
-        Me.Label36.Text = "Colonia:"
-        '
-        'Label37
-        '
-        Me.Label37.AutoSize = True
-        Me.Label37.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label37.Location = New System.Drawing.Point(409, 50)
-        Me.Label37.Name = "Label37"
-        Me.Label37.Size = New System.Drawing.Size(113, 17)
-        Me.Label37.TabIndex = 61
-        Me.Label37.Text = "Número exterior:"
-        '
-        'Label38
-        '
-        Me.Label38.AutoSize = True
-        Me.Label38.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label38.Location = New System.Drawing.Point(409, 18)
-        Me.Label38.Name = "Label38"
-        Me.Label38.Size = New System.Drawing.Size(110, 17)
-        Me.Label38.TabIndex = 60
-        Me.Label38.Text = "Número interior:"
-        '
-        'TextBox30
-        '
-        Me.TextBox30.Enabled = False
-        Me.TextBox30.Location = New System.Drawing.Point(520, 221)
-        Me.TextBox30.Name = "TextBox30"
-        Me.TextBox30.Size = New System.Drawing.Size(209, 20)
-        Me.TextBox30.TabIndex = 20
-        '
-        'Label39
-        '
-        Me.Label39.AutoSize = True
-        Me.Label39.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label39.Location = New System.Drawing.Point(409, 221)
-        Me.Label39.Name = "Label39"
-        Me.Label39.Size = New System.Drawing.Size(90, 17)
-        Me.Label39.TabIndex = 58
-        Me.Label39.Text = "Teléfono fijo:"
-        '
-        'TextBox31
-        '
-        Me.TextBox31.Enabled = False
-        Me.TextBox31.Location = New System.Drawing.Point(520, 195)
-        Me.TextBox31.Name = "TextBox31"
-        Me.TextBox31.Size = New System.Drawing.Size(209, 20)
-        Me.TextBox31.TabIndex = 19
-        '
-        'Label40
-        '
-        Me.Label40.AutoSize = True
-        Me.Label40.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label40.Location = New System.Drawing.Point(409, 198)
-        Me.Label40.Name = "Label40"
-        Me.Label40.Size = New System.Drawing.Size(114, 17)
-        Me.Label40.TabIndex = 56
-        Me.Label40.Text = "Teléfono celular:"
-        '
-        'RadioButton7
-        '
-        Me.RadioButton7.AutoSize = True
-        Me.RadioButton7.Enabled = False
-        Me.RadioButton7.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.RadioButton7.Location = New System.Drawing.Point(299, 156)
-        Me.RadioButton7.Name = "RadioButton7"
-        Me.RadioButton7.Size = New System.Drawing.Size(89, 21)
-        Me.RadioButton7.TabIndex = 6
-        Me.RadioButton7.TabStop = True
-        Me.RadioButton7.Text = "Masculino"
-        Me.RadioButton7.UseVisualStyleBackColor = True
-        '
-        'RadioButton8
-        '
-        Me.RadioButton8.AutoSize = True
-        Me.RadioButton8.Enabled = False
-        Me.RadioButton8.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.RadioButton8.Location = New System.Drawing.Point(162, 156)
-        Me.RadioButton8.Name = "RadioButton8"
-        Me.RadioButton8.Size = New System.Drawing.Size(88, 21)
-        Me.RadioButton8.TabIndex = 5
-        Me.RadioButton8.TabStop = True
-        Me.RadioButton8.Text = "Femenino"
-        Me.RadioButton8.UseVisualStyleBackColor = True
-        '
-        'Label41
-        '
-        Me.Label41.AutoSize = True
-        Me.Label41.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label41.Location = New System.Drawing.Point(39, 156)
-        Me.Label41.Name = "Label41"
-        Me.Label41.Size = New System.Drawing.Size(43, 17)
-        Me.Label41.TabIndex = 53
-        Me.Label41.Text = "Sexo:"
-        '
-        'DateTimePicker2
-        '
-        Me.DateTimePicker2.Enabled = False
-        Me.DateTimePicker2.Location = New System.Drawing.Point(189, 121)
-        Me.DateTimePicker2.Name = "DateTimePicker2"
-        Me.DateTimePicker2.Size = New System.Drawing.Size(200, 20)
-        Me.DateTimePicker2.TabIndex = 4
-        '
-        'Label42
-        '
-        Me.Label42.AutoSize = True
-        Me.Label42.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label42.Location = New System.Drawing.Point(39, 121)
-        Me.Label42.Name = "Label42"
-        Me.Label42.Size = New System.Drawing.Size(143, 17)
-        Me.Label42.TabIndex = 51
-        Me.Label42.Text = "Fecha de nacimiento:"
-        '
-        'TextBox32
-        '
-        Me.TextBox32.Location = New System.Drawing.Point(162, 88)
-        Me.TextBox32.Name = "TextBox32"
-        Me.TextBox32.Size = New System.Drawing.Size(227, 20)
-        Me.TextBox32.TabIndex = 3
-        '
-        'TextBox33
-        '
-        Me.TextBox33.Location = New System.Drawing.Point(162, 56)
-        Me.TextBox33.Name = "TextBox33"
-        Me.TextBox33.Size = New System.Drawing.Size(227, 20)
-        Me.TextBox33.TabIndex = 2
-        '
-        'Label43
-        '
-        Me.Label43.AutoSize = True
-        Me.Label43.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label43.Location = New System.Drawing.Point(39, 88)
-        Me.Label43.Name = "Label43"
-        Me.Label43.Size = New System.Drawing.Size(118, 17)
-        Me.Label43.TabIndex = 48
-        Me.Label43.Text = "Apellido materno:"
-        '
-        'Label44
-        '
-        Me.Label44.AutoSize = True
-        Me.Label44.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label44.Location = New System.Drawing.Point(39, 56)
-        Me.Label44.Name = "Label44"
-        Me.Label44.Size = New System.Drawing.Size(115, 17)
-        Me.Label44.TabIndex = 47
-        Me.Label44.Text = "Apellido paterno:"
-        '
-        'TextBox34
-        '
-        Me.TextBox34.Location = New System.Drawing.Point(162, 18)
-        Me.TextBox34.Name = "TextBox34"
-        Me.TextBox34.Size = New System.Drawing.Size(227, 20)
-        Me.TextBox34.TabIndex = 1
-        '
-        'Label45
-        '
-        Me.Label45.AutoSize = True
-        Me.Label45.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label45.Location = New System.Drawing.Point(39, 18)
-        Me.Label45.Name = "Label45"
-        Me.Label45.Size = New System.Drawing.Size(73, 17)
-        Me.Label45.TabIndex = 45
-        Me.Label45.Text = "Nombre/s:"
+        '
+        'Btn_Camb_Buscar
+        '
+        Me.Btn_Camb_Buscar.Location = New System.Drawing.Point(545, 350)
+        Me.Btn_Camb_Buscar.Name = "Btn_Camb_Buscar"
+        Me.Btn_Camb_Buscar.Size = New System.Drawing.Size(186, 23)
+        Me.Btn_Camb_Buscar.TabIndex = 21
+        Me.Btn_Camb_Buscar.Text = "Buscar"
+        Me.Btn_Camb_Buscar.UseVisualStyleBackColor = True
+        '
+        'TtBo_Camb_PuestoTrabEmp
+        '
+        Me.TtBo_Camb_PuestoTrabEmp.Enabled = False
+        Me.TtBo_Camb_PuestoTrabEmp.Location = New System.Drawing.Point(180, 289)
+        Me.TtBo_Camb_PuestoTrabEmp.Name = "TtBo_Camb_PuestoTrabEmp"
+        Me.TtBo_Camb_PuestoTrabEmp.Size = New System.Drawing.Size(209, 23)
+        Me.TtBo_Camb_PuestoTrabEmp.TabIndex = 11
+        '
+        'Lab_Camb_PuestoTrabEmp
+        '
+        Me.Lab_Camb_PuestoTrabEmp.AutoSize = True
+        Me.Lab_Camb_PuestoTrabEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Camb_PuestoTrabEmp.Location = New System.Drawing.Point(39, 293)
+        Me.Lab_Camb_PuestoTrabEmp.Name = "Lab_Camb_PuestoTrabEmp"
+        Me.Lab_Camb_PuestoTrabEmp.Size = New System.Drawing.Size(124, 17)
+        Me.Lab_Camb_PuestoTrabEmp.TabIndex = 86
+        Me.Lab_Camb_PuestoTrabEmp.Text = "Puesto de trabajo:"
+        '
+        'Btn_Camb_Limpiar
+        '
+        Me.Btn_Camb_Limpiar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Btn_Camb_Limpiar.Enabled = False
+        Me.Btn_Camb_Limpiar.Location = New System.Drawing.Point(640, 379)
+        Me.Btn_Camb_Limpiar.Name = "Btn_Camb_Limpiar"
+        Me.Btn_Camb_Limpiar.Size = New System.Drawing.Size(91, 23)
+        Me.Btn_Camb_Limpiar.TabIndex = 23
+        Me.Btn_Camb_Limpiar.Text = "Limpiar"
+        Me.Btn_Camb_Limpiar.UseVisualStyleBackColor = False
+        '
+        'Btn_Camb_Guardar
+        '
+        Me.Btn_Camb_Guardar.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Btn_Camb_Guardar.Enabled = False
+        Me.Btn_Camb_Guardar.Location = New System.Drawing.Point(545, 379)
+        Me.Btn_Camb_Guardar.Name = "Btn_Camb_Guardar"
+        Me.Btn_Camb_Guardar.Size = New System.Drawing.Size(91, 23)
+        Me.Btn_Camb_Guardar.TabIndex = 22
+        Me.Btn_Camb_Guardar.Text = "Guardar"
+        Me.Btn_Camb_Guardar.UseVisualStyleBackColor = False
+        '
+        'TtBo_Camb_CalleEmp
+        '
+        Me.TtBo_Camb_CalleEmp.Enabled = False
+        Me.TtBo_Camb_CalleEmp.Location = New System.Drawing.Point(522, 47)
+        Me.TtBo_Camb_CalleEmp.Name = "TtBo_Camb_CalleEmp"
+        Me.TtBo_Camb_CalleEmp.Size = New System.Drawing.Size(209, 23)
+        Me.TtBo_Camb_CalleEmp.TabIndex = 12
+        '
+        'Lab_Camb_CalleEmp
+        '
+        Me.Lab_Camb_CalleEmp.AutoSize = True
+        Me.Lab_Camb_CalleEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Camb_CalleEmp.Location = New System.Drawing.Point(411, 50)
+        Me.Lab_Camb_CalleEmp.Name = "Lab_Camb_CalleEmp"
+        Me.Lab_Camb_CalleEmp.Size = New System.Drawing.Size(43, 17)
+        Me.Lab_Camb_CalleEmp.TabIndex = 82
+        Me.Lab_Camb_CalleEmp.Text = "Calle:"
+        '
+        'Lab_Camb_CurpNota
+        '
+        Me.Lab_Camb_CurpNota.AutoSize = True
+        Me.Lab_Camb_CurpNota.Location = New System.Drawing.Point(40, 268)
+        Me.Lab_Camb_CurpNota.Name = "Lab_Camb_CurpNota"
+        Me.Lab_Camb_CurpNota.Size = New System.Drawing.Size(265, 17)
+        Me.Lab_Camb_CurpNota.TabIndex = 81
+        Me.Lab_Camb_CurpNota.Text = "* RNE: Registro Nacional de Extranjeros."
+        '
+        'TtBo_Camb_CurpEmp
+        '
+        Me.TtBo_Camb_CurpEmp.Location = New System.Drawing.Point(162, 245)
+        Me.TtBo_Camb_CurpEmp.MaxLength = 18
+        Me.TtBo_Camb_CurpEmp.Name = "TtBo_Camb_CurpEmp"
+        Me.TtBo_Camb_CurpEmp.Size = New System.Drawing.Size(227, 23)
+        Me.TtBo_Camb_CurpEmp.TabIndex = 10
+        '
+        'Lab_Camb_CurpEmp
+        '
+        Me.Lab_Camb_CurpEmp.AutoSize = True
+        Me.Lab_Camb_CurpEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Camb_CurpEmp.Location = New System.Drawing.Point(39, 245)
+        Me.Lab_Camb_CurpEmp.Name = "Lab_Camb_CurpEmp"
+        Me.Lab_Camb_CurpEmp.Size = New System.Drawing.Size(83, 17)
+        Me.Lab_Camb_CurpEmp.TabIndex = 79
+        Me.Lab_Camb_CurpEmp.Text = "Curp o RNE"
+        '
+        'TtBo_Camb_NaclidadOrigEmp
+        '
+        Me.TtBo_Camb_NaclidadOrigEmp.Enabled = False
+        Me.TtBo_Camb_NaclidadOrigEmp.Location = New System.Drawing.Point(204, 215)
+        Me.TtBo_Camb_NaclidadOrigEmp.Name = "TtBo_Camb_NaclidadOrigEmp"
+        Me.TtBo_Camb_NaclidadOrigEmp.Size = New System.Drawing.Size(185, 23)
+        Me.TtBo_Camb_NaclidadOrigEmp.TabIndex = 9
+        '
+        'Lab_Camb_NaclidadOrigEmp
+        '
+        Me.Lab_Camb_NaclidadOrigEmp.AutoSize = True
+        Me.Lab_Camb_NaclidadOrigEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Camb_NaclidadOrigEmp.Location = New System.Drawing.Point(39, 215)
+        Me.Lab_Camb_NaclidadOrigEmp.Name = "Lab_Camb_NaclidadOrigEmp"
+        Me.Lab_Camb_NaclidadOrigEmp.Size = New System.Drawing.Size(158, 17)
+        Me.Lab_Camb_NaclidadOrigEmp.TabIndex = 77
+        Me.Lab_Camb_NaclidadOrigEmp.Text = "Nacionalidad de origen:"
+        '
+        'RaBo_Camb_NaclidadExtjEmp
+        '
+        Me.RaBo_Camb_NaclidadExtjEmp.AutoSize = True
+        Me.RaBo_Camb_NaclidadExtjEmp.Enabled = False
+        Me.RaBo_Camb_NaclidadExtjEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.RaBo_Camb_NaclidadExtjEmp.Location = New System.Drawing.Point(286, 185)
+        Me.RaBo_Camb_NaclidadExtjEmp.Name = "RaBo_Camb_NaclidadExtjEmp"
+        Me.RaBo_Camb_NaclidadExtjEmp.Size = New System.Drawing.Size(102, 21)
+        Me.RaBo_Camb_NaclidadExtjEmp.TabIndex = 8
+        Me.RaBo_Camb_NaclidadExtjEmp.TabStop = True
+        Me.RaBo_Camb_NaclidadExtjEmp.Text = "Extranjera/o"
+        Me.RaBo_Camb_NaclidadExtjEmp.UseVisualStyleBackColor = True
+        '
+        'RaBo_Camb_NaclidadMexEmp
+        '
+        Me.RaBo_Camb_NaclidadMexEmp.AutoSize = True
+        Me.RaBo_Camb_NaclidadMexEmp.Enabled = False
+        Me.RaBo_Camb_NaclidadMexEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.RaBo_Camb_NaclidadMexEmp.Location = New System.Drawing.Point(162, 185)
+        Me.RaBo_Camb_NaclidadMexEmp.Name = "RaBo_Camb_NaclidadMexEmp"
+        Me.RaBo_Camb_NaclidadMexEmp.Size = New System.Drawing.Size(97, 21)
+        Me.RaBo_Camb_NaclidadMexEmp.TabIndex = 7
+        Me.RaBo_Camb_NaclidadMexEmp.TabStop = True
+        Me.RaBo_Camb_NaclidadMexEmp.Text = "Mexicana/o"
+        Me.RaBo_Camb_NaclidadMexEmp.UseVisualStyleBackColor = True
+        '
+        'Lab_Camb_NaclidadEmp
+        '
+        Me.Lab_Camb_NaclidadEmp.AutoSize = True
+        Me.Lab_Camb_NaclidadEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Camb_NaclidadEmp.Location = New System.Drawing.Point(39, 187)
+        Me.Lab_Camb_NaclidadEmp.Name = "Lab_Camb_NaclidadEmp"
+        Me.Lab_Camb_NaclidadEmp.Size = New System.Drawing.Size(94, 17)
+        Me.Lab_Camb_NaclidadEmp.TabIndex = 74
+        Me.Lab_Camb_NaclidadEmp.Text = "Nacionalidad:"
+        '
+        'TtBo_Camb_EmailEmp
+        '
+        Me.TtBo_Camb_EmailEmp.Enabled = False
+        Me.TtBo_Camb_EmailEmp.Location = New System.Drawing.Point(545, 312)
+        Me.TtBo_Camb_EmailEmp.Name = "TtBo_Camb_EmailEmp"
+        Me.TtBo_Camb_EmailEmp.Size = New System.Drawing.Size(186, 23)
+        Me.TtBo_Camb_EmailEmp.TabIndex = 20
+        '
+        'Lab_Camb_EmailEmp
+        '
+        Me.Lab_Camb_EmailEmp.AutoSize = True
+        Me.Lab_Camb_EmailEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Camb_EmailEmp.Location = New System.Drawing.Point(411, 313)
+        Me.Lab_Camb_EmailEmp.Name = "Lab_Camb_EmailEmp"
+        Me.Lab_Camb_EmailEmp.Size = New System.Drawing.Size(128, 17)
+        Me.Lab_Camb_EmailEmp.TabIndex = 72
+        Me.Lab_Camb_EmailEmp.Text = "Correo electrónico:"
+        '
+        'TtBo_Camb_CpEmp
+        '
+        Me.TtBo_Camb_CpEmp.Enabled = False
+        Me.TtBo_Camb_CpEmp.Location = New System.Drawing.Point(522, 192)
+        Me.TtBo_Camb_CpEmp.Name = "TtBo_Camb_CpEmp"
+        Me.TtBo_Camb_CpEmp.Size = New System.Drawing.Size(209, 23)
+        Me.TtBo_Camb_CpEmp.TabIndex = 17
+        '
+        'Lab_Camb_CpEmp
+        '
+        Me.Lab_Camb_CpEmp.AutoSize = True
+        Me.Lab_Camb_CpEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Camb_CpEmp.Location = New System.Drawing.Point(411, 192)
+        Me.Lab_Camb_CpEmp.Name = "Lab_Camb_CpEmp"
+        Me.Lab_Camb_CpEmp.Size = New System.Drawing.Size(98, 17)
+        Me.Lab_Camb_CpEmp.TabIndex = 70
+        Me.Lab_Camb_CpEmp.Text = "Código postal:"
+        '
+        'CoBo_Camb_EstadoEmp
+        '
+        Me.CoBo_Camb_EstadoEmp.Enabled = False
+        Me.CoBo_Camb_EstadoEmp.FormattingEnabled = True
+        Me.CoBo_Camb_EstadoEmp.Location = New System.Drawing.Point(522, 221)
+        Me.CoBo_Camb_EstadoEmp.Name = "CoBo_Camb_EstadoEmp"
+        Me.CoBo_Camb_EstadoEmp.Size = New System.Drawing.Size(209, 24)
+        Me.CoBo_Camb_EstadoEmp.TabIndex = 18
+        Me.CoBo_Camb_EstadoEmp.Text = "Seleccione un estado"
+        '
+        'TtBo_Camb_MunicipioEmp
+        '
+        Me.TtBo_Camb_MunicipioEmp.Enabled = False
+        Me.TtBo_Camb_MunicipioEmp.Location = New System.Drawing.Point(572, 163)
+        Me.TtBo_Camb_MunicipioEmp.Name = "TtBo_Camb_MunicipioEmp"
+        Me.TtBo_Camb_MunicipioEmp.Size = New System.Drawing.Size(159, 23)
+        Me.TtBo_Camb_MunicipioEmp.TabIndex = 16
+        '
+        'TtBo_Camb_ColoniaEmp
+        '
+        Me.TtBo_Camb_ColoniaEmp.Enabled = False
+        Me.TtBo_Camb_ColoniaEmp.Location = New System.Drawing.Point(522, 134)
+        Me.TtBo_Camb_ColoniaEmp.Name = "TtBo_Camb_ColoniaEmp"
+        Me.TtBo_Camb_ColoniaEmp.Size = New System.Drawing.Size(209, 23)
+        Me.TtBo_Camb_ColoniaEmp.TabIndex = 15
+        '
+        'TtBo_Camb_NumExtEmp
+        '
+        Me.TtBo_Camb_NumExtEmp.Enabled = False
+        Me.TtBo_Camb_NumExtEmp.Location = New System.Drawing.Point(522, 105)
+        Me.TtBo_Camb_NumExtEmp.Name = "TtBo_Camb_NumExtEmp"
+        Me.TtBo_Camb_NumExtEmp.Size = New System.Drawing.Size(209, 23)
+        Me.TtBo_Camb_NumExtEmp.TabIndex = 14
+        '
+        'TtBo_Camb_NumIntEmp
+        '
+        Me.TtBo_Camb_NumIntEmp.Enabled = False
+        Me.TtBo_Camb_NumIntEmp.Location = New System.Drawing.Point(522, 76)
+        Me.TtBo_Camb_NumIntEmp.Name = "TtBo_Camb_NumIntEmp"
+        Me.TtBo_Camb_NumIntEmp.Size = New System.Drawing.Size(209, 23)
+        Me.TtBo_Camb_NumIntEmp.TabIndex = 13
+        '
+        'Lab_Camb_EstadoEmp
+        '
+        Me.Lab_Camb_EstadoEmp.AutoSize = True
+        Me.Lab_Camb_EstadoEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Camb_EstadoEmp.Location = New System.Drawing.Point(411, 225)
+        Me.Lab_Camb_EstadoEmp.Name = "Lab_Camb_EstadoEmp"
+        Me.Lab_Camb_EstadoEmp.Size = New System.Drawing.Size(56, 17)
+        Me.Lab_Camb_EstadoEmp.TabIndex = 64
+        Me.Lab_Camb_EstadoEmp.Text = "Estado:"
+        '
+        'Lab_Camb_MunicipioEmp
+        '
+        Me.Lab_Camb_MunicipioEmp.AutoSize = True
+        Me.Lab_Camb_MunicipioEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Camb_MunicipioEmp.Location = New System.Drawing.Point(411, 163)
+        Me.Lab_Camb_MunicipioEmp.Name = "Lab_Camb_MunicipioEmp"
+        Me.Lab_Camb_MunicipioEmp.Size = New System.Drawing.Size(154, 17)
+        Me.Lab_Camb_MunicipioEmp.TabIndex = 63
+        Me.Lab_Camb_MunicipioEmp.Text = "Municipio / Delegación:"
+        '
+        'Lab_Camb_ColoniaEmp
+        '
+        Me.Lab_Camb_ColoniaEmp.AutoSize = True
+        Me.Lab_Camb_ColoniaEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Camb_ColoniaEmp.Location = New System.Drawing.Point(414, 137)
+        Me.Lab_Camb_ColoniaEmp.Name = "Lab_Camb_ColoniaEmp"
+        Me.Lab_Camb_ColoniaEmp.Size = New System.Drawing.Size(59, 17)
+        Me.Lab_Camb_ColoniaEmp.TabIndex = 62
+        Me.Lab_Camb_ColoniaEmp.Text = "Colonia:"
+        '
+        'Lab_Camb_NumExtEmp
+        '
+        Me.Lab_Camb_NumExtEmp.AutoSize = True
+        Me.Lab_Camb_NumExtEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Camb_NumExtEmp.Location = New System.Drawing.Point(411, 108)
+        Me.Lab_Camb_NumExtEmp.Name = "Lab_Camb_NumExtEmp"
+        Me.Lab_Camb_NumExtEmp.Size = New System.Drawing.Size(113, 17)
+        Me.Lab_Camb_NumExtEmp.TabIndex = 61
+        Me.Lab_Camb_NumExtEmp.Text = "Número exterior:"
+        '
+        'Lab_Camb_NumIntEmp
+        '
+        Me.Lab_Camb_NumIntEmp.AutoSize = True
+        Me.Lab_Camb_NumIntEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Camb_NumIntEmp.Location = New System.Drawing.Point(411, 79)
+        Me.Lab_Camb_NumIntEmp.Name = "Lab_Camb_NumIntEmp"
+        Me.Lab_Camb_NumIntEmp.Size = New System.Drawing.Size(110, 17)
+        Me.Lab_Camb_NumIntEmp.TabIndex = 60
+        Me.Lab_Camb_NumIntEmp.Text = "Número interior:"
+        '
+        'TtBo_Camb_TelefFijoEmp
+        '
+        Me.TtBo_Camb_TelefFijoEmp.Enabled = False
+        Me.TtBo_Camb_TelefFijoEmp.Location = New System.Drawing.Point(522, 280)
+        Me.TtBo_Camb_TelefFijoEmp.Name = "TtBo_Camb_TelefFijoEmp"
+        Me.TtBo_Camb_TelefFijoEmp.Size = New System.Drawing.Size(209, 23)
+        Me.TtBo_Camb_TelefFijoEmp.TabIndex = 20
+        '
+        'Lab_Camb_TelefFijoEmp
+        '
+        Me.Lab_Camb_TelefFijoEmp.AutoSize = True
+        Me.Lab_Camb_TelefFijoEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Camb_TelefFijoEmp.Location = New System.Drawing.Point(411, 280)
+        Me.Lab_Camb_TelefFijoEmp.Name = "Lab_Camb_TelefFijoEmp"
+        Me.Lab_Camb_TelefFijoEmp.Size = New System.Drawing.Size(90, 17)
+        Me.Lab_Camb_TelefFijoEmp.TabIndex = 58
+        Me.Lab_Camb_TelefFijoEmp.Text = "Teléfono fijo:"
+        '
+        'TtBo_Camb_TelefMovilEmp
+        '
+        Me.TtBo_Camb_TelefMovilEmp.Enabled = False
+        Me.TtBo_Camb_TelefMovilEmp.Location = New System.Drawing.Point(522, 251)
+        Me.TtBo_Camb_TelefMovilEmp.Name = "TtBo_Camb_TelefMovilEmp"
+        Me.TtBo_Camb_TelefMovilEmp.Size = New System.Drawing.Size(209, 23)
+        Me.TtBo_Camb_TelefMovilEmp.TabIndex = 19
+        '
+        'Lab_Camb_TelefMovilEmp
+        '
+        Me.Lab_Camb_TelefMovilEmp.AutoSize = True
+        Me.Lab_Camb_TelefMovilEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Camb_TelefMovilEmp.Location = New System.Drawing.Point(411, 254)
+        Me.Lab_Camb_TelefMovilEmp.Name = "Lab_Camb_TelefMovilEmp"
+        Me.Lab_Camb_TelefMovilEmp.Size = New System.Drawing.Size(114, 17)
+        Me.Lab_Camb_TelefMovilEmp.TabIndex = 56
+        Me.Lab_Camb_TelefMovilEmp.Text = "Teléfono celular:"
+        '
+        'RaBo_Camb_SMasculinoEmp
+        '
+        Me.RaBo_Camb_SMasculinoEmp.AutoSize = True
+        Me.RaBo_Camb_SMasculinoEmp.Enabled = False
+        Me.RaBo_Camb_SMasculinoEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.RaBo_Camb_SMasculinoEmp.Location = New System.Drawing.Point(299, 156)
+        Me.RaBo_Camb_SMasculinoEmp.Name = "RaBo_Camb_SMasculinoEmp"
+        Me.RaBo_Camb_SMasculinoEmp.Size = New System.Drawing.Size(89, 21)
+        Me.RaBo_Camb_SMasculinoEmp.TabIndex = 6
+        Me.RaBo_Camb_SMasculinoEmp.TabStop = True
+        Me.RaBo_Camb_SMasculinoEmp.Text = "Masculino"
+        Me.RaBo_Camb_SMasculinoEmp.UseVisualStyleBackColor = True
+        '
+        'RaBo_Camb_SFemeninoEmp
+        '
+        Me.RaBo_Camb_SFemeninoEmp.AutoSize = True
+        Me.RaBo_Camb_SFemeninoEmp.Enabled = False
+        Me.RaBo_Camb_SFemeninoEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.RaBo_Camb_SFemeninoEmp.Location = New System.Drawing.Point(162, 156)
+        Me.RaBo_Camb_SFemeninoEmp.Name = "RaBo_Camb_SFemeninoEmp"
+        Me.RaBo_Camb_SFemeninoEmp.Size = New System.Drawing.Size(88, 21)
+        Me.RaBo_Camb_SFemeninoEmp.TabIndex = 5
+        Me.RaBo_Camb_SFemeninoEmp.TabStop = True
+        Me.RaBo_Camb_SFemeninoEmp.Text = "Femenino"
+        Me.RaBo_Camb_SFemeninoEmp.UseVisualStyleBackColor = True
+        '
+        'Lab_Camb_SexoEmp
+        '
+        Me.Lab_Camb_SexoEmp.AutoSize = True
+        Me.Lab_Camb_SexoEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Camb_SexoEmp.Location = New System.Drawing.Point(39, 156)
+        Me.Lab_Camb_SexoEmp.Name = "Lab_Camb_SexoEmp"
+        Me.Lab_Camb_SexoEmp.Size = New System.Drawing.Size(43, 17)
+        Me.Lab_Camb_SexoEmp.TabIndex = 53
+        Me.Lab_Camb_SexoEmp.Text = "Sexo:"
+        '
+        'DaTiPi_Camb_FechNacEmp
+        '
+        Me.DaTiPi_Camb_FechNacEmp.Enabled = False
+        Me.DaTiPi_Camb_FechNacEmp.Location = New System.Drawing.Point(189, 121)
+        Me.DaTiPi_Camb_FechNacEmp.MaxDate = New Date(2021, 12, 15, 0, 0, 0, 0)
+        Me.DaTiPi_Camb_FechNacEmp.MinDate = New Date(1920, 1, 1, 0, 0, 0, 0)
+        Me.DaTiPi_Camb_FechNacEmp.Name = "DaTiPi_Camb_FechNacEmp"
+        Me.DaTiPi_Camb_FechNacEmp.Size = New System.Drawing.Size(200, 23)
+        Me.DaTiPi_Camb_FechNacEmp.TabIndex = 4
+        Me.DaTiPi_Camb_FechNacEmp.Value = New Date(2021, 12, 15, 0, 0, 0, 0)
+        '
+        'Lab_Camb_FechNacEmp
+        '
+        Me.Lab_Camb_FechNacEmp.AutoSize = True
+        Me.Lab_Camb_FechNacEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Camb_FechNacEmp.Location = New System.Drawing.Point(39, 121)
+        Me.Lab_Camb_FechNacEmp.Name = "Lab_Camb_FechNacEmp"
+        Me.Lab_Camb_FechNacEmp.Size = New System.Drawing.Size(143, 17)
+        Me.Lab_Camb_FechNacEmp.TabIndex = 51
+        Me.Lab_Camb_FechNacEmp.Text = "Fecha de nacimiento:"
+        '
+        'TtBo_Camb_AmatEmp
+        '
+        Me.TtBo_Camb_AmatEmp.Location = New System.Drawing.Point(162, 88)
+        Me.TtBo_Camb_AmatEmp.Name = "TtBo_Camb_AmatEmp"
+        Me.TtBo_Camb_AmatEmp.Size = New System.Drawing.Size(227, 23)
+        Me.TtBo_Camb_AmatEmp.TabIndex = 3
+        '
+        'TtBo_Camb_ApatEmp
+        '
+        Me.TtBo_Camb_ApatEmp.Location = New System.Drawing.Point(162, 56)
+        Me.TtBo_Camb_ApatEmp.Name = "TtBo_Camb_ApatEmp"
+        Me.TtBo_Camb_ApatEmp.Size = New System.Drawing.Size(227, 23)
+        Me.TtBo_Camb_ApatEmp.TabIndex = 2
+        '
+        'Lab_Camb_AmatEmp
+        '
+        Me.Lab_Camb_AmatEmp.AutoSize = True
+        Me.Lab_Camb_AmatEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Camb_AmatEmp.Location = New System.Drawing.Point(39, 88)
+        Me.Lab_Camb_AmatEmp.Name = "Lab_Camb_AmatEmp"
+        Me.Lab_Camb_AmatEmp.Size = New System.Drawing.Size(118, 17)
+        Me.Lab_Camb_AmatEmp.TabIndex = 48
+        Me.Lab_Camb_AmatEmp.Text = "Apellido materno:"
+        '
+        'Lab_Camb_ApatEmp
+        '
+        Me.Lab_Camb_ApatEmp.AutoSize = True
+        Me.Lab_Camb_ApatEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Camb_ApatEmp.Location = New System.Drawing.Point(39, 56)
+        Me.Lab_Camb_ApatEmp.Name = "Lab_Camb_ApatEmp"
+        Me.Lab_Camb_ApatEmp.Size = New System.Drawing.Size(115, 17)
+        Me.Lab_Camb_ApatEmp.TabIndex = 47
+        Me.Lab_Camb_ApatEmp.Text = "Apellido paterno:"
+        '
+        'TtBo_Camb_NombEmp
+        '
+        Me.TtBo_Camb_NombEmp.Location = New System.Drawing.Point(162, 18)
+        Me.TtBo_Camb_NombEmp.Name = "TtBo_Camb_NombEmp"
+        Me.TtBo_Camb_NombEmp.Size = New System.Drawing.Size(227, 23)
+        Me.TtBo_Camb_NombEmp.TabIndex = 1
+        '
+        'Lab_Camb_NombEmp
+        '
+        Me.Lab_Camb_NombEmp.AutoSize = True
+        Me.Lab_Camb_NombEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Camb_NombEmp.Location = New System.Drawing.Point(39, 18)
+        Me.Lab_Camb_NombEmp.Name = "Lab_Camb_NombEmp"
+        Me.Lab_Camb_NombEmp.Size = New System.Drawing.Size(73, 17)
+        Me.Lab_Camb_NombEmp.TabIndex = 45
+        Me.Lab_Camb_NombEmp.Text = "Nombre/s:"
         '
         'Baja_Empleado
         '
-        Me.Baja_Empleado.Controls.Add(Me.DataGridView2)
-        Me.Baja_Empleado.Controls.Add(Me.Button8)
-        Me.Baja_Empleado.Controls.Add(Me.Button7)
-        Me.Baja_Empleado.Controls.Add(Me.Label46)
-        Me.Baja_Empleado.Controls.Add(Me.TextBox35)
-        Me.Baja_Empleado.Controls.Add(Me.Label47)
-        Me.Baja_Empleado.Controls.Add(Me.TextBox36)
-        Me.Baja_Empleado.Controls.Add(Me.TextBox37)
-        Me.Baja_Empleado.Controls.Add(Me.Label48)
-        Me.Baja_Empleado.Controls.Add(Me.Label49)
-        Me.Baja_Empleado.Controls.Add(Me.TextBox38)
-        Me.Baja_Empleado.Controls.Add(Me.Label50)
-        Me.Baja_Empleado.Location = New System.Drawing.Point(4, 22)
+        Me.Baja_Empleado.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Baja_Empleado.Controls.Add(Me.DGV_Baja_ListaEmp)
+        Me.Baja_Empleado.Controls.Add(Me.Btn_Baja_Eliminar)
+        Me.Baja_Empleado.Controls.Add(Me.Btn_Baja_Buscar)
+        Me.Baja_Empleado.Controls.Add(Me.Lab_Baja_CurpNota)
+        Me.Baja_Empleado.Controls.Add(Me.TtBo_Baja_CurpEmp)
+        Me.Baja_Empleado.Controls.Add(Me.Lab_Baja_CurpEmp)
+        Me.Baja_Empleado.Controls.Add(Me.TtBo_Baja_AmatEmp)
+        Me.Baja_Empleado.Controls.Add(Me.TtBo_Baja_ApatEmp)
+        Me.Baja_Empleado.Controls.Add(Me.Lab_Baja_AmatEmp)
+        Me.Baja_Empleado.Controls.Add(Me.Lab_Baja_ApatEmp)
+        Me.Baja_Empleado.Controls.Add(Me.TtBo_Baja_NombEmp)
+        Me.Baja_Empleado.Controls.Add(Me.Lab_Baja_NombEmp)
+        Me.Baja_Empleado.Location = New System.Drawing.Point(4, 25)
         Me.Baja_Empleado.Name = "Baja_Empleado"
         Me.Baja_Empleado.Padding = New System.Windows.Forms.Padding(3)
-        Me.Baja_Empleado.Size = New System.Drawing.Size(768, 374)
+        Me.Baja_Empleado.Size = New System.Drawing.Size(768, 377)
         Me.Baja_Empleado.TabIndex = 1
         Me.Baja_Empleado.Text = "Baja de empleado"
-        Me.Baja_Empleado.UseVisualStyleBackColor = True
         '
-        'DataGridView2
+        'DGV_Baja_ListaEmp
         '
-        Me.DataGridView2.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView2.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7})
-        Me.DataGridView2.GridColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.DataGridView2.Location = New System.Drawing.Point(6, 209)
-        Me.DataGridView2.Name = "DataGridView2"
-        Me.DataGridView2.Size = New System.Drawing.Size(743, 141)
-        Me.DataGridView2.TabIndex = 0
+        Me.DGV_Baja_ListaEmp.BackgroundColor = System.Drawing.Color.Silver
+        Me.DGV_Baja_ListaEmp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGV_Baja_ListaEmp.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7})
+        Me.DGV_Baja_ListaEmp.GridColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.DGV_Baja_ListaEmp.Location = New System.Drawing.Point(6, 209)
+        Me.DGV_Baja_ListaEmp.Name = "DGV_Baja_ListaEmp"
+        Me.DGV_Baja_ListaEmp.Size = New System.Drawing.Size(743, 141)
+        Me.DGV_Baja_ListaEmp.TabIndex = 0
         '
         'DataGridViewTextBoxColumn1
         '
@@ -1515,111 +1561,209 @@ Partial Class Form_Empleados
         Me.DataGridViewTextBoxColumn7.MaxInputLength = 250
         Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
         '
-        'Button8
+        'Btn_Baja_Eliminar
         '
-        Me.Button8.Enabled = False
-        Me.Button8.Location = New System.Drawing.Point(271, 172)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(100, 23)
-        Me.Button8.TabIndex = 6
-        Me.Button8.Text = "Eliminar"
-        Me.Button8.UseVisualStyleBackColor = True
+        Me.Btn_Baja_Eliminar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Btn_Baja_Eliminar.Enabled = False
+        Me.Btn_Baja_Eliminar.Location = New System.Drawing.Point(530, 164)
+        Me.Btn_Baja_Eliminar.Name = "Btn_Baja_Eliminar"
+        Me.Btn_Baja_Eliminar.Size = New System.Drawing.Size(100, 23)
+        Me.Btn_Baja_Eliminar.TabIndex = 6
+        Me.Btn_Baja_Eliminar.Text = "Eliminar"
+        Me.Btn_Baja_Eliminar.UseVisualStyleBackColor = False
         '
-        'Button7
+        'Btn_Baja_Buscar
         '
-        Me.Button7.Location = New System.Drawing.Point(144, 172)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(100, 23)
-        Me.Button7.TabIndex = 5
-        Me.Button7.Text = "Buscar"
-        Me.Button7.UseVisualStyleBackColor = True
+        Me.Btn_Baja_Buscar.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Btn_Baja_Buscar.Location = New System.Drawing.Point(403, 164)
+        Me.Btn_Baja_Buscar.Name = "Btn_Baja_Buscar"
+        Me.Btn_Baja_Buscar.Size = New System.Drawing.Size(100, 23)
+        Me.Btn_Baja_Buscar.TabIndex = 5
+        Me.Btn_Baja_Buscar.Text = "Buscar"
+        Me.Btn_Baja_Buscar.UseVisualStyleBackColor = False
         '
-        'Label46
+        'Lab_Baja_CurpNota
         '
-        Me.Label46.AutoSize = True
-        Me.Label46.Location = New System.Drawing.Point(22, 137)
-        Me.Label46.Name = "Label46"
-        Me.Label46.Size = New System.Drawing.Size(200, 13)
-        Me.Label46.TabIndex = 50
-        Me.Label46.Text = "* RNE: Registro Nacional de Extranjeros."
+        Me.Lab_Baja_CurpNota.AutoSize = True
+        Me.Lab_Baja_CurpNota.Location = New System.Drawing.Point(281, 144)
+        Me.Lab_Baja_CurpNota.Name = "Lab_Baja_CurpNota"
+        Me.Lab_Baja_CurpNota.Size = New System.Drawing.Size(265, 17)
+        Me.Lab_Baja_CurpNota.TabIndex = 50
+        Me.Lab_Baja_CurpNota.Text = "* RNE: Registro Nacional de Extranjeros."
         '
-        'TextBox35
+        'TtBo_Baja_CurpEmp
         '
-        Me.TextBox35.Location = New System.Drawing.Point(144, 114)
-        Me.TextBox35.MaxLength = 18
-        Me.TextBox35.Name = "TextBox35"
-        Me.TextBox35.Size = New System.Drawing.Size(227, 20)
-        Me.TextBox35.TabIndex = 4
+        Me.TtBo_Baja_CurpEmp.Location = New System.Drawing.Point(403, 121)
+        Me.TtBo_Baja_CurpEmp.MaxLength = 18
+        Me.TtBo_Baja_CurpEmp.Name = "TtBo_Baja_CurpEmp"
+        Me.TtBo_Baja_CurpEmp.Size = New System.Drawing.Size(227, 23)
+        Me.TtBo_Baja_CurpEmp.TabIndex = 4
         '
-        'Label47
+        'Lab_Baja_CurpEmp
         '
-        Me.Label47.AutoSize = True
-        Me.Label47.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label47.Location = New System.Drawing.Point(21, 114)
-        Me.Label47.Name = "Label47"
-        Me.Label47.Size = New System.Drawing.Size(91, 17)
-        Me.Label47.TabIndex = 48
-        Me.Label47.Text = "CURP o RNE"
+        Me.Lab_Baja_CurpEmp.AutoSize = True
+        Me.Lab_Baja_CurpEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Baja_CurpEmp.Location = New System.Drawing.Point(280, 121)
+        Me.Lab_Baja_CurpEmp.Name = "Lab_Baja_CurpEmp"
+        Me.Lab_Baja_CurpEmp.Size = New System.Drawing.Size(91, 17)
+        Me.Lab_Baja_CurpEmp.TabIndex = 48
+        Me.Lab_Baja_CurpEmp.Text = "CURP o RNE"
         '
-        'TextBox36
+        'TtBo_Baja_AmatEmp
         '
-        Me.TextBox36.Location = New System.Drawing.Point(144, 83)
-        Me.TextBox36.Name = "TextBox36"
-        Me.TextBox36.Size = New System.Drawing.Size(227, 20)
-        Me.TextBox36.TabIndex = 3
+        Me.TtBo_Baja_AmatEmp.Location = New System.Drawing.Point(403, 90)
+        Me.TtBo_Baja_AmatEmp.Name = "TtBo_Baja_AmatEmp"
+        Me.TtBo_Baja_AmatEmp.Size = New System.Drawing.Size(227, 23)
+        Me.TtBo_Baja_AmatEmp.TabIndex = 3
         '
-        'TextBox37
+        'TtBo_Baja_ApatEmp
         '
-        Me.TextBox37.Location = New System.Drawing.Point(144, 51)
-        Me.TextBox37.Name = "TextBox37"
-        Me.TextBox37.Size = New System.Drawing.Size(227, 20)
-        Me.TextBox37.TabIndex = 2
+        Me.TtBo_Baja_ApatEmp.Location = New System.Drawing.Point(403, 58)
+        Me.TtBo_Baja_ApatEmp.Name = "TtBo_Baja_ApatEmp"
+        Me.TtBo_Baja_ApatEmp.Size = New System.Drawing.Size(227, 23)
+        Me.TtBo_Baja_ApatEmp.TabIndex = 2
         '
-        'Label48
+        'Lab_Baja_AmatEmp
         '
-        Me.Label48.AutoSize = True
-        Me.Label48.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label48.Location = New System.Drawing.Point(21, 83)
-        Me.Label48.Name = "Label48"
-        Me.Label48.Size = New System.Drawing.Size(118, 17)
-        Me.Label48.TabIndex = 45
-        Me.Label48.Text = "Apellido materno:"
+        Me.Lab_Baja_AmatEmp.AutoSize = True
+        Me.Lab_Baja_AmatEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Baja_AmatEmp.Location = New System.Drawing.Point(280, 90)
+        Me.Lab_Baja_AmatEmp.Name = "Lab_Baja_AmatEmp"
+        Me.Lab_Baja_AmatEmp.Size = New System.Drawing.Size(118, 17)
+        Me.Lab_Baja_AmatEmp.TabIndex = 45
+        Me.Lab_Baja_AmatEmp.Text = "Apellido materno:"
         '
-        'Label49
+        'Lab_Baja_ApatEmp
         '
-        Me.Label49.AutoSize = True
-        Me.Label49.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label49.Location = New System.Drawing.Point(21, 51)
-        Me.Label49.Name = "Label49"
-        Me.Label49.Size = New System.Drawing.Size(115, 17)
-        Me.Label49.TabIndex = 44
-        Me.Label49.Text = "Apellido paterno:"
+        Me.Lab_Baja_ApatEmp.AutoSize = True
+        Me.Lab_Baja_ApatEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Baja_ApatEmp.Location = New System.Drawing.Point(280, 58)
+        Me.Lab_Baja_ApatEmp.Name = "Lab_Baja_ApatEmp"
+        Me.Lab_Baja_ApatEmp.Size = New System.Drawing.Size(115, 17)
+        Me.Lab_Baja_ApatEmp.TabIndex = 44
+        Me.Lab_Baja_ApatEmp.Text = "Apellido paterno:"
         '
-        'TextBox38
+        'TtBo_Baja_NombEmp
         '
-        Me.TextBox38.Location = New System.Drawing.Point(144, 13)
-        Me.TextBox38.Name = "TextBox38"
-        Me.TextBox38.Size = New System.Drawing.Size(227, 20)
-        Me.TextBox38.TabIndex = 1
+        Me.TtBo_Baja_NombEmp.Location = New System.Drawing.Point(403, 20)
+        Me.TtBo_Baja_NombEmp.Name = "TtBo_Baja_NombEmp"
+        Me.TtBo_Baja_NombEmp.Size = New System.Drawing.Size(227, 23)
+        Me.TtBo_Baja_NombEmp.TabIndex = 1
         '
-        'Label50
+        'Lab_Baja_NombEmp
         '
-        Me.Label50.AutoSize = True
-        Me.Label50.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label50.Location = New System.Drawing.Point(21, 13)
-        Me.Label50.Name = "Label50"
-        Me.Label50.Size = New System.Drawing.Size(73, 17)
-        Me.Label50.TabIndex = 42
-        Me.Label50.Text = "Nombre/s:"
+        Me.Lab_Baja_NombEmp.AutoSize = True
+        Me.Lab_Baja_NombEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Baja_NombEmp.Location = New System.Drawing.Point(280, 20)
+        Me.Lab_Baja_NombEmp.Name = "Lab_Baja_NombEmp"
+        Me.Lab_Baja_NombEmp.Size = New System.Drawing.Size(73, 17)
+        Me.Lab_Baja_NombEmp.TabIndex = 42
+        Me.Lab_Baja_NombEmp.Text = "Nombre/s:"
+        '
+        'Lab_Camb_HrSalEmp
+        '
+        Me.Lab_Camb_HrSalEmp.AutoSize = True
+        Me.Lab_Camb_HrSalEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Camb_HrSalEmp.Location = New System.Drawing.Point(40, 380)
+        Me.Lab_Camb_HrSalEmp.Name = "Lab_Camb_HrSalEmp"
+        Me.Lab_Camb_HrSalEmp.Size = New System.Drawing.Size(120, 17)
+        Me.Lab_Camb_HrSalEmp.TabIndex = 96
+        Me.Lab_Camb_HrSalEmp.Text = "Horario de salida:"
+        '
+        'MaskedTextBox1
+        '
+        Me.MaskedTextBox1.Location = New System.Drawing.Point(522, 18)
+        Me.MaskedTextBox1.Mask = "99999.99"
+        Me.MaskedTextBox1.Name = "MaskedTextBox1"
+        Me.MaskedTextBox1.Size = New System.Drawing.Size(209, 23)
+        Me.MaskedTextBox1.TabIndex = 92
+        Me.MaskedTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Lab_Camb_SueldoEmp
+        '
+        Me.Lab_Camb_SueldoEmp.AutoSize = True
+        Me.Lab_Camb_SueldoEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Camb_SueldoEmp.Location = New System.Drawing.Point(414, 24)
+        Me.Lab_Camb_SueldoEmp.Name = "Lab_Camb_SueldoEmp"
+        Me.Lab_Camb_SueldoEmp.Size = New System.Drawing.Size(56, 17)
+        Me.Lab_Camb_SueldoEmp.TabIndex = 95
+        Me.Lab_Camb_SueldoEmp.Text = "Sueldo:"
+        '
+        'CoBo_Camb_HrSalEmp
+        '
+        Me.CoBo_Camb_HrSalEmp.FormattingEnabled = True
+        Me.CoBo_Camb_HrSalEmp.Items.AddRange(New Object() {"6:00", "7:00", "8:00", "9:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00", "18:00", "19:00", "20:00", "21:00", "22:00", "23:00", "00:00"})
+        Me.CoBo_Camb_HrSalEmp.Location = New System.Drawing.Point(180, 377)
+        Me.CoBo_Camb_HrSalEmp.Name = "CoBo_Camb_HrSalEmp"
+        Me.CoBo_Camb_HrSalEmp.Size = New System.Drawing.Size(61, 24)
+        Me.CoBo_Camb_HrSalEmp.TabIndex = 90
+        '
+        'CoBo_Camb_MeridianoSalEmp
+        '
+        Me.CoBo_Camb_MeridianoSalEmp.FormattingEnabled = True
+        Me.CoBo_Camb_MeridianoSalEmp.Items.AddRange(New Object() {"Am", "Pm"})
+        Me.CoBo_Camb_MeridianoSalEmp.Location = New System.Drawing.Point(278, 376)
+        Me.CoBo_Camb_MeridianoSalEmp.Name = "CoBo_Camb_MeridianoSalEmp"
+        Me.CoBo_Camb_MeridianoSalEmp.Size = New System.Drawing.Size(60, 24)
+        Me.CoBo_Camb_MeridianoSalEmp.TabIndex = 91
+        '
+        'CoBo_Camb_MeridianoEntEmp
+        '
+        Me.CoBo_Camb_MeridianoEntEmp.FormattingEnabled = True
+        Me.CoBo_Camb_MeridianoEntEmp.Items.AddRange(New Object() {"Am", "Pm"})
+        Me.CoBo_Camb_MeridianoEntEmp.Location = New System.Drawing.Point(278, 349)
+        Me.CoBo_Camb_MeridianoEntEmp.Name = "CoBo_Camb_MeridianoEntEmp"
+        Me.CoBo_Camb_MeridianoEntEmp.Size = New System.Drawing.Size(60, 24)
+        Me.CoBo_Camb_MeridianoEntEmp.TabIndex = 89
+        '
+        'CoBo_Camb_HrEntEmp
+        '
+        Me.CoBo_Camb_HrEntEmp.FormattingEnabled = True
+        Me.CoBo_Camb_HrEntEmp.Items.AddRange(New Object() {"6:00", "7:00", "8:00", "9:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00", "18:00", "19:00", "20:00", "21:00", "22:00", "23:00", "00:00"})
+        Me.CoBo_Camb_HrEntEmp.Location = New System.Drawing.Point(180, 348)
+        Me.CoBo_Camb_HrEntEmp.Name = "CoBo_Camb_HrEntEmp"
+        Me.CoBo_Camb_HrEntEmp.Size = New System.Drawing.Size(61, 24)
+        Me.CoBo_Camb_HrEntEmp.TabIndex = 88
+        '
+        'Lab_Camb_HrEntEmp
+        '
+        Me.Lab_Camb_HrEntEmp.AutoSize = True
+        Me.Lab_Camb_HrEntEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Camb_HrEntEmp.Location = New System.Drawing.Point(39, 351)
+        Me.Lab_Camb_HrEntEmp.Name = "Lab_Camb_HrEntEmp"
+        Me.Lab_Camb_HrEntEmp.Size = New System.Drawing.Size(132, 17)
+        Me.Lab_Camb_HrEntEmp.TabIndex = 94
+        Me.Lab_Camb_HrEntEmp.Text = "Horario de entrada:"
+        '
+        'CoBo_Camb_TurnoEmp
+        '
+        Me.CoBo_Camb_TurnoEmp.FormattingEnabled = True
+        Me.CoBo_Camb_TurnoEmp.Items.AddRange(New Object() {"Diurno", "Nocturno"})
+        Me.CoBo_Camb_TurnoEmp.Location = New System.Drawing.Point(180, 318)
+        Me.CoBo_Camb_TurnoEmp.Name = "CoBo_Camb_TurnoEmp"
+        Me.CoBo_Camb_TurnoEmp.Size = New System.Drawing.Size(209, 24)
+        Me.CoBo_Camb_TurnoEmp.TabIndex = 87
+        '
+        'Lab_Camb_TurnoEmp
+        '
+        Me.Lab_Camb_TurnoEmp.AutoSize = True
+        Me.Lab_Camb_TurnoEmp.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Camb_TurnoEmp.Location = New System.Drawing.Point(40, 315)
+        Me.Lab_Camb_TurnoEmp.Name = "Lab_Camb_TurnoEmp"
+        Me.Lab_Camb_TurnoEmp.Size = New System.Drawing.Size(50, 17)
+        Me.Lab_Camb_TurnoEmp.TabIndex = 93
+        Me.Lab_Camb_TurnoEmp.Text = "Turno:"
         '
         'Form_Empleados
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 461)
+        Me.BackgroundImage = Global.Proyecto_Spa_Mascotas.My.Resources.Resources.depositphotos_81696382_stock_photo_teal_and_white_doggy_tile1
+        Me.ClientSize = New System.Drawing.Size(800, 494)
         Me.Controls.Add(Me.Tab_Ctr_Empleados)
         Me.Controls.Add(Me.Btn_atras)
         Me.Controls.Add(Me.MenuS_Principal)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form_Empleados"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Empleados"
@@ -1630,12 +1774,12 @@ Partial Class Form_Empleados
         Me.Alta_Empleado.PerformLayout()
         Me.Consulta_Empleado.ResumeLayout(False)
         Me.Consulta_Empleado.PerformLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DGV_ListaEmp, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Cambio_Empleado.ResumeLayout(False)
         Me.Cambio_Empleado.PerformLayout()
         Me.Baja_Empleado.ResumeLayout(False)
         Me.Baja_Empleado.PerformLayout()
-        CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DGV_Baja_ListaEmp, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1654,54 +1798,54 @@ Partial Class Form_Empleados
     Friend WithEvents Baja_Empleado As TabPage
     Friend WithEvents Consulta_Empleado As TabPage
     Friend WithEvents Cambio_Empleado As TabPage
-    Friend WithEvents DateTimePicker1 As DateTimePicker
-    Friend WithEvents Label4 As Label
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Label19 As Label
-    Friend WithEvents TextBox14 As TextBox
-    Friend WithEvents Label18 As Label
-    Friend WithEvents TextBox13 As TextBox
-    Friend WithEvents Label17 As Label
-    Friend WithEvents RadioButton4 As RadioButton
-    Friend WithEvents RadioButton3 As RadioButton
-    Friend WithEvents Label16 As Label
-    Friend WithEvents TextBox12 As TextBox
-    Friend WithEvents Label15 As Label
-    Friend WithEvents TextBox11 As TextBox
-    Friend WithEvents Label14 As Label
-    Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents TextBox10 As TextBox
-    Friend WithEvents TextBox9 As TextBox
-    Friend WithEvents TextBox8 As TextBox
-    Friend WithEvents TextBox7 As TextBox
-    Friend WithEvents Label13 As Label
-    Friend WithEvents Label12 As Label
-    Friend WithEvents Label11 As Label
-    Friend WithEvents Label10 As Label
-    Friend WithEvents Label9 As Label
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents Label7 As Label
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents Label6 As Label
-    Friend WithEvents RadioButton2 As RadioButton
-    Friend WithEvents RadioButton1 As RadioButton
-    Friend WithEvents Label5 As Label
-    Friend WithEvents TextBox15 As TextBox
-    Friend WithEvents Label20 As Label
-    Friend WithEvents TextBox16 As TextBox
-    Friend WithEvents TextBox17 As TextBox
-    Friend WithEvents Label21 As Label
-    Friend WithEvents Label22 As Label
-    Friend WithEvents TextBox18 As TextBox
-    Friend WithEvents Label23 As Label
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents DaTiPi_Alta_FechNacEmp As DateTimePicker
+    Friend WithEvents Lab_Alta_FechaNacEmp As Label
+    Friend WithEvents TtBo_Alta_AmatEmp As TextBox
+    Friend WithEvents TtBo_Alta_ApatEmp As TextBox
+    Friend WithEvents Lab_Alta_AmatEmp As Label
+    Friend WithEvents Lab_Alta_ApatEmp As Label
+    Friend WithEvents TtBo_Alta_NombEmp As TextBox
+    Friend WithEvents Lab_Alta_NombEmp As Label
+    Friend WithEvents Btn_Alta_LimpiarEmp As Button
+    Friend WithEvents Btn_Alta_GuardaEmp As Button
+    Friend WithEvents Lab_Alta_CurpNota As Label
+    Friend WithEvents TtBo_Alta_CurpEmp As TextBox
+    Friend WithEvents Lab_Alta_CurpEmp As Label
+    Friend WithEvents TtBo_Alta_NaclidadOrigEmp As TextBox
+    Friend WithEvents Lab_Alta_NaclidadOrigEmp As Label
+    Friend WithEvents RaBo_Alta_NaclidadExtjEmp As RadioButton
+    Friend WithEvents RaBo_Alta_NaclidadMexEmp As RadioButton
+    Friend WithEvents Lab_Alta_NaclidadEmp As Label
+    Friend WithEvents TtBo_Alta_EmailEmp As TextBox
+    Friend WithEvents Lab_Alta_EmailEmp As Label
+    Friend WithEvents TtBo_Alta_CpEmp As TextBox
+    Friend WithEvents Lab_Alta_CpEmp As Label
+    Friend WithEvents CoBo_Alta_EstadoEmp As ComboBox
+    Friend WithEvents TtBo_Alta_MunicipioEmp As TextBox
+    Friend WithEvents TtBo_Alta_ColoniaEmp As TextBox
+    Friend WithEvents TtBo_Alta_NumExtEmp As TextBox
+    Friend WithEvents TtBo_Alta_NumIntEmp As TextBox
+    Friend WithEvents Lab_Alta_EstadoEmp As Label
+    Friend WithEvents Lab_Alta_MunicipioEmp As Label
+    Friend WithEvents Lab_Alta_ColoniaEmp As Label
+    Friend WithEvents Lab_Alta_NumExtEmp As Label
+    Friend WithEvents Lab_Alta_NumIntEmp As Label
+    Friend WithEvents TtBo_Alta_TelefFijoEmp As TextBox
+    Friend WithEvents Lab_Alta_TelefFijoEmp As Label
+    Friend WithEvents TtBo_Alta_TelefMoviEmp As TextBox
+    Friend WithEvents Lab_Alta_TelefMovEmp As Label
+    Friend WithEvents RaBo_Alta_SMasculinoEmp As RadioButton
+    Friend WithEvents RaBo_Alta_SFemeninoEmp As RadioButton
+    Friend WithEvents Lab_Alta_SexoEmp As Label
+    Friend WithEvents TtBo_Alta_PuestoTrabEmp As TextBox
+    Friend WithEvents Lab_Alta_PuestoTrabEmp As Label
+    Friend WithEvents TtBo_Cons_AmatEmp As TextBox
+    Friend WithEvents TtBo_Cons_ApatEmp As TextBox
+    Friend WithEvents Lab_Cons_AmatEmp As Label
+    Friend WithEvents Lab_Cons_ApatEmp As Label
+    Friend WithEvents TtBo_Cons_NombEmp As TextBox
+    Friend WithEvents Lab_Cons_NombEmp As Label
+    Friend WithEvents DGV_ListaEmp As DataGridView
     Friend WithEvents DGV_ID As DataGridViewTextBoxColumn
     Friend WithEvents DGV_NombraComp As DataGridViewTextBoxColumn
     Friend WithEvents DGV_FNac As DataGridViewTextBoxColumn
@@ -1709,55 +1853,55 @@ Partial Class Form_Empleados
     Friend WithEvents DGV_CurpORne As DataGridViewTextBoxColumn
     Friend WithEvents DGV_Cargo As DataGridViewTextBoxColumn
     Friend WithEvents DGV_Domio As DataGridViewTextBoxColumn
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Label24 As Label
-    Friend WithEvents TextBox19 As TextBox
-    Friend WithEvents Label25 As Label
-    Friend WithEvents TextBox20 As TextBox
-    Friend WithEvents Label26 As Label
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button5 As Button
-    Friend WithEvents TextBox21 As TextBox
-    Friend WithEvents Label27 As Label
-    Friend WithEvents Label28 As Label
-    Friend WithEvents TextBox22 As TextBox
-    Friend WithEvents Label29 As Label
-    Friend WithEvents TextBox23 As TextBox
-    Friend WithEvents Label30 As Label
-    Friend WithEvents RadioButton5 As RadioButton
-    Friend WithEvents RadioButton6 As RadioButton
-    Friend WithEvents Label31 As Label
-    Friend WithEvents TextBox24 As TextBox
-    Friend WithEvents Label32 As Label
-    Friend WithEvents TextBox25 As TextBox
-    Friend WithEvents Label33 As Label
-    Friend WithEvents ComboBox2 As ComboBox
-    Friend WithEvents TextBox26 As TextBox
-    Friend WithEvents TextBox27 As TextBox
-    Friend WithEvents TextBox28 As TextBox
-    Friend WithEvents TextBox29 As TextBox
-    Friend WithEvents Label34 As Label
-    Friend WithEvents Label35 As Label
-    Friend WithEvents Label36 As Label
-    Friend WithEvents Label37 As Label
-    Friend WithEvents Label38 As Label
-    Friend WithEvents TextBox30 As TextBox
-    Friend WithEvents Label39 As Label
-    Friend WithEvents TextBox31 As TextBox
-    Friend WithEvents Label40 As Label
-    Friend WithEvents RadioButton7 As RadioButton
-    Friend WithEvents RadioButton8 As RadioButton
-    Friend WithEvents Label41 As Label
-    Friend WithEvents DateTimePicker2 As DateTimePicker
-    Friend WithEvents Label42 As Label
-    Friend WithEvents TextBox32 As TextBox
-    Friend WithEvents TextBox33 As TextBox
-    Friend WithEvents Label43 As Label
-    Friend WithEvents Label44 As Label
-    Friend WithEvents TextBox34 As TextBox
-    Friend WithEvents Label45 As Label
-    Friend WithEvents Button6 As Button
-    Friend WithEvents DataGridView2 As DataGridView
+    Friend WithEvents Btn_Cons_Consultar As Button
+    Friend WithEvents Lab_Cons_CurpNota As Label
+    Friend WithEvents TtBo_Cons_CurpEmp As TextBox
+    Friend WithEvents Lab_Cons_CurpbEmp As Label
+    Friend WithEvents TtBo_Camb_PuestoTrabEmp As TextBox
+    Friend WithEvents Lab_Camb_PuestoTrabEmp As Label
+    Friend WithEvents Btn_Camb_Limpiar As Button
+    Friend WithEvents Btn_Camb_Guardar As Button
+    Friend WithEvents TtBo_Camb_CalleEmp As TextBox
+    Friend WithEvents Lab_Camb_CalleEmp As Label
+    Friend WithEvents Lab_Camb_CurpNota As Label
+    Friend WithEvents TtBo_Camb_CurpEmp As TextBox
+    Friend WithEvents Lab_Camb_CurpEmp As Label
+    Friend WithEvents TtBo_Camb_NaclidadOrigEmp As TextBox
+    Friend WithEvents Lab_Camb_NaclidadOrigEmp As Label
+    Friend WithEvents RaBo_Camb_NaclidadExtjEmp As RadioButton
+    Friend WithEvents RaBo_Camb_NaclidadMexEmp As RadioButton
+    Friend WithEvents Lab_Camb_NaclidadEmp As Label
+    Friend WithEvents TtBo_Camb_EmailEmp As TextBox
+    Friend WithEvents Lab_Camb_EmailEmp As Label
+    Friend WithEvents TtBo_Camb_CpEmp As TextBox
+    Friend WithEvents Lab_Camb_CpEmp As Label
+    Friend WithEvents CoBo_Camb_EstadoEmp As ComboBox
+    Friend WithEvents TtBo_Camb_MunicipioEmp As TextBox
+    Friend WithEvents TtBo_Camb_ColoniaEmp As TextBox
+    Friend WithEvents TtBo_Camb_NumExtEmp As TextBox
+    Friend WithEvents TtBo_Camb_NumIntEmp As TextBox
+    Friend WithEvents Lab_Camb_EstadoEmp As Label
+    Friend WithEvents Lab_Camb_MunicipioEmp As Label
+    Friend WithEvents Lab_Camb_ColoniaEmp As Label
+    Friend WithEvents Lab_Camb_NumExtEmp As Label
+    Friend WithEvents Lab_Camb_NumIntEmp As Label
+    Friend WithEvents TtBo_Camb_TelefFijoEmp As TextBox
+    Friend WithEvents Lab_Camb_TelefFijoEmp As Label
+    Friend WithEvents TtBo_Camb_TelefMovilEmp As TextBox
+    Friend WithEvents Lab_Camb_TelefMovilEmp As Label
+    Friend WithEvents RaBo_Camb_SMasculinoEmp As RadioButton
+    Friend WithEvents RaBo_Camb_SFemeninoEmp As RadioButton
+    Friend WithEvents Lab_Camb_SexoEmp As Label
+    Friend WithEvents DaTiPi_Camb_FechNacEmp As DateTimePicker
+    Friend WithEvents Lab_Camb_FechNacEmp As Label
+    Friend WithEvents TtBo_Camb_AmatEmp As TextBox
+    Friend WithEvents TtBo_Camb_ApatEmp As TextBox
+    Friend WithEvents Lab_Camb_AmatEmp As Label
+    Friend WithEvents Lab_Camb_ApatEmp As Label
+    Friend WithEvents TtBo_Camb_NombEmp As TextBox
+    Friend WithEvents Lab_Camb_NombEmp As Label
+    Friend WithEvents Btn_Camb_Buscar As Button
+    Friend WithEvents DGV_Baja_ListaEmp As DataGridView
     Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn3 As DataGridViewTextBoxColumn
@@ -1765,29 +1909,40 @@ Partial Class Form_Empleados
     Friend WithEvents DataGridViewTextBoxColumn5 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn6 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn7 As DataGridViewTextBoxColumn
-    Friend WithEvents Button8 As Button
-    Friend WithEvents Button7 As Button
-    Friend WithEvents Label46 As Label
-    Friend WithEvents TextBox35 As TextBox
-    Friend WithEvents Label47 As Label
-    Friend WithEvents TextBox36 As TextBox
-    Friend WithEvents TextBox37 As TextBox
-    Friend WithEvents Label48 As Label
-    Friend WithEvents Label49 As Label
-    Friend WithEvents TextBox38 As TextBox
-    Friend WithEvents Label50 As Label
+    Friend WithEvents Btn_Baja_Eliminar As Button
+    Friend WithEvents Btn_Baja_Buscar As Button
+    Friend WithEvents Lab_Baja_CurpNota As Label
+    Friend WithEvents TtBo_Baja_CurpEmp As TextBox
+    Friend WithEvents Lab_Baja_CurpEmp As Label
+    Friend WithEvents TtBo_Baja_AmatEmp As TextBox
+    Friend WithEvents TtBo_Baja_ApatEmp As TextBox
+    Friend WithEvents Lab_Baja_AmatEmp As Label
+    Friend WithEvents Lab_Baja_ApatEmp As Label
+    Friend WithEvents TtBo_Baja_NombEmp As TextBox
+    Friend WithEvents Lab_Baja_NombEmp As Label
     Friend WithEvents ClientesYMascotasToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CategoriasToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CaducosToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ComboBox6 As ComboBox
-    Friend WithEvents ComboBox7 As ComboBox
-    Friend WithEvents ComboBox5 As ComboBox
-    Friend WithEvents ComboBox4 As ComboBox
-    Friend WithEvents Label52 As Label
-    Friend WithEvents ComboBox3 As ComboBox
-    Friend WithEvents Label51 As Label
-    Friend WithEvents TextBox6 As TextBox
-    Friend WithEvents Label8 As Label
-    Friend WithEvents Label53 As Label
+    Friend WithEvents CoBo_Alta_HrSalEmp As ComboBox
+    Friend WithEvents CoBo_Alta_MeridianaSalEmp As ComboBox
+    Friend WithEvents CoBo_Alta_MeridianaEntEmp As ComboBox
+    Friend WithEvents CoBo_Alta_HrEntEmp As ComboBox
+    Friend WithEvents Lab_Alta_HrEntEmp As Label
+    Friend WithEvents CoBo_Alta_TurnoEmp As ComboBox
+    Friend WithEvents Lab_Alta_TurnoEmp As Label
+    Friend WithEvents TtBo_Alta_CalleEmp As TextBox
+    Friend WithEvents Lab_Alta_CalleEmp As Label
+    Friend WithEvents Lab_Alta_SueldoEmp As Label
+    Friend WithEvents Mas_Alta_SueldoEmp As MaskedTextBox
+    Friend WithEvents Lab_Alta_HrSalEmp As Label
+    Friend WithEvents Lab_Camb_HrSalEmp As Label
     Friend WithEvents MaskedTextBox1 As MaskedTextBox
+    Friend WithEvents Lab_Camb_SueldoEmp As Label
+    Friend WithEvents CoBo_Camb_HrSalEmp As ComboBox
+    Friend WithEvents CoBo_Camb_MeridianoSalEmp As ComboBox
+    Friend WithEvents CoBo_Camb_MeridianoEntEmp As ComboBox
+    Friend WithEvents CoBo_Camb_HrEntEmp As ComboBox
+    Friend WithEvents Lab_Camb_HrEntEmp As Label
+    Friend WithEvents CoBo_Camb_TurnoEmp As ComboBox
+    Friend WithEvents Lab_Camb_TurnoEmp As Label
 End Class

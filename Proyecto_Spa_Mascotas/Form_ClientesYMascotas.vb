@@ -30,11 +30,28 @@
     End Sub
 
     Private Sub Btn_atras_Click(sender As Object, e As EventArgs) Handles Btn_atras.Click
-        Form_Ventas.Show()
+        'Form_Menu.Show()
         Me.Hide()
     End Sub
 
     Private Sub Alta_Clientes_Click(sender As Object, e As EventArgs) Handles Alta_Clientes.Click
+
+    End Sub
+
+
+
+
+    Private Sub MenuS_Principal_ItemClicked(sender As Object, e As ToolStripItemClickedEventArgs) Handles MenuS_Principal.ItemClicked
+
+    End Sub
+
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Lab_Alta_NombDueno.Click
+
+    End Sub
+
+    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Btn_Alta_AgregarMascotaDueno.Click
+        Form_Mascotas.Show()
+        Me.Hide()
 
     End Sub
 End Class
