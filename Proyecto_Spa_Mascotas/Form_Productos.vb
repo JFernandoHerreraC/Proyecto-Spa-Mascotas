@@ -182,32 +182,51 @@
         Dim CodBarra As String = TtBo_Consulta_CodBarraProd.Text
         Dim Consulta = New Consultas.ConsultasGenerales()
         Dim Resultado As DataTable = Consulta.ConsultaTodoPor("Productos", "CodBarra", "Prod", CodBarra)
-        Dim NumeroColmunas As Integer = Resultado.Columns().Count() - 1
-        Dim ColumnaQuitar = Resultado.Columns(NumeroColmunas)
-        Resultado.Columns().Remove(ColumnaQuitar)
-        DGVListProd.Columns.Clear()
-        DGVListProd.DataSource = Resultado
-        TtBo_Consulta_CodBarraProd.Clear()
+        If Resultado.Rows.Count > 0 Then
+            Dim NumeroColmunas As Integer = Resultado.Columns().Count() - 1
+            Dim ColumnaQuitar = Resultado.Columns(NumeroColmunas)
+            Resultado.Columns().Remove(ColumnaQuitar)
+            DGVListProd.Columns.Clear()
+            DGVListProd.DataSource = Resultado
+            DGVListProd.Columns(0).HeaderText = "Codigo de barra"
+            DGVListProd.Columns(1).HeaderText = "Nombre del producto"
+            DGVListProd.Columns(2).HeaderText = "Contenido"
+            DGVListProd.Columns(3).HeaderText = "Categoria"
+            DGVListProd.Columns(4).HeaderText = "Proveedor"
+            DGVListProd.Columns(5).HeaderText = "Cantidad en existencía"
+            DGVListProd.Columns(6).HeaderText = "Caducidad"
+            DGVListProd.Columns(7).HeaderText = "Fecha de caducidad"
+            DGVListProd.Columns(8).HeaderText = "Precio de proveedor"
+            DGVListProd.Columns(9).HeaderText = "Precio al publico"
+
+            TtBo_Consulta_CodBarraProd.Clear()
+        Else
+            MsgBox("No se encontrarón elemento en la busqueda", MsgBoxStyle.Critical, "Error en la busqueda")
+        End If
     End Sub
 
     Private Sub Btn_Buscar_BajasProd_Click(sender As Object, e As EventArgs) Handles Btn_Buscar_BajasProd.Click
         Dim CodBarra As String = TtBo_Baja_CodBarraProd.Text
         Dim Consulta = New Consultas.ConsultasGenerales()
         Dim Resultado As DataTable = Consulta.ConsultaTodoPor("Productos", "CodBarra", "Prod", CodBarra)
-        Dim Contenido As String = Resultado.Rows(0).Item(3)
-        Dim TipoContenido As String = Contenido.Substring(Contenido.Length - 2, 2)
-        Dim ContenidoEmbase As String = Contenido.Substring(0, Contenido.Length - 2)
-        ID = Resultado.Rows(0).Item(0)
-        TtBo_Baja_Dg_CodBarraProd.Text = Resultado.Rows(0).Item(0)
-        TtBo_Baja_Dg_NombreProd.Text = Resultado.Rows(0).Item(1)
-        TtBo_Baja_Dg_DescProd.Text = Resultado.Rows(0).Item(2)
-        CoBo_Baja_Dg_ContenidoProd.Text = TipoContenido
-        TtBo_Baja_Dg_ContenidoProd.Text = ContenidoEmbase
-        NuUpDo_Baja_CantidadExistProd.Value = Resultado.Rows(0).Item(6)
-        TtBo_Baja_ProvProd.Text = Resultado.Rows(0).Item(5)
-        TtBo_Baja_PrecioProvProd.Text = Resultado.Rows(0).Item(9)
-        TtBo_Baja_PrecioPublicProd.Text = Resultado.Rows(0).Item(10)
-        TtBo_Baja_CodBarraProd.Clear()
+        If Resultado.Rows.Count > 0 Then
+            Dim Contenido As String = Resultado.Rows(0).Item(3)
+            Dim TipoContenido As String = Contenido.Substring(Contenido.Length - 2, 2)
+            Dim ContenidoEmbase As String = Contenido.Substring(0, Contenido.Length - 2)
+            Id = Resultado.Rows(0).Item(0)
+            TtBo_Baja_Dg_CodBarraProd.Text = Resultado.Rows(0).Item(0)
+            TtBo_Baja_Dg_NombreProd.Text = Resultado.Rows(0).Item(1)
+            TtBo_Baja_Dg_DescProd.Text = Resultado.Rows(0).Item(2)
+            CoBo_Baja_Dg_ContenidoProd.Text = TipoContenido
+            TtBo_Baja_Dg_ContenidoProd.Text = ContenidoEmbase
+            NuUpDo_Baja_CantidadExistProd.Value = Resultado.Rows(0).Item(6)
+            TtBo_Baja_ProvProd.Text = Resultado.Rows(0).Item(5)
+            TtBo_Baja_PrecioProvProd.Text = Resultado.Rows(0).Item(9)
+            TtBo_Baja_PrecioPublicProd.Text = Resultado.Rows(0).Item(10)
+            TtBo_Baja_CodBarraProd.Clear()
+        Else
+            MsgBox("No se encontrarón elementos en la busqueda", MsgBoxStyle.Critical, "Error en la busqueda")
+        End If
     End Sub
 
     Private Sub Btn_Baja_EliminarProd_Click(sender As Object, e As EventArgs) Handles Btn_Baja_EliminarProd.Click
@@ -235,52 +254,53 @@
             Dim CodBarra As String = TtBo_Cambios_CodBarraProd.Text
             Dim Consulta = New Consultas.ConsultasGenerales()
             Dim Resultado As DataTable = Consulta.ConsultaTodoPor("Productos", "CodBarra", "Prod", CodBarra)
+            If Resultado.Rows.Count > 0 Then
+                Dim Resultado_Categorias As DataTable = Consulta.ConsultaTodo("Categorias")
+                Dim Resultado_Proveedores As DataTable = Consulta.ConsultaTodo("Proveedores")
+                For i = 1 To Resultado_Categorias.Rows.Count - 1
+                    CoBo_Cambios_CategoriasProd.Items.Add(Resultado_Categorias.Rows(i).Item(1))
+                Next
+                For i = 1 To Resultado_Proveedores.Rows.Count - 1
+                    CoBo_Cambios_ProvProd.Items.Add(Resultado_Proveedores.Rows(i).Item(1))
+                Next
 
-            Dim Resultado_Categorias As DataTable = Consulta.ConsultaTodo("Categorias")
-            Dim Resultado_Proveedores As DataTable = Consulta.ConsultaTodo("Proveedores")
-            For i = 1 To Resultado_Categorias.Rows.Count - 1
-                CoBo_Cambios_CategoriasProd.Items.Add(Resultado_Categorias.Rows(i).Item(1))
-            Next
-            For i = 1 To Resultado_Proveedores.Rows.Count - 1
-                CoBo_Cambios_ProvProd.Items.Add(Resultado_Proveedores.Rows(i).Item(1))
-            Next
+                Dim Columna As Integer = Resultado.Rows().Count() - 1
+                Dim DesicionCk = Resultado.Rows(Columna).Item(7)
 
-            Dim Columna As Integer = Resultado.Rows().Count() - 1
-            Dim DesicionCk = Resultado.Rows(Columna).Item(7)
+                Dim Id_Ctg As Integer = Resultado.Rows(Columna).Item(4)
+                Dim Resultado_Ctg As DataTable = Consulta.ConsultaTodoPor("Categorias", "Id", "Ctg", Id_Ctg)
+                Dim Id_Prov As Integer = Resultado.Rows(Columna).Item(5)
+                Dim Resultado_Prov As DataTable = Consulta.ConsultaTodoPor("Proveedores", "Id", "Prov", Id_Prov)
 
-            Dim Id_Ctg As Integer = Resultado.Rows(Columna).Item(4)
-            Dim Resultado_Ctg As DataTable = Consulta.ConsultaTodoPor("Categorias", "Id", "Ctg", Id_Ctg)
-            Dim Id_Prov As Integer = Resultado.Rows(Columna).Item(5)
-            Dim Resultado_Prov As DataTable = Consulta.ConsultaTodoPor("Proveedores", "Id", "Prov", Id_Prov)
+                Dim Contenido As String = Resultado.Rows(Columna).Item(3)
+                Dim TipoContenido As String = Contenido.Substring(Contenido.Length - 2, 2)
+                Dim ContenidoEmbase As String = Contenido.Substring(0, Contenido.Length - 2)
 
-            Dim Contenido As String = Resultado.Rows(Columna).Item(3)
-            Dim TipoContenido As String = Contenido.Substring(Contenido.Length - 2, 2)
-            Dim ContenidoEmbase As String = Contenido.Substring(0, Contenido.Length - 2)
-
-            TtBo_Cambios_CodBarraProd.Text = Resultado.Rows(Columna).Item(0)
-            TtBo_Cambios_NombreProd.Text = Resultado.Rows(Columna).Item(1)
-            TtBo_Cambios_DescProd.Text = Resultado.Rows(Columna).Item(2)
-            TtBo_Cambios_ContenidoProd.Text = ContenidoEmbase
-            CoBo_Cambios_ContenidoProd.Text = TipoContenido
-            CoBo_Cambios_CategoriasProd.Text = Resultado_Ctg.Rows(0).Item(1)
-            CoBo_Cambios_ProvProd.Text = Resultado_Prov.Rows(0).Item(1)
-            NuUpDo_Cambios_CantidadExistProd.Value = Resultado.Rows(Columna).Item(6)
-            If DesicionCk = "Sí, Caduca" Then
-                RaBo_Cambios_SiCaducaProd.Checked = True
-            Else
-                RaBo_Cambios_NoCaducaProd.Checked = False
+                TtBo_Cambios_CodBarraProd.Text = Resultado.Rows(Columna).Item(0)
+                TtBo_Cambios_NombreProd.Text = Resultado.Rows(Columna).Item(1)
+                TtBo_Cambios_DescProd.Text = Resultado.Rows(Columna).Item(2)
+                TtBo_Cambios_ContenidoProd.Text = ContenidoEmbase
+                CoBo_Cambios_ContenidoProd.Text = TipoContenido
+                CoBo_Cambios_CategoriasProd.Text = Resultado_Ctg.Rows(0).Item(1)
+                CoBo_Cambios_ProvProd.Text = Resultado_Prov.Rows(0).Item(1)
+                NuUpDo_Cambios_CantidadExistProd.Value = Resultado.Rows(Columna).Item(6)
+                If DesicionCk = "Sí, Caduca" Then
+                    RaBo_Cambios_SiCaducaProd.Checked = True
+                Else
+                    RaBo_Cambios_NoCaducaProd.Checked = False
+                End If
+                DaTiPi_Cambios_FechaCaducaProd.Value = Resultado.Rows(Columna).Item(8)
+                TtBo_Cambios_PrecProvProd.Text = Resultado.Rows(Columna).Item(9)
+                TtBo_Cambios_PrecPublicProd.Text = Resultado.Rows(Columna).Item(10)
+                'Console.WriteLine(Resultado.Rows(Columna).Item(11).ToString)
+                If Resultado.Rows(Columna).Item(11) Is Nothing Then
+                    Dim ImagenBy As Byte() = Resultado.Rows(Columna).Item(11)
+                    Dim Binarios As New System.IO.MemoryStream(ImagenBy)
+                    Dim Imagen As Image = Image.FromStream(Binarios)
+                    PiBo_Cambios_ImgProd.Image = Imagen
+                End If
+                Btn_Cambios_Guardar_Prod.Text = "Guardar"
             End If
-            DaTiPi_Cambios_FechaCaducaProd.Value = Resultado.Rows(Columna).Item(8)
-            TtBo_Cambios_PrecProvProd.Text = Resultado.Rows(Columna).Item(9)
-            TtBo_Cambios_PrecPublicProd.Text = Resultado.Rows(Columna).Item(10)
-            'Console.WriteLine(Resultado.Rows(Columna).Item(11).ToString)
-            If Resultado.Rows(Columna).Item(11) Is Nothing Then
-                Dim ImagenBy As Byte() = Resultado.Rows(Columna).Item(11)
-                Dim Binarios As New System.IO.MemoryStream(ImagenBy)
-                Dim Imagen As Image = Image.FromStream(Binarios)
-                PiBo_Cambios_ImgProd.Image = Imagen
-            End If
-            Btn_Cambios_Guardar_Prod.Text = "Guardar"
         Else
             Dim ValorRadioBotom As String = ""
             Dim Imagen As Image
@@ -333,5 +353,26 @@
             Dim Path_Img = informacion.GetFileInfo(File.FileName).FullName
             Console.WriteLine("Path file: " + File.FileName)
         End If
+    End Sub
+
+    Private Sub TtBo_Cambios_CodBarraProd_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TtBo_Cambios_CodBarraProd.KeyPress
+        Dim Validaciones = New Validaciones_Numeros()
+        Validaciones.Textos_solo_numeros(sender, e)
+    End Sub
+
+    Private Sub TtBo_Baja_CodBarraProd_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TtBo_Baja_CodBarraProd.KeyPress
+        Dim Validaciones = New Validaciones_Numeros()
+        Validaciones.Textos_solo_numeros(sender, e)
+    End Sub
+
+
+    Private Sub TtBo_Consulta_CodBarraProd_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TtBo_Consulta_CodBarraProd.KeyPress
+        Dim Validaciones = New Validaciones_Numeros()
+        Validaciones.Textos_solo_numeros(sender, e)
+    End Sub
+
+    Private Sub TtBo_Alta_CodBarraProd_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TtBo_Alta_CodBarraProd.KeyPress
+        Dim Validaciones = New Validaciones_Numeros()
+        Validaciones.Textos_solo_numeros(sender, e)
     End Sub
 End Class

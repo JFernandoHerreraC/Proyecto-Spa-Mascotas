@@ -22,6 +22,7 @@ Partial Class Form_Proveedores
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form_Proveedores))
         Me.Btn_atras = New System.Windows.Forms.Button()
         Me.MenuS_Principal = New System.Windows.Forms.MenuStrip()
         Me.ProductosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -239,6 +240,9 @@ Partial Class Form_Proveedores
         '
         'Tab_Ctr_Proveedor
         '
+        Me.Tab_Ctr_Proveedor.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Tab_Ctr_Proveedor.Controls.Add(Me.Alta_Proveedores)
         Me.Tab_Ctr_Proveedor.Controls.Add(Me.Consulta_Proveedores)
         Me.Tab_Ctr_Proveedor.Controls.Add(Me.Cambio_Proveedor)
@@ -303,9 +307,11 @@ Partial Class Form_Proveedores
         '
         Me.TtBo_Alta_MpioProv.Location = New System.Drawing.Point(253, 302)
         Me.TtBo_Alta_MpioProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_Alta_MpioProv.MaxLength = 50
         Me.TtBo_Alta_MpioProv.Name = "TtBo_Alta_MpioProv"
         Me.TtBo_Alta_MpioProv.Size = New System.Drawing.Size(217, 23)
         Me.TtBo_Alta_MpioProv.TabIndex = 74
+        Me.TtBo_Alta_MpioProv.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Lab_Alta_MpioProv
         '
@@ -354,30 +360,37 @@ Partial Class Form_Proveedores
         '
         Me.TtBo_Alta_TelefDosProv.Location = New System.Drawing.Point(253, 410)
         Me.TtBo_Alta_TelefDosProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_Alta_TelefDosProv.MaxLength = 10
         Me.TtBo_Alta_TelefDosProv.Name = "TtBo_Alta_TelefDosProv"
         Me.TtBo_Alta_TelefDosProv.Size = New System.Drawing.Size(217, 23)
         Me.TtBo_Alta_TelefDosProv.TabIndex = 69
+        Me.TtBo_Alta_TelefDosProv.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TtBo_Alta_TelefUnoProv
         '
         Me.TtBo_Alta_TelefUnoProv.Location = New System.Drawing.Point(253, 372)
         Me.TtBo_Alta_TelefUnoProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_Alta_TelefUnoProv.MaxLength = 10
         Me.TtBo_Alta_TelefUnoProv.Name = "TtBo_Alta_TelefUnoProv"
         Me.TtBo_Alta_TelefUnoProv.Size = New System.Drawing.Size(217, 23)
         Me.TtBo_Alta_TelefUnoProv.TabIndex = 68
+        Me.TtBo_Alta_TelefUnoProv.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TtBo_Alta_ColoniaProv
         '
         Me.TtBo_Alta_ColoniaProv.Location = New System.Drawing.Point(253, 263)
         Me.TtBo_Alta_ColoniaProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_Alta_ColoniaProv.MaxLength = 50
         Me.TtBo_Alta_ColoniaProv.Name = "TtBo_Alta_ColoniaProv"
         Me.TtBo_Alta_ColoniaProv.Size = New System.Drawing.Size(217, 23)
         Me.TtBo_Alta_ColoniaProv.TabIndex = 67
+        Me.TtBo_Alta_ColoniaProv.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TtBo_Alta_CpProv
         '
         Me.TtBo_Alta_CpProv.Location = New System.Drawing.Point(253, 226)
         Me.TtBo_Alta_CpProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_Alta_CpProv.MaxLength = 5
         Me.TtBo_Alta_CpProv.Name = "TtBo_Alta_CpProv"
         Me.TtBo_Alta_CpProv.Size = New System.Drawing.Size(217, 23)
         Me.TtBo_Alta_CpProv.TabIndex = 66
@@ -386,6 +399,7 @@ Partial Class Form_Proveedores
         '
         Me.TtBo_Alta_NumInteriorProv.Location = New System.Drawing.Point(253, 192)
         Me.TtBo_Alta_NumInteriorProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_Alta_NumInteriorProv.MaxLength = 5
         Me.TtBo_Alta_NumInteriorProv.Name = "TtBo_Alta_NumInteriorProv"
         Me.TtBo_Alta_NumInteriorProv.Size = New System.Drawing.Size(217, 23)
         Me.TtBo_Alta_NumInteriorProv.TabIndex = 65
@@ -394,6 +408,7 @@ Partial Class Form_Proveedores
         '
         Me.TtBo_Alta_NumExteriorProv.Location = New System.Drawing.Point(253, 154)
         Me.TtBo_Alta_NumExteriorProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_Alta_NumExteriorProv.MaxLength = 5
         Me.TtBo_Alta_NumExteriorProv.Name = "TtBo_Alta_NumExteriorProv"
         Me.TtBo_Alta_NumExteriorProv.Size = New System.Drawing.Size(217, 23)
         Me.TtBo_Alta_NumExteriorProv.TabIndex = 64
@@ -402,9 +417,11 @@ Partial Class Form_Proveedores
         '
         Me.TtBo_Alta_DescripProv.Location = New System.Drawing.Point(720, 282)
         Me.TtBo_Alta_DescripProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_Alta_DescripProv.MaxLength = 120
         Me.TtBo_Alta_DescripProv.Name = "TtBo_Alta_DescripProv"
         Me.TtBo_Alta_DescripProv.Size = New System.Drawing.Size(240, 23)
         Me.TtBo_Alta_DescripProv.TabIndex = 63
+        Me.TtBo_Alta_DescripProv.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Lab_Alta_DescripProv
         '
@@ -421,10 +438,11 @@ Partial Class Form_Proveedores
         '
         Me.TtBo_Alta_SecuenciaProv.Location = New System.Drawing.Point(720, 151)
         Me.TtBo_Alta_SecuenciaProv.Margin = New System.Windows.Forms.Padding(4)
-        Me.TtBo_Alta_SecuenciaProv.MaxLength = 2
+        Me.TtBo_Alta_SecuenciaProv.MaxLength = 5
         Me.TtBo_Alta_SecuenciaProv.Name = "TtBo_Alta_SecuenciaProv"
         Me.TtBo_Alta_SecuenciaProv.Size = New System.Drawing.Size(240, 23)
         Me.TtBo_Alta_SecuenciaProv.TabIndex = 61
+        Me.TtBo_Alta_SecuenciaProv.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Lab_Alta_SecuenciaProv
         '
@@ -451,14 +469,17 @@ Partial Class Form_Proveedores
         '
         Me.TtBo_Alta_EmailProv.Location = New System.Drawing.Point(720, 36)
         Me.TtBo_Alta_EmailProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_Alta_EmailProv.MaxLength = 40
         Me.TtBo_Alta_EmailProv.Name = "TtBo_Alta_EmailProv"
         Me.TtBo_Alta_EmailProv.Size = New System.Drawing.Size(240, 23)
         Me.TtBo_Alta_EmailProv.TabIndex = 58
+        Me.TtBo_Alta_EmailProv.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TtBo_Alta_RubroProv
         '
         Me.TtBo_Alta_RubroProv.Location = New System.Drawing.Point(720, 65)
         Me.TtBo_Alta_RubroProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_Alta_RubroProv.MaxLength = 50
         Me.TtBo_Alta_RubroProv.Name = "TtBo_Alta_RubroProv"
         Me.TtBo_Alta_RubroProv.Size = New System.Drawing.Size(240, 23)
         Me.TtBo_Alta_RubroProv.TabIndex = 57
@@ -467,10 +488,11 @@ Partial Class Form_Proveedores
         '
         Me.TtBo_Alta_CuentaDepositoProv.Location = New System.Drawing.Point(720, 240)
         Me.TtBo_Alta_CuentaDepositoProv.Margin = New System.Windows.Forms.Padding(4)
-        Me.TtBo_Alta_CuentaDepositoProv.MaxLength = 18
+        Me.TtBo_Alta_CuentaDepositoProv.MaxLength = 20
         Me.TtBo_Alta_CuentaDepositoProv.Name = "TtBo_Alta_CuentaDepositoProv"
         Me.TtBo_Alta_CuentaDepositoProv.Size = New System.Drawing.Size(240, 23)
         Me.TtBo_Alta_CuentaDepositoProv.TabIndex = 56
+        Me.TtBo_Alta_CuentaDepositoProv.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Lab_Alta_CuentaDepositoProv
         '
@@ -618,9 +640,11 @@ Partial Class Form_Proveedores
         '
         Me.TtBo_Alta_CalleProv.Location = New System.Drawing.Point(253, 110)
         Me.TtBo_Alta_CalleProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_Alta_CalleProv.MaxLength = 30
         Me.TtBo_Alta_CalleProv.Name = "TtBo_Alta_CalleProv"
         Me.TtBo_Alta_CalleProv.Size = New System.Drawing.Size(217, 23)
         Me.TtBo_Alta_CalleProv.TabIndex = 42
+        Me.TtBo_Alta_CalleProv.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Lab_Alta_CalleProv
         '
@@ -641,15 +665,17 @@ Partial Class Form_Proveedores
         Me.TtBo_Alta_RfcProv.Name = "TtBo_Alta_RfcProv"
         Me.TtBo_Alta_RfcProv.Size = New System.Drawing.Size(217, 23)
         Me.TtBo_Alta_RfcProv.TabIndex = 40
+        Me.TtBo_Alta_RfcProv.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TtBo_Alta_NombProv
         '
         Me.TtBo_Alta_NombProv.Location = New System.Drawing.Point(253, 36)
         Me.TtBo_Alta_NombProv.Margin = New System.Windows.Forms.Padding(4)
-        Me.TtBo_Alta_NombProv.MaxLength = 100
+        Me.TtBo_Alta_NombProv.MaxLength = 80
         Me.TtBo_Alta_NombProv.Name = "TtBo_Alta_NombProv"
         Me.TtBo_Alta_NombProv.Size = New System.Drawing.Size(217, 23)
         Me.TtBo_Alta_NombProv.TabIndex = 39
+        Me.TtBo_Alta_NombProv.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Lab_Alta_RfcProv
         '
@@ -887,6 +913,7 @@ Partial Class Form_Proveedores
         Me.TtBo_Cambios_mpioProv.Name = "TtBo_Cambios_mpioProv"
         Me.TtBo_Cambios_mpioProv.Size = New System.Drawing.Size(217, 23)
         Me.TtBo_Cambios_mpioProv.TabIndex = 110
+        Me.TtBo_Cambios_mpioProv.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Lab_Cambios_MpioProv
         '
@@ -935,57 +962,71 @@ Partial Class Form_Proveedores
         '
         Me.TtBo_Cambios_TelefDosProv.Location = New System.Drawing.Point(253, 403)
         Me.TtBo_Cambios_TelefDosProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_Cambios_TelefDosProv.MaxLength = 10
         Me.TtBo_Cambios_TelefDosProv.Name = "TtBo_Cambios_TelefDosProv"
         Me.TtBo_Cambios_TelefDosProv.Size = New System.Drawing.Size(217, 23)
         Me.TtBo_Cambios_TelefDosProv.TabIndex = 105
+        Me.TtBo_Cambios_TelefDosProv.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TtBo_Cambios_TelefUnoProv
         '
         Me.TtBo_Cambios_TelefUnoProv.Location = New System.Drawing.Point(253, 366)
         Me.TtBo_Cambios_TelefUnoProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_Cambios_TelefUnoProv.MaxLength = 10
         Me.TtBo_Cambios_TelefUnoProv.Name = "TtBo_Cambios_TelefUnoProv"
         Me.TtBo_Cambios_TelefUnoProv.Size = New System.Drawing.Size(217, 23)
         Me.TtBo_Cambios_TelefUnoProv.TabIndex = 104
+        Me.TtBo_Cambios_TelefUnoProv.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TtBo_Cambios_ColoniaProv
         '
         Me.TtBo_Cambios_ColoniaProv.Location = New System.Drawing.Point(253, 263)
         Me.TtBo_Cambios_ColoniaProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_Cambios_ColoniaProv.MaxLength = 50
         Me.TtBo_Cambios_ColoniaProv.Name = "TtBo_Cambios_ColoniaProv"
         Me.TtBo_Cambios_ColoniaProv.Size = New System.Drawing.Size(217, 23)
         Me.TtBo_Cambios_ColoniaProv.TabIndex = 103
+        Me.TtBo_Cambios_ColoniaProv.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TtBo_Cambios_CpProv
         '
         Me.TtBo_Cambios_CpProv.Location = New System.Drawing.Point(253, 226)
         Me.TtBo_Cambios_CpProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_Cambios_CpProv.MaxLength = 5
         Me.TtBo_Cambios_CpProv.Name = "TtBo_Cambios_CpProv"
         Me.TtBo_Cambios_CpProv.Size = New System.Drawing.Size(217, 23)
         Me.TtBo_Cambios_CpProv.TabIndex = 102
+        Me.TtBo_Cambios_CpProv.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TtBo_Cambios_NumInteriorProv
         '
         Me.TtBo_Cambios_NumInteriorProv.Location = New System.Drawing.Point(253, 192)
         Me.TtBo_Cambios_NumInteriorProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_Cambios_NumInteriorProv.MaxLength = 5
         Me.TtBo_Cambios_NumInteriorProv.Name = "TtBo_Cambios_NumInteriorProv"
         Me.TtBo_Cambios_NumInteriorProv.Size = New System.Drawing.Size(217, 23)
         Me.TtBo_Cambios_NumInteriorProv.TabIndex = 101
+        Me.TtBo_Cambios_NumInteriorProv.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TtBo_Cambios_NumExteriorProv
         '
         Me.TtBo_Cambios_NumExteriorProv.Location = New System.Drawing.Point(253, 154)
         Me.TtBo_Cambios_NumExteriorProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_Cambios_NumExteriorProv.MaxLength = 5
         Me.TtBo_Cambios_NumExteriorProv.Name = "TtBo_Cambios_NumExteriorProv"
         Me.TtBo_Cambios_NumExteriorProv.Size = New System.Drawing.Size(217, 23)
         Me.TtBo_Cambios_NumExteriorProv.TabIndex = 100
+        Me.TtBo_Cambios_NumExteriorProv.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TtBo_Cambios_DescripProv
         '
         Me.TtBo_Cambios_DescripProv.Location = New System.Drawing.Point(720, 282)
         Me.TtBo_Cambios_DescripProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_Cambios_DescripProv.MaxLength = 120
         Me.TtBo_Cambios_DescripProv.Name = "TtBo_Cambios_DescripProv"
         Me.TtBo_Cambios_DescripProv.Size = New System.Drawing.Size(240, 23)
         Me.TtBo_Cambios_DescripProv.TabIndex = 99
+        Me.TtBo_Cambios_DescripProv.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Lab_Cambios_DescripProv
         '
@@ -1002,9 +1043,11 @@ Partial Class Form_Proveedores
         '
         Me.TtBo_Cambios_SecuenciaProv.Location = New System.Drawing.Point(720, 151)
         Me.TtBo_Cambios_SecuenciaProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_Cambios_SecuenciaProv.MaxLength = 5
         Me.TtBo_Cambios_SecuenciaProv.Name = "TtBo_Cambios_SecuenciaProv"
         Me.TtBo_Cambios_SecuenciaProv.Size = New System.Drawing.Size(240, 23)
         Me.TtBo_Cambios_SecuenciaProv.TabIndex = 97
+        Me.TtBo_Cambios_SecuenciaProv.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Lab_Cambios_SecuenciaProv
         '
@@ -1031,14 +1074,17 @@ Partial Class Form_Proveedores
         '
         Me.TtBo_Cambios_EmailProv.Location = New System.Drawing.Point(720, 36)
         Me.TtBo_Cambios_EmailProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_Cambios_EmailProv.MaxLength = 40
         Me.TtBo_Cambios_EmailProv.Name = "TtBo_Cambios_EmailProv"
         Me.TtBo_Cambios_EmailProv.Size = New System.Drawing.Size(240, 23)
         Me.TtBo_Cambios_EmailProv.TabIndex = 94
+        Me.TtBo_Cambios_EmailProv.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TtBo_Cambios_RubroProv
         '
         Me.TtBo_Cambios_RubroProv.Location = New System.Drawing.Point(720, 65)
         Me.TtBo_Cambios_RubroProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_Cambios_RubroProv.MaxLength = 50
         Me.TtBo_Cambios_RubroProv.Name = "TtBo_Cambios_RubroProv"
         Me.TtBo_Cambios_RubroProv.Size = New System.Drawing.Size(240, 23)
         Me.TtBo_Cambios_RubroProv.TabIndex = 93
@@ -1047,9 +1093,11 @@ Partial Class Form_Proveedores
         '
         Me.TtBo_Cambios_CuentaDepositoProv.Location = New System.Drawing.Point(720, 240)
         Me.TtBo_Cambios_CuentaDepositoProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_Cambios_CuentaDepositoProv.MaxLength = 20
         Me.TtBo_Cambios_CuentaDepositoProv.Name = "TtBo_Cambios_CuentaDepositoProv"
         Me.TtBo_Cambios_CuentaDepositoProv.Size = New System.Drawing.Size(240, 23)
         Me.TtBo_Cambios_CuentaDepositoProv.TabIndex = 92
+        Me.TtBo_Cambios_CuentaDepositoProv.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Lab_Cambios_CuentaDepositoProv
         '
@@ -1198,9 +1246,11 @@ Partial Class Form_Proveedores
         Me.TtBo_Cambios_CalleProv.Enabled = False
         Me.TtBo_Cambios_CalleProv.Location = New System.Drawing.Point(253, 110)
         Me.TtBo_Cambios_CalleProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_Cambios_CalleProv.MaxLength = 30
         Me.TtBo_Cambios_CalleProv.Name = "TtBo_Cambios_CalleProv"
         Me.TtBo_Cambios_CalleProv.Size = New System.Drawing.Size(217, 23)
         Me.TtBo_Cambios_CalleProv.TabIndex = 78
+        Me.TtBo_Cambios_CalleProv.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Lab_Cambios_CalleProv
         '
@@ -1217,17 +1267,21 @@ Partial Class Form_Proveedores
         '
         Me.TtBo_Cambios_RfcProv.Location = New System.Drawing.Point(253, 69)
         Me.TtBo_Cambios_RfcProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_Cambios_RfcProv.MaxLength = 20
         Me.TtBo_Cambios_RfcProv.Name = "TtBo_Cambios_RfcProv"
         Me.TtBo_Cambios_RfcProv.Size = New System.Drawing.Size(217, 23)
         Me.TtBo_Cambios_RfcProv.TabIndex = 76
+        Me.TtBo_Cambios_RfcProv.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TtBo_Cambios_NombProv
         '
         Me.TtBo_Cambios_NombProv.Location = New System.Drawing.Point(253, 36)
         Me.TtBo_Cambios_NombProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_Cambios_NombProv.MaxLength = 80
         Me.TtBo_Cambios_NombProv.Name = "TtBo_Cambios_NombProv"
         Me.TtBo_Cambios_NombProv.Size = New System.Drawing.Size(217, 23)
         Me.TtBo_Cambios_NombProv.TabIndex = 75
+        Me.TtBo_Cambios_NombProv.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Lab_Cambios_RfcProv
         '
@@ -1309,33 +1363,41 @@ Partial Class Form_Proveedores
         '
         Me.TtBo_PreBaja_ColoniaProv.Location = New System.Drawing.Point(732, 185)
         Me.TtBo_PreBaja_ColoniaProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_PreBaja_ColoniaProv.MaxLength = 50
         Me.TtBo_PreBaja_ColoniaProv.Name = "TtBo_PreBaja_ColoniaProv"
         Me.TtBo_PreBaja_ColoniaProv.Size = New System.Drawing.Size(217, 23)
         Me.TtBo_PreBaja_ColoniaProv.TabIndex = 108
+        Me.TtBo_PreBaja_ColoniaProv.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TtBo_PreBaja_CpProv
         '
         Me.TtBo_PreBaja_CpProv.Location = New System.Drawing.Point(732, 148)
         Me.TtBo_PreBaja_CpProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_PreBaja_CpProv.MaxLength = 5
         Me.TtBo_PreBaja_CpProv.Name = "TtBo_PreBaja_CpProv"
         Me.TtBo_PreBaja_CpProv.Size = New System.Drawing.Size(217, 23)
         Me.TtBo_PreBaja_CpProv.TabIndex = 107
+        Me.TtBo_PreBaja_CpProv.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TtBo_PreBaja_NumbExterior
         '
         Me.TtBo_PreBaja_NumbExterior.Location = New System.Drawing.Point(273, 267)
         Me.TtBo_PreBaja_NumbExterior.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_PreBaja_NumbExterior.MaxLength = 5
         Me.TtBo_PreBaja_NumbExterior.Name = "TtBo_PreBaja_NumbExterior"
         Me.TtBo_PreBaja_NumbExterior.Size = New System.Drawing.Size(217, 23)
         Me.TtBo_PreBaja_NumbExterior.TabIndex = 106
+        Me.TtBo_PreBaja_NumbExterior.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TtBo_PreBaja_RubroProv
         '
         Me.TtBo_PreBaja_RubroProv.Location = New System.Drawing.Point(732, 217)
         Me.TtBo_PreBaja_RubroProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_PreBaja_RubroProv.MaxLength = 50
         Me.TtBo_PreBaja_RubroProv.Name = "TtBo_PreBaja_RubroProv"
         Me.TtBo_PreBaja_RubroProv.Size = New System.Drawing.Size(217, 23)
         Me.TtBo_PreBaja_RubroProv.TabIndex = 105
+        Me.TtBo_PreBaja_RubroProv.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Lab_PreBaja_RubroProv
         '
@@ -1386,9 +1448,11 @@ Partial Class Form_Proveedores
         Me.TtBo_PreBaja_CalleProv.Enabled = False
         Me.TtBo_PreBaja_CalleProv.Location = New System.Drawing.Point(273, 223)
         Me.TtBo_PreBaja_CalleProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_PreBaja_CalleProv.MaxLength = 30
         Me.TtBo_PreBaja_CalleProv.Name = "TtBo_PreBaja_CalleProv"
         Me.TtBo_PreBaja_CalleProv.Size = New System.Drawing.Size(217, 23)
         Me.TtBo_PreBaja_CalleProv.TabIndex = 100
+        Me.TtBo_PreBaja_CalleProv.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Lab_PreBaja_CalleProv
         '
@@ -1405,17 +1469,21 @@ Partial Class Form_Proveedores
         '
         Me.TtBo_PreBaja_RfcProv.Location = New System.Drawing.Point(273, 182)
         Me.TtBo_PreBaja_RfcProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_PreBaja_RfcProv.MaxLength = 20
         Me.TtBo_PreBaja_RfcProv.Name = "TtBo_PreBaja_RfcProv"
         Me.TtBo_PreBaja_RfcProv.Size = New System.Drawing.Size(217, 23)
         Me.TtBo_PreBaja_RfcProv.TabIndex = 98
+        Me.TtBo_PreBaja_RfcProv.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TtBo_PreBaja_NombProv
         '
         Me.TtBo_PreBaja_NombProv.Location = New System.Drawing.Point(273, 149)
         Me.TtBo_PreBaja_NombProv.Margin = New System.Windows.Forms.Padding(4)
+        Me.TtBo_PreBaja_NombProv.MaxLength = 80
         Me.TtBo_PreBaja_NombProv.Name = "TtBo_PreBaja_NombProv"
         Me.TtBo_PreBaja_NombProv.Size = New System.Drawing.Size(217, 23)
         Me.TtBo_PreBaja_NombProv.TabIndex = 97
+        Me.TtBo_PreBaja_NombProv.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Lab_PreBaja_RfcProv
         '
@@ -1498,10 +1566,12 @@ Partial Class Form_Proveedores
         Me.Controls.Add(Me.Btn_atras)
         Me.Controls.Add(Me.MenuS_Principal)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Form_Proveedores"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "ñ"
+        Me.Text = "Proveedores"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.MenuS_Principal.ResumeLayout(False)
         Me.MenuS_Principal.PerformLayout()
         Me.Tab_Ctr_Proveedor.ResumeLayout(False)

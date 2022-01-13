@@ -29,6 +29,7 @@ Partial Class Form_splash
         '
         'Timer1
         '
+        Me.Timer1.Enabled = True
         '
         'Form_splash
         '
@@ -38,6 +39,7 @@ Partial Class Form_splash
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(508, 375)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form_splash"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Splash"

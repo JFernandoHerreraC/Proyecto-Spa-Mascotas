@@ -22,6 +22,7 @@ Partial Class Form_UsuarioYContraseña
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form_UsuarioYContraseña))
         Me.Lab_Login_Usuario = New System.Windows.Forms.Label()
         Me.Lab_Login_Contraseña = New System.Windows.Forms.Label()
         Me.TtBo_Login_Usuario = New System.Windows.Forms.TextBox()
@@ -105,6 +106,7 @@ Partial Class Form_UsuarioYContraseña
         Me.Controls.Add(Me.Lab_Login_Contraseña)
         Me.Controls.Add(Me.Lab_Login_Usuario)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form_UsuarioYContraseña"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form_UsuarioYContraseña"

@@ -37,31 +37,31 @@ Partial Class Form_Categorias
         Me.CaducosToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.Alta_Categoria = New System.Windows.Forms.TabPage()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Btn_Alta_Limpiar_Categorias = New System.Windows.Forms.Button()
         Me.Btn_Categorias_Guardar = New System.Windows.Forms.Button()
         Me.TtBo_Alta_DescCategoria = New System.Windows.Forms.TextBox()
         Me.Lab_Catg_DescCategoria = New System.Windows.Forms.Label()
         Me.TtBo_Alta_NombCategoria = New System.Windows.Forms.TextBox()
         Me.Lab_Catg_NombCategoria = New System.Windows.Forms.Label()
         Me.Consulta_Categorias = New System.Windows.Forms.TabPage()
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.Btn_Consulta_BuscarTodo = New System.Windows.Forms.Button()
+        Me.DGVListaCtg = New System.Windows.Forms.DataGridView()
         Me.DGV_Catg_ID = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DGV_Catg_Nomb = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DGV_Catg_Descp = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Btn_Consulta_Buscar = New System.Windows.Forms.Button()
         Me.TtBo_Consulta_NombCategoria = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Cambio_Categoria = New System.Windows.Forms.TabPage()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
+        Me.Btn_Cambios_Limpiar = New System.Windows.Forms.Button()
+        Me.Btn_Cambios_Guardar = New System.Windows.Forms.Button()
         Me.TtBo_Cambios_DescCategoria = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.TtBo_Cambios_NombCategoria = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Baja_Categoria = New System.Windows.Forms.TabPage()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
+        Me.Btn_Baja_Limpiar_Ctg = New System.Windows.Forms.Button()
+        Me.Btn_Baja_Buscar = New System.Windows.Forms.Button()
         Me.TtBo_Baja_DescCategoria = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.TtBo_Baja_NombCategoria = New System.Windows.Forms.TextBox()
@@ -70,7 +70,7 @@ Partial Class Form_Categorias
         Me.TabControl1.SuspendLayout()
         Me.Alta_Categoria.SuspendLayout()
         Me.Consulta_Categorias.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DGVListaCtg, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Cambio_Categoria.SuspendLayout()
         Me.Baja_Categoria.SuspendLayout()
         Me.SuspendLayout()
@@ -156,6 +156,9 @@ Partial Class Form_Categorias
         '
         'TabControl1
         '
+        Me.TabControl1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TabControl1.Controls.Add(Me.Alta_Categoria)
         Me.TabControl1.Controls.Add(Me.Consulta_Categorias)
         Me.TabControl1.Controls.Add(Me.Cambio_Categoria)
@@ -170,7 +173,7 @@ Partial Class Form_Categorias
         'Alta_Categoria
         '
         Me.Alta_Categoria.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Alta_Categoria.Controls.Add(Me.Button2)
+        Me.Alta_Categoria.Controls.Add(Me.Btn_Alta_Limpiar_Categorias)
         Me.Alta_Categoria.Controls.Add(Me.Btn_Categorias_Guardar)
         Me.Alta_Categoria.Controls.Add(Me.TtBo_Alta_DescCategoria)
         Me.Alta_Categoria.Controls.Add(Me.Lab_Catg_DescCategoria)
@@ -183,20 +186,20 @@ Partial Class Form_Categorias
         Me.Alta_Categoria.TabIndex = 0
         Me.Alta_Categoria.Text = "Alta de categoría"
         '
-        'Button2
+        'Btn_Alta_Limpiar_Categorias
         '
-        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Button2.Location = New System.Drawing.Point(395, 136)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(62, 25)
-        Me.Button2.TabIndex = 5
-        Me.Button2.Text = "Limpiar"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.Btn_Alta_Limpiar_Categorias.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Btn_Alta_Limpiar_Categorias.Location = New System.Drawing.Point(455, 200)
+        Me.Btn_Alta_Limpiar_Categorias.Name = "Btn_Alta_Limpiar_Categorias"
+        Me.Btn_Alta_Limpiar_Categorias.Size = New System.Drawing.Size(80, 25)
+        Me.Btn_Alta_Limpiar_Categorias.TabIndex = 5
+        Me.Btn_Alta_Limpiar_Categorias.Text = "Limpiar"
+        Me.Btn_Alta_Limpiar_Categorias.UseVisualStyleBackColor = False
         '
         'Btn_Categorias_Guardar
         '
         Me.Btn_Categorias_Guardar.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Btn_Categorias_Guardar.Location = New System.Drawing.Point(481, 136)
+        Me.Btn_Categorias_Guardar.Location = New System.Drawing.Point(541, 200)
         Me.Btn_Categorias_Guardar.Name = "Btn_Categorias_Guardar"
         Me.Btn_Categorias_Guardar.Size = New System.Drawing.Size(120, 25)
         Me.Btn_Categorias_Guardar.TabIndex = 4
@@ -205,17 +208,18 @@ Partial Class Form_Categorias
         '
         'TtBo_Alta_DescCategoria
         '
-        Me.TtBo_Alta_DescCategoria.Location = New System.Drawing.Point(395, 98)
-        Me.TtBo_Alta_DescCategoria.MaxLength = 120
+        Me.TtBo_Alta_DescCategoria.Location = New System.Drawing.Point(455, 162)
+        Me.TtBo_Alta_DescCategoria.MaxLength = 80
         Me.TtBo_Alta_DescCategoria.Name = "TtBo_Alta_DescCategoria"
         Me.TtBo_Alta_DescCategoria.Size = New System.Drawing.Size(206, 23)
         Me.TtBo_Alta_DescCategoria.TabIndex = 3
+        Me.TtBo_Alta_DescCategoria.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Lab_Catg_DescCategoria
         '
         Me.Lab_Catg_DescCategoria.AutoSize = True
         Me.Lab_Catg_DescCategoria.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Lab_Catg_DescCategoria.Location = New System.Drawing.Point(186, 101)
+        Me.Lab_Catg_DescCategoria.Location = New System.Drawing.Point(246, 165)
         Me.Lab_Catg_DescCategoria.Name = "Lab_Catg_DescCategoria"
         Me.Lab_Catg_DescCategoria.Size = New System.Drawing.Size(184, 17)
         Me.Lab_Catg_DescCategoria.TabIndex = 2
@@ -223,17 +227,18 @@ Partial Class Form_Categorias
         '
         'TtBo_Alta_NombCategoria
         '
-        Me.TtBo_Alta_NombCategoria.Location = New System.Drawing.Point(395, 64)
-        Me.TtBo_Alta_NombCategoria.MaxLength = 30
+        Me.TtBo_Alta_NombCategoria.Location = New System.Drawing.Point(455, 128)
+        Me.TtBo_Alta_NombCategoria.MaxLength = 40
         Me.TtBo_Alta_NombCategoria.Name = "TtBo_Alta_NombCategoria"
         Me.TtBo_Alta_NombCategoria.Size = New System.Drawing.Size(206, 23)
         Me.TtBo_Alta_NombCategoria.TabIndex = 1
+        Me.TtBo_Alta_NombCategoria.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'Lab_Catg_NombCategoria
         '
         Me.Lab_Catg_NombCategoria.AutoSize = True
         Me.Lab_Catg_NombCategoria.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Lab_Catg_NombCategoria.Location = New System.Drawing.Point(186, 64)
+        Me.Lab_Catg_NombCategoria.Location = New System.Drawing.Point(246, 128)
         Me.Lab_Catg_NombCategoria.Name = "Lab_Catg_NombCategoria"
         Me.Lab_Catg_NombCategoria.Size = New System.Drawing.Size(160, 17)
         Me.Lab_Catg_NombCategoria.TabIndex = 0
@@ -242,9 +247,9 @@ Partial Class Form_Categorias
         'Consulta_Categorias
         '
         Me.Consulta_Categorias.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Consulta_Categorias.Controls.Add(Me.Button8)
-        Me.Consulta_Categorias.Controls.Add(Me.DataGridView1)
-        Me.Consulta_Categorias.Controls.Add(Me.Button3)
+        Me.Consulta_Categorias.Controls.Add(Me.Btn_Consulta_BuscarTodo)
+        Me.Consulta_Categorias.Controls.Add(Me.DGVListaCtg)
+        Me.Consulta_Categorias.Controls.Add(Me.Btn_Consulta_Buscar)
         Me.Consulta_Categorias.Controls.Add(Me.TtBo_Consulta_NombCategoria)
         Me.Consulta_Categorias.Controls.Add(Me.Label3)
         Me.Consulta_Categorias.Location = New System.Drawing.Point(4, 25)
@@ -254,25 +259,25 @@ Partial Class Form_Categorias
         Me.Consulta_Categorias.TabIndex = 1
         Me.Consulta_Categorias.Text = "Consulta de categorías"
         '
-        'Button8
+        'Btn_Consulta_BuscarTodo
         '
-        Me.Button8.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.Button8.Location = New System.Drawing.Point(268, 75)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(123, 25)
-        Me.Button8.TabIndex = 4
-        Me.Button8.Text = "Buscar todo"
-        Me.Button8.UseVisualStyleBackColor = False
+        Me.Btn_Consulta_BuscarTodo.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Btn_Consulta_BuscarTodo.Location = New System.Drawing.Point(294, 121)
+        Me.Btn_Consulta_BuscarTodo.Name = "Btn_Consulta_BuscarTodo"
+        Me.Btn_Consulta_BuscarTodo.Size = New System.Drawing.Size(123, 25)
+        Me.Btn_Consulta_BuscarTodo.TabIndex = 4
+        Me.Btn_Consulta_BuscarTodo.Text = "Buscar todo"
+        Me.Btn_Consulta_BuscarTodo.UseVisualStyleBackColor = False
         '
-        'DataGridView1
+        'DGVListaCtg
         '
-        Me.DataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveBorder
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DGV_Catg_ID, Me.DGV_Catg_Nomb, Me.DGV_Catg_Descp})
-        Me.DataGridView1.Location = New System.Drawing.Point(229, 125)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(345, 150)
-        Me.DataGridView1.TabIndex = 3
+        Me.DGVListaCtg.BackgroundColor = System.Drawing.SystemColors.ActiveBorder
+        Me.DGVListaCtg.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGVListaCtg.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DGV_Catg_ID, Me.DGV_Catg_Nomb, Me.DGV_Catg_Descp})
+        Me.DGVListaCtg.Location = New System.Drawing.Point(252, 162)
+        Me.DGVListaCtg.Name = "DGVListaCtg"
+        Me.DGVListaCtg.Size = New System.Drawing.Size(344, 150)
+        Me.DGVListaCtg.TabIndex = 3
         '
         'DGV_Catg_ID
         '
@@ -292,29 +297,30 @@ Partial Class Form_Categorias
         Me.DGV_Catg_Descp.MaxInputLength = 120
         Me.DGV_Catg_Descp.Name = "DGV_Catg_Descp"
         '
-        'Button3
+        'Btn_Consulta_Buscar
         '
-        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Button3.Location = New System.Drawing.Point(397, 75)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(132, 25)
-        Me.Button3.TabIndex = 2
-        Me.Button3.Text = "Buscar"
-        Me.Button3.UseVisualStyleBackColor = False
+        Me.Btn_Consulta_Buscar.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Btn_Consulta_Buscar.Location = New System.Drawing.Point(423, 121)
+        Me.Btn_Consulta_Buscar.Name = "Btn_Consulta_Buscar"
+        Me.Btn_Consulta_Buscar.Size = New System.Drawing.Size(132, 25)
+        Me.Btn_Consulta_Buscar.TabIndex = 2
+        Me.Btn_Consulta_Buscar.Text = "Buscar"
+        Me.Btn_Consulta_Buscar.UseVisualStyleBackColor = False
         '
         'TtBo_Consulta_NombCategoria
         '
-        Me.TtBo_Consulta_NombCategoria.Location = New System.Drawing.Point(338, 49)
-        Me.TtBo_Consulta_NombCategoria.MaxLength = 30
+        Me.TtBo_Consulta_NombCategoria.Location = New System.Drawing.Point(364, 95)
+        Me.TtBo_Consulta_NombCategoria.MaxLength = 40
         Me.TtBo_Consulta_NombCategoria.Name = "TtBo_Consulta_NombCategoria"
         Me.TtBo_Consulta_NombCategoria.Size = New System.Drawing.Size(179, 23)
         Me.TtBo_Consulta_NombCategoria.TabIndex = 1
+        Me.TtBo_Consulta_NombCategoria.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label3.Location = New System.Drawing.Point(171, 49)
+        Me.Label3.Location = New System.Drawing.Point(197, 95)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(160, 17)
         Me.Label3.TabIndex = 0
@@ -323,8 +329,8 @@ Partial Class Form_Categorias
         'Cambio_Categoria
         '
         Me.Cambio_Categoria.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Cambio_Categoria.Controls.Add(Me.Button4)
-        Me.Cambio_Categoria.Controls.Add(Me.Button5)
+        Me.Cambio_Categoria.Controls.Add(Me.Btn_Cambios_Limpiar)
+        Me.Cambio_Categoria.Controls.Add(Me.Btn_Cambios_Guardar)
         Me.Cambio_Categoria.Controls.Add(Me.TtBo_Cambios_DescCategoria)
         Me.Cambio_Categoria.Controls.Add(Me.Label4)
         Me.Cambio_Categoria.Controls.Add(Me.TtBo_Cambios_NombCategoria)
@@ -336,30 +342,30 @@ Partial Class Form_Categorias
         Me.Cambio_Categoria.TabIndex = 3
         Me.Cambio_Categoria.Text = "Cambios en categoría"
         '
-        'Button4
+        'Btn_Cambios_Limpiar
         '
-        Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Button4.Location = New System.Drawing.Point(395, 151)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(62, 25)
-        Me.Button4.TabIndex = 11
-        Me.Button4.Text = "Limpiar"
-        Me.Button4.UseVisualStyleBackColor = False
+        Me.Btn_Cambios_Limpiar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Btn_Cambios_Limpiar.Location = New System.Drawing.Point(405, 182)
+        Me.Btn_Cambios_Limpiar.Name = "Btn_Cambios_Limpiar"
+        Me.Btn_Cambios_Limpiar.Size = New System.Drawing.Size(80, 25)
+        Me.Btn_Cambios_Limpiar.TabIndex = 11
+        Me.Btn_Cambios_Limpiar.Text = "Limpiar"
+        Me.Btn_Cambios_Limpiar.UseVisualStyleBackColor = False
         '
-        'Button5
+        'Btn_Cambios_Guardar
         '
-        Me.Button5.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Button5.Location = New System.Drawing.Point(481, 151)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(120, 25)
-        Me.Button5.TabIndex = 10
-        Me.Button5.Text = "Buscar"
-        Me.Button5.UseVisualStyleBackColor = False
+        Me.Btn_Cambios_Guardar.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Btn_Cambios_Guardar.Location = New System.Drawing.Point(491, 182)
+        Me.Btn_Cambios_Guardar.Name = "Btn_Cambios_Guardar"
+        Me.Btn_Cambios_Guardar.Size = New System.Drawing.Size(120, 25)
+        Me.Btn_Cambios_Guardar.TabIndex = 10
+        Me.Btn_Cambios_Guardar.Text = "Buscar"
+        Me.Btn_Cambios_Guardar.UseVisualStyleBackColor = False
         '
         'TtBo_Cambios_DescCategoria
         '
-        Me.TtBo_Cambios_DescCategoria.Location = New System.Drawing.Point(395, 113)
-        Me.TtBo_Cambios_DescCategoria.MaxLength = 120
+        Me.TtBo_Cambios_DescCategoria.Location = New System.Drawing.Point(405, 144)
+        Me.TtBo_Cambios_DescCategoria.MaxLength = 80
         Me.TtBo_Cambios_DescCategoria.Name = "TtBo_Cambios_DescCategoria"
         Me.TtBo_Cambios_DescCategoria.Size = New System.Drawing.Size(206, 23)
         Me.TtBo_Cambios_DescCategoria.TabIndex = 9
@@ -368,7 +374,7 @@ Partial Class Form_Categorias
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label4.Location = New System.Drawing.Point(205, 113)
+        Me.Label4.Location = New System.Drawing.Point(215, 144)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(184, 17)
         Me.Label4.TabIndex = 8
@@ -376,8 +382,8 @@ Partial Class Form_Categorias
         '
         'TtBo_Cambios_NombCategoria
         '
-        Me.TtBo_Cambios_NombCategoria.Location = New System.Drawing.Point(395, 80)
-        Me.TtBo_Cambios_NombCategoria.MaxLength = 30
+        Me.TtBo_Cambios_NombCategoria.Location = New System.Drawing.Point(405, 111)
+        Me.TtBo_Cambios_NombCategoria.MaxLength = 40
         Me.TtBo_Cambios_NombCategoria.Name = "TtBo_Cambios_NombCategoria"
         Me.TtBo_Cambios_NombCategoria.Size = New System.Drawing.Size(206, 23)
         Me.TtBo_Cambios_NombCategoria.TabIndex = 7
@@ -386,7 +392,7 @@ Partial Class Form_Categorias
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label5.Location = New System.Drawing.Point(205, 80)
+        Me.Label5.Location = New System.Drawing.Point(215, 111)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(160, 17)
         Me.Label5.TabIndex = 6
@@ -395,8 +401,8 @@ Partial Class Form_Categorias
         'Baja_Categoria
         '
         Me.Baja_Categoria.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Baja_Categoria.Controls.Add(Me.Button6)
-        Me.Baja_Categoria.Controls.Add(Me.Button7)
+        Me.Baja_Categoria.Controls.Add(Me.Btn_Baja_Limpiar_Ctg)
+        Me.Baja_Categoria.Controls.Add(Me.Btn_Baja_Buscar)
         Me.Baja_Categoria.Controls.Add(Me.TtBo_Baja_DescCategoria)
         Me.Baja_Categoria.Controls.Add(Me.Label6)
         Me.Baja_Categoria.Controls.Add(Me.TtBo_Baja_NombCategoria)
@@ -408,30 +414,30 @@ Partial Class Form_Categorias
         Me.Baja_Categoria.TabIndex = 2
         Me.Baja_Categoria.Text = "Baja de categoría"
         '
-        'Button6
+        'Btn_Baja_Limpiar_Ctg
         '
-        Me.Button6.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Button6.Location = New System.Drawing.Point(397, 173)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(62, 25)
-        Me.Button6.TabIndex = 17
-        Me.Button6.Text = "Limpiar"
-        Me.Button6.UseVisualStyleBackColor = False
+        Me.Btn_Baja_Limpiar_Ctg.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Btn_Baja_Limpiar_Ctg.Location = New System.Drawing.Point(391, 134)
+        Me.Btn_Baja_Limpiar_Ctg.Name = "Btn_Baja_Limpiar_Ctg"
+        Me.Btn_Baja_Limpiar_Ctg.Size = New System.Drawing.Size(62, 25)
+        Me.Btn_Baja_Limpiar_Ctg.TabIndex = 17
+        Me.Btn_Baja_Limpiar_Ctg.Text = "Limpiar"
+        Me.Btn_Baja_Limpiar_Ctg.UseVisualStyleBackColor = False
         '
-        'Button7
+        'Btn_Baja_Buscar
         '
-        Me.Button7.BackColor = System.Drawing.Color.Lime
-        Me.Button7.Location = New System.Drawing.Point(475, 173)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(128, 25)
-        Me.Button7.TabIndex = 16
-        Me.Button7.Text = "Buscar"
-        Me.Button7.UseVisualStyleBackColor = False
+        Me.Btn_Baja_Buscar.BackColor = System.Drawing.Color.Lime
+        Me.Btn_Baja_Buscar.Location = New System.Drawing.Point(469, 134)
+        Me.Btn_Baja_Buscar.Name = "Btn_Baja_Buscar"
+        Me.Btn_Baja_Buscar.Size = New System.Drawing.Size(128, 25)
+        Me.Btn_Baja_Buscar.TabIndex = 16
+        Me.Btn_Baja_Buscar.Text = "Buscar"
+        Me.Btn_Baja_Buscar.UseVisualStyleBackColor = False
         '
         'TtBo_Baja_DescCategoria
         '
-        Me.TtBo_Baja_DescCategoria.Location = New System.Drawing.Point(397, 135)
-        Me.TtBo_Baja_DescCategoria.MaxLength = 120
+        Me.TtBo_Baja_DescCategoria.Location = New System.Drawing.Point(391, 96)
+        Me.TtBo_Baja_DescCategoria.MaxLength = 80
         Me.TtBo_Baja_DescCategoria.Name = "TtBo_Baja_DescCategoria"
         Me.TtBo_Baja_DescCategoria.Size = New System.Drawing.Size(206, 23)
         Me.TtBo_Baja_DescCategoria.TabIndex = 15
@@ -440,7 +446,7 @@ Partial Class Form_Categorias
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label6.Location = New System.Drawing.Point(207, 138)
+        Me.Label6.Location = New System.Drawing.Point(201, 99)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(184, 17)
         Me.Label6.TabIndex = 14
@@ -448,17 +454,18 @@ Partial Class Form_Categorias
         '
         'TtBo_Baja_NombCategoria
         '
-        Me.TtBo_Baja_NombCategoria.Location = New System.Drawing.Point(397, 101)
-        Me.TtBo_Baja_NombCategoria.MaxLength = 30
+        Me.TtBo_Baja_NombCategoria.Location = New System.Drawing.Point(391, 62)
+        Me.TtBo_Baja_NombCategoria.MaxLength = 40
         Me.TtBo_Baja_NombCategoria.Name = "TtBo_Baja_NombCategoria"
         Me.TtBo_Baja_NombCategoria.Size = New System.Drawing.Size(206, 23)
         Me.TtBo_Baja_NombCategoria.TabIndex = 13
+        Me.TtBo_Baja_NombCategoria.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label7
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Label7.Location = New System.Drawing.Point(212, 101)
+        Me.Label7.Location = New System.Drawing.Point(206, 62)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(160, 17)
         Me.Label7.TabIndex = 12
@@ -475,7 +482,9 @@ Partial Class Form_Categorias
         Me.Controls.Add(Me.MenuS_Principal)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form_Categorias"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Categorias"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.MenuS_Principal.ResumeLayout(False)
         Me.MenuS_Principal.PerformLayout()
         Me.TabControl1.ResumeLayout(False)
@@ -483,7 +492,7 @@ Partial Class Form_Categorias
         Me.Alta_Categoria.PerformLayout()
         Me.Consulta_Categorias.ResumeLayout(False)
         Me.Consulta_Categorias.PerformLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DGVListaCtg, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Cambio_Categoria.ResumeLayout(False)
         Me.Cambio_Categoria.PerformLayout()
         Me.Baja_Categoria.ResumeLayout(False)
@@ -508,7 +517,7 @@ Partial Class Form_Categorias
     Friend WithEvents TabControl1 As TabControl
     Friend WithEvents Alta_Categoria As TabPage
     Friend WithEvents Consulta_Categorias As TabPage
-    Friend WithEvents Button2 As Button
+    Friend WithEvents Btn_Alta_Limpiar_Categorias As Button
     Friend WithEvents Btn_Categorias_Guardar As Button
     Friend WithEvents TtBo_Alta_DescCategoria As TextBox
     Friend WithEvents Lab_Catg_DescCategoria As Label
@@ -516,24 +525,24 @@ Partial Class Form_Categorias
     Friend WithEvents Lab_Catg_NombCategoria As Label
     Friend WithEvents Cambio_Categoria As TabPage
     Friend WithEvents Baja_Categoria As TabPage
-    Friend WithEvents Button3 As Button
+    Friend WithEvents Btn_Consulta_Buscar As Button
     Friend WithEvents TtBo_Consulta_NombCategoria As TextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents DGVListaCtg As DataGridView
     Friend WithEvents DGV_Catg_ID As DataGridViewTextBoxColumn
     Friend WithEvents DGV_Catg_Nomb As DataGridViewTextBoxColumn
     Friend WithEvents DGV_Catg_Descp As DataGridViewTextBoxColumn
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button5 As Button
+    Friend WithEvents Btn_Cambios_Limpiar As Button
+    Friend WithEvents Btn_Cambios_Guardar As Button
     Friend WithEvents TtBo_Cambios_DescCategoria As TextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents TtBo_Cambios_NombCategoria As TextBox
     Friend WithEvents Label5 As Label
-    Friend WithEvents Button6 As Button
-    Friend WithEvents Button7 As Button
+    Friend WithEvents Btn_Baja_Limpiar_Ctg As Button
+    Friend WithEvents Btn_Baja_Buscar As Button
     Friend WithEvents TtBo_Baja_DescCategoria As TextBox
     Friend WithEvents Label6 As Label
     Friend WithEvents TtBo_Baja_NombCategoria As TextBox
     Friend WithEvents Label7 As Label
-    Friend WithEvents Button8 As Button
+    Friend WithEvents Btn_Consulta_BuscarTodo As Button
 End Class

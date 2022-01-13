@@ -310,7 +310,8 @@ Partial Class Form_Productos
         Me.TtBo_Alta_CodBarraProd.MaxLength = 18
         Me.TtBo_Alta_CodBarraProd.Name = "TtBo_Alta_CodBarraProd"
         Me.TtBo_Alta_CodBarraProd.Size = New System.Drawing.Size(182, 23)
-        Me.TtBo_Alta_CodBarraProd.TabIndex = 17
+        Me.TtBo_Alta_CodBarraProd.TabIndex = 1
+        Me.TtBo_Alta_CodBarraProd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Lab_Alta_ProvProd
         '
@@ -367,10 +368,11 @@ Partial Class Form_Productos
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.TtBo_Alta_NombProd.Location = New System.Drawing.Point(126, 46)
-        Me.TtBo_Alta_NombProd.MaxLength = 40
+        Me.TtBo_Alta_NombProd.MaxLength = 30
         Me.TtBo_Alta_NombProd.Name = "TtBo_Alta_NombProd"
         Me.TtBo_Alta_NombProd.Size = New System.Drawing.Size(182, 23)
         Me.TtBo_Alta_NombProd.TabIndex = 2
+        Me.TtBo_Alta_NombProd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'DaTiPi_Alta_FechaCaducaProd
         '
@@ -379,12 +381,12 @@ Partial Class Form_Productos
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.DaTiPi_Alta_FechaCaducaProd.CalendarFont = New System.Drawing.Font("Microsoft Sans Serif", 9.5!)
         Me.DaTiPi_Alta_FechaCaducaProd.Location = New System.Drawing.Point(148, 275)
-        Me.DaTiPi_Alta_FechaCaducaProd.MaxDate = New Date(2021, 12, 31, 0, 0, 0, 0)
+        Me.DaTiPi_Alta_FechaCaducaProd.MaxDate = New Date(2050, 1, 1, 0, 0, 0, 0)
         Me.DaTiPi_Alta_FechaCaducaProd.MinDate = New Date(1920, 1, 1, 0, 0, 0, 0)
         Me.DaTiPi_Alta_FechaCaducaProd.Name = "DaTiPi_Alta_FechaCaducaProd"
         Me.DaTiPi_Alta_FechaCaducaProd.Size = New System.Drawing.Size(238, 23)
         Me.DaTiPi_Alta_FechaCaducaProd.TabIndex = 11
-        Me.DaTiPi_Alta_FechaCaducaProd.Value = New Date(2021, 12, 31, 0, 0, 0, 0)
+        Me.DaTiPi_Alta_FechaCaducaProd.Value = New Date(2022, 1, 11, 0, 0, 0, 0)
         '
         'Lab_Alta_DescripProd
         '
@@ -478,6 +480,7 @@ Partial Class Form_Productos
         Me.TtBo_Alta_DescripProd.Name = "TtBo_Alta_DescripProd"
         Me.TtBo_Alta_DescripProd.Size = New System.Drawing.Size(182, 23)
         Me.TtBo_Alta_DescripProd.TabIndex = 3
+        Me.TtBo_Alta_DescripProd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Lab_Alta_FechCadProd
         '
@@ -502,6 +505,7 @@ Partial Class Form_Productos
         Me.TtBo_Alta_ContenidoProd.Name = "TtBo_Alta_ContenidoProd"
         Me.TtBo_Alta_ContenidoProd.Size = New System.Drawing.Size(107, 23)
         Me.TtBo_Alta_ContenidoProd.TabIndex = 4
+        Me.TtBo_Alta_ContenidoProd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'NuUpDo_Alta_CantidadExistProd
         '
@@ -606,6 +610,7 @@ Partial Class Form_Productos
         Me.TtBo_Alta_PrecioProvProd.Name = "TtBo_Alta_PrecioProvProd"
         Me.TtBo_Alta_PrecioProvProd.Size = New System.Drawing.Size(112, 23)
         Me.TtBo_Alta_PrecioProvProd.TabIndex = 12
+        Me.TtBo_Alta_PrecioProvProd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Lab_Alta_PrecioPublicoProd
         '
@@ -737,7 +742,7 @@ Partial Class Form_Productos
         'TtBo_Consulta_CodBarraProd
         '
         Me.TtBo_Consulta_CodBarraProd.Location = New System.Drawing.Point(190, 28)
-        Me.TtBo_Consulta_CodBarraProd.MaxLength = 15
+        Me.TtBo_Consulta_CodBarraProd.MaxLength = 18
         Me.TtBo_Consulta_CodBarraProd.Name = "TtBo_Consulta_CodBarraProd"
         Me.TtBo_Consulta_CodBarraProd.Size = New System.Drawing.Size(206, 23)
         Me.TtBo_Consulta_CodBarraProd.TabIndex = 1
@@ -1208,12 +1213,12 @@ Partial Class Form_Productos
         '
         Me.DaTiPi_Cambios_FechaCaducaProd.CalendarFont = New System.Drawing.Font("Microsoft Sans Serif", 9.5!)
         Me.DaTiPi_Cambios_FechaCaducaProd.Location = New System.Drawing.Point(210, 275)
-        Me.DaTiPi_Cambios_FechaCaducaProd.MaxDate = New Date(2021, 12, 31, 0, 0, 0, 0)
+        Me.DaTiPi_Cambios_FechaCaducaProd.MaxDate = New Date(2050, 1, 1, 0, 0, 0, 0)
         Me.DaTiPi_Cambios_FechaCaducaProd.MinDate = New Date(1920, 1, 1, 0, 0, 0, 0)
         Me.DaTiPi_Cambios_FechaCaducaProd.Name = "DaTiPi_Cambios_FechaCaducaProd"
         Me.DaTiPi_Cambios_FechaCaducaProd.Size = New System.Drawing.Size(238, 23)
         Me.DaTiPi_Cambios_FechaCaducaProd.TabIndex = 11
-        Me.DaTiPi_Cambios_FechaCaducaProd.Value = New Date(2021, 12, 31, 0, 0, 0, 0)
+        Me.DaTiPi_Cambios_FechaCaducaProd.Value = New Date(2022, 1, 11, 0, 0, 0, 0)
         '
         'Label25
         '
@@ -1351,6 +1356,7 @@ Partial Class Form_Productos
         Me.Controls.Add(Me.Tab_ABCC_Productos)
         Me.Controls.Add(Me.Btn_atras)
         Me.Controls.Add(Me.MenuS_Principal)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form_Productos"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Productos"

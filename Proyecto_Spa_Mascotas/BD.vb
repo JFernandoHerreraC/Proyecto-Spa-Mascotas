@@ -324,5 +324,62 @@ Module BD
                 Return Respuesta
             End Function
         End Class
+
+        Public Class Servicios
+            Public Function AltaServicios(Nombre As String, Desc As String)
+                Dim Respuesta As Boolean = False
+                Dim consulta = New ConsultasGenerales()
+                Dim RespuestaCons As DataTable = consulta.ConsultaTodo("Servicios")
+                Dim Columna As Integer = RespuestaCons.Rows.Count - 1
+                Dim Id As Integer = ObtenerId("Serv", "Servicios") + 1
+                Dim Conn As OdbcConnection = Conexion()
+                Dim Query As String = "Insert into Servicios values(" + Id.ToString() + ",'" + Nombre + "','" + Desc + "');"
+                Dim Comm As OdbcCommand = New OdbcCommand(Query, Conn)
+                Comm.CommandType = CommandType.Text
+                Try
+                    Conn.Open()
+                    Comm.ExecuteNonQuery()
+                    Respuesta = True
+                    Conn.Close()
+                Catch ex As Exception
+                    Console.WriteLine(ex.Message)
+                End Try
+                Return Respuesta
+            End Function
+            Public Function CambiosServicios()
+                Dim Respuesta As Boolean = False
+                Dim Conn As OdbcConnection = Conexion()
+                Dim Query As String = "Update set "
+                Dim Comm As OdbcCommand = New OdbcCommand(Query, Conn)
+                Return Respuesta
+            End Function
+        End Class
+        Public Class Aux_Servicios
+            Public Function Alta_AuxSrv(NombreSrv As String, Desc As String, Precio As Decimal)
+                Dim Respuesta As Boolean = False
+
+                Dim ConsSrv = New ConsultasGenerales()
+                Dim Id = ObtenerId("AxServ", "Aux_Servicios") + 1
+
+                Dim RespConsSrv As DataTable = ConsSrv.ConsultaTodoPor("Servicios", "Nombre", "Serv", NombreSrv)
+                Dim Id_Srv As Integer = RespConsSrv.Rows(0).Item(0)
+
+                Dim Conn As OdbcConnection = Conexion()
+                Dim Query As String = "Insert into Aux_Servicios values(" + Id.ToString() + "," + Id_Srv.ToString() + ",'" + Desc + "'," + Precio.ToString() + ");"
+                Dim Comm As OdbcCommand = New OdbcCommand(Query, Conn)
+                Comm.CommandType = CommandType.Text
+                Try
+                    Conn.Open()
+                    Comm.ExecuteNonQuery()
+                    Respuesta = True
+                    Conn.Close()
+                Catch ex As Exception
+                    Console.WriteLine(ex.Message)
+                End Try
+
+                Return Respuesta
+            End Function
+
+        End Class
     End Class
 End Module

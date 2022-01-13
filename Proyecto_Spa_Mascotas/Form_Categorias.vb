@@ -61,21 +61,29 @@
 
     Private Sub TextBox3_TextChanged(sender As Object, e As EventArgs) Handles TtBo_Consulta_NombCategoria.TextChanged
         If TtBo_Consulta_NombCategoria.TextAlign > 2 Then
-            Button3.Enabled = True
+            Btn_Consulta_Buscar.Enabled = True
         End If
     End Sub
 
-    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-        If Button5.Text = "Buscar" Then
+    Private Sub Btn_Cambios_Guardar_Click(sender As Object, e As EventArgs) Handles Btn_Cambios_Guardar.Click
+        If Btn_Cambios_Guardar.Text = "Buscar" Then
             'aqui va la opcion de buscar
             Dim Busqueda As String = TtBo_Cambios_NombCategoria.Text
-            Dim Consulta = New Consultas.ConsultasGenerales()
-            Dim Repuesta As DataTable = Consulta.ConsultaTodoPor("Categorias", "Nombre", "Ctg", Busqueda)
-            Id = Repuesta.Rows(0).Item(0)
-            TtBo_Cambios_NombCategoria.Clear()
-            TtBo_Cambios_NombCategoria.Text = Repuesta.Rows(0).Item(1)
-            TtBo_Cambios_DescCategoria.Text = Repuesta.Rows(0).Item(2)
-            Button5.Text = "Guardar"
+            If Not Busqueda = "" Then
+                Dim Consulta = New Consultas.ConsultasGenerales()
+                Dim Respuesta As DataTable = Consulta.ConsultaTodoPor("Categorias", "Nombre", "Ctg", Busqueda)
+                If Respuesta.Rows.Count > 0 Then
+                    Id = Respuesta.Rows(0).Item(0)
+                    TtBo_Cambios_NombCategoria.Clear()
+                    TtBo_Cambios_NombCategoria.Text = Respuesta.Rows(0).Item(1)
+                    TtBo_Cambios_DescCategoria.Text = Respuesta.Rows(0).Item(2)
+                    Btn_Cambios_Guardar.Text = "Guardar"
+                Else
+                    MsgBox("No se encontrarón elementos en la busqueda", MsgBoxStyle.Critical, "Error en la busqueda")
+                End If
+            Else
+                MsgBox("No hay elementos para buscar", MsgBoxStyle.Critical, "Error en la busqueda")
+            End If
         Else
             Dim Consulta_G = New Consultas.Categorias()
             Dim Nombre As String = TtBo_Cambios_NombCategoria.Text
@@ -83,6 +91,7 @@
             Dim Repuesta As Boolean = Consulta_G.CambioCategorias(Id.ToString(), Nombre, Desc)
             If Repuesta Then
                 MsgBox("Se guardarón los cambios con exito", MsgBoxStyle.Information, "Datos guardados")
+                Btn_Cambios_Guardar.Text = "Buscar"
                 TtBo_Cambios_NombCategoria.Clear()
                 TtBo_Cambios_DescCategoria.Clear()
             End If
@@ -90,16 +99,24 @@
         '    MsgBox("Lo sentimos, el campo de nombre esta vacío", MsgBoxStyle.Critical)
     End Sub
 
-    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
-        If Button7.Text = "Buscar" Then
+    Private Sub Btn_Baja_Buscar_Click(sender As Object, e As EventArgs) Handles Btn_Baja_Buscar.Click
+        If Btn_Baja_Buscar.Text = "Buscar" Then
             'aqui va la opcion de buscar
             Dim Busqueda As String = TtBo_Baja_NombCategoria.Text
-            Dim Consulta = New Consultas.ConsultasGenerales()
-            Dim Repuesta As DataTable = Consulta.ConsultaTodoPor("Categorias", "Nombre", "Ctg", Busqueda)
-            Id = Repuesta.Rows(0).Item(0)
-            TtBo_Baja_NombCategoria.Text = Repuesta.Rows(0).Item(1)
-            TtBo_Baja_DescCategoria.Text = Repuesta.Rows(0).Item(2)
-            Button7.Text = "Eliminar"
+            If Not Busqueda = "" Then
+                Dim Consulta = New Consultas.ConsultasGenerales()
+                Dim Respuesta As DataTable = Consulta.ConsultaTodoPor("Categorias", "Nombre", "Ctg", Busqueda)
+                If Respuesta.Rows.Count > 0 Then
+                    Id = Respuesta.Rows(0).Item(0)
+                    TtBo_Baja_NombCategoria.Text = Respuesta.Rows(0).Item(1)
+                    TtBo_Baja_DescCategoria.Text = Respuesta.Rows(0).Item(2)
+                    Btn_Baja_Buscar.Text = "Eliminar"
+                Else
+                    MsgBox("No se encontrarón elementos en la busqueda", MsgBoxStyle.Critical, "Error en la busqueda")
+                End If
+            Else
+                MsgBox("No hay elementos para buscar", MsgBoxStyle.Critical, "Error en la busqueda")
+            End If
         Else
             Dim Consulta_G = New Consultas.Categorias()
             Dim Repuesta As Boolean = Consulta_G.BajaCategorias(Id.ToString())
@@ -107,30 +124,53 @@
                 MsgBox("Se guardarón los cambios con exito", MsgBoxStyle.Information, "Datos guardados")
                 TtBo_Baja_NombCategoria.Clear()
                 TtBo_Baja_DescCategoria.Clear()
+                Btn_Baja_Buscar.Text = "Buscar"
             Else
-                MsgBox("Lo sentimos ocurrio algo...", MsgBoxStyle.Critical, "¡Ocurrio un error!")
+                MsgBox("Lo sentimos se origino un error", MsgBoxStyle.Critical, "¡Ocurrio un error!")
             End If
         End If
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub Btn_Consulta_Buscar_Click(sender As Object, e As EventArgs) Handles Btn_Consulta_Buscar.Click
         Dim Busqueda As String = TtBo_Consulta_NombCategoria.Text
-        Dim Consulta = New Consultas.ConsultasGenerales()
-        Dim Repuesta = Consulta.ConsultaTodoPor("Categorias", "Nombre", "Ctg", Busqueda)
-        DataGridView1.Columns().Clear()
-        DataGridView1.DataSource = Repuesta
-        DataGridView1.Columns(0).HeaderText = "ID"
-        DataGridView1.Columns(1).HeaderText = "Nombre de categoria"
-        DataGridView1.Columns(2).HeaderText = "Descripción de la categoria"
+        If Not Busqueda = "" Then
+            Dim Consulta = New Consultas.ConsultasGenerales()
+            Dim Repuesta = Consulta.ConsultaTodoPor("Categorias", "Nombre", "Ctg", Busqueda)
+            DGVListaCtg.Columns().Clear()
+            DGVListaCtg.DataSource = Repuesta
+            DGVListaCtg.Columns(0).HeaderText = "ID"
+            DGVListaCtg.Columns(1).HeaderText = "Nombre de categoria"
+            DGVListaCtg.Columns(2).HeaderText = "Descripción de la categoria"
+        Else
+            MsgBox("Lo sentimos, esta vacío el campo nombre de categoría", MsgBoxStyle.Critical, "Error en el guardado")
+        End If
+
     End Sub
 
-    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+    Private Sub Btn_Consulta_BuscarTodo_Click(sender As Object, e As EventArgs) Handles Btn_Consulta_BuscarTodo.Click
         Dim Consulta = New Consultas.ConsultasGenerales()
         Dim Repuesta = Consulta.ConsultaTodo("Categorias")
-        DataGridView1.Columns().Clear()
-        DataGridView1.DataSource = Repuesta
-        DataGridView1.Columns(0).HeaderText = "ID"
-        DataGridView1.Columns(1).HeaderText = "Nombre de categoria"
-        DataGridView1.Columns(2).HeaderText = "Descripción de la categoria"
+        DGVListaCtg.Columns().Clear()
+        DGVListaCtg.DataSource = Repuesta
+        DGVListaCtg.Columns(0).HeaderText = "ID"
+        DGVListaCtg.Columns(1).HeaderText = "Nombre de categoria"
+        DGVListaCtg.Columns(2).HeaderText = "Descripción de la categoria"
+    End Sub
+
+    Private Sub Btn_Alta_Limpiar_Categorias_Click(sender As Object, e As EventArgs) Handles Btn_Alta_Limpiar_Categorias.Click
+        TtBo_Alta_NombCategoria.Clear()
+        TtBo_Alta_DescCategoria.Clear()
+    End Sub
+
+    Private Sub Btn_Cambios_Limpiar_Click(sender As Object, e As EventArgs) Handles Btn_Cambios_Limpiar.Click
+        TtBo_Cambios_NombCategoria.Clear()
+        TtBo_Cambios_DescCategoria.Clear()
+        Btn_Cambios_Guardar.Text = "Buscar"
+    End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Btn_Baja_Limpiar_Ctg.Click
+        TtBo_Baja_NombCategoria.Clear()
+        TtBo_Baja_DescCategoria.Clear()
+        Btn_Baja_Buscar.Text = "Buscar"
     End Sub
 End Class

@@ -207,26 +207,30 @@
         Dim Datos(19) As String
         If Btn_Cambios_Buscar.Text = "Buscar" Then
             Dim Resultado As DataTable = Busqueda(Nombre, Rfc)
-            Id = Resultado.Rows(0).Item(0)
-            TtBo_Cambios_NombProv.Text = Resultado.Rows(0).Item(1)
-            TtBo_Cambios_RfcProv.Text = Resultado.Rows(0).Item(2)
-            TtBo_Cambios_CalleProv.Text = Resultado.Rows(0).Item(3)
-            TtBo_Cambios_NumExteriorProv.Text = Resultado.Rows(0).Item(4)
-            TtBo_Cambios_NumInteriorProv.Text = Resultado.Rows(0).Item(5)
-            TtBo_Cambios_CpProv.Text = Resultado.Rows(0).Item(6)
-            TtBo_Cambios_ColoniaProv.Text = Resultado.Rows(0).Item(7)
-            TtBo_Cambios_MpioProv.Text = Resultado.Rows(0).Item(8)
-            CoBo_Cambios_EstadoProv.Text = Resultado.Rows(0).Item(9)
-            TtBo_Cambios_TelefUnoProv.Text = Resultado.Rows(0).Item(10)
-            TtBo_Cambios_TelefDosProv.Text = Resultado.Rows(0).Item(11)
-            TtBo_Cambios_EmailProv.Text = Resultado.Rows(0).Item(12)
-            TtBo_Cambios_RubroProv.Text = Resultado.Rows(0).Item(13)
-            CoBo_Cambios_FormaPagoProv.Text = Resultado.Rows(0).Item(14)
-            TtBo_Cambios_SecuenciaProv.Text = Resultado.Rows(0).Item(15)
-            CoBo_Cambios_MonedaProv.Text = Resultado.Rows(0).Item(16)
-            TtBo_Cambios_CuentaDepositoProv.Text = Resultado.Rows(0).Item(17)
-            TtBo_Cambios_DescripProv.Text = Resultado.Rows(0).Item(18)
-            Btn_Cambios_Buscar.Text = "Guardar"
+            If Resultado.Rows.Count > 0 Then
+                Id = Resultado.Rows(0).Item(0)
+                TtBo_Cambios_NombProv.Text = Resultado.Rows(0).Item(1)
+                TtBo_Cambios_RfcProv.Text = Resultado.Rows(0).Item(2)
+                TtBo_Cambios_CalleProv.Text = Resultado.Rows(0).Item(3)
+                TtBo_Cambios_NumExteriorProv.Text = Resultado.Rows(0).Item(4)
+                TtBo_Cambios_NumInteriorProv.Text = Resultado.Rows(0).Item(5).ToString
+                TtBo_Cambios_CpProv.Text = Resultado.Rows(0).Item(6)
+                TtBo_Cambios_ColoniaProv.Text = Resultado.Rows(0).Item(7)
+                TtBo_Cambios_mpioProv.Text = Resultado.Rows(0).Item(8)
+                CoBo_Cambios_EstadoProv.Text = Resultado.Rows(0).Item(9)
+                TtBo_Cambios_TelefUnoProv.Text = Resultado.Rows(0).Item(10)
+                TtBo_Cambios_TelefDosProv.Text = Resultado.Rows(0).Item(11)
+                TtBo_Cambios_EmailProv.Text = Resultado.Rows(0).Item(12)
+                TtBo_Cambios_RubroProv.Text = Resultado.Rows(0).Item(13)
+                CoBo_Cambios_FormaPagoProv.Text = Resultado.Rows(0).Item(14)
+                TtBo_Cambios_SecuenciaProv.Text = Resultado.Rows(0).Item(15)
+                CoBo_Cambios_MonedaProv.Text = Resultado.Rows(0).Item(16)
+                TtBo_Cambios_CuentaDepositoProv.Text = Resultado.Rows(0).Item(17)
+                TtBo_Cambios_DescripProv.Text = Resultado.Rows(0).Item(18)
+                Btn_Cambios_Buscar.Text = "Guardar"
+            Else
+                MsgBox("No hay elementos encontrados", MsgBoxStyle.Critical, "Error en la busqueda")
+            End If
         Else
             Datos(0) = Id
             Datos(1) = TtBo_Cambios_NombProv.Text
@@ -262,14 +266,18 @@
         Dim Nombre As String = TtBo_Baja_NombProv.Text
         Dim Rfc As String = TtBo_Baja_RfcProv.Text
         Dim Resultado As DataTable = Busqueda(Nombre, Rfc)
-        Id = Resultado.Rows(0).Item(0)
-        TtBo_PreBaja_NombProv.Text = Resultado.Rows(0).Item(1)
-        TtBo_PreBaja_RfcProv.Text = Resultado.Rows(0).Item(2)
-        TtBo_PreBaja_CalleProv.Text = Resultado.Rows(0).Item(3)
-        TtBo_PreBaja_NumbExterior.Text = Resultado.Rows(0).Item(4)
-        TtBo_PreBaja_CpProv.Text = Resultado.Rows(0).Item(6)
-        TtBo_PreBaja_ColoniaProv.Text = Resultado.Rows(0).Item(7)
-        TtBo_PreBaja_RubroProv.Text = Resultado.Rows(0).Item(13)
+        If Resultado.Rows.Count > 0 Then
+            Id = Resultado.Rows(0).Item(0)
+            TtBo_PreBaja_NombProv.Text = Resultado.Rows(0).Item(1)
+            TtBo_PreBaja_RfcProv.Text = Resultado.Rows(0).Item(2)
+            TtBo_PreBaja_CalleProv.Text = Resultado.Rows(0).Item(3)
+            TtBo_PreBaja_NumbExterior.Text = Resultado.Rows(0).Item(4)
+            TtBo_PreBaja_CpProv.Text = Resultado.Rows(0).Item(6)
+            TtBo_PreBaja_ColoniaProv.Text = Resultado.Rows(0).Item(7)
+            TtBo_PreBaja_RubroProv.Text = Resultado.Rows(0).Item(13)
+        Else
+            MsgBox("No se encontrarón elementos en la busqueda", MsgBoxStyle.Critical, "Error en la busqueda")
+        End If
     End Sub
 
     Private Sub Btn_Baja_Eliminar_Click(sender As Object, e As EventArgs) Handles Btn_Baja_Eliminar.Click
@@ -289,5 +297,55 @@
 
     Private Sub Btn_Cambios_Limpiar_Click(sender As Object, e As EventArgs) Handles Btn_Cambios_Limpiar.Click
         LimpiarCambios()
+    End Sub
+
+    Private Sub TtBo_Alta_CpProv_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TtBo_Alta_CpProv.KeyPress
+        Dim Validaciones = New Validaciones_Numeros()
+        Validaciones.Textos_solo_numeros(sender, e)
+    End Sub
+
+    Private Sub TtBo_Alta_TelefUnoProv_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TtBo_Alta_TelefUnoProv.KeyPress
+        Dim Validaciones = New Validaciones_Numeros()
+        Validaciones.Textos_solo_numeros(sender, e)
+    End Sub
+
+    Private Sub TtBo_Alta_TelefDosProv_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TtBo_Alta_TelefDosProv.KeyPress
+        Dim Validaciones = New Validaciones_Numeros()
+        Validaciones.Textos_solo_numeros(sender, e)
+    End Sub
+
+    Private Sub TtBo_Alta_SecuenciaProv_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TtBo_Alta_SecuenciaProv.KeyPress
+        Dim Validaciones = New Validaciones_Numeros()
+        Validaciones.Textos_solo_numeros(sender, e)
+    End Sub
+
+    Private Sub TtBo_Alta_CuentaDepositoProv_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TtBo_Alta_CuentaDepositoProv.KeyPress
+        Dim Validaciones = New Validaciones_Numeros()
+        Validaciones.Textos_solo_numeros(sender, e)
+    End Sub
+
+    Private Sub TtBo_Cambios_CpProv_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TtBo_Cambios_CpProv.KeyPress
+        Dim Validaciones = New Validaciones_Numeros()
+        Validaciones.Textos_solo_numeros(sender, e)
+    End Sub
+
+    Private Sub TtBo_Cambios_TelefUnoProv_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TtBo_Cambios_TelefUnoProv.KeyPress
+        Dim Validaciones = New Validaciones_Numeros()
+        Validaciones.Textos_solo_numeros(sender, e)
+    End Sub
+
+    Private Sub TtBo_Cambios_TelefDosProv_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TtBo_Cambios_TelefDosProv.KeyPress
+        Dim Validaciones = New Validaciones_Numeros()
+        Validaciones.Textos_solo_numeros(sender, e)
+    End Sub
+
+    Private Sub TtBo_Cambios_SecuenciaProv_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TtBo_Cambios_SecuenciaProv.KeyPress
+        Dim Validaciones = New Validaciones_Numeros()
+        Validaciones.Textos_solo_numeros(sender, e)
+    End Sub
+
+    Private Sub TtBo_Cambios_CuentaDepositoProv_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TtBo_Cambios_CuentaDepositoProv.KeyPress
+        Dim Validaciones = New Validaciones_Numeros()
+        Validaciones.Textos_solo_numeros(sender, e)
     End Sub
 End Class

@@ -22,6 +22,7 @@ Partial Class Form_Servicios
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form_Servicios))
         Me.MenuS_Principal = New System.Windows.Forms.MenuStrip()
         Me.ProductosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CategoriasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -35,14 +36,22 @@ Partial Class Form_Servicios
         Me.Btn_atras = New System.Windows.Forms.Button()
         Me.Tab_Ctr_Servicio = New System.Windows.Forms.TabControl()
         Me.Alta_Servicio = New System.Windows.Forms.TabPage()
-        Me.Btn_Alta_LimpiarProd = New System.Windows.Forms.Button()
-        Me.Btn_Alta_GuardarProd = New System.Windows.Forms.Button()
-        Me.TtBo_Alta_PrecioServicio = New System.Windows.Forms.MaskedTextBox()
-        Me.TtBo_Alta_DescripServicio = New System.Windows.Forms.TextBox()
-        Me.TtBo_Alta_NombServicio = New System.Windows.Forms.TextBox()
-        Me.Lab_Alta_DescripServicio = New System.Windows.Forms.Label()
-        Me.Lab_Alta_PrecioServicio = New System.Windows.Forms.Label()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Btn_Alta_Limpiar_Servicio = New System.Windows.Forms.Button()
+        Me.TtBo_Alta_DescServicio = New System.Windows.Forms.TextBox()
+        Me.Btn_Alta_Servicio = New System.Windows.Forms.Button()
+        Me.TtBo_Alta_NombreServicio = New System.Windows.Forms.TextBox()
+        Me.Lab_Alta_DescServicio = New System.Windows.Forms.Label()
         Me.Lab_Alta_NombServicio = New System.Windows.Forms.Label()
+        Me.GoBo_DtsSrv_Servicios = New System.Windows.Forms.GroupBox()
+        Me.CoBo_Alta_DtsSrv_NombreServicio = New System.Windows.Forms.ComboBox()
+        Me.Btn_Alta_DtsSrv_LimpiarProd = New System.Windows.Forms.Button()
+        Me.Lab_Alta_DtsSrv_NombServicio = New System.Windows.Forms.Label()
+        Me.Btn_Alta_DtsSrv_GuardarProd = New System.Windows.Forms.Button()
+        Me.Lab_Alta_DtsSrv_PrecioServicio = New System.Windows.Forms.Label()
+        Me.TtBo_Alta_DtsSrv_PrecioServicio = New System.Windows.Forms.MaskedTextBox()
+        Me.Lab_Alta_DtsSrv_DescripServicio = New System.Windows.Forms.Label()
+        Me.TtBo_Alta_DtsSrv_DescripServicio = New System.Windows.Forms.TextBox()
         Me.Consulta_Servicio = New System.Windows.Forms.TabPage()
         Me.Btn_Consulta_BuscarTodo = New System.Windows.Forms.Button()
         Me.DGV_ListaServicio = New System.Windows.Forms.DataGridView()
@@ -54,14 +63,22 @@ Partial Class Form_Servicios
         Me.TtBo_Consulta_NombServicio = New System.Windows.Forms.TextBox()
         Me.Lab_Consulta_NombServicio = New System.Windows.Forms.Label()
         Me.Cambio_Servicio = New System.Windows.Forms.TabPage()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Btn_Cambios_Guardar = New System.Windows.Forms.Button()
-        Me.TtBo_Cambios_PrecioServicio = New System.Windows.Forms.MaskedTextBox()
-        Me.TtBo_Cambios_DescripServicio = New System.Windows.Forms.TextBox()
-        Me.TtBo_Cambios_NombServicio = New System.Windows.Forms.TextBox()
-        Me.Lab_Cambios_DescripServicio = New System.Windows.Forms.Label()
-        Me.Lab_Cambios_PrecioServicio = New System.Windows.Forms.Label()
-        Me.Lab_Cambios_NombServicio = New System.Windows.Forms.Label()
+        Me.GoBo_Cambios_Servicios = New System.Windows.Forms.GroupBox()
+        Me.CoBo_Cambios_NombServ = New System.Windows.Forms.ComboBox()
+        Me.Btn_Cambios_Limpiar = New System.Windows.Forms.Button()
+        Me.TtBo_Cambios_DescServ = New System.Windows.Forms.TextBox()
+        Me.Btn_Cambios_Buscar = New System.Windows.Forms.Button()
+        Me.Lab_Cambios_DescServ = New System.Windows.Forms.Label()
+        Me.Lab_Cambios_NombServ = New System.Windows.Forms.Label()
+        Me.GoBo_Cambios_detallesServ = New System.Windows.Forms.GroupBox()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.MaskedTextBox1 = New System.Windows.Forms.MaskedTextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Baja_Servicio = New System.Windows.Forms.TabPage()
         Me.Btn_Bajas_Limpiar = New System.Windows.Forms.Button()
         Me.Btn_Bajas_Buscar = New System.Windows.Forms.Button()
@@ -78,9 +95,13 @@ Partial Class Form_Servicios
         Me.MenuS_Principal.SuspendLayout()
         Me.Tab_Ctr_Servicio.SuspendLayout()
         Me.Alta_Servicio.SuspendLayout()
+        Me.GroupBox1.SuspendLayout()
+        Me.GoBo_DtsSrv_Servicios.SuspendLayout()
         Me.Consulta_Servicio.SuspendLayout()
         CType(Me.DGV_ListaServicio, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Cambio_Servicio.SuspendLayout()
+        Me.GoBo_Cambios_Servicios.SuspendLayout()
+        Me.GoBo_Cambios_detallesServ.SuspendLayout()
         Me.Baja_Servicio.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -172,14 +193,8 @@ Partial Class Form_Servicios
         'Alta_Servicio
         '
         Me.Alta_Servicio.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Alta_Servicio.Controls.Add(Me.Btn_Alta_LimpiarProd)
-        Me.Alta_Servicio.Controls.Add(Me.Btn_Alta_GuardarProd)
-        Me.Alta_Servicio.Controls.Add(Me.TtBo_Alta_PrecioServicio)
-        Me.Alta_Servicio.Controls.Add(Me.TtBo_Alta_DescripServicio)
-        Me.Alta_Servicio.Controls.Add(Me.TtBo_Alta_NombServicio)
-        Me.Alta_Servicio.Controls.Add(Me.Lab_Alta_DescripServicio)
-        Me.Alta_Servicio.Controls.Add(Me.Lab_Alta_PrecioServicio)
-        Me.Alta_Servicio.Controls.Add(Me.Lab_Alta_NombServicio)
+        Me.Alta_Servicio.Controls.Add(Me.GroupBox1)
+        Me.Alta_Servicio.Controls.Add(Me.GoBo_DtsSrv_Servicios)
         Me.Alta_Servicio.Location = New System.Drawing.Point(4, 22)
         Me.Alta_Servicio.Name = "Alta_Servicio"
         Me.Alta_Servicio.Padding = New System.Windows.Forms.Padding(3)
@@ -187,83 +202,179 @@ Partial Class Form_Servicios
         Me.Alta_Servicio.TabIndex = 0
         Me.Alta_Servicio.Text = "Alta de Servicios"
         '
-        'Btn_Alta_LimpiarProd
+        'GroupBox1
         '
-        Me.Btn_Alta_LimpiarProd.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Btn_Alta_LimpiarProd.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Btn_Alta_LimpiarProd.Location = New System.Drawing.Point(358, 202)
-        Me.Btn_Alta_LimpiarProd.Name = "Btn_Alta_LimpiarProd"
-        Me.Btn_Alta_LimpiarProd.Size = New System.Drawing.Size(75, 25)
-        Me.Btn_Alta_LimpiarProd.TabIndex = 7
-        Me.Btn_Alta_LimpiarProd.Text = "Limpiar"
-        Me.Btn_Alta_LimpiarProd.UseVisualStyleBackColor = False
+        Me.GroupBox1.Controls.Add(Me.Btn_Alta_Limpiar_Servicio)
+        Me.GroupBox1.Controls.Add(Me.TtBo_Alta_DescServicio)
+        Me.GroupBox1.Controls.Add(Me.Btn_Alta_Servicio)
+        Me.GroupBox1.Controls.Add(Me.TtBo_Alta_NombreServicio)
+        Me.GroupBox1.Controls.Add(Me.Lab_Alta_DescServicio)
+        Me.GroupBox1.Controls.Add(Me.Lab_Alta_NombServicio)
+        Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.GroupBox1.Location = New System.Drawing.Point(167, 15)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(358, 144)
+        Me.GroupBox1.TabIndex = 9
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Alta de servício"
         '
-        'Btn_Alta_GuardarProd
+        'Btn_Alta_Limpiar_Servicio
         '
-        Me.Btn_Alta_GuardarProd.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Btn_Alta_GuardarProd.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Btn_Alta_GuardarProd.Location = New System.Drawing.Point(439, 202)
-        Me.Btn_Alta_GuardarProd.Name = "Btn_Alta_GuardarProd"
-        Me.Btn_Alta_GuardarProd.Size = New System.Drawing.Size(98, 25)
-        Me.Btn_Alta_GuardarProd.TabIndex = 6
-        Me.Btn_Alta_GuardarProd.Text = "Guardar"
-        Me.Btn_Alta_GuardarProd.UseVisualStyleBackColor = False
+        Me.Btn_Alta_Limpiar_Servicio.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Btn_Alta_Limpiar_Servicio.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Btn_Alta_Limpiar_Servicio.Location = New System.Drawing.Point(167, 93)
+        Me.Btn_Alta_Limpiar_Servicio.Name = "Btn_Alta_Limpiar_Servicio"
+        Me.Btn_Alta_Limpiar_Servicio.Size = New System.Drawing.Size(75, 25)
+        Me.Btn_Alta_Limpiar_Servicio.TabIndex = 10
+        Me.Btn_Alta_Limpiar_Servicio.Text = "Limpiar"
+        Me.Btn_Alta_Limpiar_Servicio.UseVisualStyleBackColor = False
         '
-        'TtBo_Alta_PrecioServicio
+        'TtBo_Alta_DescServicio
         '
-        Me.TtBo_Alta_PrecioServicio.Location = New System.Drawing.Point(360, 136)
-        Me.TtBo_Alta_PrecioServicio.Mask = "9999.99"
-        Me.TtBo_Alta_PrecioServicio.Name = "TtBo_Alta_PrecioServicio"
-        Me.TtBo_Alta_PrecioServicio.Size = New System.Drawing.Size(179, 20)
-        Me.TtBo_Alta_PrecioServicio.TabIndex = 5
-        Me.TtBo_Alta_PrecioServicio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TtBo_Alta_DescServicio.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.TtBo_Alta_DescServicio.Location = New System.Drawing.Point(167, 65)
+        Me.TtBo_Alta_DescServicio.MaxLength = 120
+        Me.TtBo_Alta_DescServicio.Name = "TtBo_Alta_DescServicio"
+        Me.TtBo_Alta_DescServicio.Size = New System.Drawing.Size(179, 23)
+        Me.TtBo_Alta_DescServicio.TabIndex = 9
+        Me.TtBo_Alta_DescServicio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'TtBo_Alta_DescripServicio
+        'Btn_Alta_Servicio
         '
-        Me.TtBo_Alta_DescripServicio.Location = New System.Drawing.Point(358, 176)
-        Me.TtBo_Alta_DescripServicio.MaxLength = 120
-        Me.TtBo_Alta_DescripServicio.Name = "TtBo_Alta_DescripServicio"
-        Me.TtBo_Alta_DescripServicio.Size = New System.Drawing.Size(179, 20)
-        Me.TtBo_Alta_DescripServicio.TabIndex = 4
+        Me.Btn_Alta_Servicio.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Btn_Alta_Servicio.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Btn_Alta_Servicio.Location = New System.Drawing.Point(248, 93)
+        Me.Btn_Alta_Servicio.Name = "Btn_Alta_Servicio"
+        Me.Btn_Alta_Servicio.Size = New System.Drawing.Size(98, 25)
+        Me.Btn_Alta_Servicio.TabIndex = 9
+        Me.Btn_Alta_Servicio.Text = "Guardar"
+        Me.Btn_Alta_Servicio.UseVisualStyleBackColor = False
         '
-        'TtBo_Alta_NombServicio
+        'TtBo_Alta_NombreServicio
         '
-        Me.TtBo_Alta_NombServicio.Location = New System.Drawing.Point(358, 90)
-        Me.TtBo_Alta_NombServicio.MaxLength = 50
-        Me.TtBo_Alta_NombServicio.Name = "TtBo_Alta_NombServicio"
-        Me.TtBo_Alta_NombServicio.Size = New System.Drawing.Size(179, 20)
-        Me.TtBo_Alta_NombServicio.TabIndex = 3
-        Me.TtBo_Alta_NombServicio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TtBo_Alta_NombreServicio.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.TtBo_Alta_NombreServicio.Location = New System.Drawing.Point(167, 22)
+        Me.TtBo_Alta_NombreServicio.MaxLength = 120
+        Me.TtBo_Alta_NombreServicio.Name = "TtBo_Alta_NombreServicio"
+        Me.TtBo_Alta_NombreServicio.Size = New System.Drawing.Size(179, 23)
+        Me.TtBo_Alta_NombreServicio.TabIndex = 9
+        Me.TtBo_Alta_NombreServicio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'Lab_Alta_DescripServicio
+        'Lab_Alta_DescServicio
         '
-        Me.Lab_Alta_DescripServicio.AutoSize = True
-        Me.Lab_Alta_DescripServicio.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Lab_Alta_DescripServicio.Location = New System.Drawing.Point(191, 179)
-        Me.Lab_Alta_DescripServicio.Name = "Lab_Alta_DescripServicio"
-        Me.Lab_Alta_DescripServicio.Size = New System.Drawing.Size(161, 17)
-        Me.Lab_Alta_DescripServicio.TabIndex = 2
-        Me.Lab_Alta_DescripServicio.Text = "Descripción del servicio:"
-        '
-        'Lab_Alta_PrecioServicio
-        '
-        Me.Lab_Alta_PrecioServicio.AutoSize = True
-        Me.Lab_Alta_PrecioServicio.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Lab_Alta_PrecioServicio.Location = New System.Drawing.Point(191, 139)
-        Me.Lab_Alta_PrecioServicio.Name = "Lab_Alta_PrecioServicio"
-        Me.Lab_Alta_PrecioServicio.Size = New System.Drawing.Size(127, 17)
-        Me.Lab_Alta_PrecioServicio.TabIndex = 1
-        Me.Lab_Alta_PrecioServicio.Text = "Precio del servicio:"
+        Me.Lab_Alta_DescServicio.AutoSize = True
+        Me.Lab_Alta_DescServicio.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Alta_DescServicio.Location = New System.Drawing.Point(6, 66)
+        Me.Lab_Alta_DescServicio.Name = "Lab_Alta_DescServicio"
+        Me.Lab_Alta_DescServicio.Size = New System.Drawing.Size(161, 17)
+        Me.Lab_Alta_DescServicio.TabIndex = 9
+        Me.Lab_Alta_DescServicio.Text = "Descripción del servicio:"
         '
         'Lab_Alta_NombServicio
         '
         Me.Lab_Alta_NombServicio.AutoSize = True
         Me.Lab_Alta_NombServicio.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Lab_Alta_NombServicio.Location = New System.Drawing.Point(191, 93)
+        Me.Lab_Alta_NombServicio.Location = New System.Drawing.Point(6, 25)
         Me.Lab_Alta_NombServicio.Name = "Lab_Alta_NombServicio"
         Me.Lab_Alta_NombServicio.Size = New System.Drawing.Size(137, 17)
-        Me.Lab_Alta_NombServicio.TabIndex = 0
+        Me.Lab_Alta_NombServicio.TabIndex = 9
         Me.Lab_Alta_NombServicio.Text = "Nombre del servicio:"
+        '
+        'GoBo_DtsSrv_Servicios
+        '
+        Me.GoBo_DtsSrv_Servicios.Controls.Add(Me.CoBo_Alta_DtsSrv_NombreServicio)
+        Me.GoBo_DtsSrv_Servicios.Controls.Add(Me.Btn_Alta_DtsSrv_LimpiarProd)
+        Me.GoBo_DtsSrv_Servicios.Controls.Add(Me.Lab_Alta_DtsSrv_NombServicio)
+        Me.GoBo_DtsSrv_Servicios.Controls.Add(Me.Btn_Alta_DtsSrv_GuardarProd)
+        Me.GoBo_DtsSrv_Servicios.Controls.Add(Me.Lab_Alta_DtsSrv_PrecioServicio)
+        Me.GoBo_DtsSrv_Servicios.Controls.Add(Me.TtBo_Alta_DtsSrv_PrecioServicio)
+        Me.GoBo_DtsSrv_Servicios.Controls.Add(Me.Lab_Alta_DtsSrv_DescripServicio)
+        Me.GoBo_DtsSrv_Servicios.Controls.Add(Me.TtBo_Alta_DtsSrv_DescripServicio)
+        Me.GoBo_DtsSrv_Servicios.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.GoBo_DtsSrv_Servicios.Location = New System.Drawing.Point(43, 156)
+        Me.GoBo_DtsSrv_Servicios.Name = "GoBo_DtsSrv_Servicios"
+        Me.GoBo_DtsSrv_Servicios.Size = New System.Drawing.Size(640, 185)
+        Me.GoBo_DtsSrv_Servicios.TabIndex = 8
+        Me.GoBo_DtsSrv_Servicios.TabStop = False
+        Me.GoBo_DtsSrv_Servicios.Text = "Detalles del servicio"
+        '
+        'CoBo_Alta_DtsSrv_NombreServicio
+        '
+        Me.CoBo_Alta_DtsSrv_NombreServicio.FormattingEnabled = True
+        Me.CoBo_Alta_DtsSrv_NombreServicio.Location = New System.Drawing.Point(291, 19)
+        Me.CoBo_Alta_DtsSrv_NombreServicio.Name = "CoBo_Alta_DtsSrv_NombreServicio"
+        Me.CoBo_Alta_DtsSrv_NombreServicio.Size = New System.Drawing.Size(179, 24)
+        Me.CoBo_Alta_DtsSrv_NombreServicio.TabIndex = 8
+        '
+        'Btn_Alta_DtsSrv_LimpiarProd
+        '
+        Me.Btn_Alta_DtsSrv_LimpiarProd.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Btn_Alta_DtsSrv_LimpiarProd.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Btn_Alta_DtsSrv_LimpiarProd.Location = New System.Drawing.Point(291, 154)
+        Me.Btn_Alta_DtsSrv_LimpiarProd.Name = "Btn_Alta_DtsSrv_LimpiarProd"
+        Me.Btn_Alta_DtsSrv_LimpiarProd.Size = New System.Drawing.Size(75, 25)
+        Me.Btn_Alta_DtsSrv_LimpiarProd.TabIndex = 7
+        Me.Btn_Alta_DtsSrv_LimpiarProd.Text = "Limpiar"
+        Me.Btn_Alta_DtsSrv_LimpiarProd.UseVisualStyleBackColor = False
+        '
+        'Lab_Alta_DtsSrv_NombServicio
+        '
+        Me.Lab_Alta_DtsSrv_NombServicio.AutoSize = True
+        Me.Lab_Alta_DtsSrv_NombServicio.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Alta_DtsSrv_NombServicio.Location = New System.Drawing.Point(17, 22)
+        Me.Lab_Alta_DtsSrv_NombServicio.Name = "Lab_Alta_DtsSrv_NombServicio"
+        Me.Lab_Alta_DtsSrv_NombServicio.Size = New System.Drawing.Size(137, 17)
+        Me.Lab_Alta_DtsSrv_NombServicio.TabIndex = 0
+        Me.Lab_Alta_DtsSrv_NombServicio.Text = "Nombre del servicio:"
+        '
+        'Btn_Alta_DtsSrv_GuardarProd
+        '
+        Me.Btn_Alta_DtsSrv_GuardarProd.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Btn_Alta_DtsSrv_GuardarProd.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Btn_Alta_DtsSrv_GuardarProd.Location = New System.Drawing.Point(372, 154)
+        Me.Btn_Alta_DtsSrv_GuardarProd.Name = "Btn_Alta_DtsSrv_GuardarProd"
+        Me.Btn_Alta_DtsSrv_GuardarProd.Size = New System.Drawing.Size(98, 25)
+        Me.Btn_Alta_DtsSrv_GuardarProd.TabIndex = 6
+        Me.Btn_Alta_DtsSrv_GuardarProd.Text = "Guardar"
+        Me.Btn_Alta_DtsSrv_GuardarProd.UseVisualStyleBackColor = False
+        '
+        'Lab_Alta_DtsSrv_PrecioServicio
+        '
+        Me.Lab_Alta_DtsSrv_PrecioServicio.AutoSize = True
+        Me.Lab_Alta_DtsSrv_PrecioServicio.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Alta_DtsSrv_PrecioServicio.Location = New System.Drawing.Point(17, 121)
+        Me.Lab_Alta_DtsSrv_PrecioServicio.Name = "Lab_Alta_DtsSrv_PrecioServicio"
+        Me.Lab_Alta_DtsSrv_PrecioServicio.Size = New System.Drawing.Size(127, 17)
+        Me.Lab_Alta_DtsSrv_PrecioServicio.TabIndex = 1
+        Me.Lab_Alta_DtsSrv_PrecioServicio.Text = "Precio del servicio:"
+        '
+        'TtBo_Alta_DtsSrv_PrecioServicio
+        '
+        Me.TtBo_Alta_DtsSrv_PrecioServicio.Location = New System.Drawing.Point(291, 115)
+        Me.TtBo_Alta_DtsSrv_PrecioServicio.Mask = "9999.99"
+        Me.TtBo_Alta_DtsSrv_PrecioServicio.Name = "TtBo_Alta_DtsSrv_PrecioServicio"
+        Me.TtBo_Alta_DtsSrv_PrecioServicio.Size = New System.Drawing.Size(179, 23)
+        Me.TtBo_Alta_DtsSrv_PrecioServicio.TabIndex = 5
+        Me.TtBo_Alta_DtsSrv_PrecioServicio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Lab_Alta_DtsSrv_DescripServicio
+        '
+        Me.Lab_Alta_DtsSrv_DescripServicio.AutoSize = True
+        Me.Lab_Alta_DtsSrv_DescripServicio.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Alta_DtsSrv_DescripServicio.Location = New System.Drawing.Point(17, 72)
+        Me.Lab_Alta_DtsSrv_DescripServicio.Name = "Lab_Alta_DtsSrv_DescripServicio"
+        Me.Lab_Alta_DtsSrv_DescripServicio.Size = New System.Drawing.Size(234, 17)
+        Me.Lab_Alta_DtsSrv_DescripServicio.TabIndex = 2
+        Me.Lab_Alta_DtsSrv_DescripServicio.Text = "Descripción de detalles del servicio:"
+        '
+        'TtBo_Alta_DtsSrv_DescripServicio
+        '
+        Me.TtBo_Alta_DtsSrv_DescripServicio.Location = New System.Drawing.Point(291, 66)
+        Me.TtBo_Alta_DtsSrv_DescripServicio.MaxLength = 120
+        Me.TtBo_Alta_DtsSrv_DescripServicio.Name = "TtBo_Alta_DtsSrv_DescripServicio"
+        Me.TtBo_Alta_DtsSrv_DescripServicio.Size = New System.Drawing.Size(179, 23)
+        Me.TtBo_Alta_DtsSrv_DescripServicio.TabIndex = 4
+        Me.TtBo_Alta_DtsSrv_DescripServicio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Consulta_Servicio
         '
@@ -283,7 +394,7 @@ Partial Class Form_Servicios
         '
         Me.Btn_Consulta_BuscarTodo.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Btn_Consulta_BuscarTodo.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Btn_Consulta_BuscarTodo.Location = New System.Drawing.Point(464, 78)
+        Me.Btn_Consulta_BuscarTodo.Location = New System.Drawing.Point(492, 61)
         Me.Btn_Consulta_BuscarTodo.Name = "Btn_Consulta_BuscarTodo"
         Me.Btn_Consulta_BuscarTodo.Size = New System.Drawing.Size(119, 25)
         Me.Btn_Consulta_BuscarTodo.TabIndex = 8
@@ -328,7 +439,7 @@ Partial Class Form_Servicios
         '
         Me.Btn_Consulta_Buscar.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Btn_Consulta_Buscar.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Btn_Consulta_Buscar.Location = New System.Drawing.Point(329, 78)
+        Me.Btn_Consulta_Buscar.Location = New System.Drawing.Point(367, 61)
         Me.Btn_Consulta_Buscar.Name = "Btn_Consulta_Buscar"
         Me.Btn_Consulta_Buscar.Size = New System.Drawing.Size(119, 25)
         Me.Btn_Consulta_Buscar.TabIndex = 6
@@ -356,100 +467,185 @@ Partial Class Form_Servicios
         'Cambio_Servicio
         '
         Me.Cambio_Servicio.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Cambio_Servicio.Controls.Add(Me.Button5)
-        Me.Cambio_Servicio.Controls.Add(Me.Btn_Cambios_Guardar)
-        Me.Cambio_Servicio.Controls.Add(Me.TtBo_Cambios_PrecioServicio)
-        Me.Cambio_Servicio.Controls.Add(Me.TtBo_Cambios_DescripServicio)
-        Me.Cambio_Servicio.Controls.Add(Me.TtBo_Cambios_NombServicio)
-        Me.Cambio_Servicio.Controls.Add(Me.Lab_Cambios_DescripServicio)
-        Me.Cambio_Servicio.Controls.Add(Me.Lab_Cambios_PrecioServicio)
-        Me.Cambio_Servicio.Controls.Add(Me.Lab_Cambios_NombServicio)
+        Me.Cambio_Servicio.Controls.Add(Me.GoBo_Cambios_Servicios)
+        Me.Cambio_Servicio.Controls.Add(Me.GoBo_Cambios_detallesServ)
         Me.Cambio_Servicio.Location = New System.Drawing.Point(4, 22)
         Me.Cambio_Servicio.Name = "Cambio_Servicio"
         Me.Cambio_Servicio.Size = New System.Drawing.Size(768, 356)
         Me.Cambio_Servicio.TabIndex = 3
         Me.Cambio_Servicio.Text = "Cambios en el  servicios"
         '
-        'Button5
+        'GoBo_Cambios_Servicios
         '
-        Me.Button5.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.Button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Button5.Location = New System.Drawing.Point(375, 185)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(75, 25)
-        Me.Button5.TabIndex = 15
-        Me.Button5.Text = "Limpiar"
-        Me.Button5.UseVisualStyleBackColor = False
+        Me.GoBo_Cambios_Servicios.Controls.Add(Me.CoBo_Cambios_NombServ)
+        Me.GoBo_Cambios_Servicios.Controls.Add(Me.Btn_Cambios_Limpiar)
+        Me.GoBo_Cambios_Servicios.Controls.Add(Me.TtBo_Cambios_DescServ)
+        Me.GoBo_Cambios_Servicios.Controls.Add(Me.Btn_Cambios_Buscar)
+        Me.GoBo_Cambios_Servicios.Controls.Add(Me.Lab_Cambios_DescServ)
+        Me.GoBo_Cambios_Servicios.Controls.Add(Me.Lab_Cambios_NombServ)
+        Me.GoBo_Cambios_Servicios.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.GoBo_Cambios_Servicios.Location = New System.Drawing.Point(188, 15)
+        Me.GoBo_Cambios_Servicios.Name = "GoBo_Cambios_Servicios"
+        Me.GoBo_Cambios_Servicios.Size = New System.Drawing.Size(358, 144)
+        Me.GoBo_Cambios_Servicios.TabIndex = 11
+        Me.GoBo_Cambios_Servicios.TabStop = False
+        Me.GoBo_Cambios_Servicios.Text = "Cambios de servício"
         '
-        'Btn_Cambios_Guardar
+        'CoBo_Cambios_NombServ
         '
-        Me.Btn_Cambios_Guardar.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Btn_Cambios_Guardar.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Btn_Cambios_Guardar.Location = New System.Drawing.Point(454, 185)
-        Me.Btn_Cambios_Guardar.Name = "Btn_Cambios_Guardar"
-        Me.Btn_Cambios_Guardar.Size = New System.Drawing.Size(100, 25)
-        Me.Btn_Cambios_Guardar.TabIndex = 14
-        Me.Btn_Cambios_Guardar.Text = "Buscar"
-        Me.Btn_Cambios_Guardar.UseVisualStyleBackColor = False
+        Me.CoBo_Cambios_NombServ.FormattingEnabled = True
+        Me.CoBo_Cambios_NombServ.Location = New System.Drawing.Point(167, 25)
+        Me.CoBo_Cambios_NombServ.Name = "CoBo_Cambios_NombServ"
+        Me.CoBo_Cambios_NombServ.Size = New System.Drawing.Size(179, 24)
+        Me.CoBo_Cambios_NombServ.TabIndex = 11
         '
-        'TtBo_Cambios_PrecioServicio
+        'Btn_Cambios_Limpiar
         '
-        Me.TtBo_Cambios_PrecioServicio.Location = New System.Drawing.Point(375, 105)
-        Me.TtBo_Cambios_PrecioServicio.Mask = "9999.99"
-        Me.TtBo_Cambios_PrecioServicio.Name = "TtBo_Cambios_PrecioServicio"
-        Me.TtBo_Cambios_PrecioServicio.ReadOnly = True
-        Me.TtBo_Cambios_PrecioServicio.Size = New System.Drawing.Size(179, 20)
-        Me.TtBo_Cambios_PrecioServicio.TabIndex = 13
-        Me.TtBo_Cambios_PrecioServicio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.Btn_Cambios_Limpiar.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Btn_Cambios_Limpiar.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Btn_Cambios_Limpiar.Location = New System.Drawing.Point(167, 93)
+        Me.Btn_Cambios_Limpiar.Name = "Btn_Cambios_Limpiar"
+        Me.Btn_Cambios_Limpiar.Size = New System.Drawing.Size(75, 25)
+        Me.Btn_Cambios_Limpiar.TabIndex = 10
+        Me.Btn_Cambios_Limpiar.Text = "Limpiar"
+        Me.Btn_Cambios_Limpiar.UseVisualStyleBackColor = False
         '
-        'TtBo_Cambios_DescripServicio
+        'TtBo_Cambios_DescServ
         '
-        Me.TtBo_Cambios_DescripServicio.Location = New System.Drawing.Point(375, 150)
-        Me.TtBo_Cambios_DescripServicio.MaxLength = 120
-        Me.TtBo_Cambios_DescripServicio.Name = "TtBo_Cambios_DescripServicio"
-        Me.TtBo_Cambios_DescripServicio.ReadOnly = True
-        Me.TtBo_Cambios_DescripServicio.Size = New System.Drawing.Size(179, 20)
-        Me.TtBo_Cambios_DescripServicio.TabIndex = 12
-        Me.TtBo_Cambios_DescripServicio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TtBo_Cambios_DescServ.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.TtBo_Cambios_DescServ.Location = New System.Drawing.Point(167, 65)
+        Me.TtBo_Cambios_DescServ.MaxLength = 120
+        Me.TtBo_Cambios_DescServ.Name = "TtBo_Cambios_DescServ"
+        Me.TtBo_Cambios_DescServ.Size = New System.Drawing.Size(179, 23)
+        Me.TtBo_Cambios_DescServ.TabIndex = 9
+        Me.TtBo_Cambios_DescServ.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'TtBo_Cambios_NombServicio
+        'Btn_Cambios_Buscar
         '
-        Me.TtBo_Cambios_NombServicio.Location = New System.Drawing.Point(375, 59)
-        Me.TtBo_Cambios_NombServicio.MaxLength = 50
-        Me.TtBo_Cambios_NombServicio.Name = "TtBo_Cambios_NombServicio"
-        Me.TtBo_Cambios_NombServicio.Size = New System.Drawing.Size(179, 20)
-        Me.TtBo_Cambios_NombServicio.TabIndex = 11
-        Me.TtBo_Cambios_NombServicio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.Btn_Cambios_Buscar.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Btn_Cambios_Buscar.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Btn_Cambios_Buscar.Location = New System.Drawing.Point(248, 93)
+        Me.Btn_Cambios_Buscar.Name = "Btn_Cambios_Buscar"
+        Me.Btn_Cambios_Buscar.Size = New System.Drawing.Size(98, 25)
+        Me.Btn_Cambios_Buscar.TabIndex = 9
+        Me.Btn_Cambios_Buscar.Text = "Buscar"
+        Me.Btn_Cambios_Buscar.UseVisualStyleBackColor = False
         '
-        'Lab_Cambios_DescripServicio
+        'Lab_Cambios_DescServ
         '
-        Me.Lab_Cambios_DescripServicio.AutoSize = True
-        Me.Lab_Cambios_DescripServicio.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Lab_Cambios_DescripServicio.Location = New System.Drawing.Point(197, 153)
-        Me.Lab_Cambios_DescripServicio.Name = "Lab_Cambios_DescripServicio"
-        Me.Lab_Cambios_DescripServicio.Size = New System.Drawing.Size(161, 17)
-        Me.Lab_Cambios_DescripServicio.TabIndex = 10
-        Me.Lab_Cambios_DescripServicio.Text = "Descripción del servicio:"
+        Me.Lab_Cambios_DescServ.AutoSize = True
+        Me.Lab_Cambios_DescServ.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Cambios_DescServ.Location = New System.Drawing.Point(6, 66)
+        Me.Lab_Cambios_DescServ.Name = "Lab_Cambios_DescServ"
+        Me.Lab_Cambios_DescServ.Size = New System.Drawing.Size(161, 17)
+        Me.Lab_Cambios_DescServ.TabIndex = 9
+        Me.Lab_Cambios_DescServ.Text = "Descripción del servicio:"
         '
-        'Lab_Cambios_PrecioServicio
+        'Lab_Cambios_NombServ
         '
-        Me.Lab_Cambios_PrecioServicio.AutoSize = True
-        Me.Lab_Cambios_PrecioServicio.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Lab_Cambios_PrecioServicio.Location = New System.Drawing.Point(197, 105)
-        Me.Lab_Cambios_PrecioServicio.Name = "Lab_Cambios_PrecioServicio"
-        Me.Lab_Cambios_PrecioServicio.Size = New System.Drawing.Size(127, 17)
-        Me.Lab_Cambios_PrecioServicio.TabIndex = 9
-        Me.Lab_Cambios_PrecioServicio.Text = "Precio del servicio:"
+        Me.Lab_Cambios_NombServ.AutoSize = True
+        Me.Lab_Cambios_NombServ.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Lab_Cambios_NombServ.Location = New System.Drawing.Point(6, 25)
+        Me.Lab_Cambios_NombServ.Name = "Lab_Cambios_NombServ"
+        Me.Lab_Cambios_NombServ.Size = New System.Drawing.Size(137, 17)
+        Me.Lab_Cambios_NombServ.TabIndex = 9
+        Me.Lab_Cambios_NombServ.Text = "Nombre del servicio:"
         '
-        'Lab_Cambios_NombServicio
+        'GoBo_Cambios_detallesServ
         '
-        Me.Lab_Cambios_NombServicio.AutoSize = True
-        Me.Lab_Cambios_NombServicio.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
-        Me.Lab_Cambios_NombServicio.Location = New System.Drawing.Point(197, 62)
-        Me.Lab_Cambios_NombServicio.Name = "Lab_Cambios_NombServicio"
-        Me.Lab_Cambios_NombServicio.Size = New System.Drawing.Size(137, 17)
-        Me.Lab_Cambios_NombServicio.TabIndex = 8
-        Me.Lab_Cambios_NombServicio.Text = "Nombre del servicio:"
+        Me.GoBo_Cambios_detallesServ.Controls.Add(Me.ComboBox1)
+        Me.GoBo_Cambios_detallesServ.Controls.Add(Me.Button3)
+        Me.GoBo_Cambios_detallesServ.Controls.Add(Me.Label3)
+        Me.GoBo_Cambios_detallesServ.Controls.Add(Me.Button4)
+        Me.GoBo_Cambios_detallesServ.Controls.Add(Me.Label4)
+        Me.GoBo_Cambios_detallesServ.Controls.Add(Me.MaskedTextBox1)
+        Me.GoBo_Cambios_detallesServ.Controls.Add(Me.Label5)
+        Me.GoBo_Cambios_detallesServ.Controls.Add(Me.TextBox3)
+        Me.GoBo_Cambios_detallesServ.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.GoBo_Cambios_detallesServ.Location = New System.Drawing.Point(64, 156)
+        Me.GoBo_Cambios_detallesServ.Name = "GoBo_Cambios_detallesServ"
+        Me.GoBo_Cambios_detallesServ.Size = New System.Drawing.Size(640, 185)
+        Me.GoBo_Cambios_detallesServ.TabIndex = 10
+        Me.GoBo_Cambios_detallesServ.TabStop = False
+        Me.GoBo_Cambios_detallesServ.Text = "Detalles del servicio"
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(291, 19)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(179, 24)
+        Me.ComboBox1.TabIndex = 8
+        '
+        'Button3
+        '
+        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Button3.Location = New System.Drawing.Point(291, 154)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(75, 25)
+        Me.Button3.TabIndex = 7
+        Me.Button3.Text = "Limpiar"
+        Me.Button3.UseVisualStyleBackColor = False
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Label3.Location = New System.Drawing.Point(17, 22)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(137, 17)
+        Me.Label3.TabIndex = 0
+        Me.Label3.Text = "Nombre del servicio:"
+        '
+        'Button4
+        '
+        Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Button4.Location = New System.Drawing.Point(372, 154)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(98, 25)
+        Me.Button4.TabIndex = 6
+        Me.Button4.Text = "Guardar"
+        Me.Button4.UseVisualStyleBackColor = False
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Label4.Location = New System.Drawing.Point(17, 121)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(127, 17)
+        Me.Label4.TabIndex = 1
+        Me.Label4.Text = "Precio del servicio:"
+        '
+        'MaskedTextBox1
+        '
+        Me.MaskedTextBox1.Location = New System.Drawing.Point(291, 115)
+        Me.MaskedTextBox1.Mask = "9999.99"
+        Me.MaskedTextBox1.Name = "MaskedTextBox1"
+        Me.MaskedTextBox1.Size = New System.Drawing.Size(179, 23)
+        Me.MaskedTextBox1.TabIndex = 5
+        Me.MaskedTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.Label5.Location = New System.Drawing.Point(17, 72)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(234, 17)
+        Me.Label5.TabIndex = 2
+        Me.Label5.Text = "Descripción de detalles del servicio:"
+        '
+        'TextBox3
+        '
+        Me.TextBox3.Location = New System.Drawing.Point(291, 66)
+        Me.TextBox3.MaxLength = 120
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(179, 23)
+        Me.TextBox3.TabIndex = 4
+        Me.TextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Baja_Servicio
         '
@@ -595,6 +791,7 @@ Partial Class Form_Servicios
         Me.Controls.Add(Me.Tab_Ctr_Servicio)
         Me.Controls.Add(Me.Btn_atras)
         Me.Controls.Add(Me.MenuS_Principal)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form_Servicios"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Servicios"
@@ -602,12 +799,18 @@ Partial Class Form_Servicios
         Me.MenuS_Principal.PerformLayout()
         Me.Tab_Ctr_Servicio.ResumeLayout(False)
         Me.Alta_Servicio.ResumeLayout(False)
-        Me.Alta_Servicio.PerformLayout()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
+        Me.GoBo_DtsSrv_Servicios.ResumeLayout(False)
+        Me.GoBo_DtsSrv_Servicios.PerformLayout()
         Me.Consulta_Servicio.ResumeLayout(False)
         Me.Consulta_Servicio.PerformLayout()
         CType(Me.DGV_ListaServicio, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Cambio_Servicio.ResumeLayout(False)
-        Me.Cambio_Servicio.PerformLayout()
+        Me.GoBo_Cambios_Servicios.ResumeLayout(False)
+        Me.GoBo_Cambios_Servicios.PerformLayout()
+        Me.GoBo_Cambios_detallesServ.ResumeLayout(False)
+        Me.GoBo_Cambios_detallesServ.PerformLayout()
         Me.Baja_Servicio.ResumeLayout(False)
         Me.Baja_Servicio.PerformLayout()
         Me.ResumeLayout(False)
@@ -635,14 +838,13 @@ Partial Class Form_Servicios
     Friend WithEvents TextBox34 As TextBox
     Friend WithEvents Label40 As Label
     Friend WithEvents Label41 As Label
-    Friend WithEvents Btn_Alta_LimpiarProd As Button
-    Friend WithEvents Btn_Alta_GuardarProd As Button
-    Friend WithEvents TtBo_Alta_PrecioServicio As MaskedTextBox
-    Friend WithEvents TtBo_Alta_DescripServicio As TextBox
-    Friend WithEvents TtBo_Alta_NombServicio As TextBox
-    Friend WithEvents Lab_Alta_DescripServicio As Label
-    Friend WithEvents Lab_Alta_PrecioServicio As Label
-    Friend WithEvents Lab_Alta_NombServicio As Label
+    Friend WithEvents Btn_Alta_DtsSrv_LimpiarProd As Button
+    Friend WithEvents Btn_Alta_DtsSrv_GuardarProd As Button
+    Friend WithEvents TtBo_Alta_DtsSrv_PrecioServicio As MaskedTextBox
+    Friend WithEvents TtBo_Alta_DtsSrv_DescripServicio As TextBox
+    Friend WithEvents Lab_Alta_DtsSrv_DescripServicio As Label
+    Friend WithEvents Lab_Alta_DtsSrv_PrecioServicio As Label
+    Friend WithEvents Lab_Alta_DtsSrv_NombServicio As Label
     Friend WithEvents Btn_Consulta_BuscarTodo As Button
     Friend WithEvents DGV_ListaServicio As DataGridView
     Friend WithEvents DVG_ID_Serv As DataGridViewTextBoxColumn
@@ -652,14 +854,6 @@ Partial Class Form_Servicios
     Friend WithEvents Btn_Consulta_Buscar As Button
     Friend WithEvents TtBo_Consulta_NombServicio As TextBox
     Friend WithEvents Lab_Consulta_NombServicio As Label
-    Friend WithEvents Button5 As Button
-    Friend WithEvents Btn_Cambios_Guardar As Button
-    Friend WithEvents TtBo_Cambios_PrecioServicio As MaskedTextBox
-    Friend WithEvents TtBo_Cambios_DescripServicio As TextBox
-    Friend WithEvents TtBo_Cambios_NombServicio As TextBox
-    Friend WithEvents Lab_Cambios_DescripServicio As Label
-    Friend WithEvents Lab_Cambios_PrecioServicio As Label
-    Friend WithEvents Lab_Cambios_NombServicio As Label
     Friend WithEvents Btn_Bajas_Limpiar As Button
     Friend WithEvents Btn_Bajas_Buscar As Button
     Friend WithEvents TtBo_Bajas_PrecioServicio As MaskedTextBox
@@ -668,4 +862,29 @@ Partial Class Form_Servicios
     Friend WithEvents Lab_Bajas_DescripServicio As Label
     Friend WithEvents Lab_Bajas_PrecioServicio As Label
     Friend WithEvents Lab_Bajas_NombServicio As Label
+    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents GoBo_DtsSrv_Servicios As GroupBox
+    Friend WithEvents CoBo_Alta_DtsSrv_NombreServicio As ComboBox
+    Friend WithEvents Btn_Alta_Limpiar_Servicio As Button
+    Friend WithEvents TtBo_Alta_DescServicio As TextBox
+    Friend WithEvents Btn_Alta_Servicio As Button
+    Friend WithEvents TtBo_Alta_NombreServicio As TextBox
+    Friend WithEvents Lab_Alta_DescServicio As Label
+    Friend WithEvents Lab_Alta_NombServicio As Label
+    Friend WithEvents GoBo_Cambios_Servicios As GroupBox
+    Friend WithEvents Btn_Cambios_Limpiar As Button
+    Friend WithEvents TtBo_Cambios_DescServ As TextBox
+    Friend WithEvents Btn_Cambios_Buscar As Button
+    Friend WithEvents Lab_Cambios_DescServ As Label
+    Friend WithEvents Lab_Cambios_NombServ As Label
+    Friend WithEvents GoBo_Cambios_detallesServ As GroupBox
+    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents Button3 As Button
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Button4 As Button
+    Friend WithEvents Label4 As Label
+    Friend WithEvents MaskedTextBox1 As MaskedTextBox
+    Friend WithEvents Label5 As Label
+    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents CoBo_Cambios_NombServ As ComboBox
 End Class
